@@ -23,7 +23,7 @@ Scientific journals operate over a broad spectrum of publishing strategies,
 from strictly for-profit, to non-profit, and in-between business models 
 (e.g. for-profit but academic friendly journals). Scientific publishing is 
 increasingly dominated by for-profit journals, many of which attract prestige 
-and submissions through high impact factors. In contrast, non-profit journals 
+and submissions through high impact factors (McGill 2024). In contrast, non-profit journals 
 – those that reinvest revenue into the academic community – struggle to maintain
 visibility despite offering more equitable publishing models.
 
@@ -42,7 +42,7 @@ This information comes from the
 [DAFNEE initiative](https://dafnee.isem-evolution.fr/), a Database of Academia 
 Friendly jourNals in Ecology and Evolution.
 
-**Note:** The package `fairpub` provides a subset of the original DAFNEE database.
+**Note:** The package `fairpub` provides a subset of the original [DAFNEE database](https://dafnee.isem-evolution.fr/) (fields "Ecology", "Evolution/Systematics", "General" and "Organisms").
 We are currently working to increase this list of journals.
 
 The package `fairpub` also implements the method proposed by Beck _et al._ 
@@ -222,3 +222,6 @@ contain all articles published by this author.
 
 Beck M _et al._ (in revision) Strategic citations for a fairer academic landscape. 
 Submitted to Proc B - Biological Science Practices.
+
+McGill B (2024) The state of academic publishing in 3 graphs, 6 trends, and 4 thoughts.
+URL: <https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/>

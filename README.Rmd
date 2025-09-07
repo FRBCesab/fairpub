@@ -52,7 +52,7 @@ Scientific journals operate over a broad spectrum of publishing strategies,
 from strictly for-profit, to non-profit, and in-between business models 
 (e.g. for-profit but academic friendly journals). Scientific publishing is 
 increasingly dominated by for-profit journals, many of which attract prestige 
-and submissions through high impact factors. In contrast, non-profit journals 
+and submissions through high impact factors (McGill 2024). In contrast, non-profit journals 
 – those that reinvest revenue into the academic community – struggle to maintain
 visibility despite offering more equitable publishing models.
 
@@ -72,7 +72,7 @@ This information comes from the
 Friendly jourNals in Ecology and Evolution.
 
 The package `fairpub` also implements the method proposed by Beck _et al._ 
-(in revision): the strategic citation. By deliberately choosing to cite relevant
+(in prep): the strategic citation. By deliberately choosing to cite relevant
 articles from non-profit journals when multiple references would be equally 
 valid, researchers can contribute to increasing their visibility and future 
 impact factor. This method is implemented in the `fp_compute_ratio()` function 
@@ -98,7 +98,7 @@ In addition, the [`fp_doi_from_bibtex()`](https://frbcesab.github.io/fairpub/ref
 
 ## Limitation
 
-The package `fairpub` provides a small subset of the journals indexed in the DAFNEE database.
+The package `fairpub` provides a small subset of the journals indexed in the [DAFNEE database](https://dafnee.isem-evolution.fr/) (fields "Ecology", "Evolution/Systematics", "General" and "Organisms").
 We are currently working to increase this list of journals.
 
 
@@ -194,5 +194,8 @@ incredible work in gathering information about scientific journals.
 
 ## References
 
-Beck M _et al._ (in revision) Strategic citations for a fairer academic landscape. 
+Beck M _et al._ (in prep) Strategic citations for a fairer academic landscape. 
 Submitted to Proc B - Biological Science Practices.
+
+McGill B (2024) The state of academic publishing in 3 graphs, 6 trends, and 4 thoughts.
+URL: <https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/>

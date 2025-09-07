@@ -19,6 +19,7 @@ Check](https://github.com/frbcesab/fairpub/actions/workflows/R-CMD-check.yaml/ba
 <!-- badges: end -->
 
 <p align="left">
+
 • <a href="#overview">Overview</a><br> •
 <a href="#features">Features</a><br> •
 <a href="#limitation">Limitation</a><br> •
@@ -37,9 +38,9 @@ strategies, from strictly for-profit, to non-profit, and in-between
 business models (e.g. for-profit but academic friendly journals).
 Scientific publishing is increasingly dominated by for-profit journals,
 many of which attract prestige and submissions through high impact
-factors. In contrast, non-profit journals – those that reinvest revenue
-into the academic community – struggle to maintain visibility despite
-offering more equitable publishing models.
+factors (McGill 2024). In contrast, non-profit journals – those that
+reinvest revenue into the academic community – struggle to maintain
+visibility despite offering more equitable publishing models.
 
 The R package `fairpub` aims to provide a user-friendly toolbox to
 investigate the fairness of a research (article, bibliographic list,
@@ -59,8 +60,8 @@ initiative](https://dafnee.isem-evolution.fr/), a Database of Academia
 Friendly jourNals in Ecology and Evolution.
 
 The package `fairpub` also implements the method proposed by Beck *et
-al.* (in revision): the strategic citation. By deliberately choosing to
-cite relevant articles from non-profit journals when multiple references
+al.* (in prep): the strategic citation. By deliberately choosing to cite
+relevant articles from non-profit journals when multiple references
 would be equally valid, researchers can contribute to increasing their
 visibility and future impact factor. This method is implemented in the
 `fp_compute_ratio()` function and can answer the question **How fair am
@@ -102,8 +103,9 @@ function.
 ## Limitation
 
 The package `fairpub` provides a small subset of the journals indexed in
-the DAFNEE database. We are currently working to increase this list of
-journals.
+the [DAFNEE database](https://dafnee.isem-evolution.fr/) (fields
+“Ecology”, “Evolution/Systematics”, “General” and “Organisms”). We are
+currently working to increase this list of journals.
 
 ## Installation
 
@@ -193,5 +195,9 @@ journals.
 
 ## References
 
-Beck M *et al.* (in revision) Strategic citations for a fairer academic
+Beck M *et al.* (in prep) Strategic citations for a fairer academic
 landscape. Submitted to Proc B - Biological Science Practices.
+
+McGill B (2024) The state of academic publishing in 3 graphs, 6 trends,
+and 4 thoughts. URL:
+<https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/>
