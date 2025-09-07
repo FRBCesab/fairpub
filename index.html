@@ -79,7 +79,7 @@
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p>Scientific journals operate over a broad spectrum of publishing strategies, from strictly for-profit, to non-profit, and in-between business models (e.g. for-profit but academic friendly journals). Scientific publishing is increasingly dominated by for-profit journals, many of which attract prestige and submissions through high impact factors. In contrast, non-profit journals – those that reinvest revenue into the academic community – struggle to maintain visibility despite offering more equitable publishing models.</p>
+<p>Scientific journals operate over a broad spectrum of publishing strategies, from strictly for-profit, to non-profit, and in-between business models (e.g. for-profit but academic friendly journals). Scientific publishing is increasingly dominated by for-profit journals, many of which attract prestige and submissions through high impact factors (McGill 2024). In contrast, non-profit journals – those that reinvest revenue into the academic community – struggle to maintain visibility despite offering more equitable publishing models.</p>
 <p>The R package <code>fairpub</code> aims to provide a user-friendly toolbox to investigate the fairness of a research (article, bibliographic list, citation list, etc.). The fairness is measured according to two dimensions:</p>
 <ul>
 <li>the <strong>business model</strong> of the journal: for-profit vs. non-profit</li>
@@ -87,7 +87,7 @@
 </ul>
 <p>A journal with a non-profit business model is fairer than an academic friendly journal with a for-profit business model. But the later is still fairer than a non-academic friendly journal with a for-profit business model.</p>
 <p>This information comes from the <a href="https://dafnee.isem-evolution.fr/" class="external-link">DAFNEE initiative</a>, a Database of Academia Friendly jourNals in Ecology and Evolution.</p>
-<p>The package <code>fairpub</code> also implements the method proposed by Beck <em>et al.</em> (in revision): the strategic citation. By deliberately choosing to cite relevant articles from non-profit journals when multiple references would be equally valid, researchers can contribute to increasing their visibility and future impact factor. This method is implemented in the <code><a href="reference/fp_compute_ratio.html">fp_compute_ratio()</a></code> function and can answer the question <strong>How fair am I when I cite previous works?</strong> by computing the fairness ratio on the references cited in a manuscript.</p>
+<p>The package <code>fairpub</code> also implements the method proposed by Beck <em>et al.</em> (in prep): the strategic citation. By deliberately choosing to cite relevant articles from non-profit journals when multiple references would be equally valid, researchers can contribute to increasing their visibility and future impact factor. This method is implemented in the <code><a href="reference/fp_compute_ratio.html">fp_compute_ratio()</a></code> function and can answer the question <strong>How fair am I when I cite previous works?</strong> by computing the fairness ratio on the references cited in a manuscript.</p>
 <p>The package can also answer the question <strong>How fair is my publication list?</strong>. See the <a href="https://frbcesab.github.io/fairpub/articles/fairpub.html" class="external-link">Get started</a> vignette for more information.</p>
 </div>
 <div class="section level2">
@@ -105,7 +105,7 @@
 <div class="section level2">
 <h2 id="limitation">Limitation<a class="anchor" aria-label="anchor" href="#limitation"></a>
 </h2>
-<p>The package <code>fairpub</code> provides a small subset of the journals indexed in the DAFNEE database. We are currently working to increase this list of journals.</p>
+<p>The package <code>fairpub</code> provides a small subset of the journals indexed in the <a href="https://dafnee.isem-evolution.fr/" class="external-link">DAFNEE database</a> (fields “Ecology”, “Evolution/Systematics”, “General” and “Organisms”). We are currently working to increase this list of journals.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -169,7 +169,8 @@
 <div class="section level2">
 <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
 </h2>
-<p>Beck M <em>et al.</em> (in revision) Strategic citations for a fairer academic landscape. Submitted to Proc B - Biological Science Practices.</p>
+<p>Beck M <em>et al.</em> (in prep) Strategic citations for a fairer academic landscape. Submitted to Proc B - Biological Science Practices.</p>
+<p>McGill B (2024) The state of academic publishing in 3 graphs, 6 trends, and 4 thoughts. URL: <a href="https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/" class="external-link uri">https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/</a></p>
 </div>
 </div>
   </div>
