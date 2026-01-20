@@ -195,7 +195,7 @@ incredible work in gathering information about scientific journals.
 ## References
 
 Beck M _et al._ (in prep) Strategic citations for a fairer academic landscape. 
-Submitted to Proc B - Biological Science Practices.
+Submitted to BioScience.
 
 McGill B (2024) The state of academic publishing in 3 graphs, 6 trends, and 4 thoughts.
 URL: <https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/>

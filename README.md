@@ -168,7 +168,7 @@ vignette for a complete usage of the `fairpub` package.
 
 Please cite `fairpub` as:
 
-> Casajus Nicolas (2025) fairpub: How fair are you when you publish/cite
+> Casajus Nicolas (2026) fairpub: How fair are you when you publish/cite
 > scientific works? R package version 1.0.0.
 > <https://github.com/frbcesab/fairpub/>
 
@@ -196,7 +196,7 @@ journals.
 ## References
 
 Beck M *et al.* (in prep) Strategic citations for a fairer academic
-landscape. Submitted to Proc B - Biological Science Practices.
+landscape. Submitted to BioScience.
 
 McGill B (2024) The state of academic publishing in 3 graphs, 6 trends,
 and 4 thoughts. URL:
