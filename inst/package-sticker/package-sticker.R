@@ -27,7 +27,7 @@ p <- ggplot2::ggplot() +
 hexSticker::sticker(
   subplot = p,
   package = "fairpub",
-  filename = here::here("man", "figures", "package_sticker.png"),
+  filename = here::here("man", "figures", "package-sticker.png"),
   dpi = 600,
 
   p_size = 32.0, # Title
