@@ -8,7 +8,7 @@ rlogo <- png::readPNG(here::here("inst", "package-sticker", "r_logo.png"))
 rlogo <- grid::rasterGrob(rlogo, interpolate = TRUE)
 
 
-fp_image <- png::readPNG("inst/package-sticker/fairpub_fair_cite.png")
+fp_image <- png::readPNG("inst/package-sticker/fairpub_1.png")
 fp_image <- grid::rasterGrob(fp_image, interpolate = TRUE)
 
 
@@ -27,7 +27,7 @@ p <- ggplot2::ggplot() +
 hexSticker::sticker(
   subplot = p,
   package = "fairpub",
-  filename = here::here("man", "figures", "fairpub_faircite.png"),
+  filename = here::here("man", "figures", "package_sticker.png"),
   dpi = 600,
 
   p_size = 32.0, # Title
@@ -47,7 +47,7 @@ hexSticker::sticker(
   s_width = 1, # Subplot
   s_height = 1, # Subplot
 
-  url = "https://github.com/",
+  url = "https://github.com/frbcesab/fairpub",
 
   spotlight = TRUE,
   l_alpha = 0.10,
