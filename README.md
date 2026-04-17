@@ -7,10 +7,7 @@
 
 ![Package](https://img.shields.io/static/v1?message=Package&logo=r&labelColor=5c5c5c&color=yellowgreen&logoColor=white&label=%20)
 ![Lifecycle
-Maturing](https://img.shields.io/badge/Lifecycle-Maturing-007EC6)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/fairpub)](https://CRAN.R-project.org/package=fairpub)
-[![R CMD
+Stable](https://img.shields.io/badge/Lifecycle-Stable-97ca00) [![R CMD
 Check](https://github.com/frbcesab/fairpub/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/frbcesab/fairpub/actions/workflows/R-CMD-check.yaml)
 [![Website](https://github.com/frbcesab/fairpub/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/frbcesab/fairpub/actions/workflows/pkgdown.yaml)
 [![codecov](https://codecov.io/gh/frbcesab/fairpub/graph/badge.svg?token=pTqQ0978iE)](https://codecov.io/gh/frbcesab/fairpub)
@@ -60,7 +57,7 @@ initiative](https://dafnee.isem-evolution.fr/), a Database of Academia
 Friendly jourNals in Ecology and Evolution.
 
 The package `fairpub` also implements the method proposed by Beck *et
-al.* (in prep): the strategic citation. By deliberately choosing to cite
+al.* (2026): the strategic citation. By deliberately choosing to cite
 relevant articles from non-profit journals when multiple references
 would be equally valid, researchers can contribute to increasing their
 visibility and future impact factor. This method is implemented in the
@@ -69,7 +66,7 @@ I when I cite previous works?** by computing the fairness ratio on the
 references cited in a manuscript.
 
 The package can also answer the question **How fair is my publication
-list?**. See the [Get
+list?** See the [Get
 started](https://frbcesab.github.io/fairpub/articles/fairpub.html)
 vignette for more information.
 
@@ -187,17 +184,18 @@ By contributing to this project, you agree to abide by its terms.
 
 This project is a collaborative work among
 [FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/)
-scientific team.
-
-We want to thanks the [DAFNEE team](https://dafnee.isem-evolution.fr/)
-for his incredible work in gathering information about scientific
-journals.
+scientific team. We want to thank the [DAFNEE
+team](https://dafnee.isem-evolution.fr/) for his incredible work in
+gathering information about scientific journals.
 
 ## References
 
-Beck M *et al.* (in prep) Strategic citations for a fairer academic
-landscape. Submitted to BioScience.
+Beck M, Annasawmy P, Birre D, Busana M, Casajus N, Coux C, Marino C,
+Mouquet N, Nicvert L, Oliveira BF, Petit-Cailleux C, Tortosa A, Unkule
+M, Vagnon C & Veytia D (2026) Citation self-awareness for a fairer
+academic publishing landscape. **BioScience**. DOI:
+[10.1093/biosci/biag028](https://doi.org/10.1093/biosci/biag028).
 
 McGill B (2024) The state of academic publishing in 3 graphs, 6 trends,
 and 4 thoughts. URL:
-<https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/>
+[https://dynamicecology.wordpress.com](https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/).

@@ -41,7 +41,7 @@ from strictly for-profit, to non-profit, and in-between business models
 From a list of references, this function computes three citation ratios:
 the proportion of non-profit citations, the proportion of for-profit and
 academic friendly citations, and the proportion of for-profit and
-non-academic friendly citations (Beck et al. 2025).
+non-academic friendly citations (Beck \emph{et al.} 2026).
 
 It uses the OpenAlex bibliographic database (\url{https://openalex.org}) to
 retrieve journal names from article DOI and the DAFNEE database
@@ -68,6 +68,7 @@ doi_list
 fp_compute_ratio(doi_list)
 }
 \references{
-Beck M et al. (2025) Strategic citations for a fairer academic
-landscape. Submitted to Proc B - Biological Science Practices.
+Beck M et al. (2026) Citation self-awareness for a fairer
+academic publishing landscape. \strong{BioScience}.
+DOI: \doi{10.1093/biosci/biag028}
 }

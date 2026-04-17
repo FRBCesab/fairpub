@@ -13,7 +13,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.5.1 (2025-06-13)",
+  "runtimePlatform": "R version 4.5.3 (2026-03-11)",
   "author": [
     {
       "@type": "Person",
@@ -137,7 +137,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "335.18KB",
+  "fileSize": "404.777KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -153,7 +153,7 @@
       "description": "R package version 1.0.0"
     }
   ],
-  "releaseNotes": "https://github.com/frbcesab/fairpub/blob/master/NEWS.md",
+  "releaseNotes": "https://github.com/frbcesab/fairpub/blob/main/NEWS.md",
   "readme": "https://github.com/FRBCesab/fairpub/blob/main/README.md",
   "contIntegration": ["https://github.com/frbcesab/fairpub/actions/workflows/R-CMD-check.yaml", "https://github.com/frbcesab/fairpub/actions/workflows/pkgdown.yaml", "https://codecov.io/gh/frbcesab/fairpub"]
 }
