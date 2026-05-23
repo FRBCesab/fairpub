@@ -30,8 +30,22 @@ returns the business model and the academic friendly status of a journal.
 # Be polite and send your email to OpenAlex API ----
 options(openalexR.mailto = 'anonymous@mail.com')
 
+\dontrun{
 # Fairness status ----
 fp_get_journal_fairness("Science")
+#>   journal                           fairness
+#> 1 Science   Non-profit and academic friendly
+
+# Fuzzy search ----
 fp_get_journal_fairness("Science of Nature")
+#> No exact match found!
+#> The fuzzy search returns these three best candidates:
+#>   'The Science of Nature'
+#>   'Science Advances'
+#>   'People and Nature'
+
 fp_get_journal_fairness("The Science of Nature")
+#>                 journal                               fairness
+#> 1 The Science of Nature   For-profit and non-academic friendly
+}
 }
