@@ -1,0 +1,26 @@
+url: https://frbcesab.github.io/fairpub
+
+template:
+  bootstrap: 5
+
+reference:
+- title: Fairness & Citation ratio
+  desc: |
+    Functions to retrieve tha fairness status of an article/journal and to
+    compute the citation ratio of a list of articles.
+  contents:
+  - fp_get_article_fairness
+  - fp_get_journal_fairness
+  - fp_compute_citation_ratio
+
+- title: Digital Object Identifier (DOI)
+  desc: |
+    Functions to retrieve, extract and clean DOI.
+  contents:
+  - fp_extract_doi
+
+- title: DAFNEE database
+  desc: |
+    Helpers related to the DAFNEE database.
+  contents:
+  - fp_list_dafnee_journals
