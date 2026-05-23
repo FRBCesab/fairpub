@@ -24,13 +24,13 @@
 #' options(openalexR.mailto = 'anonymous@mail.com')
 #'
 #' # Fairness status ----
-#' fp_article_fairness(doi = "10.1126/science.162.3859.1243")
-#' fp_article_fairness(doi = "10.1111/j.1461-0248.2005.00792.x")
-#' fp_article_fairness(doi = "10.1038/35002501")
-#' fp_article_fairness(doi = "10.xxxx/xxxx")
-#' fp_article_fairness(doi = "10.21105/joss.05753")
+#' fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
+#' fp_get_article_fairness(doi = "10.1111/j.1461-0248.2005.00792.x")
+#' fp_get_article_fairness(doi = "10.1038/35002501")
+#' fp_get_article_fairness(doi = "10.xxxx/xxxx")
+#' fp_get_article_fairness(doi = "10.21105/joss.05753")
 
-fp_article_fairness <- function(doi) {
+fp_get_article_fairness <- function(doi) {
   ## Check args ----
 
   if (missing(doi)) {

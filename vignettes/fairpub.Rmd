@@ -123,7 +123,7 @@ exhaustive, and it's possible that many journals are missing.
 
 ## Article fairness
 
-The function `fp_article_fairness()` of the package `fairpub` is dedicated to
+The function `fp_get_article_fairness()` of the package `fairpub` is dedicated to
 retrieve the fairness of a scientific article. This function first queries the
 [OpenAlex](https://openalex.org/) bibliographic database to find the journal
 name from the DOI (digital object identifier) of the article. Then, the journal
@@ -134,8 +134,8 @@ is associated to the journal. In other words, all articles published in a journa
 have the same fairness status.
 
 
-```{r 'fp_article_fairness-1'}
-fp_article_fairness(doi = "10.1126/science.162.3859.1243")
+```{r 'fp_get_article_fairness-1'}
+fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
 ```
 
 The output is identical to the output of `fp_journal_fairness()`, i.e. a 
@@ -143,15 +143,15 @@ two-column `data.frame`.
 
 **Note:** if the DOI is not found in OpenAlex, the output will be:
 
-```{r 'fp_article_fairness-2'}
-fp_article_fairness(doi = "10.xxxx/xxxx")
+```{r 'fp_get_article_fairness-2'}
+fp_get_article_fairness(doi = "10.xxxx/xxxx")
 ```
 
 **Note:** if the DOI is found in OpenAlex but the journal is absent from DAFNEE,
 the output will be:
 
-```{r 'fp_article_fairness-3'}
-fp_article_fairness(doi = "10.21105/joss.05753")
+```{r 'fp_get_article_fairness-3'}
+fp_get_article_fairness(doi = "10.21105/joss.05753")
 ```
 
 
