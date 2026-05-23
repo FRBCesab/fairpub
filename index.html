@@ -87,7 +87,7 @@
 </ul>
 <p>A journal with a non-profit business model is fairer than an academic friendly journal with a for-profit business model. But the later is still fairer than a non-academic friendly journal with a for-profit business model.</p>
 <p>This information comes from the <a href="https://dafnee.isem-evolution.fr/" class="external-link">DAFNEE initiative</a>, a Database of Academia Friendly jourNals in Ecology and Evolution.</p>
-<p>The package <code>fairpub</code> also implements the method proposed by Beck <em>et al.</em> (2026): the strategic citation. By deliberately choosing to cite relevant articles from non-profit journals when multiple references would be equally valid, researchers can contribute to increasing their visibility and future impact factor. This method is implemented in the <code><a href="reference/fp_compute_ratio.html">fp_compute_ratio()</a></code> function and can answer the question <strong>How fair am I when I cite previous works?</strong> by computing the fairness ratio on the references cited in a manuscript.</p>
+<p>The package <code>fairpub</code> also implements the method proposed by Beck <em>et al.</em> (2026): the strategic citation. By deliberately choosing to cite relevant articles from non-profit journals when multiple references would be equally valid, researchers can contribute to increasing their visibility and future impact factor. This method is implemented in the <code>fp_compute_ratio()</code> function and can answer the question <strong>How fair am I when I cite previous works?</strong> by computing the fairness ratio on the references cited in a manuscript.</p>
 <p>The package can also answer the question <strong>How fair is my publication list?</strong> See the <a href="https://frbcesab.github.io/fairpub/articles/fairpub.html" class="external-link">Get started</a> vignette for more information.</p>
 </div>
 <div class="section level2">
@@ -95,12 +95,12 @@
 </h2>
 <p>The <code>fairpub</code> package can:</p>
 <ul>
-<li>retrieve the fairness status of a journal with the <a href="https://frbcesab.github.io/fairpub/reference/fp_journal_fairness.html" class="external-link"><code>fp_journal_fairness()</code></a> function</li>
-<li>retrieve the fairness status of an article with the <a href="https://frbcesab.github.io/fairpub/reference/fp_article_fairness.html" class="external-link"><code>fp_article_fairness()</code></a> function and by querying the <a href="https://openalex.org" class="external-link">OpenAlex</a> bibliographic database</li>
-<li>compute the fairness ratio of a list references cited in a manuscript with the <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html" class="external-link"><code>fp_compute_ratio()</code></a> function</li>
-<li>compute the fairness ratio of all publications of an author (or a team) with the <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html" class="external-link"><code>fp_compute_ratio()</code></a> function</li>
+<li>retrieve the fairness status of a journal with the <a href="https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.html" class="external-link"><code>fp_get_journal_fairness()</code></a> function</li>
+<li>retrieve the fairness status of an article with the <a href="https://frbcesab.github.io/fairpub/reference/fp_get_article_fairness.html" class="external-link"><code>fp_get_article_fairness()</code></a> function and by querying the <a href="https://openalex.org" class="external-link">OpenAlex</a> bibliographic database</li>
+<li>compute the fairness ratio of a list references cited in a manuscript with the <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html" class="external-link"><code>fp_compute_citation_ratio()</code></a> function</li>
+<li>compute the fairness ratio of all publications of an author (or a team) with the <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html" class="external-link"><code>fp_compute_citation_ratio()</code></a> function</li>
 </ul>
-<p>In addition, the <a href="https://frbcesab.github.io/fairpub/reference/fp_doi_from_bibtex.html" class="external-link"><code>fp_doi_from_bibtex()</code></a> function helps user to easily extract DOI from a BibTeX file. The list of DOI can then be pass to the <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html" class="external-link"><code>fp_compute_ratio()</code></a> function.</p>
+<p>In addition, the <a href="https://frbcesab.github.io/fairpub/reference/fp_extract_doi.html" class="external-link"><code>fp_extract_doi()</code></a> function helps user to easily extract DOI from a BibTeX file. The list of DOI can then be pass to the <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html" class="external-link"><code>fp_compute_citation_ratio()</code></a> function.</p>
 </div>
 <div class="section level2">
 <h2 id="limitation">Limitation<a class="anchor" aria-label="anchor" href="#limitation"></a>
@@ -126,9 +126,9 @@
 <div class="section level2">
 <h2 id="get-started">Get started<a class="anchor" aria-label="anchor" href="#get-started"></a>
 </h2>
-<p>The main function of <code>fairpub</code> is <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html" class="external-link"><code>fp_compute_ratio()</code></a>. From a vector of article DOI, this function will report the following metrics:</p>
+<p>The main function of <code>fairpub</code> is <a href="https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html" class="external-link"><code>fp_compute_citation_ratio()</code></a>. From a vector of article DOI, this function will report the following metrics:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/fp_compute_ratio.html">fp_compute_ratio</a></span><span class="op">(</span>doi <span class="op">=</span> <span class="va">list_of_doi</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/fp_compute_citation_ratio.html">fp_compute_citation_ratio</a></span><span class="op">(</span>doi <span class="op">=</span> <span class="va">list_of_doi</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="do">## $summary</span></span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="do">##                                     metric value</span></span>
 <span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="do">##                           Total references    33</span></span>
