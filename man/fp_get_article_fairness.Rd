@@ -31,10 +31,28 @@ returns the business model and the academic friendly status of an article
 # Be polite and send your email to OpenAlex API ----
 options(openalexR.mailto = 'anonymous@mail.com')
 
+\dontrun{
 # Fairness status ----
 fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
+#>   journal                           fairness
+#> 1 Science   Non-profit and academic friendly
+
 fp_get_article_fairness(doi = "10.1111/j.1461-0248.2005.00792.x")
+#>           journal                         fairness
+#> 1 Ecology Letters For-profit and academic friendly
+
 fp_get_article_fairness(doi = "10.1038/35002501")
+#>   journal                               fairness
+#> 1  Nature   For-profit and non-academic friendly
+
+# Article not found in OA ----
 fp_get_article_fairness(doi = "10.xxxx/xxxx")
+#>   journal                       fairness
+#> 1      NA   Record not found in OpenAlex
+
+# Journal not found in the DAFNEE database ----
 fp_get_article_fairness(doi = "10.21105/joss.05753")
+#>                               journal                            fairness
+#> 1 The Journal of Open Source Software Record not found in DAFNEE database
+}
 }

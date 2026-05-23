@@ -64,8 +64,26 @@ doi_list <- fp_extract_doi(filename)
 # Print DOI ----
 doi_list
 
-# Compute citation ratios ----
+\dontrun{
+# Compute citation ratio ----
 fp_compute_citation_ratio(doi_list)
+#> $summary
+#>                                            metric value
+#> 1                                Total references    38
+#> 2                             References with DOI    33
+#> 3                         Deduplicated references    33
+#> 4                    References found in OpenAlex    33
+#> 5                      References found in DAFNEE    11
+#> 6     Non-profit and academic friendly references     9
+#> 7     For-profit and academic friendly references     2
+#> 8 For-profit and non-academic friendly references     0
+#> 
+#> $ratios
+#>     Non-profit and academic friendly     For-profit and academic friendly 
+#>                                 0.82                                 0.18 
+#> For-profit and non-academic friendly 
+#>                                 0.00 
+}
 }
 \references{
 Beck M et al. (2026) Citation self-awareness for a fairer
