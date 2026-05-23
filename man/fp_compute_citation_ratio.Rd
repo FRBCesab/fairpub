@@ -62,7 +62,7 @@ filename <- system.file(
 doi_list <- fp_extract_doi(filename)
 
 # Print DOI ----
-doi_list
+head(doi_list)
 
 \dontrun{
 # Compute citation ratio ----
