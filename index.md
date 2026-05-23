@@ -1,0 +1,188 @@
+# fairpub: How fair are you when you publish/cite scientific works? ![](reference/figures/package-sticker.png)
+
+• [Overview](#overview)  
+• [Features](#features)  
+• [Limitation](#limitation)  
+• [Installation](#installation)  
+• [Get started](#get-started)  
+• [Citation](#citation)  
+• [Contributing](#contributing)  
+• [Acknowledgments](#acknowledgments)  
+• [References](#references)
+
+## Overview
+
+Scientific journals operate over a broad spectrum of publishing
+strategies, from strictly for-profit, to non-profit, and in-between
+business models (e.g. for-profit but academic friendly journals).
+Scientific publishing is increasingly dominated by for-profit journals,
+many of which attract prestige and submissions through high impact
+factors (McGill 2024). In contrast, non-profit journals – those that
+reinvest revenue into the academic community – struggle to maintain
+visibility despite offering more equitable publishing models.
+
+The R package `fairpub` aims to provide a user-friendly toolbox to
+investigate the fairness of a research (article, bibliographic list,
+citation list, etc.). The fairness is measured according to two
+dimensions:
+
+- the **business model** of the journal: for-profit vs. non-profit
+- the **academic friendly** status of the journal: yes or no
+
+A journal with a non-profit business model is fairer than an academic
+friendly journal with a for-profit business model. But the later is
+still fairer than a non-academic friendly journal with a for-profit
+business model.
+
+This information comes from the [DAFNEE
+initiative](https://dafnee.isem-evolution.fr/), a Database of Academia
+Friendly jourNals in Ecology and Evolution.
+
+The package `fairpub` also implements the method proposed by Beck *et
+al.* (2026): the strategic citation. By deliberately choosing to cite
+relevant articles from non-profit journals when multiple references
+would be equally valid, researchers can contribute to increasing their
+visibility and future impact factor. This method is implemented in the
+`fp_compute_ratio()` function and can answer the question **How fair am
+I when I cite previous works?** by computing the fairness ratio on the
+references cited in a manuscript.
+
+The package can also answer the question **How fair is my publication
+list?** See the [Get
+started](https://frbcesab.github.io/fairpub/articles/fairpub.html)
+vignette for more information.
+
+## Features
+
+The `fairpub` package can:
+
+- retrieve the fairness status of a journal with the
+  [`fp_get_journal_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.html)
+  function
+- retrieve the fairness status of an article with the
+  [`fp_get_article_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_article_fairness.html)
+  function and by querying the [OpenAlex](https://openalex.org)
+  bibliographic database
+- compute the fairness ratio of a list references cited in a manuscript
+  with the
+  [`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html)
+  function
+- compute the fairness ratio of all publications of an author (or a
+  team) with the
+  [`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html)
+  function
+
+In addition, the
+[`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.html)
+function helps user to easily extract DOI from a BibTeX file. The list
+of DOI can then be pass to the
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html)
+function.
+
+## Limitation
+
+The package `fairpub` provides a small subset of the journals indexed in
+the [DAFNEE database](https://dafnee.isem-evolution.fr/) (fields
+“Ecology”, “Evolution/Systematics”, “General” and “Organisms”). We are
+currently working to increase this list of journals.
+
+## Installation
+
+You can install the development version from
+[GitHub](https://github.com/) with:
+
+``` r
+
+# Install < remotes > package (if not already installed) ----
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+
+# Install < fairpub > from GitHub ----
+remotes::install_github("frbcesab/fairpub")
+```
+
+Then you can attach the package `fairpub`:
+
+``` r
+
+library("fairpub")
+```
+
+## Get started
+
+The main function of `fairpub` is
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html).
+From a vector of article DOI, this function will report the following
+metrics:
+
+``` r
+
+fp_compute_citation_ratio(doi = list_of_doi)
+```
+
+``` R
+## $summary
+##                                     metric value
+##                           Total references    33
+##                        References with DOI    33
+##                    Deduplicated references    33
+##               References found in OpenAlex    30
+##                 References found in DAFNEE    10
+##     Non-profit & acad. friendly references     9
+##     For-profit & acad. friendly references     1
+## For-profit & non-acad. friendly references     0
+## 
+## $ratios
+## Non-profit & acad. friendly  For-profit & acad. friendly  For-profit & non-acad. friendly 
+##                         0.9                          0.1                              0.0 
+```
+
+In this example, this list of references has a fairness ratio
+(`Non-profit and academic friendly`) of 90%. But this value must be
+interpreted with caution. Indeed this ratio has been computed on 26% (10
+over 38) of the references, because the journal of 20 articles is not
+indexed in the DAFNEE database.
+
+Visit the [**Get
+started**](https://frbcesab.github.io/fairpub/articles/fairpub.html)
+vignette for a complete usage of the `fairpub` package.
+
+## Citation
+
+Please cite `fairpub` as:
+
+> Casajus Nicolas (2026) fairpub: How fair are you when you publish/cite
+> scientific works? R package version 1.0.0.
+> <https://github.com/frbcesab/fairpub/>
+
+## Contributing
+
+All types of contributions are encouraged and valued. For more
+information, check out our [Contributor
+Guidelines](https://github.com/frbcesab/fairpub/blob/main/CONTRIBUTING.md).
+
+Please note that the `fairpub` project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
+
+## Acknowledgments
+
+This project is a collaborative work among
+[FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/)
+scientific team. We want to thank the [DAFNEE
+team](https://dafnee.isem-evolution.fr/) for his incredible work in
+gathering information about scientific journals.
+
+## References
+
+Beck M, Annasawmy P, Birre D, Busana M, Casajus N, Coux C, Marino C,
+Mouquet N, Nicvert L, Oliveira BF, Petit-Cailleux C, Tortosa A, Unkule
+M, Vagnon C & Veytia D (2026) Citation self-awareness for a fairer
+academic publishing landscape. **BioScience**. DOI:
+[10.1093/biosci/biag028](https://doi.org/10.1093/biosci/biag028).
+
+McGill B (2024) The state of academic publishing in 3 graphs, 6 trends,
+and 4 thoughts. URL:
+[https://dynamicecology.wordpress.com](https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/).

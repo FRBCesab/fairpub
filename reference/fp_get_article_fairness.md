@@ -1,0 +1,58 @@
+# Get the fairness status of an article
+
+By querying the OpenAlex bibliographic database (<https://openalex.org>)
+and the DAFNEE database (<https://dafnee.isem-evolution.fr/>), this
+function returns the business model and the academic friendly status of
+an article (more precisely the fairness status of the journal).
+
+## Usage
+
+``` r
+fp_get_article_fairness(doi)
+```
+
+## Arguments
+
+- doi:
+
+  a `character` of length 1. The Digital Object Identifiers (DOI) of the
+  article.
+
+## Value
+
+A `data.frame` with two columns: `journal`, the journal name, and
+`fairness`, the fairness status with the following possible values:
+
+- Non-profit and academic friendly
+
+- For-profit and academic friendly
+
+- For-profit and non academic friendly
+
+- Record not found in OpenAlex
+
+- Record not found in DAFNEE database
+
+## Examples
+
+``` r
+# Be polite and send your email to OpenAlex API ----
+options(openalexR.mailto = 'anonymous@mail.com')
+
+# Fairness status ----
+fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
+#>   journal                         fairness
+#> 1 Science Non-profit and academic friendly
+fp_get_article_fairness(doi = "10.1111/j.1461-0248.2005.00792.x")
+#>           journal                         fairness
+#> 1 Ecology Letters For-profit and academic friendly
+fp_get_article_fairness(doi = "10.1038/35002501")
+#>   journal                             fairness
+#> 1  Nature For-profit and non-academic friendly
+fp_get_article_fairness(doi = "10.xxxx/xxxx")
+#>   journal                     fairness
+#> 1      NA Record not found in OpenAlex
+fp_get_article_fairness(doi = "10.21105/joss.05753")
+#>                               journal                            fairness
+#> 1 The Journal of Open Source Software Record not found in DAFNEE database
+```

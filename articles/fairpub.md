@@ -1,0 +1,293 @@
+# Get started
+
+## Introduction
+
+Scientific journals operate over a broad spectrum of publishing
+strategies, from strictly for-profit, to non-profit, and in-between
+business models (e.g. for-profit but academic friendly journals).
+Scientific publishing is increasingly dominated by for-profit journals,
+many of which attract prestige and submissions through high impact
+factors (McGill 2024). In contrast, non-profit journals – those that
+reinvest revenue into the academic community – struggle to maintain
+visibility despite offering more equitable publishing models.
+
+The R package `fairpub` aims to provide a user-friendly toolbox to
+investigate the fairness of a research (article, bibliographic list,
+citation list, etc.). The fairness is measured according to two
+dimensions:
+
+- the **business model** of the journal: for-profit vs. non-profit
+- the **academic friendly** status of the journal: yes or no
+
+A journal with a non-profit business model is fairer than an academic
+friendly journal with a for-profit business model. But the later is
+still fairer than a non-academic friendly journal with a for-profit
+business model.
+
+This information comes from the [DAFNEE
+initiative](https://dafnee.isem-evolution.fr/), a Database of Academia
+Friendly jourNals in Ecology and Evolution.
+
+**Note:** The package `fairpub` provides a subset of the original
+[DAFNEE database](https://dafnee.isem-evolution.fr/) (fields “Ecology”,
+“Evolution/Systematics”, “General” and “Organisms”). We are currently
+working to increase this list of journals.
+
+The package `fairpub` also implements the method proposed by Beck *et
+al.* (2026): the strategic citation. By deliberately choosing to cite
+relevant articles from non-profit journals when multiple references
+would be equally valid, researchers can contribute to increasing their
+visibility and future impact factor. This method is implemented in the
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md)
+function and can answer the question **How fair am I when I cite
+previous works?** by computing the fairness ratio on the references
+cited in a manuscript.
+
+The
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md)
+function can also be used to answer the question **How fair is my
+publication list?** by computing the fairness ratio on the bibliography
+of an author.
+
+## Setup
+
+Let’s explore the features of `fairpub` but first let’s load and attach
+the `fairpub` package:
+
+``` r
+
+library(fairpub)
+```
+
+Some functions of `fairpub` query the [OpenAlex](https://openalex.org/)
+bibliographic database by using the
+[`openalexR`](https://docs.ropensci.org/openalexR/) package. As
+recommended by the OpenAlex API
+[documentation](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool),
+it’s a good practice to send your email address to each query made by
+`openalexR`.
+
+Use the function [`options()`](https://rdrr.io/r/base/options.html) to
+store your email address as a global variable available for the current
+session:
+
+``` r
+
+options(openalexR.mailto = 'your_email@mail.com')
+```
+
+**Note:** No registration is required on the OpenAlex website.
+
+## Journal fairness
+
+The function
+[`fp_get_journal_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.md)
+of the package `fairpub` queries the DAFNEE database to retrieve the
+fairness of a journal.
+
+``` r
+
+fp_get_journal_fairness(journal = "Science")
+#>   journal                         fairness
+#> 1 Science Non-profit and academic friendly
+```
+
+This function returns a two-column `data.frame` with the name of the
+journal and the fairness status of the journal. This fairness status can
+have the following three values:
+
+- Non-profit and academic friendly
+- For-profit and academic friendly
+- For-profit and non-academic friendly
+
+This function searches for an exact match (case insensitive) but if the
+journal is not found, a fuzzy search returns the three best candidates
+(low distance between characters). For instance:
+
+``` r
+
+fp_get_journal_fairness(journal = "Science of Nature")
+#> No exact match found!
+#> The fuzzy search returns these three best candidates:
+#>   'The Science of Nature'
+#>   'Science Advances'
+#>   'People and Nature'
+```
+
+Then, user can run this same function with the correct spelling:
+
+``` r
+
+fp_get_journal_fairness(journal = "The Science of Nature")
+#>                 journal                             fairness
+#> 1 The Science of Nature For-profit and non-academic friendly
+```
+
+As mentioned before, the list of DAFNEE journals included in `fairpub`
+is not exhaustive, and it’s possible that many journals are missing.
+
+## Article fairness
+
+The function
+[`fp_get_article_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_article_fairness.md)
+of the package `fairpub` is dedicated to retrieve the fairness of a
+scientific article. This function first queries the
+[OpenAlex](https://openalex.org/) bibliographic database to find the
+journal name from the DOI (digital object identifier) of the article.
+Then, the journal name is used to query the DAFNEE database to get the
+fairness status.
+
+**Note:** Even if this function works at the article level, this
+fairness status is associated to the journal. In other words, all
+articles published in a journal have the same fairness status.
+
+``` r
+
+fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
+#>   journal                         fairness
+#> 1 Science Non-profit and academic friendly
+```
+
+The output is identical to the output of
+[`fp_get_journal_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.md),
+i.e. a two-column `data.frame`.
+
+**Note:** if the DOI is not found in OpenAlex, the output will be:
+
+``` r
+
+fp_get_article_fairness(doi = "10.xxxx/xxxx")
+#>   journal                     fairness
+#> 1      NA Record not found in OpenAlex
+```
+
+**Note:** if the DOI is found in OpenAlex but the journal is absent from
+DAFNEE, the output will be:
+
+``` r
+
+fp_get_article_fairness(doi = "10.21105/joss.05753")
+#>                               journal                            fairness
+#> 1 The Journal of Open Source Software Record not found in DAFNEE database
+```
+
+## Citation ratio
+
+One core function of `fairpub` is
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md).
+It computes the fairness ratio of a list of references cited in a
+manuscript. This ratio can be used by the author to replace some
+for-profit citations by fairer citations (e.g.  citations of articles
+published in non-profit journals). Of course, if the findings of two
+studies are similar.
+
+This function uses one argument: a vector of DOI. The `fairpub` package
+provides the
+[`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.md)
+function that reads a BibTeX file and extracts all available DOI.
+
+Let’s use the function
+[`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.md)
+with the BibTeX file provided as an example in `fairpub`.
+
+``` r
+
+# Path to the BibTeX provided by 'fairpub' ----
+filename <- system.file(
+  file.path("extdata", "references.bib"),
+  package = "fairpub"
+)
+
+# Extract DOI from this BibTeX file ----
+doi_list <- fp_extract_doi(filename)
+doi_list
+#>  [1] "10.1098/rsos.160384"               NA                                 
+#>  [3] "10.1126/science.1212540"           "10.9745/ghsp-d-21-00145"          
+#>  [5] "10.1126/science.adk9900"           "10.1016/j.ecolecon.2021.107082"   
+#>  [7] "10.1177/014107680609900316"        "10.1093/reseval/rvad012"          
+#>  [9] "10.1111/ele.14395"                 "10.3998/ptpbio.3363"              
+#> [11] "10.4000/proceedings.elpub.2018.30" "10.1093/scipol/scs093"            
+#> [13] NA                                  "10.1002/leap.1102"                
+#> [15] "10.1087/0953151053584975"          NA                                 
+#> [17] "10.1177/0263395719858571"          "10.1017/s1062798709000532"        
+#> [19] "10.1371/journal.pone.0127502"      "10.1162/qss_c_00305"              
+#> [21] "10.1007/978-3-030-02511-3_1"       NA                                 
+#> [23] "10.1371/journal.pbio.1002264"      "10.3389/frma.2016.00007"          
+#> [25] "10.48550/arxiv.2407.16551"         NA                                 
+#> [27] "10.1080/08109028.2014.891710"      "10.1007/s11192-022-04586-1"       
+#> [29] "10.1098/rspb.2019.2047"            "10.5281/zenodo.4558704"           
+#> [31] "10.1162/qss_a_00272"               "10.3917/inno.063.0095"            
+#> [33] "10.1371/journal.pone.0243664"      "10.1257/jep.15.4.183"             
+#> [35] "10.1073/pnas.0305628101"           "10.1016/j.amjmed.2019.07.028"     
+#> [37] "10.32614/rj-2023-089"              "10.5534/wjmh.230001"
+```
+
+**Note:** Make sure to check your references, especially the DOI field.
+In this example, some references don’t have a DOI (book, book chapter,
+etc.). The
+[`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.md)
+function don’t remove these references to provide a full report (see
+below the output of the
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md)
+function).
+
+Now we have a vector of DOI, we can use the
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md)
+function to compute the fairness ratio of this list.
+
+``` r
+
+fp_compute_citation_ratio(doi = doi_list)
+#> $summary
+#>                                            metric value
+#> 1                                Total references    38
+#> 2                             References with DOI    33
+#> 3                         Deduplicated references    33
+#> 4                    References found in OpenAlex    33
+#> 5                      References found in DAFNEE    11
+#> 6     Non-profit and academic friendly references     9
+#> 7     For-profit and academic friendly references     2
+#> 8 For-profit and non-academic friendly references     0
+#> 
+#> $ratios
+#>     Non-profit and academic friendly     For-profit and academic friendly 
+#>                                 0.82                                 0.18 
+#> For-profit and non-academic friendly 
+#>                                 0.00
+```
+
+This function returns a two-element `list`:
+
+- `summary`: a two-column `data.frame` with the number of references
+  remaining after each step of the workflow
+- `ratio`: a three-element `vector` with the value of the three fairness
+  ratios
+
+In this example, this list of references has a fairness ratio
+(`Non-profit and academic friendly`) of 90%. But this value must be
+interpreted with caution. Indeed this ratio has been computed on 26% (10
+over 38) of the references, because the journal of 20 articles is not
+indexed in the DAFNEE database.
+
+As mentioned before, we are currently working to improve the list of
+journals indexed in the DAFNEE database.
+
+## Author ratio
+
+It’s possible to use the
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md)
+function to compute the fairness ratio of all publications of an author.
+In that case, the list of DOI should contain all articles published by
+this author.
+
+## References
+
+Beck M, Annasawmy P, Birre D, Busana M, Casajus N, Coux C, Marino C,
+Mouquet N, Nicvert L, Oliveira BF, Petit-Cailleux C, Tortosa A, Unkule
+M, Vagnon C & Veytia D (2026) Citation self-awareness for a fairer
+academic publishing landscape. **BioScience**. DOI:
+[10.1093/biosci/biag028](https://doi.org/10.1093/biosci/biag028).
+
+McGill B (2024) The state of academic publishing in 3 graphs, 6 trends,
+and 4 thoughts. URL:
+[https://dynamicecology.wordpress.com](https://dynamicecology.wordpress.com/2024/04/29/the-state-of-academic-publishing-in-3-graphs-5-trends-and-4-thoughts/).
