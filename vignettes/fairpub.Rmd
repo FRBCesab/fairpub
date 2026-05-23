@@ -87,11 +87,11 @@ options(openalexR.mailto = 'your_email@mail.com')
 
 ## Journal fairness
 
-The function `fp_journal_fairness()` of the package `fairpub` queries the DAFNEE
+The function `fp_get_journal_fairness()` of the package `fairpub` queries the DAFNEE
 database to retrieve the fairness of a journal.
 
-```{r 'fp_journal_fairness-1'}
-fp_journal_fairness(journal = "Science")
+```{r 'fp_get_journal_fairness-1'}
+fp_get_journal_fairness(journal = "Science")
 ```
 
 This function returns a two-column `data.frame` with the name of the journal and
@@ -106,14 +106,14 @@ This function searches for an exact match (case insensitive) but if the journal
 is not found, a fuzzy search returns the three best candidates (low distance
 between characters). For instance:
 
-```{r 'fp_journal_fairness-2'}
-fp_journal_fairness(journal = "Science of Nature")
+```{r 'fp_get_journal_fairness-2'}
+fp_get_journal_fairness(journal = "Science of Nature")
 ```
 
 Then, user can run this same function with the correct spelling:
 
-```{r 'fp_journal_fairness-3'}
-fp_journal_fairness(journal = "The Science of Nature")
+```{r 'fp_get_journal_fairness-3'}
+fp_get_journal_fairness(journal = "The Science of Nature")
 ```
 
 As mentioned before, the list of DAFNEE journals included in `fairpub` is not 
@@ -138,7 +138,7 @@ have the same fairness status.
 fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
 ```
 
-The output is identical to the output of `fp_journal_fairness()`, i.e. a 
+The output is identical to the output of `fp_get_journal_fairness()`, i.e. a 
 two-column `data.frame`.
 
 **Note:** if the DOI is not found in OpenAlex, the output will be:
