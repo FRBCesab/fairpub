@@ -14,55 +14,55 @@ doi_not_in_oa <- "https://doi.org/10.xxxx/xxxx"
 
 doi_not_in_dafnee <- "10.5281/zenodo.7390791"
 
-test_that("Test fp_article_fairness() for error", {
+test_that("Test fp_get_article_fairness() for error", {
   # Argument missing
   expect_error(
-    fp_article_fairness(),
+    fp_get_article_fairness(),
     "Argument 'doi' is required",
     fixed = TRUE
   )
 
   expect_error(
-    fp_article_fairness(NULL),
+    fp_get_article_fairness(NULL),
     "Argument 'doi' is required",
     fixed = TRUE
   )
 
   # Not a string
   expect_error(
-    fp_article_fairness(data.frame()),
+    fp_get_article_fairness(data.frame()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   expect_error(
-    fp_article_fairness(matrix()),
+    fp_get_article_fairness(matrix()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   expect_error(
-    fp_article_fairness(numeric()),
+    fp_get_article_fairness(numeric()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   expect_error(
-    fp_article_fairness(logical()),
+    fp_get_article_fairness(logical()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
-    fp_article_fairness(dois),
+    fp_get_article_fairness(dois),
     "Argument 'doi' must be of length 1",
     fixed = TRUE
   )
 
   # API credentials
   expect_error(
-    fp_article_fairness(dois[1]),
+    fp_get_article_fairness(dois[1]),
     paste0(
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
@@ -75,7 +75,7 @@ test_that("Test fp_article_fairness() for error", {
   )
 
   expect_error(
-    fp_article_fairness(dois[1]),
+    fp_get_article_fairness(dois[1]),
     paste0(
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
@@ -90,13 +90,13 @@ test_that("Test fp_article_fairness() for error", {
 
   # Only NA in DOI
   expect_error(
-    fp_article_fairness(doi_na),
+    fp_get_article_fairness(doi_na),
     "Argument 'doi' cannot be NA",
     fixed = TRUE
   )
 })
 
-test_that("Test fp_article_fairness() for success", {
+test_that("Test fp_get_article_fairness() for success", {
   needs_api()
 
   # Set API email
@@ -105,7 +105,7 @@ test_that("Test fp_article_fairness() for success", {
   )
 
   # Test for NP journal
-  expect_silent(res <- fp_article_fairness(dois[1]))
+  expect_silent(res <- fp_get_article_fairness(dois[1]))
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -118,7 +118,7 @@ test_that("Test fp_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "Non-profit and academic friendly")
 
   # Test for FP & academic journal
-  expect_silent(res <- fp_article_fairness(dois[2]))
+  expect_silent(res <- fp_get_article_fairness(dois[2]))
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -131,7 +131,7 @@ test_that("Test fp_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "For-profit and academic friendly")
 
   # Test for FP & non-academic journal
-  expect_silent(res <- fp_article_fairness(dois[3]))
+  expect_silent(res <- fp_get_article_fairness(dois[3]))
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -144,7 +144,7 @@ test_that("Test fp_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "For-profit and non-academic friendly")
 
   # Test for not found in OpenAlex
-  expect_silent(res <- fp_article_fairness(dois[4]))
+  expect_silent(res <- fp_get_article_fairness(dois[4]))
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -157,7 +157,7 @@ test_that("Test fp_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "Record not found in OpenAlex")
 
   # Test for not found in OpenAlex
-  expect_silent(res <- fp_article_fairness(dois[5]))
+  expect_silent(res <- fp_get_article_fairness(dois[5]))
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)

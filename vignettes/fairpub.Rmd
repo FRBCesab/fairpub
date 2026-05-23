@@ -49,11 +49,11 @@ The package `fairpub` also implements the method proposed by Beck _et al._
 (2026): the strategic citation. By deliberately choosing to cite relevant
 articles from non-profit journals when multiple references would be equally 
 valid, researchers can contribute to increasing their visibility and future 
-impact factor. This method is implemented in the `fp_compute_ratio()` function 
+impact factor. This method is implemented in the `fp_compute_citation_ratio()` function 
 and can answer the question **How fair am I when I cite previous works?** by 
 computing the fairness ratio on the references cited in a manuscript.
 
-The `fp_compute_ratio()` function can also be used to answer the question 
+The `fp_compute_citation_ratio()` function can also be used to answer the question 
 **How fair is my publication list?** by computing the fairness ratio on the 
 bibliography of an author.
 
@@ -87,11 +87,11 @@ options(openalexR.mailto = 'your_email@mail.com')
 
 ## Journal fairness
 
-The function `fp_journal_fairness()` of the package `fairpub` queries the DAFNEE
+The function `fp_get_journal_fairness()` of the package `fairpub` queries the DAFNEE
 database to retrieve the fairness of a journal.
 
-```{r 'fp_journal_fairness-1'}
-fp_journal_fairness(journal = "Science")
+```{r 'fp_get_journal_fairness-1'}
+fp_get_journal_fairness(journal = "Science")
 ```
 
 This function returns a two-column `data.frame` with the name of the journal and
@@ -106,14 +106,14 @@ This function searches for an exact match (case insensitive) but if the journal
 is not found, a fuzzy search returns the three best candidates (low distance
 between characters). For instance:
 
-```{r 'fp_journal_fairness-2'}
-fp_journal_fairness(journal = "Science of Nature")
+```{r 'fp_get_journal_fairness-2'}
+fp_get_journal_fairness(journal = "Science of Nature")
 ```
 
 Then, user can run this same function with the correct spelling:
 
-```{r 'fp_journal_fairness-3'}
-fp_journal_fairness(journal = "The Science of Nature")
+```{r 'fp_get_journal_fairness-3'}
+fp_get_journal_fairness(journal = "The Science of Nature")
 ```
 
 As mentioned before, the list of DAFNEE journals included in `fairpub` is not 
@@ -123,7 +123,7 @@ exhaustive, and it's possible that many journals are missing.
 
 ## Article fairness
 
-The function `fp_article_fairness()` of the package `fairpub` is dedicated to
+The function `fp_get_article_fairness()` of the package `fairpub` is dedicated to
 retrieve the fairness of a scientific article. This function first queries the
 [OpenAlex](https://openalex.org/) bibliographic database to find the journal
 name from the DOI (digital object identifier) of the article. Then, the journal
@@ -134,44 +134,44 @@ is associated to the journal. In other words, all articles published in a journa
 have the same fairness status.
 
 
-```{r 'fp_article_fairness-1'}
-fp_article_fairness(doi = "10.1126/science.162.3859.1243")
+```{r 'fp_get_article_fairness-1'}
+fp_get_article_fairness(doi = "10.1126/science.162.3859.1243")
 ```
 
-The output is identical to the output of `fp_journal_fairness()`, i.e. a 
+The output is identical to the output of `fp_get_journal_fairness()`, i.e. a 
 two-column `data.frame`.
 
 **Note:** if the DOI is not found in OpenAlex, the output will be:
 
-```{r 'fp_article_fairness-2'}
-fp_article_fairness(doi = "10.xxxx/xxxx")
+```{r 'fp_get_article_fairness-2'}
+fp_get_article_fairness(doi = "10.xxxx/xxxx")
 ```
 
 **Note:** if the DOI is found in OpenAlex but the journal is absent from DAFNEE,
 the output will be:
 
-```{r 'fp_article_fairness-3'}
-fp_article_fairness(doi = "10.21105/joss.05753")
+```{r 'fp_get_article_fairness-3'}
+fp_get_article_fairness(doi = "10.21105/joss.05753")
 ```
 
 
 ## Citation ratio
 
-One core function of `fairpub` is `fp_compute_ratio()`. It computes the fairness
+One core function of `fairpub` is `fp_compute_citation_ratio()`. It computes the fairness
 ratio of a list of references cited in a manuscript. This ratio can be used by 
 the author to replace some for-profit citations by fairer citations (e.g. 
 citations of articles published in non-profit journals). Of course, if the findings
 of two studies are similar.
 
 This function uses one argument: a vector of DOI. The `fairpub` package provides
-the `fp_doi_from_bibtex()` function that reads a BibTeX file and extracts all
+the `fp_extract_doi()` function that reads a BibTeX file and extracts all
 available DOI.
 
-Let's use the function `fp_doi_from_bibtex()` with the BibTeX file provided as 
+Let's use the function `fp_extract_doi()` with the BibTeX file provided as 
 an example in `fairpub`.
 
 
-```{r 'fp_doi_from_bibtex-1'}
+```{r 'fp_extract_doi-1'}
 # Path to the BibTeX provided by 'fairpub' ----
 filename <- system.file(
   file.path("extdata", "references.bib"),
@@ -179,20 +179,20 @@ filename <- system.file(
 )
 
 # Extract DOI from this BibTeX file ----
-doi_list <- fp_doi_from_bibtex(filename)
+doi_list <- fp_extract_doi(filename)
 doi_list
 ```
 
 **Note:** Make sure to check your references, especially the DOI field. In this
 example, some references don't have a DOI (book, book chapter, etc.). The
-`fp_doi_from_bibtex()` function don't remove these references to provide
-a full report (see below the output of the `fp_compute_ratio()` function).
+`fp_extract_doi()` function don't remove these references to provide
+a full report (see below the output of the `fp_compute_citation_ratio()` function).
 
-Now we have a vector of DOI, we can use the `fp_compute_ratio()` function to 
+Now we have a vector of DOI, we can use the `fp_compute_citation_ratio()` function to 
 compute the fairness ratio of this list.
 
-```{r 'fp_compute_ratio-1'}
-fp_compute_ratio(doi = doi_list)
+```{r 'fp_compute_citation_ratio-1'}
+fp_compute_citation_ratio(doi = doi_list)
 ```
 
 This function returns a two-element `list`:
@@ -213,7 +213,7 @@ indexed in the DAFNEE database.
 
 ## Author ratio
 
-It's possible to use the `fp_compute_ratio()` function to compute the fairness 
+It's possible to use the `fp_compute_citation_ratio()` function to compute the fairness 
 ratio of all publications of an author. In that case, the list of DOI should 
 contain all articles published by this author.
 

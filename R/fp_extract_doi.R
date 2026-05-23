@@ -21,9 +21,9 @@
 #' )
 #'
 #' # Extract DOI from BibTeX ----
-#' fp_doi_from_bibtex(filename)
+#' fp_extract_doi(filename)
 
-fp_doi_from_bibtex <- function(bibtex) {
+fp_extract_doi <- function(bibtex) {
   ## Check args ----
 
   if (missing(bibtex)) {

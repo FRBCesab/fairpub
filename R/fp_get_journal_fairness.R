@@ -23,11 +23,11 @@
 #' options(openalexR.mailto = 'anonymous@mail.com')
 #'
 #' # Fairness status ----
-#' fp_journal_fairness("Science")
-#' fp_journal_fairness("Science of Nature")
-#' fp_journal_fairness("The Science of Nature")
+#' fp_get_journal_fairness("Science")
+#' fp_get_journal_fairness("Science of Nature")
+#' fp_get_journal_fairness("The Science of Nature")
 
-fp_journal_fairness <- function(journal) {
+fp_get_journal_fairness <- function(journal) {
   ## Check args ----
 
   if (missing(journal)) {

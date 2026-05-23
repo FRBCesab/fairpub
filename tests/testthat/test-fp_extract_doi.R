@@ -4,65 +4,65 @@ filename <- system.file(
   package = "fairpub"
 )
 
-test_that("Test fp_doi_from_bibtex() for error", {
+test_that("Test fp_extract_doi() for error", {
   # Argument missing
   expect_error(
-    fp_doi_from_bibtex(),
+    fp_extract_doi(),
     "Argument 'bibtex' is required",
     fixed = TRUE
   )
 
   expect_error(
-    fp_doi_from_bibtex(NULL),
+    fp_extract_doi(NULL),
     "Argument 'bibtex' is required",
     fixed = TRUE
   )
 
   # Not a file name
   expect_error(
-    fp_doi_from_bibtex(data.frame()),
+    fp_extract_doi(data.frame()),
     "Argument 'bibtex' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   expect_error(
-    fp_doi_from_bibtex(matrix()),
+    fp_extract_doi(matrix()),
     "Argument 'bibtex' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   expect_error(
-    fp_doi_from_bibtex(numeric()),
+    fp_extract_doi(numeric()),
     "Argument 'bibtex' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   expect_error(
-    fp_doi_from_bibtex(logical()),
+    fp_extract_doi(logical()),
     "Argument 'bibtex' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
-    fp_doi_from_bibtex(rep(filename, 2)),
+    fp_extract_doi(rep(filename, 2)),
     "Argument 'bibtex' must be of length 1 (one BibTeX file)",
     fixed = TRUE
   )
 
   # File not found
   expect_error(
-    fp_doi_from_bibtex("./wrong_path.bib"),
+    fp_extract_doi("./wrong_path.bib"),
     "The file './wrong_path.bib' does not exist",
     fixed = TRUE
   )
 })
 
 
-test_that("Test fp_doi_from_bibtex() for success", {
-  expect_silent(dois <- fp_doi_from_bibtex(filename))
+test_that("Test fp_extract_doi() for success", {
+  expect_silent(dois <- fp_extract_doi(filename))
 
-  dois <- fp_doi_from_bibtex(filename)
+  dois <- fp_extract_doi(filename)
 
   # Class
   expect_true(inherits(dois, "character"))

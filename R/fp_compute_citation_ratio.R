@@ -53,15 +53,15 @@
 #' )
 #'
 #' # Extract DOI from BibTeX ----
-#' doi_list <- fp_doi_from_bibtex(filename)
+#' doi_list <- fp_extract_doi(filename)
 #'
 #' # Print DOI ----
 #' doi_list
 #'
 #' # Compute citation ratios ----
-#' fp_compute_ratio(doi_list)
+#' fp_compute_citation_ratio(doi_list)
 
-fp_compute_ratio <- function(doi) {
+fp_compute_citation_ratio <- function(doi) {
   ## Check args ----
 
   if (missing(doi)) {

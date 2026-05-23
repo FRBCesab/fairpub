@@ -75,26 +75,26 @@ vignette for more information.
 The `fairpub` package can:
 
 - retrieve the fairness status of a journal with the
-  [`fp_journal_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_journal_fairness.html)
+  [`fp_get_journal_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.html)
   function
 - retrieve the fairness status of an article with the
-  [`fp_article_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_article_fairness.html)
+  [`fp_get_article_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_article_fairness.html)
   function and by querying the [OpenAlex](https://openalex.org)
   bibliographic database
 - compute the fairness ratio of a list references cited in a manuscript
   with the
-  [`fp_compute_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html)
+  [`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html)
   function
 - compute the fairness ratio of all publications of an author (or a
   team) with the
-  [`fp_compute_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html)
+  [`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html)
   function
 
 In addition, the
-[`fp_doi_from_bibtex()`](https://frbcesab.github.io/fairpub/reference/fp_doi_from_bibtex.html)
+[`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.html)
 function helps user to easily extract DOI from a BibTeX file. The list
 of DOI can then be pass to the
-[`fp_compute_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html)
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html)
 function.
 
 ## Limitation
@@ -128,12 +128,12 @@ library("fairpub")
 ## Get started
 
 The main function of `fairpub` is
-[`fp_compute_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_ratio.html).
+[`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.html).
 From a vector of article DOI, this function will report the following
 metrics:
 
 ``` r
-fp_compute_ratio(doi = list_of_doi)
+fp_compute_citation_ratio(doi = list_of_doi)
 ```
 
     ## $summary
