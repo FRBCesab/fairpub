@@ -53,7 +53,7 @@
 #' )
 #'
 #' # Extract DOI from BibTeX ----
-#' doi_list <- fp_doi_from_bibtex(filename)
+#' doi_list <- fp_extract_doi(filename)
 #'
 #' # Print DOI ----
 #' doi_list

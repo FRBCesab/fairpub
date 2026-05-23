@@ -164,14 +164,14 @@ citations of articles published in non-profit journals). Of course, if the findi
 of two studies are similar.
 
 This function uses one argument: a vector of DOI. The `fairpub` package provides
-the `fp_doi_from_bibtex()` function that reads a BibTeX file and extracts all
+the `fp_extract_doi()` function that reads a BibTeX file and extracts all
 available DOI.
 
-Let's use the function `fp_doi_from_bibtex()` with the BibTeX file provided as 
+Let's use the function `fp_extract_doi()` with the BibTeX file provided as 
 an example in `fairpub`.
 
 
-```{r 'fp_doi_from_bibtex-1'}
+```{r 'fp_extract_doi-1'}
 # Path to the BibTeX provided by 'fairpub' ----
 filename <- system.file(
   file.path("extdata", "references.bib"),
@@ -179,13 +179,13 @@ filename <- system.file(
 )
 
 # Extract DOI from this BibTeX file ----
-doi_list <- fp_doi_from_bibtex(filename)
+doi_list <- fp_extract_doi(filename)
 doi_list
 ```
 
 **Note:** Make sure to check your references, especially the DOI field. In this
 example, some references don't have a DOI (book, book chapter, etc.). The
-`fp_doi_from_bibtex()` function don't remove these references to provide
+`fp_extract_doi()` function don't remove these references to provide
 a full report (see below the output of the `fp_compute_citation_ratio()` function).
 
 Now we have a vector of DOI, we can use the `fp_compute_citation_ratio()` function to 
