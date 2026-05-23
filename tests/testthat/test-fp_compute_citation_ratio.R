@@ -15,55 +15,55 @@ doi_not_in_oa <- c("https://doi.org/10.xxxx/xxxx")
 
 doi_not_in_dafnee <- c("10.5281/zenodo.7390791")
 
-test_that("Test fp_compute_ratio() for error (no API query)", {
+test_that("Test fp_compute_citation_ratio() for error (no API query)", {
   # Argument missing
   expect_error(
-    fp_compute_ratio(),
+    fp_compute_citation_ratio(),
     "Argument 'doi' is required",
     fixed = TRUE
   )
 
   expect_error(
-    fp_compute_ratio(NULL),
+    fp_compute_citation_ratio(NULL),
     "Argument 'doi' is required",
     fixed = TRUE
   )
 
   # Not a string
   expect_error(
-    fp_compute_ratio(data.frame()),
+    fp_compute_citation_ratio(data.frame()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   expect_error(
-    fp_compute_ratio(matrix()),
+    fp_compute_citation_ratio(matrix()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   expect_error(
-    fp_compute_ratio(numeric()),
+    fp_compute_citation_ratio(numeric()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   expect_error(
-    fp_compute_ratio(logical()),
+    fp_compute_citation_ratio(logical()),
     "Argument 'doi' must be character",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
-    fp_compute_ratio(character()),
+    fp_compute_citation_ratio(character()),
     "Argument 'doi' must be of length > 0",
     fixed = TRUE
   )
 
   # API credentials
   expect_error(
-    fp_compute_ratio(dois),
+    fp_compute_citation_ratio(dois),
     paste0(
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
@@ -76,7 +76,7 @@ test_that("Test fp_compute_ratio() for error (no API query)", {
   )
 
   expect_error(
-    fp_compute_ratio(dois),
+    fp_compute_citation_ratio(dois),
     paste0(
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
@@ -91,13 +91,13 @@ test_that("Test fp_compute_ratio() for error (no API query)", {
 
   # Only NA in DOI
   expect_error(
-    fp_compute_ratio(doi_na),
+    fp_compute_citation_ratio(doi_na),
     "No valid DOI provided (missing value)",
     fixed = TRUE
   )
 })
 
-test_that("Test fp_compute_ratio() for error (w/ API queries)", {
+test_that("Test fp_compute_citation_ratio() for error (w/ API queries)", {
   needs_api()
 
   # Set API email
@@ -106,19 +106,19 @@ test_that("Test fp_compute_ratio() for error (w/ API queries)", {
   )
 
   expect_error(
-    fp_compute_ratio(doi_not_in_oa),
+    fp_compute_citation_ratio(doi_not_in_oa),
     "No record found in OpenAlex",
     fixed = TRUE
   )
 
   expect_error(
-    fp_compute_ratio(doi_not_in_dafnee),
+    fp_compute_citation_ratio(doi_not_in_dafnee),
     "No record found in DAFNEE database",
     fixed = TRUE
   )
 })
 
-test_that("Test fp_compute_ratio() for success", {
+test_that("Test fp_compute_citation_ratio() for success", {
   needs_api()
 
   # Set API email
@@ -126,7 +126,7 @@ test_that("Test fp_compute_ratio() for success", {
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  expect_silent(ratios <- fp_compute_ratio(dois))
+  expect_silent(ratios <- fp_compute_citation_ratio(dois))
 
   # Check list
   expect_true(inherits(ratios, "list"))

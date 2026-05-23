@@ -49,11 +49,11 @@ The package `fairpub` also implements the method proposed by Beck _et al._
 (2026): the strategic citation. By deliberately choosing to cite relevant
 articles from non-profit journals when multiple references would be equally 
 valid, researchers can contribute to increasing their visibility and future 
-impact factor. This method is implemented in the `fp_compute_ratio()` function 
+impact factor. This method is implemented in the `fp_compute_citation_ratio()` function 
 and can answer the question **How fair am I when I cite previous works?** by 
 computing the fairness ratio on the references cited in a manuscript.
 
-The `fp_compute_ratio()` function can also be used to answer the question 
+The `fp_compute_citation_ratio()` function can also be used to answer the question 
 **How fair is my publication list?** by computing the fairness ratio on the 
 bibliography of an author.
 
@@ -157,7 +157,7 @@ fp_get_article_fairness(doi = "10.21105/joss.05753")
 
 ## Citation ratio
 
-One core function of `fairpub` is `fp_compute_ratio()`. It computes the fairness
+One core function of `fairpub` is `fp_compute_citation_ratio()`. It computes the fairness
 ratio of a list of references cited in a manuscript. This ratio can be used by 
 the author to replace some for-profit citations by fairer citations (e.g. 
 citations of articles published in non-profit journals). Of course, if the findings
@@ -186,13 +186,13 @@ doi_list
 **Note:** Make sure to check your references, especially the DOI field. In this
 example, some references don't have a DOI (book, book chapter, etc.). The
 `fp_doi_from_bibtex()` function don't remove these references to provide
-a full report (see below the output of the `fp_compute_ratio()` function).
+a full report (see below the output of the `fp_compute_citation_ratio()` function).
 
-Now we have a vector of DOI, we can use the `fp_compute_ratio()` function to 
+Now we have a vector of DOI, we can use the `fp_compute_citation_ratio()` function to 
 compute the fairness ratio of this list.
 
-```{r 'fp_compute_ratio-1'}
-fp_compute_ratio(doi = doi_list)
+```{r 'fp_compute_citation_ratio-1'}
+fp_compute_citation_ratio(doi = doi_list)
 ```
 
 This function returns a two-element `list`:
@@ -213,7 +213,7 @@ indexed in the DAFNEE database.
 
 ## Author ratio
 
-It's possible to use the `fp_compute_ratio()` function to compute the fairness 
+It's possible to use the `fp_compute_citation_ratio()` function to compute the fairness 
 ratio of all publications of an author. In that case, the list of DOI should 
 contain all articles published by this author.
 
