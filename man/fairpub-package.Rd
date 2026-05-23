@@ -19,5 +19,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Nicolas Casajus \email{rdev.nc@gmail.com} (\href{https://orcid.org/0000-0002-5537-5294}{ORCID}) [copyright holder]
 
+Authors:
+\itemize{
+  \item Nicolas Casajus \email{rdev.nc@gmail.com} (\href{https://orcid.org/0000-0002-5537-5294}{ORCID}) [copyright holder]
+}
+
 }
 \keyword{internal}
