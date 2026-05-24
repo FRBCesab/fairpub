@@ -28,5 +28,6 @@ fp_clean_doi <- function(doi) {
 
   doi |>
     tolower() |>
-    gsub("\\s|http(s)?://(dx.)?doi.org/|doi:", "", x = _)
+    gsub("\\s", "", x = _) |>
+    gsub(.DOI_PREFIX, "", x = _)
 }
