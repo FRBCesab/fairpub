@@ -1,81 +1,26 @@
-# Example BibTeX
-filename <- system.file(
-  file.path("extdata", "references.bib"),
-  package = "fairpub"
-)
+## fp_extract_doi() ----
 
-test_that("Test fp_extract_doi() for error", {
-  # Argument missing
-  expect_error(
-    fp_extract_doi(),
-    "Argument 'bibtex' is required",
-    fixed = TRUE
-  )
+test_that("fp_extract_doi() works - BibTeX file", {
+  expect_silent(res <- fp_extract_doi(file = filename))
 
-  expect_error(
-    fp_extract_doi(NULL),
-    "Argument 'bibtex' is required",
-    fixed = TRUE
-  )
+  expect_true(inherits(res, "character"))
+  expect_equal(length(res), 38L)
+  expect_true(any(is.na(res)))
 
-  # Not a file name
-  expect_error(
-    fp_extract_doi(data.frame()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_extract_doi(matrix()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_extract_doi(numeric()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_extract_doi(logical()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
-    fixed = TRUE
-  )
-
-  # Wrong length
-  expect_error(
-    fp_extract_doi(rep(filename, 2)),
-    "Argument 'bibtex' must be of length 1 (one BibTeX file)",
-    fixed = TRUE
-  )
-
-  # File not found
-  expect_error(
-    fp_extract_doi("./wrong_path.bib"),
-    "The file './wrong_path.bib' does not exist",
-    fixed = TRUE
-  )
+  expect_equal(length(grep("^doi:", res)), 0L)
+  expect_equal(length(grep("^http", res)), 0L)
+  expect_equal(length(grep("[A-Z]", res)), 0L)
 })
 
+test_that("fp_extract_doi() works - Character vector", {
+  expect_silent(res <- fp_extract_doi(x = texte))
 
-test_that("Test fp_extract_doi() for success", {
-  expect_silent(dois <- fp_extract_doi(filename))
+  expect_true(inherits(res, "character"))
+  expect_equal(length(res), 4L)
+  expect_false(any(is.na(res)))
 
-  dois <- fp_extract_doi(filename)
-
-  # Class
-  expect_true(inherits(dois, "character"))
-  expect_equal(length(dois), 38L)
-  expect_true(any(is.na(dois)))
-
-  # Cleaned DOI
-  pos <- grep("^doi:", dois)
-  expect_equal(length(pos), 0L)
-
-  pos <- grep("^http", dois)
-  expect_equal(length(pos), 0L)
-
-  pos <- grep("[A-Z]", dois)
-  expect_equal(length(pos), 0L)
+  expect_equal(res[1], "10.1093/biosci/biag028")
+  expect_equal(res[2], "10.32942/x24933")
+  expect_equal(res[3], "10.1162/qss(c)_00305")
+  expect_equal(res[4], "10.1111/ele.14395")
 })

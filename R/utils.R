@@ -1,16 +1,11 @@
+#' Helper: if x is NULL then y
 #' @noRd
-
-fp_clean_doi <- function(doi) {
-  doi <- gsub("\\s", "", doi)
-  doi <- tolower(doi)
-  doi <- gsub("http(s)?://(dx.)?doi.org/", "", doi)
-  doi <- gsub("doi:", "", doi)
-
-  doi
+`%||%` <- function(x, y) {
+  if (is.null(x)) y else x
 }
 
-#' @noRd
 
+#' @noRd
 fp_check_mailto <- function() {
   if (is.null(options()$"openalexR.mailto")) {
     stop(
@@ -20,4 +15,31 @@ fp_check_mailto <- function() {
   }
 
   invisible(NULL)
+}
+
+#' @noRd
+fp_read_bibtex <- function(file) {
+  bibtex::read.bib(file)
+}
+
+
+#' @noRd
+fp_extract_doi_from_bibentry <- function(bibentry) {
+  vapply(
+    bibentry,
+    \(x) x$doi %||% NA_character_,
+    character(1),
+    USE.NAMES = FALSE
+  )
+}
+
+
+#' @noRd
+fp_extract_doi_from_string <- function(x) {
+  matches <- regmatches(
+    x,
+    gregexpr(.DOI_REGEX, x, perl = TRUE, ignore.case = TRUE)
+  )
+
+  unlist(matches, use.names = FALSE)
 }

@@ -14,3 +14,4 @@
 ^\.vscode$
 ^NEWS\.md$
 ^codemeta\.json$
+^docs$

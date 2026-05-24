@@ -1,13 +1,13 @@
 http_interactions:
 - request:
     method: GET
-    uri: https://api.openalex.org/works?filter=doi%3A10.21105%2Fjoss.05753&per-page=1&mailto=anonymous%40mail.com
+    uri: https://api.openalex.org/works?filter=doi%3A10.21105%2Fjoss.09217&per-page=1&mailto=anonymous%40mail.com
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 05:16:31 GMT
+      date: Sun, 24 May 2026 08:50:29 GMT
       content-type: application/json
-      cf-ray: a009d4271d7fe1d1-MRS
+      cf-ray: a00b0d927af7a26a-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,226 +16,33 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599791"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599791"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=AqjQ3Npl8xUc8e%2F0%2BUb3szCrc9%2BfZgLjuB0u9%2F5DftU%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779612628"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=AqjQ3Npl8xUc8e%2F0%2BUb3szCrc9%2BfZgLjuB0u9%2F5DftU%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779612628"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9924'
-      x-ratelimit-remaining-usd: '0.9924'
-      x-ratelimit-reset: '67409'
+      x-ratelimit-remaining: '9926'
+      x-ratelimit-remaining-usd: '0.9926'
+      x-ratelimit-reset: '54571'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 15, "page": 1, "per_page":
-        1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W4387609797",
-        "doi": "https://doi.org/10.21105/joss.05753", "title": "chessboard: An R package
-        for creating networkconnections based on chess moves", "display_name": "chessboard:
-        An R package for creating networkconnections based on chess moves", "publication_year":
-        2023, "publication_date": "2023-10-13", "ids": {"openalex": "https://openalex.org/W4387609797",
-        "doi": "https://doi.org/10.21105/joss.05753"}, "language": "en", "primary_location":
-        {"id": "doi:10.21105/joss.05753", "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.05753",
-        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source":
-        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
-        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
-        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
-        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
-        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
-        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
-        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
-        "Journal of Open Source Software", "raw_type": "journal-article"}, "type":
-        "article", "indexed_in": ["crossref", "doaj"], "open_access": {"is_oa": true,
-        "oa_status": "diamond", "oa_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
-        "any_repository_has_fulltext": true}, "authorships": [{"author_position":
-        "first", "author": {"id": "https://openalex.org/A5004806463", "display_name":
-        "Nicolas Casajus", "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions":
-        [], "countries": [], "is_corresponding": true, "raw_author_name": "Nicolas
-        Casajus", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-5537-5294",
-        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
-        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5034881512",
-        "display_name": "\u00c9rica Rievrs Borges", "orcid": "https://orcid.org/0000-0001-7751-6265"},
-        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-        "\u00c9rica Rievrs Borges", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
-        "https://orcid.org/0000-0001-7751-6265", "affiliations": [{"raw_affiliation_string":
-        "1 - , , ,", "institution_ids": []}]}, {"author_position": "middle", "author":
-        {"id": "https://openalex.org/A5051327875", "display_name": "\u00c9ric Tabacchi",
-        "orcid": "https://orcid.org/0000-0001-7729-4439"}, "institutions": [], "countries":
-        [], "is_corresponding": false, "raw_author_name": "\u00c9ric Tabacchi", "raw_affiliation_strings":
-        ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0001-7729-4439", "affiliations":
-        [{"raw_affiliation_string": "1 - , , ,", "institution_ids": []}]}, {"author_position":
-        "middle", "author": {"id": "https://openalex.org/A5011198499", "display_name":
-        "Guillaume Fried", "orcid": "https://orcid.org/0000-0002-3653-195X"}, "institutions":
-        [], "countries": [], "is_corresponding": false, "raw_author_name": "Guillaume
-        Fried", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-3653-195X",
-        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
-        []}]}, {"author_position": "last", "author": {"id": "https://openalex.org/A5001034207",
-        "display_name": "Nicolas Mouquet", "orcid": "https://orcid.org/0000-0003-1840-6984"},
-        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-        "Nicolas Mouquet", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
-        "https://orcid.org/0000-0003-1840-6984", "affiliations": [{"raw_affiliation_string":
-        "1 - , , ,", "institution_ids": []}]}], "institutions": [], "countries_distinct_count":
-        0, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5004806463"],
-        "corresponding_institution_ids": [], "apc_list": null, "apc_paid": null, "fwci":
-        0.2307, "has_fulltext": true, "cited_by_count": 1, "citation_normalized_percentile":
-        {"value": 0.52604547, "is_in_top_1_percent": false, "is_in_top_10_percent":
-        false}, "cited_by_percentile_year": {"min": 91, "max": 95}, "biblio": {"volume":
-        "8", "issue": "90", "first_page": "5753", "last_page": "5753"}, "is_retracted":
-        false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10799",
-        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
-        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
-        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
-        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10799",
-        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
-        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
-        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
-        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10064",
-        "display_name": "Complex Network Analysis Techniques", "score": 0.9715999960899353,
-        "subfield": {"id": "https://openalex.org/subfields/3109", "display_name":
-        "Statistical and Nonlinear Physics"}, "field": {"id": "https://openalex.org/fields/31",
-        "display_name": "Physics and Astronomy"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10487",
-        "display_name": "Plant and animal studies", "score": 0.9330999851226807, "subfield":
-        {"id": "https://openalex.org/subfields/1105", "display_name": "Ecology, Evolution,
-        Behavior and Systematics"}, "field": {"id": "https://openalex.org/fields/11",
-        "display_name": "Agricultural and Biological Sciences"}, "domain": {"id":
-        "https://openalex.org/domains/1", "display_name": "Life Sciences"}}], "keywords":
-        [{"id": "https://openalex.org/keywords/computer-science", "display_name":
-        "Computer science", "score": 0.5957576036453247}, {"id": "https://openalex.org/keywords/engineering-drawing",
-        "display_name": "Engineering drawing", "score": 0.42907822132110596}, {"id":
-        "https://openalex.org/keywords/computer-graphics", "display_name": "Computer
-        graphics (images)", "score": 0.40461450815200806}, {"id": "https://openalex.org/keywords/programming-language",
-        "display_name": "Programming language", "score": 0.3500136137008667}, {"id":
-        "https://openalex.org/keywords/engineering", "display_name": "Engineering",
-        "score": 0.16990187764167786}], "concepts": [{"id": "https://openalex.org/C41008148",
-        "wikidata": "https://www.wikidata.org/wiki/Q21198", "display_name": "Computer
-        science", "level": 0, "score": 0.5957576036453247}, {"id": "https://openalex.org/C199639397",
-        "wikidata": "https://www.wikidata.org/wiki/Q1788588", "display_name": "Engineering
-        drawing", "level": 1, "score": 0.42907822132110596}, {"id": "https://openalex.org/C121684516",
-        "wikidata": "https://www.wikidata.org/wiki/Q7600677", "display_name": "Computer
-        graphics (images)", "level": 1, "score": 0.40461450815200806}, {"id": "https://openalex.org/C199360897",
-        "wikidata": "https://www.wikidata.org/wiki/Q9143", "display_name": "Programming
-        language", "level": 1, "score": 0.3500136137008667}, {"id": "https://openalex.org/C127413603",
-        "wikidata": "https://www.wikidata.org/wiki/Q11023", "display_name": "Engineering",
-        "level": 0, "score": 0.16990187764167786}], "mesh": [], "locations_count":
-        3, "locations": [{"id": "doi:10.21105/joss.05753", "is_oa": true, "landing_page_url":
-        "https://doi.org/10.21105/joss.05753", "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
-        "source": {"id": "https://openalex.org/S4210214273", "display_name": "The
-        Journal of Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"],
-        "is_oa": true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
-        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
-        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
-        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
-        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
-        "Journal of Open Source Software", "raw_type": "journal-article"}, {"id":
-        "pmh:oai:HAL:hal-04782259v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-04782259",
-        "pdf_url": "https://hal.science/hal-04782259/document", "source": {"id": "https://openalex.org/S4306402512",
-        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
-        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
-        false, "host_organization": "https://openalex.org/I1294671590", "host_organization_name":
-        "Centre National de la Recherche Scientifique", "host_organization_lineage":
-        ["https://openalex.org/I1294671590"], "host_organization_lineage_names": [],
-        "type": "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
-        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
-        Open Source Software, 2023, 8, &#x27E8;10.21105/joss.05753&#x27E9;", "raw_type":
-        "Journal articles"}, {"id": "pmh:oai:archimer.ifremer.fr:96837", "is_oa":
-        true, "landing_page_url": "https://archimer.ifremer.fr/doc/00856/96837/",
-        "pdf_url": "https://archimer.ifremer.fr/doc/00856/96837/105441.pdf", "source":
-        {"id": "https://openalex.org/S4377196267", "display_name": "Institutional
-        Archive of Ifremer (French Research Institute for Exploitation of the Sea)",
-        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
-        false, "host_organization": "https://openalex.org/I154202486", "host_organization_name":
-        "Ifremer", "host_organization_lineage": ["https://openalex.org/I154202486"],
-        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
-        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
-        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
-        Open Source Software (2475-9066) (The Open Journal), 2023-10-13 , Vol. 8 ,
-        N. 90 , P. 5753 (6p.)", "raw_type": "text"}], "best_oa_location": {"id": "doi:10.21105/joss.05753",
-        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.05753",
-        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source":
-        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
-        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
-        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
-        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
-        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
-        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
-        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
-        "Journal of Open Source Software", "raw_type": "journal-article"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
-        "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
-        "has_content": {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf":
-        "https://content.openalex.org/works/W4387609797.pdf"}, "referenced_works_count":
-        10, "referenced_works": ["https://openalex.org/W229097380", "https://openalex.org/W2160061095",
-        "https://openalex.org/W2468260939", "https://openalex.org/W2582743722", "https://openalex.org/W2804233742",
-        "https://openalex.org/W2883227601", "https://openalex.org/W3102426116", "https://openalex.org/W4254687493",
-        "https://openalex.org/W4399580101", "https://openalex.org/W6608852248"], "related_works":
-        ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801", "https://openalex.org/W2358668433",
-        "https://openalex.org/W2376932109", "https://openalex.org/W2001405890", "https://openalex.org/W2382290278",
-        "https://openalex.org/W2350741829", "https://openalex.org/W2530322880", "https://openalex.org/W1596801655",
-        "https://openalex.org/W2359140296"], "abstract_inverted_index": {"chessboard":
-        [0, 29], "aims": [1], "to": [2, 33], "facilitate": [3], "the": [4, 39, 43],
-        "creation": [5, 44], "of": [6, 45], "connectivity": [7, 47], "matrices": [8],
-        "for": [9], "sampling": [10], "networks": [11], "designed": [12], "as": [13],
-        "regular": [14], "grids.": [15], "It": [16], "can": [17], "handle": [18],
-        "directed": [19], "(asymmetric)": [20], "and": [21], "undirected": [22], "(symmetric)":
-        [23], "spatial": [24], "(or": [25], "non-spatial)": [26], "network": [27],
-        "connections.": [28], "offers": [30], "various": [31], "methods": [32], "detect":
-        [34], "neighbors,": [35], "all": [36], "based": [37], "on": [38], "chess":
-        [40], "game,": [41], "allowing": [42], "complex": [46], "scenarios\\n": [48]},
-        "counts_by_year": [{"year": 2025, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
-        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 05:16:31
-- request:
-    method: GET
-    uri: https://api.openalex.org/works?filter=doi%3A10.21105%2Fjoss.05753&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
-  response:
-    status: 200
-    headers:
-      date: Sun, 24 May 2026 05:16:31 GMT
-      content-type: application/json
-      cf-ray: a009d4299804e1d1-MRS
-      cf-cache-status: DYNAMIC
-      access-control-allow-origin: '*'
-      server: cloudflare
-      via: 1.1 heroku-router
-      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
-        Content-Type
-      access-control-allow-methods: GET, HEAD, POST, OPTIONS
-      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599791"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599791"
-      x-ratelimit-cost-usd: '0.0001'
-      x-ratelimit-credits-used: '1'
-      x-ratelimit-limit: '10000'
-      x-ratelimit-limit-usd: '1'
-      x-ratelimit-onetime-remaining: '0'
-      x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9923'
-      x-ratelimit-remaining-usd: '0.9923'
-      x-ratelimit-reset: '67409'
-      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
-        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
-        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
-      content-encoding: br
-    body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 24, "page": null, "per_page":
-        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
-        [{"id": "https://openalex.org/W4387609797", "doi": "https://doi.org/10.21105/joss.05753",
-        "title": "chessboard: An R package for creating networkconnections based on
-        chess moves", "display_name": "chessboard: An R package for creating networkconnections
-        based on chess moves", "publication_year": 2023, "publication_date": "2023-10-13",
-        "ids": {"openalex": "https://openalex.org/W4387609797", "doi": "https://doi.org/10.21105/joss.05753"},
-        "language": "en", "primary_location": {"id": "doi:10.21105/joss.05753", "is_oa":
-        true, "landing_page_url": "https://doi.org/10.21105/joss.05753", "pdf_url":
-        "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source": {"id":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 18, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W4415113473",
+        "doi": "https://doi.org/10.21105/joss.09217", "title": "forcis: An R package
+        for accessing, handling and analysing the FORCIS database", "display_name":
+        "forcis: An R package for accessing, handling and analysing the FORCIS database",
+        "publication_year": 2025, "publication_date": "2025-10-13", "ids": {"openalex":
+        "https://openalex.org/W4415113473", "doi": "https://doi.org/10.21105/joss.09217"},
+        "language": "en", "primary_location": {"id": "doi:10.21105/joss.09217", "is_oa":
+        true, "landing_page_url": "https://doi.org/10.21105/joss.09217", "pdf_url":
+        "https://joss.theoj.org/papers/10.21105/joss.09217.pdf", "source": {"id":
         "https://openalex.org/S4210214273", "display_name": "The Journal of Open Source
         Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa": true, "is_in_doaj":
         true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
@@ -245,115 +52,227 @@ http_interactions:
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Journal of Open Source Software", "raw_type": "journal-article"}, "type":
         "article", "indexed_in": ["crossref", "doaj"], "open_access": {"is_oa": true,
-        "oa_status": "diamond", "oa_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
+        "oa_status": "diamond", "oa_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf",
         "any_repository_has_fulltext": true}, "authorships": [{"author_position":
         "first", "author": {"id": "https://openalex.org/A5004806463", "display_name":
         "Nicolas Casajus", "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions":
-        [], "countries": [], "is_corresponding": true, "raw_author_name": "Nicolas
-        Casajus", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-5537-5294",
-        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
-        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5034881512",
-        "display_name": "\u00c9rica Rievrs Borges", "orcid": "https://orcid.org/0000-0001-7751-6265"},
-        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-        "\u00c9rica Rievrs Borges", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
-        "https://orcid.org/0000-0001-7751-6265", "affiliations": [{"raw_affiliation_string":
-        "1 - , , ,", "institution_ids": []}]}, {"author_position": "middle", "author":
-        {"id": "https://openalex.org/A5051327875", "display_name": "\u00c9ric Tabacchi",
-        "orcid": "https://orcid.org/0000-0001-7729-4439"}, "institutions": [], "countries":
-        [], "is_corresponding": false, "raw_author_name": "\u00c9ric Tabacchi", "raw_affiliation_strings":
-        ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0001-7729-4439", "affiliations":
-        [{"raw_affiliation_string": "1 - , , ,", "institution_ids": []}]}, {"author_position":
-        "middle", "author": {"id": "https://openalex.org/A5011198499", "display_name":
-        "Guillaume Fried", "orcid": "https://orcid.org/0000-0002-3653-195X"}, "institutions":
-        [], "countries": [], "is_corresponding": false, "raw_author_name": "Guillaume
-        Fried", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-3653-195X",
-        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
-        []}]}, {"author_position": "last", "author": {"id": "https://openalex.org/A5001034207",
-        "display_name": "Nicolas Mouquet", "orcid": "https://orcid.org/0000-0003-1840-6984"},
-        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-        "Nicolas Mouquet", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
-        "https://orcid.org/0000-0003-1840-6984", "affiliations": [{"raw_affiliation_string":
-        "1 - , , ,", "institution_ids": []}]}], "institutions": [], "countries_distinct_count":
-        0, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5004806463"],
-        "corresponding_institution_ids": [], "apc_list": null, "apc_paid": null, "fwci":
-        0.2307, "has_fulltext": true, "cited_by_count": 1, "citation_normalized_percentile":
-        {"value": 0.52604547, "is_in_top_1_percent": false, "is_in_top_10_percent":
-        false}, "cited_by_percentile_year": {"min": 91, "max": 95}, "biblio": {"volume":
-        "8", "issue": "90", "first_page": "5753", "last_page": "5753"}, "is_retracted":
-        false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10799",
-        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
-        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
-        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
+        [{"id": "https://openalex.org/I4210151099", "display_name": "Fondation Pour
+        la Recherche Sur la Biodiversit\u00e9", "ror": "https://ror.org/05x5km989",
+        "country_code": "FR", "type": "nonprofit", "lineage": ["https://openalex.org/I4210151099"]}],
+        "countries": ["FR"], "is_corresponding": true, "raw_author_name": "Nicolas
+        Casajus", "raw_affiliation_strings": ["Fondation pour la Recherche sur la
+        Biodiversit\u00e9 (FRB-CESAB), Montpellier, France"], "raw_orcid": "https://orcid.org/0000-0002-5537-5294",
+        "affiliations": [{"raw_affiliation_string": "Fondation pour la Recherche sur
+        la Biodiversit\u00e9 (FRB-CESAB), Montpellier, France", "institution_ids":
+        ["https://openalex.org/I4210151099"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5052437613", "display_name": "Sonia Chaabane",
+        "orcid": "https://orcid.org/0000-0002-4653-8610"}, "institutions": [{"id":
+        "https://openalex.org/I1294671590", "display_name": "Centre National de la
+        Recherche Scientifique", "ror": "https://ror.org/02feahw73", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I21491767", "display_name": "Aix-Marseille Universit\u00e9",
+        "ror": "https://ror.org/035xkbk20", "country_code": "FR", "type": "education",
+        "lineage": ["https://openalex.org/I21491767"]}, {"id": "https://openalex.org/I4210088668",
+        "display_name": "Institut National de Recherche pour l''Agriculture, l''Alimentation
+        et l''Environnement", "ror": "https://ror.org/003vg9w96", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210088668"]},
+        {"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}, {"id": "https://openalex.org/I4210113422",
+        "display_name": "Max Planck Institute for Chemistry", "ror": "https://ror.org/02f5b7n18",
+        "country_code": "DE", "type": "facility", "lineage": ["https://openalex.org/I149899117",
+        "https://openalex.org/I4210113422"]}, {"id": "https://openalex.org/I4210151099",
+        "display_name": "Fondation Pour la Recherche Sur la Biodiversit\u00e9", "ror":
+        "https://ror.org/05x5km989", "country_code": "FR", "type": "nonprofit", "lineage":
+        ["https://openalex.org/I4210151099"]}, {"id": "https://openalex.org/I4210166444",
+        "display_name": "Institut de Recherche pour le D\u00e9veloppement", "ror":
+        "https://ror.org/05q3vnk25", "country_code": "FR", "type": "government", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220"]}],
+        "countries": ["DE", "FR"], "is_corresponding": false, "raw_author_name": "Sonia
+        Chaabane", "raw_affiliation_strings": ["Aix-Marseille Universit\u00e9, CNRS,
+        IRD, INRAE, CEREGE, Aix-en-Provence, France", "Department of Climate Geochemistry,
+        Max Planck Institute for Chemistry, Mainz, Germany", "Fondation pour la Recherche
+        sur la Biodiversit\u00e9 (FRB-CESAB), Montpellier, France"], "raw_orcid":
+        "https://orcid.org/0000-0002-4653-8610", "affiliations": [{"raw_affiliation_string":
+        "Aix-Marseille Universit\u00e9, CNRS, IRD, INRAE, CEREGE, Aix-en-Provence,
+        France", "institution_ids": ["https://openalex.org/I4210104942", "https://openalex.org/I21491767",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210166444", "https://openalex.org/I1294671590"]},
+        {"raw_affiliation_string": "Department of Climate Geochemistry, Max Planck
+        Institute for Chemistry, Mainz, Germany", "institution_ids": ["https://openalex.org/I4210113422"]},
+        {"raw_affiliation_string": "Fondation pour la Recherche sur la Biodiversit\u00e9
+        (FRB-CESAB), Montpellier, France", "institution_ids": ["https://openalex.org/I4210151099"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5036834271",
+        "display_name": "Xavier Giraud", "orcid": "https://orcid.org/0000-0001-5067-8176"},
+        "institutions": [{"id": "https://openalex.org/I1294671590", "display_name":
+        "Centre National de la Recherche Scientifique", "ror": "https://ror.org/02feahw73",
+        "country_code": "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I21491767", "display_name": "Aix-Marseille Universit\u00e9",
+        "ror": "https://ror.org/035xkbk20", "country_code": "FR", "type": "education",
+        "lineage": ["https://openalex.org/I21491767"]}, {"id": "https://openalex.org/I4210088668",
+        "display_name": "Institut National de Recherche pour l''Agriculture, l''Alimentation
+        et l''Environnement", "ror": "https://ror.org/003vg9w96", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210088668"]},
+        {"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}, {"id": "https://openalex.org/I4210166444",
+        "display_name": "Institut de Recherche pour le D\u00e9veloppement", "ror":
+        "https://ror.org/05q3vnk25", "country_code": "FR", "type": "government", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Xavier
+        Giraud", "raw_affiliation_strings": ["Aix-Marseille Universit\u00e9, CNRS,
+        IRD, INRAE, CEREGE, Aix-en-Provence, France"], "raw_orcid": "https://orcid.org/0000-0001-5067-8176",
+        "affiliations": [{"raw_affiliation_string": "Aix-Marseille Universit\u00e9,
+        CNRS, IRD, INRAE, CEREGE, Aix-en-Provence, France", "institution_ids": ["https://openalex.org/I4210104942",
+        "https://openalex.org/I21491767", "https://openalex.org/I4210088668", "https://openalex.org/I4210166444",
+        "https://openalex.org/I1294671590"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5041069138", "display_name": "Thibault de Garidel\u2010Thoron",
+        "orcid": "https://orcid.org/0000-0001-8983-9571"}, "institutions": [{"id":
+        "https://openalex.org/I1294671590", "display_name": "Centre National de la
+        Recherche Scientifique", "ror": "https://ror.org/02feahw73", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I21491767", "display_name": "Aix-Marseille Universit\u00e9",
+        "ror": "https://ror.org/035xkbk20", "country_code": "FR", "type": "education",
+        "lineage": ["https://openalex.org/I21491767"]}, {"id": "https://openalex.org/I4210088668",
+        "display_name": "Institut National de Recherche pour l''Agriculture, l''Alimentation
+        et l''Environnement", "ror": "https://ror.org/003vg9w96", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210088668"]},
+        {"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}, {"id": "https://openalex.org/I4210166444",
+        "display_name": "Institut de Recherche pour le D\u00e9veloppement", "ror":
+        "https://ror.org/05q3vnk25", "country_code": "FR", "type": "government", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Thibault
+        de Garidel-Thoron", "raw_affiliation_strings": ["Aix-Marseille Universit\u00e9,
+        CNRS, IRD, INRAE, CEREGE, Aix-en-Provence, France"], "raw_orcid": "https://orcid.org/0000-0001-8983-9571",
+        "affiliations": [{"raw_affiliation_string": "Aix-Marseille Universit\u00e9,
+        CNRS, IRD, INRAE, CEREGE, Aix-en-Provence, France", "institution_ids": ["https://openalex.org/I4210104942",
+        "https://openalex.org/I21491767", "https://openalex.org/I4210088668", "https://openalex.org/I4210166444",
+        "https://openalex.org/I1294671590"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5053519683", "display_name": "Mattia Greco",
+        "orcid": "https://orcid.org/0000-0003-2416-6235"}, "institutions": [{"id":
+        "https://openalex.org/I4210151560", "display_name": "Institut de Ci\u00e8ncies
+        del Mar", "ror": "https://ror.org/05ect0289", "country_code": "ES", "type":
+        "facility", "lineage": ["https://openalex.org/I134820265", "https://openalex.org/I4210151560"]}],
+        "countries": ["ES"], "is_corresponding": false, "raw_author_name": "Mattia
+        Greco", "raw_affiliation_strings": ["Institute of Marine Sciences (ICM), CSIC,
+        Barcelona, Catalonia, Spain"], "raw_orcid": "https://orcid.org/0000-0003-2416-6235",
+        "affiliations": [{"raw_affiliation_string": "Institute of Marine Sciences
+        (ICM), CSIC, Barcelona, Catalonia, Spain", "institution_ids": ["https://openalex.org/I4210151560"]}]}],
+        "institutions": [], "countries_distinct_count": 3, "institutions_distinct_count":
+        5, "corresponding_author_ids": ["https://openalex.org/A5004806463"], "corresponding_institution_ids":
+        ["https://openalex.org/I4210151099"], "apc_list": null, "apc_paid": null,
+        "fwci": 0.0, "has_fulltext": true, "cited_by_count": 0, "citation_normalized_percentile":
+        {"value": 0.14112797, "is_in_top_1_percent": false, "is_in_top_10_percent":
+        false}, "cited_by_percentile_year": null, "biblio": {"volume": "10", "issue":
+        "114", "first_page": "9217", "last_page": "9217"}, "is_retracted": false,
+        "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T13398",
+        "display_name": "Data Analysis with R", "score": 0.08609999716281891, "subfield":
+        {"id": "https://openalex.org/subfields/1702", "display_name": "Artificial
+        Intelligence"}, "field": {"id": "https://openalex.org/fields/17", "display_name":
+        "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
+        "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T13398", "display_name":
+        "Data Analysis with R", "score": 0.08609999716281891, "subfield": {"id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"}, "field": {"id": "https://openalex.org/fields/17",
         "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10799",
-        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
-        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
-        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10538",
+        "display_name": "Data Mining Algorithms and Applications", "score": 0.05469999834895134,
+        "subfield": {"id": "https://openalex.org/subfields/1710", "display_name":
+        "Information Systems"}, "field": {"id": "https://openalex.org/fields/17",
         "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10064",
-        "display_name": "Complex Network Analysis Techniques", "score": 0.9715999960899353,
-        "subfield": {"id": "https://openalex.org/subfields/3109", "display_name":
-        "Statistical and Nonlinear Physics"}, "field": {"id": "https://openalex.org/fields/31",
-        "display_name": "Physics and Astronomy"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10487",
-        "display_name": "Plant and animal studies", "score": 0.9330999851226807, "subfield":
-        {"id": "https://openalex.org/subfields/1105", "display_name": "Ecology, Evolution,
-        Behavior and Systematics"}, "field": {"id": "https://openalex.org/fields/11",
-        "display_name": "Agricultural and Biological Sciences"}, "domain": {"id":
-        "https://openalex.org/domains/1", "display_name": "Life Sciences"}}], "keywords":
-        [{"id": "https://openalex.org/keywords/computer-science", "display_name":
-        "Computer science", "score": 0.5957576036453247}, {"id": "https://openalex.org/keywords/engineering-drawing",
-        "display_name": "Engineering drawing", "score": 0.42907822132110596}, {"id":
-        "https://openalex.org/keywords/computer-graphics", "display_name": "Computer
-        graphics (images)", "score": 0.40461450815200806}, {"id": "https://openalex.org/keywords/programming-language",
-        "display_name": "Programming language", "score": 0.3500136137008667}, {"id":
-        "https://openalex.org/keywords/engineering", "display_name": "Engineering",
-        "score": 0.16990187764167786}], "concepts": [{"id": "https://openalex.org/C41008148",
-        "wikidata": "https://www.wikidata.org/wiki/Q21198", "display_name": "Computer
-        science", "level": 0, "score": 0.5957576036453247}, {"id": "https://openalex.org/C199639397",
-        "wikidata": "https://www.wikidata.org/wiki/Q1788588", "display_name": "Engineering
-        drawing", "level": 1, "score": 0.42907822132110596}, {"id": "https://openalex.org/C121684516",
-        "wikidata": "https://www.wikidata.org/wiki/Q7600677", "display_name": "Computer
-        graphics (images)", "level": 1, "score": 0.40461450815200806}, {"id": "https://openalex.org/C199360897",
-        "wikidata": "https://www.wikidata.org/wiki/Q9143", "display_name": "Programming
-        language", "level": 1, "score": 0.3500136137008667}, {"id": "https://openalex.org/C127413603",
-        "wikidata": "https://www.wikidata.org/wiki/Q11023", "display_name": "Engineering",
-        "level": 0, "score": 0.16990187764167786}], "mesh": [], "locations_count":
-        3, "locations": [{"id": "doi:10.21105/joss.05753", "is_oa": true, "landing_page_url":
-        "https://doi.org/10.21105/joss.05753", "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
-        "source": {"id": "https://openalex.org/S4210214273", "display_name": "The
-        Journal of Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"],
-        "is_oa": true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "display_name": "Physical Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/r-package",
+        "display_name": "R package", "score": 0.7732999920845032}, {"id": "https://openalex.org/keywords/data-format",
+        "display_name": "Data format", "score": 0.26660001277923584}, {"id": "https://openalex.org/keywords/data-collection",
+        "display_name": "Data collection", "score": 0.23989999294281006}], "concepts":
+        [{"id": "https://openalex.org/C2984074130", "wikidata": "https://www.wikidata.org/wiki/Q73539779",
+        "display_name": "R package", "level": 2, "score": 0.7732999920845032}, {"id":
+        "https://openalex.org/C41008148", "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science", "level": 0, "score": 0.7440999746322632},
+        {"id": "https://openalex.org/C77088390", "wikidata": "https://www.wikidata.org/wiki/Q8513",
+        "display_name": "Database", "level": 1, "score": 0.6829000115394592}, {"id":
+        "https://openalex.org/C124101348", "wikidata": "https://www.wikidata.org/wiki/Q172491",
+        "display_name": "Data mining", "level": 1, "score": 0.4032000005245209}, {"id":
+        "https://openalex.org/C23123220", "wikidata": "https://www.wikidata.org/wiki/Q816826",
+        "display_name": "Information retrieval", "level": 1, "score": 0.3513999879360199},
+        {"id": "https://openalex.org/C199360897", "wikidata": "https://www.wikidata.org/wiki/Q9143",
+        "display_name": "Programming language", "level": 1, "score": 0.3407000005245209},
+        {"id": "https://openalex.org/C115903868", "wikidata": "https://www.wikidata.org/wiki/Q80993",
+        "display_name": "Software engineering", "level": 1, "score": 0.26840001344680786},
+        {"id": "https://openalex.org/C2985331491", "wikidata": "https://www.wikidata.org/wiki/Q5227298",
+        "display_name": "Data format", "level": 2, "score": 0.26660001277923584},
+        {"id": "https://openalex.org/C121684516", "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+        "display_name": "Computer graphics (images)", "level": 1, "score": 0.2485000044107437},
+        {"id": "https://openalex.org/C133462117", "wikidata": "https://www.wikidata.org/wiki/Q4929239",
+        "display_name": "Data collection", "level": 2, "score": 0.23989999294281006}],
+        "mesh": [], "locations_count": 2, "locations": [{"id": "doi:10.21105/joss.09217",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.09217",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
         "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
         "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
         "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Journal of Open Source Software", "raw_type": "journal-article"}, {"id":
-        "pmh:oai:HAL:hal-04782259v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-04782259",
-        "pdf_url": "https://hal.science/hal-04782259/document", "source": {"id": "https://openalex.org/S4306402512",
-        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
-        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
-        false, "host_organization": "https://openalex.org/I1294671590", "host_organization_name":
-        "Centre National de la Recherche Scientifique", "host_organization_lineage":
-        ["https://openalex.org/I1294671590"], "host_organization_lineage_names": [],
-        "type": "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
-        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
-        Open Source Software, 2023, 8, &#x27E8;10.21105/joss.05753&#x27E9;", "raw_type":
-        "Journal articles"}, {"id": "pmh:oai:archimer.ifremer.fr:96837", "is_oa":
-        true, "landing_page_url": "https://archimer.ifremer.fr/doc/00856/96837/",
-        "pdf_url": "https://archimer.ifremer.fr/doc/00856/96837/105441.pdf", "source":
-        {"id": "https://openalex.org/S4377196267", "display_name": "Institutional
-        Archive of Ifremer (French Research Institute for Exploitation of the Sea)",
-        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
-        false, "host_organization": "https://openalex.org/I154202486", "host_organization_name":
-        "Ifremer", "host_organization_lineage": ["https://openalex.org/I154202486"],
+        "pmh:oai:HAL:hal-05312691v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-05312691",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306402512", "display_name":
+        "HAL (Le Centre pour la Communication Scientifique Directe)", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
         "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
         "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
         "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
-        Open Source Software (2475-9066) (The Open Journal), 2023-10-13 , Vol. 8 ,
-        N. 90 , P. 5753 (6p.)", "raw_type": "text"}], "best_oa_location": {"id": "doi:10.21105/joss.05753",
-        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.05753",
-        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source":
+        Open Source Software, 2025, 10 (114), pp.9217. &#x27E8;10.21105/joss.09217&#x27E9;",
+        "raw_type": "Journal articles"}], "best_oa_location": {"id": "doi:10.21105/joss.09217",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.09217",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf", "source":
         {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
         Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
         true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
@@ -362,28 +281,352 @@ http_interactions:
         "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Journal of Open Source Software", "raw_type": "journal-article"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
-        "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
-        "has_content": {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf":
-        "https://content.openalex.org/works/W4387609797.pdf"}, "referenced_works_count":
-        10, "referenced_works": ["https://openalex.org/W229097380", "https://openalex.org/W2160061095",
-        "https://openalex.org/W2468260939", "https://openalex.org/W2582743722", "https://openalex.org/W2804233742",
-        "https://openalex.org/W2883227601", "https://openalex.org/W3102426116", "https://openalex.org/W4254687493",
-        "https://openalex.org/W4399580101", "https://openalex.org/W6608852248"], "related_works":
-        ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801", "https://openalex.org/W2358668433",
-        "https://openalex.org/W2376932109", "https://openalex.org/W2001405890", "https://openalex.org/W2382290278",
-        "https://openalex.org/W2350741829", "https://openalex.org/W2530322880", "https://openalex.org/W1596801655",
-        "https://openalex.org/W2359140296"], "abstract_inverted_index": {"chessboard":
-        [0, 29], "aims": [1], "to": [2, 33], "facilitate": [3], "the": [4, 39, 43],
-        "creation": [5, 44], "of": [6, 45], "connectivity": [7, 47], "matrices": [8],
-        "for": [9], "sampling": [10], "networks": [11], "designed": [12], "as": [13],
-        "regular": [14], "grids.": [15], "It": [16], "can": [17], "handle": [18],
-        "directed": [19], "(asymmetric)": [20], "and": [21], "undirected": [22], "(symmetric)":
-        [23], "spatial": [24], "(or": [25], "non-spatial)": [26], "network": [27],
-        "connections.": [28], "offers": [30], "various": [31], "methods": [32], "detect":
-        [34], "neighbors,": [35], "all": [36], "based": [37], "on": [38], "chess":
-        [40], "game,": [41], "allowing": [42], "complex": [46], "scenarios\\n": [48]},
-        "counts_by_year": [{"year": 2025, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
-        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 05:16:31
+        [], "awards": [{"id": "https://openalex.org/G2262748287", "display_name":
+        null, "funder_award_id": "501100011033", "funder_id": "https://openalex.org/F4320335598",
+        "funder_display_name": "Agencia Estatal de Investigaci\u00f3n"}, {"id": "https://openalex.org/G3005324705",
+        "display_name": null, "funder_award_id": "501100011033", "funder_id": "https://openalex.org/F4320321505",
+        "funder_display_name": "Generalitat de Catalunya"}, {"id": "https://openalex.org/G3480869486",
+        "display_name": null, "funder_award_id": "13039", "funder_id": "https://openalex.org/F4320335598",
+        "funder_display_name": "Agencia Estatal de Investigaci\u00f3n"}, {"id": "https://openalex.org/G3681454997",
+        "display_name": null, "funder_award_id": "13039/501100011033", "funder_id":
+        "https://openalex.org/F4320320300", "funder_display_name": "European Commission"},
+        {"id": "https://openalex.org/G4042783231", "display_name": null, "funder_award_id":
+        "501100011033", "funder_id": "https://openalex.org/F4320320300", "funder_display_name":
+        "European Commission"}, {"id": "https://openalex.org/G7084143925", "display_name":
+        null, "funder_award_id": "AEI/10", "funder_id": "https://openalex.org/F4320335598",
+        "funder_display_name": "Agencia Estatal de Investigaci\u00f3n"}, {"id": "https://openalex.org/G7266728691",
+        "display_name": null, "funder_award_id": "13039/501100011033", "funder_id":
+        "https://openalex.org/F4320335598", "funder_display_name": "Agencia Estatal
+        de Investigaci\u00f3n"}], "funders": [{"id": "https://openalex.org/F4320309911",
+        "display_name": "Aix-Marseille Universit\u00e9", "ror": "https://ror.org/035xkbk20"},
+        {"id": "https://openalex.org/F4320320300", "display_name": "European Commission",
+        "ror": "https://ror.org/00k4n6c32"}, {"id": "https://openalex.org/F4320321505",
+        "display_name": "Generalitat de Catalunya", "ror": "https://ror.org/01bg62x04"},
+        {"id": "https://openalex.org/F4320329647", "display_name": "Max-Planck-Institut
+        f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}, {"id": "https://openalex.org/F4320335598",
+        "display_name": "Agencia Estatal de Investigaci\u00f3n", "ror": null}, {"id":
+        "https://openalex.org/F4320338223", "display_name": "Direcci\u00f3 General
+        de Recerca, Generalitat de Catalunya", "ror": null}], "has_content": {"pdf":
+        true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415113473.pdf"},
+        "referenced_works_count": 3, "referenced_works": ["https://openalex.org/W4229082123",
+        "https://openalex.org/W4379259280", "https://openalex.org/W4404305647"], "related_works":
+        [], "abstract_inverted_index": {"International": [0], "audience": [1]}, "counts_by_year":
+        [], "updated_date": "2026-05-07T13:39:58.223016", "created_date": "2025-10-14T00:00:00"}],
+        "group_by": []}'
+  recorded_at: 2026-05-24 08:50:29
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.21105%2Fjoss.09217&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 08:50:29 GMT
+      content-type: application/json
+      cf-ray: a00b0d95c954a26a-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=agYEIFpNtkI4p9mUB%2FiNXqizjiGRMfm0VGrlL%2F%2FN7lE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779612629"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=agYEIFpNtkI4p9mUB%2FiNXqizjiGRMfm0VGrlL%2F%2FN7lE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779612629"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9925'
+      x-ratelimit-remaining-usd: '0.9925'
+      x-ratelimit-reset: '54571'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 24, "page": null, "per_page":
+        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [{"id": "https://openalex.org/W4415113473", "doi": "https://doi.org/10.21105/joss.09217",
+        "title": "forcis: An R package for accessing, handling and analysing the FORCIS
+        database", "display_name": "forcis: An R package for accessing, handling and
+        analysing the FORCIS database", "publication_year": 2025, "publication_date":
+        "2025-10-13", "ids": {"openalex": "https://openalex.org/W4415113473", "doi":
+        "https://doi.org/10.21105/joss.09217"}, "language": "en", "primary_location":
+        {"id": "doi:10.21105/joss.09217", "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.09217",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, "type":
+        "article", "indexed_in": ["crossref", "doaj"], "open_access": {"is_oa": true,
+        "oa_status": "diamond", "oa_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf",
+        "any_repository_has_fulltext": true}, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5004806463", "display_name":
+        "Nicolas Casajus", "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions":
+        [{"id": "https://openalex.org/I4210151099", "display_name": "Fondation Pour
+        la Recherche Sur la Biodiversit\u00e9", "ror": "https://ror.org/05x5km989",
+        "country_code": "FR", "type": "nonprofit", "lineage": ["https://openalex.org/I4210151099"]}],
+        "countries": ["FR"], "is_corresponding": true, "raw_author_name": "Nicolas
+        Casajus", "raw_affiliation_strings": ["Fondation pour la Recherche sur la
+        Biodiversit\u00e9 (FRB-CESAB), Montpellier, France"], "raw_orcid": "https://orcid.org/0000-0002-5537-5294",
+        "affiliations": [{"raw_affiliation_string": "Fondation pour la Recherche sur
+        la Biodiversit\u00e9 (FRB-CESAB), Montpellier, France", "institution_ids":
+        ["https://openalex.org/I4210151099"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5052437613", "display_name": "Sonia Chaabane",
+        "orcid": "https://orcid.org/0000-0002-4653-8610"}, "institutions": [{"id":
+        "https://openalex.org/I1294671590", "display_name": "Centre National de la
+        Recherche Scientifique", "ror": "https://ror.org/02feahw73", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I21491767", "display_name": "Aix-Marseille Universit\u00e9",
+        "ror": "https://ror.org/035xkbk20", "country_code": "FR", "type": "education",
+        "lineage": ["https://openalex.org/I21491767"]}, {"id": "https://openalex.org/I4210088668",
+        "display_name": "Institut National de Recherche pour l''Agriculture, l''Alimentation
+        et l''Environnement", "ror": "https://ror.org/003vg9w96", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210088668"]},
+        {"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}, {"id": "https://openalex.org/I4210113422",
+        "display_name": "Max Planck Institute for Chemistry", "ror": "https://ror.org/02f5b7n18",
+        "country_code": "DE", "type": "facility", "lineage": ["https://openalex.org/I149899117",
+        "https://openalex.org/I4210113422"]}, {"id": "https://openalex.org/I4210151099",
+        "display_name": "Fondation Pour la Recherche Sur la Biodiversit\u00e9", "ror":
+        "https://ror.org/05x5km989", "country_code": "FR", "type": "nonprofit", "lineage":
+        ["https://openalex.org/I4210151099"]}, {"id": "https://openalex.org/I4210166444",
+        "display_name": "Institut de Recherche pour le D\u00e9veloppement", "ror":
+        "https://ror.org/05q3vnk25", "country_code": "FR", "type": "government", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220"]}],
+        "countries": ["DE", "FR"], "is_corresponding": false, "raw_author_name": "Sonia
+        Chaabane", "raw_affiliation_strings": ["Aix-Marseille Universit\u00e9, CNRS,
+        IRD, INRAE, CEREGE, Aix-en-Provence, France", "Department of Climate Geochemistry,
+        Max Planck Institute for Chemistry, Mainz, Germany", "Fondation pour la Recherche
+        sur la Biodiversit\u00e9 (FRB-CESAB), Montpellier, France"], "raw_orcid":
+        "https://orcid.org/0000-0002-4653-8610", "affiliations": [{"raw_affiliation_string":
+        "Aix-Marseille Universit\u00e9, CNRS, IRD, INRAE, CEREGE, Aix-en-Provence,
+        France", "institution_ids": ["https://openalex.org/I4210104942", "https://openalex.org/I21491767",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210166444", "https://openalex.org/I1294671590"]},
+        {"raw_affiliation_string": "Department of Climate Geochemistry, Max Planck
+        Institute for Chemistry, Mainz, Germany", "institution_ids": ["https://openalex.org/I4210113422"]},
+        {"raw_affiliation_string": "Fondation pour la Recherche sur la Biodiversit\u00e9
+        (FRB-CESAB), Montpellier, France", "institution_ids": ["https://openalex.org/I4210151099"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5036834271",
+        "display_name": "Xavier Giraud", "orcid": "https://orcid.org/0000-0001-5067-8176"},
+        "institutions": [{"id": "https://openalex.org/I1294671590", "display_name":
+        "Centre National de la Recherche Scientifique", "ror": "https://ror.org/02feahw73",
+        "country_code": "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I21491767", "display_name": "Aix-Marseille Universit\u00e9",
+        "ror": "https://ror.org/035xkbk20", "country_code": "FR", "type": "education",
+        "lineage": ["https://openalex.org/I21491767"]}, {"id": "https://openalex.org/I4210088668",
+        "display_name": "Institut National de Recherche pour l''Agriculture, l''Alimentation
+        et l''Environnement", "ror": "https://ror.org/003vg9w96", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210088668"]},
+        {"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}, {"id": "https://openalex.org/I4210166444",
+        "display_name": "Institut de Recherche pour le D\u00e9veloppement", "ror":
+        "https://ror.org/05q3vnk25", "country_code": "FR", "type": "government", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Xavier
+        Giraud", "raw_affiliation_strings": ["Aix-Marseille Universit\u00e9, CNRS,
+        IRD, INRAE, CEREGE, Aix-en-Provence, France"], "raw_orcid": "https://orcid.org/0000-0001-5067-8176",
+        "affiliations": [{"raw_affiliation_string": "Aix-Marseille Universit\u00e9,
+        CNRS, IRD, INRAE, CEREGE, Aix-en-Provence, France", "institution_ids": ["https://openalex.org/I4210104942",
+        "https://openalex.org/I21491767", "https://openalex.org/I4210088668", "https://openalex.org/I4210166444",
+        "https://openalex.org/I1294671590"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5041069138", "display_name": "Thibault de Garidel\u2010Thoron",
+        "orcid": "https://orcid.org/0000-0001-8983-9571"}, "institutions": [{"id":
+        "https://openalex.org/I1294671590", "display_name": "Centre National de la
+        Recherche Scientifique", "ror": "https://ror.org/02feahw73", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I21491767", "display_name": "Aix-Marseille Universit\u00e9",
+        "ror": "https://ror.org/035xkbk20", "country_code": "FR", "type": "education",
+        "lineage": ["https://openalex.org/I21491767"]}, {"id": "https://openalex.org/I4210088668",
+        "display_name": "Institut National de Recherche pour l''Agriculture, l''Alimentation
+        et l''Environnement", "ror": "https://ror.org/003vg9w96", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210088668"]},
+        {"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}, {"id": "https://openalex.org/I4210166444",
+        "display_name": "Institut de Recherche pour le D\u00e9veloppement", "ror":
+        "https://ror.org/05q3vnk25", "country_code": "FR", "type": "government", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Thibault
+        de Garidel-Thoron", "raw_affiliation_strings": ["Aix-Marseille Universit\u00e9,
+        CNRS, IRD, INRAE, CEREGE, Aix-en-Provence, France"], "raw_orcid": "https://orcid.org/0000-0001-8983-9571",
+        "affiliations": [{"raw_affiliation_string": "Aix-Marseille Universit\u00e9,
+        CNRS, IRD, INRAE, CEREGE, Aix-en-Provence, France", "institution_ids": ["https://openalex.org/I4210104942",
+        "https://openalex.org/I21491767", "https://openalex.org/I4210088668", "https://openalex.org/I4210166444",
+        "https://openalex.org/I1294671590"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5053519683", "display_name": "Mattia Greco",
+        "orcid": "https://orcid.org/0000-0003-2416-6235"}, "institutions": [{"id":
+        "https://openalex.org/I4210151560", "display_name": "Institut de Ci\u00e8ncies
+        del Mar", "ror": "https://ror.org/05ect0289", "country_code": "ES", "type":
+        "facility", "lineage": ["https://openalex.org/I134820265", "https://openalex.org/I4210151560"]}],
+        "countries": ["ES"], "is_corresponding": false, "raw_author_name": "Mattia
+        Greco", "raw_affiliation_strings": ["Institute of Marine Sciences (ICM), CSIC,
+        Barcelona, Catalonia, Spain"], "raw_orcid": "https://orcid.org/0000-0003-2416-6235",
+        "affiliations": [{"raw_affiliation_string": "Institute of Marine Sciences
+        (ICM), CSIC, Barcelona, Catalonia, Spain", "institution_ids": ["https://openalex.org/I4210151560"]}]}],
+        "institutions": [], "countries_distinct_count": 3, "institutions_distinct_count":
+        5, "corresponding_author_ids": ["https://openalex.org/A5004806463"], "corresponding_institution_ids":
+        ["https://openalex.org/I4210151099"], "apc_list": null, "apc_paid": null,
+        "fwci": 0.0, "has_fulltext": true, "cited_by_count": 0, "citation_normalized_percentile":
+        {"value": 0.14112797, "is_in_top_1_percent": false, "is_in_top_10_percent":
+        false}, "cited_by_percentile_year": null, "biblio": {"volume": "10", "issue":
+        "114", "first_page": "9217", "last_page": "9217"}, "is_retracted": false,
+        "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T13398",
+        "display_name": "Data Analysis with R", "score": 0.08609999716281891, "subfield":
+        {"id": "https://openalex.org/subfields/1702", "display_name": "Artificial
+        Intelligence"}, "field": {"id": "https://openalex.org/fields/17", "display_name":
+        "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
+        "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T13398", "display_name":
+        "Data Analysis with R", "score": 0.08609999716281891, "subfield": {"id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10538",
+        "display_name": "Data Mining Algorithms and Applications", "score": 0.05469999834895134,
+        "subfield": {"id": "https://openalex.org/subfields/1710", "display_name":
+        "Information Systems"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/r-package",
+        "display_name": "R package", "score": 0.7732999920845032}, {"id": "https://openalex.org/keywords/data-format",
+        "display_name": "Data format", "score": 0.26660001277923584}, {"id": "https://openalex.org/keywords/data-collection",
+        "display_name": "Data collection", "score": 0.23989999294281006}], "concepts":
+        [{"id": "https://openalex.org/C2984074130", "wikidata": "https://www.wikidata.org/wiki/Q73539779",
+        "display_name": "R package", "level": 2, "score": 0.7732999920845032}, {"id":
+        "https://openalex.org/C41008148", "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science", "level": 0, "score": 0.7440999746322632},
+        {"id": "https://openalex.org/C77088390", "wikidata": "https://www.wikidata.org/wiki/Q8513",
+        "display_name": "Database", "level": 1, "score": 0.6829000115394592}, {"id":
+        "https://openalex.org/C124101348", "wikidata": "https://www.wikidata.org/wiki/Q172491",
+        "display_name": "Data mining", "level": 1, "score": 0.4032000005245209}, {"id":
+        "https://openalex.org/C23123220", "wikidata": "https://www.wikidata.org/wiki/Q816826",
+        "display_name": "Information retrieval", "level": 1, "score": 0.3513999879360199},
+        {"id": "https://openalex.org/C199360897", "wikidata": "https://www.wikidata.org/wiki/Q9143",
+        "display_name": "Programming language", "level": 1, "score": 0.3407000005245209},
+        {"id": "https://openalex.org/C115903868", "wikidata": "https://www.wikidata.org/wiki/Q80993",
+        "display_name": "Software engineering", "level": 1, "score": 0.26840001344680786},
+        {"id": "https://openalex.org/C2985331491", "wikidata": "https://www.wikidata.org/wiki/Q5227298",
+        "display_name": "Data format", "level": 2, "score": 0.26660001277923584},
+        {"id": "https://openalex.org/C121684516", "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+        "display_name": "Computer graphics (images)", "level": 1, "score": 0.2485000044107437},
+        {"id": "https://openalex.org/C133462117", "wikidata": "https://www.wikidata.org/wiki/Q4929239",
+        "display_name": "Data collection", "level": 2, "score": 0.23989999294281006}],
+        "mesh": [], "locations_count": 2, "locations": [{"id": "doi:10.21105/joss.09217",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.09217",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, {"id":
+        "pmh:oai:HAL:hal-05312691v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-05312691",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306402512", "display_name":
+        "HAL (Le Centre pour la Communication Scientifique Directe)", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
+        Open Source Software, 2025, 10 (114), pp.9217. &#x27E8;10.21105/joss.09217&#x27E9;",
+        "raw_type": "Journal articles"}], "best_oa_location": {"id": "doi:10.21105/joss.09217",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.09217",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.09217.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, "sustainable_development_goals":
+        [], "awards": [{"id": "https://openalex.org/G2262748287", "display_name":
+        null, "funder_award_id": "501100011033", "funder_id": "https://openalex.org/F4320335598",
+        "funder_display_name": "Agencia Estatal de Investigaci\u00f3n"}, {"id": "https://openalex.org/G3005324705",
+        "display_name": null, "funder_award_id": "501100011033", "funder_id": "https://openalex.org/F4320321505",
+        "funder_display_name": "Generalitat de Catalunya"}, {"id": "https://openalex.org/G3480869486",
+        "display_name": null, "funder_award_id": "13039", "funder_id": "https://openalex.org/F4320335598",
+        "funder_display_name": "Agencia Estatal de Investigaci\u00f3n"}, {"id": "https://openalex.org/G3681454997",
+        "display_name": null, "funder_award_id": "13039/501100011033", "funder_id":
+        "https://openalex.org/F4320320300", "funder_display_name": "European Commission"},
+        {"id": "https://openalex.org/G4042783231", "display_name": null, "funder_award_id":
+        "501100011033", "funder_id": "https://openalex.org/F4320320300", "funder_display_name":
+        "European Commission"}, {"id": "https://openalex.org/G7084143925", "display_name":
+        null, "funder_award_id": "AEI/10", "funder_id": "https://openalex.org/F4320335598",
+        "funder_display_name": "Agencia Estatal de Investigaci\u00f3n"}, {"id": "https://openalex.org/G7266728691",
+        "display_name": null, "funder_award_id": "13039/501100011033", "funder_id":
+        "https://openalex.org/F4320335598", "funder_display_name": "Agencia Estatal
+        de Investigaci\u00f3n"}], "funders": [{"id": "https://openalex.org/F4320309911",
+        "display_name": "Aix-Marseille Universit\u00e9", "ror": "https://ror.org/035xkbk20"},
+        {"id": "https://openalex.org/F4320320300", "display_name": "European Commission",
+        "ror": "https://ror.org/00k4n6c32"}, {"id": "https://openalex.org/F4320321505",
+        "display_name": "Generalitat de Catalunya", "ror": "https://ror.org/01bg62x04"},
+        {"id": "https://openalex.org/F4320329647", "display_name": "Max-Planck-Institut
+        f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}, {"id": "https://openalex.org/F4320335598",
+        "display_name": "Agencia Estatal de Investigaci\u00f3n", "ror": null}, {"id":
+        "https://openalex.org/F4320338223", "display_name": "Direcci\u00f3 General
+        de Recerca, Generalitat de Catalunya", "ror": null}], "has_content": {"pdf":
+        true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415113473.pdf"},
+        "referenced_works_count": 3, "referenced_works": ["https://openalex.org/W4229082123",
+        "https://openalex.org/W4379259280", "https://openalex.org/W4404305647"], "related_works":
+        [], "abstract_inverted_index": {"International": [0], "audience": [1]}, "counts_by_year":
+        [], "updated_date": "2026-05-07T13:39:58.223016", "created_date": "2025-10-14T00:00:00"}],
+        "group_by": []}'
+  recorded_at: 2026-05-24 08:50:29
 recorded_with: VCR-vcr/2.1.0

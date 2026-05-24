@@ -1,4 +1,6 @@
-test_that("Test fp_list_dafnee_journals() for success", {
+## fp_list_dafnee_journals() ----
+
+test_that("fp_list_dafnee_journals() works", {
   x <- fp_list_dafnee_journals()
 
   # Class

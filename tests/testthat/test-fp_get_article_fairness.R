@@ -1,17 +1,6 @@
-# Test datasets
-dois <- c(
-  "10.1126/science.162.3859.1243",
-  "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
-  "10.1038/35002501",
-  "https://doi.org/10.xxxx/xxxx",
-  "10.21105/joss.05753"
-)
+## fp_get_article_fairness() ----
 
-doi_na <- NA_character_
-doi_not_in_oa <- "https://doi.org/10.xxxx/xxxx"
-doi_not_in_dafnee <- "10.5281/zenodo.7390791"
-
-test_that("Test fp_get_article_fairness() errors - No API query", {
+test_that("fp_get_article_fairness() errors - No API query", {
   # Argument missing
   expect_error(
     fp_get_article_fairness(),
@@ -88,7 +77,7 @@ test_that("Test fp_get_article_fairness() errors - No API query", {
   )
 })
 
-test_that("Test fp_get_article_fairness() works - With API query", {
+test_that("fp_get_article_fairness() works - With API query", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
@@ -108,9 +97,9 @@ test_that("Test fp_get_article_fairness() works - With API query", {
   expect_equal(res[1, "journal"], "Science")
   expect_equal(res[1, "fairness"], "Non-profit and academic friendly")
 
-  # Test for FP & academic journal
-  vcr::use_cassette("fp_get_article_fairness_fp_acad", {
-    expect_silent(res <- fp_get_article_fairness(dois[2]))
+  # Test for FP & non-academic journal
+  vcr::use_cassette("fp_get_article_fairness_fp_non_acad", {
+    expect_silent(res <- fp_get_article_fairness(dois[3]))
   })
 
   expect_true(inherits(res, "data.frame"))
@@ -123,9 +112,9 @@ test_that("Test fp_get_article_fairness() works - With API query", {
   expect_equal(res[1, "journal"], "Ecology Letters")
   expect_equal(res[1, "fairness"], "For-profit and academic friendly")
 
-  # Test for FP & non-academic journal
-  vcr::use_cassette("fp_get_article_fairness_fp_non_acad", {
-    expect_silent(res <- fp_get_article_fairness(dois[3]))
+  # Test for FP & academic journal
+  vcr::use_cassette("fp_get_article_fairness_fp_acad", {
+    expect_silent(res <- fp_get_article_fairness(dois[2]))
   })
 
   expect_true(inherits(res, "data.frame"))

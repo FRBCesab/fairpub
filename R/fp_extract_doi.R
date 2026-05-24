@@ -1,71 +1,64 @@
-#' Extract DOI from a BibTeX file
+#' Extract DOI from a BibTeX file or a string
 #'
 #' @description
-#' This function reads a BibTex file and extracts the DOI of references (if
-#' originally present in the file).
+#' This function detects and extracts DOI from bibliographic records. User can
+#' provides either a `character` vector (argument `x`) or the path to a BibTex
+#' file (argument `file`).
 #'
-#' @param bibtex a `character` of length 1. The (absolute or relative) path to
-#'   the BibTeX file to open.
+#' @param x a `character` vector. A string containing bibliographic records.
+#'
+#' @param file a `character` of length 1. The path to the BibTeX file to open.
 #'
 #' @return
 #' A `character` vector with extracted DOI. Some values can be `NA` in case of
-#' books, chapters, etc. or if references are malformed.
+#' books, chapters, etc. or if references are malformed in the BibTeX.
 #'
 #' @export
 #'
 #' @examples
-#' # Path to the BibTeX provided by <fairpub> ----
+#' # Argument 'x' (one DOI per element) ----
+#' string <- c(
+#'   "Beck M (2026) Citation self-awareness... 10.1093/biosci/biag028.",
+#'   "Galtier N (2026) Time to publish... DOI: 10.32942/X24933",
+#'   "Doe J (9999) Title... http://dx.doi.org/10.1162/qss(c)_00305",
+#'   "Receveur A (2024) David vs Goliath... https://doi.org/10.1111/ele.14395",
+#'   "Smith J (9999) This is a fake article."
+#' )
+#'
+#' ## Extract DOI from a vector ----
+#' fp_extract_doi(x = string)
+#'
+#' # Argument 'x' (many DOI per element) ----
+#' string <- paste(string, collapse = "\n")
+#' cat(string)
+#'
+#' ## Extract DOI from a vector ----
+#' fp_extract_doi(x = string)
+#'
+#' # Argument 'file' ----
+#'
+#' ## Path to the BibTeX provided by <fairpub> ----
 #' filename <- system.file(
 #'   file.path("extdata", "references.bib"),
 #'   package = "fairpub"
 #' )
 #'
-#' # Extract DOI from BibTeX ----
-#' fp_extract_doi(filename)
+#' ## Extract DOI from BibTeX ----
+#' fp_extract_doi(file = filename)
 
-fp_extract_doi <- function(bibtex) {
-  ## Check args ----
+fp_extract_doi <- function(x = NULL, file = NULL) {
+  check_exactly_one_arg(x, file)
 
-  if (missing(bibtex)) {
-    stop("Argument 'bibtex' is required")
+  if (!is.null(x)) {
+    check_arg_string(x)
+
+    dois <- fp_extract_doi_from_string(x)
+  } else {
+    check_arg_file(file)
+
+    dois <- fp_read_bibtex(file) |>
+      fp_extract_doi_from_bibentry()
   }
-
-  if (is.null(bibtex)) {
-    stop("Argument 'bibtex' is required")
-  }
-
-  if (!is.character(bibtex)) {
-    stop("Argument 'bibtex' must be a character (BibTeX file name)")
-  }
-
-  if (length(bibtex) != 1) {
-    stop("Argument 'bibtex' must be of length 1 (one BibTeX file)")
-  }
-
-  if (!file.exists(bibtex)) {
-    stop("The file '", bibtex, "' does not exist")
-  }
-
-  ## Open BibTeX file ----
-
-  refs <- RefManageR::ReadBib(bibtex)
-
-  ## Extract DOI ----
-
-  dois <- refs$"doi"
-
-  dois <- lapply(dois, function(x) {
-    if (is.null(x)) {
-      return(NA)
-    } else {
-      return(x)
-    }
-  })
-
-  dois <- unlist(dois)
-  names(dois) <- NULL
-
-  ## Clean DOI ----
 
   fp_clean_doi(dois)
 }

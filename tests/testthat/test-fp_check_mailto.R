@@ -1,4 +1,6 @@
-test_that("Test fp_check_mailto() for error", {
+## fp_check_mailto() ----
+
+test_that("fp_check_mailto() errors", {
   expect_error(
     fp_check_mailto(),
     paste0(
