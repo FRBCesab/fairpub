@@ -46,7 +46,28 @@ references:
     address: Vienna, Austria
   year: '2026'
   doi: 10.32614/R.manuals
-  version: '>= 3.5'
+  version: '>= 4.1'
+- type: software
+  title: bibtex
+  abstract: 'bibtex: Bibtex Parser'
+  notes: Imports
+  url: https://docs.ropensci.org/bibtex/
+  repository: https://CRAN.R-project.org/package=bibtex
+  authors:
+  - family-names: Francois
+    given-names: Romain
+    email: romain@purrple.cat
+    orcid: https://orcid.org/0000-0002-2444-4226
+  - family-names: Hernangómez
+    given-names: Diego
+    email: diego.hernangomezherrero@gmail.com
+    orcid: https://orcid.org/0000-0001-8457-4658
+  - family-names: Balamuta
+    given-names: James Joseph
+    email: balamut2@illinois.edu
+    orcid: https://orcid.org/0000-0003-2826-8458
+  year: '2026'
+  doi: 10.32614/CRAN.package.bibtex
 - type: software
   title: openalexR
   abstract: 'openalexR: Getting Bibliographic Records from ''OpenAlex'' Database Using
@@ -69,20 +90,6 @@ references:
     orcid: https://orcid.org/0000-0002-0701-921X
   year: '2026'
   doi: 10.32614/CRAN.package.openalexR
-- type: software
-  title: RefManageR
-  abstract: 'RefManageR: Straightforward ''BibTeX'' and ''BibLaTeX'' Bibliography
-    Management'
-  notes: Imports
-  url: https://github.com/ropensci/RefManageR/
-  repository: https://CRAN.R-project.org/package=RefManageR
-  authors:
-  - family-names: McLean
-    given-names: Mathew W.
-    email: mathew.w.mclean@gmail.com
-    orcid: https://orcid.org/0000-0002-7891-9645
-  year: '2026'
-  doi: 10.32614/CRAN.package.RefManageR
 - type: software
   title: stringdist
   abstract: 'stringdist: Approximate String Matching, Fuzzy Text Search, and String
