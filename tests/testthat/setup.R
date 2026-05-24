@@ -54,3 +54,11 @@ journals <- c(
 )
 
 journal_na <- NA_character_
+
+texte <- c(
+  "Beck M (2026) Citation self-awareness... 10.1093/biosci/biag028.",
+  "Galtier N (2026) Time to publish... DOI: 10.32942/X24933",
+  "Doe J (9999) Title... http://dx.doi.org/10.1162/qss(c)_00305",
+  "Receveur A (2024) David vs Goliath... https://doi.org/10.1111/ele.14395",
+  "Smith J (9999) This is a fake article."
+)
