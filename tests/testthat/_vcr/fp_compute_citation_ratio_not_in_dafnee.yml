@@ -1,0 +1,972 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.5281%2Fzenodo.7390791&per-page=1&mailto=anonymous%40mail.com
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 05:16:25 GMT
+      content-type: application/json
+      cf-ray: a009d3ffffc6e1d1-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=TXhroIVkX%2BoqjlBkpNY2iguB1IcKOBgpPvIenF8cdWQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599785"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=TXhroIVkX%2BoqjlBkpNY2iguB1IcKOBgpPvIenF8cdWQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599785"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9935'
+      x-ratelimit-remaining-usd: '0.9935'
+      x-ratelimit-reset: '67415'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 19, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W4393830903",
+        "doi": "https://doi.org/10.5281/zenodo.7390791", "title": "The FORCIS database:
+        A global census of planktonic Foraminifera from ocean waters", "display_name":
+        "The FORCIS database: A global census of planktonic Foraminifera from ocean
+        waters", "publication_year": 2024, "publication_date": "2024-07-11", "ids":
+        {"openalex": "https://openalex.org/W4393830903", "doi": "https://doi.org/10.5281/zenodo.7390791"},
+        "language": "en", "primary_location": {"id": "pmh:oai:HAL:hal-05103254v1",
+        "is_oa": true, "landing_page_url": "https://hal.science/hal-05103254", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306402512", "display_name":
+        "HAL (Le Centre pour la Communication Scientifique Directe)", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;",
+        "raw_type": "Other publications"}, "type": "dataset", "indexed_in": ["datacite"],
+        "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://hal.science/hal-05103254",
+        "any_repository_has_fulltext": true}, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5052437613", "display_name":
+        "Sonia Chaabane", "orcid": "https://orcid.org/0000-0002-4653-8610"}, "institutions":
+        [{"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}], "countries": ["FR"], "is_corresponding":
+        true, "raw_author_name": "Chaabane, Sonia", "raw_affiliation_strings": ["CEREGE,
+        France and Max Planck, Germany"], "raw_orcid": "https://orcid.org/0000-0002-4653-8610",
+        "affiliations": [{"raw_affiliation_string": "CEREGE, France and Max Planck,
+        Germany", "institution_ids": ["https://openalex.org/I4210104942"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5041069138", "display_name":
+        "Thibault de Garidel\u2010Thoron", "orcid": "https://orcid.org/0000-0001-8983-9571"},
+        "institutions": [{"id": "https://openalex.org/I4210104942", "display_name":
+        "Centre de Recherche et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement",
+        "ror": "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility",
+        "lineage": ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1327553481", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I154202486", "https://openalex.org/I187986737", "https://openalex.org/I21491767",
+        "https://openalex.org/I21491767", "https://openalex.org/I2746051580", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I2802818602",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210090127", "https://openalex.org/I4210090127",
+        "https://openalex.org/I4210093025", "https://openalex.org/I4210104942", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210113730", "https://openalex.org/I4210131494", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210148025", "https://openalex.org/I4210166444", "https://openalex.org/I4210166444",
+        "https://openalex.org/I4405257220", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "de Garidel,
+        Thibault", "raw_affiliation_strings": ["CEREGE, France"], "raw_orcid": "https://orcid.org/0000-0001-8983-9571",
+        "affiliations": [{"raw_affiliation_string": "CEREGE, France", "institution_ids":
+        ["https://openalex.org/I4210104942"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5111159694", "display_name": "Xavier Giraud",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210104942",
+        "display_name": "Centre de Recherche et d\u2019Enseignement de G\u00e9osciences
+        de l\u2019Environnement", "ror": "https://ror.org/01pa4h393", "country_code":
+        "FR", "type": "facility", "lineage": ["https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I1327553481",
+        "https://openalex.org/I154202486", "https://openalex.org/I154202486", "https://openalex.org/I187986737",
+        "https://openalex.org/I21491767", "https://openalex.org/I21491767", "https://openalex.org/I2746051580",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2799535048", "https://openalex.org/I2802818602",
+        "https://openalex.org/I2802818602", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210090127",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210093025", "https://openalex.org/I4210104942",
+        "https://openalex.org/I4210113730", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210148025", "https://openalex.org/I4210166444",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Giraud,
+        Xavier", "raw_affiliation_strings": ["CEREGE, France"], "raw_orcid": "https://orcid.org/0000-0002-6252-7647",
+        "affiliations": [{"raw_affiliation_string": "CEREGE, France", "institution_ids":
+        ["https://openalex.org/I4210104942"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5111159286", "display_name": "Ralf Schiebel",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Schiebel, Ralf", "raw_affiliation_strings": ["Max Planck,
+        Germany"], "raw_orcid": "https://orcid.org/0000-0001-5067-8176", "affiliations":
+        [{"raw_affiliation_string": "Max Planck, Germany", "institution_ids": []}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5058759653",
+        "display_name": "Gr\u00e9gory Beaugrand", "orcid": "https://orcid.org/0000-0002-0712-5223"},
+        "institutions": [{"id": "https://openalex.org/I4210161208", "display_name":
+        "Laboratoire d\u2019Oc\u00e9anologie et de G\u00e9osciences", "ror": "https://ror.org/05m14rs93",
+        "country_code": "FR", "type": "facility", "lineage": ["https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I2279609970", "https://openalex.org/I2802487185",
+        "https://openalex.org/I4210148025", "https://openalex.org/I4210161208"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Beaugrand,
+        Gregory", "raw_affiliation_strings": ["LOG, France"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "LOG, France", "institution_ids": ["https://openalex.org/I4210161208"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5089217409",
+        "display_name": "Geert-Jan A Brummer", "orcid": "https://orcid.org/0000-0003-4145-1281"},
+        "institutions": [{"id": "https://openalex.org/I4210107283", "display_name":
+        "Royal Netherlands Institute for Sea Research", "ror": "https://ror.org/01gntjh03",
+        "country_code": "NL", "type": "facility", "lineage": ["https://openalex.org/I2800991832",
+        "https://openalex.org/I4210107283", "https://openalex.org/I4405262988"]}],
+        "countries": ["NL"], "is_corresponding": false, "raw_author_name": "Brummer,
+        Geert-Jan", "raw_affiliation_strings": ["NIOZ, Netherlands"], "raw_orcid":
+        null, "affiliations": [{"raw_affiliation_string": "NIOZ, Netherlands", "institution_ids":
+        ["https://openalex.org/I4210107283"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5004806463", "display_name": "Nicolas Casajus",
+        "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions": [{"id":
+        "https://openalex.org/I4210151099", "display_name": "Fondation Pour la Recherche
+        Sur la Biodiversit\u00e9", "ror": "https://ror.org/05x5km989", "country_code":
+        "FR", "type": "nonprofit", "lineage": ["https://openalex.org/I4210151099"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Casajus,
+        Nicolas", "raw_affiliation_strings": ["FRB CESAB"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "FRB CESAB", "institution_ids": ["https://openalex.org/I4210151099"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5053519683",
+        "display_name": "Mattia Greco", "orcid": "https://orcid.org/0000-0003-2416-6235"},
+        "institutions": [{"id": "https://openalex.org/I4210134584", "display_name":
+        "Polish Academy of Learning", "ror": "https://ror.org/03q674f15", "country_code":
+        "PL", "type": "government", "lineage": ["https://openalex.org/I4210134584"]},
+        {"id": "https://openalex.org/I99542240", "display_name": "Polish Academy of
+        Sciences", "ror": "https://ror.org/01dr6c206", "country_code": "PL", "type":
+        "government", "lineage": ["https://openalex.org/I99542240"]}], "countries":
+        ["PL"], "is_corresponding": false, "raw_author_name": "Greco, Mattia", "raw_affiliation_strings":
+        ["Polish Academy of Sciences, Poland"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "Polish Academy of Sciences, Poland", "institution_ids":
+        ["https://openalex.org/I4210134584", "https://openalex.org/I99542240"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5079206790",
+        "display_name": "Maria Grigoratou", "orcid": "https://orcid.org/0000-0003-0484-1408"},
+        "institutions": [{"id": "https://openalex.org/I4210118904", "display_name":
+        "Mercator Ocean (France)", "ror": "https://ror.org/02754py23", "country_code":
+        "FR", "type": "company", "lineage": ["https://openalex.org/I4210118904"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Grigoratou,
+        Maria", "raw_affiliation_strings": ["Mercator Ocean International, France"],
+        "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Mercator Ocean
+        International, France", "institution_ids": ["https://openalex.org/I4210118904"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5022320338",
+        "display_name": "H\u00e9l\u00e8ne Howa", "orcid": "https://orcid.org/0000-0003-1532-4211"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Howa, H\u00e9l\u00e8ne", "raw_affiliation_strings": ["LPG-BIAF, France"],
+        "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "LPG-BIAF,
+        France", "institution_ids": []}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5033371043", "display_name": "Lukas Jonkers",
+        "orcid": "https://orcid.org/0000-0002-0253-2639"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Jonkers, Lukas", "raw_affiliation_strings":
+        ["MARUM, Germany"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+        "MARUM, Germany", "institution_ids": []}]}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5077805126", "display_name": "Michal
+        Ku\u010dera", "orcid": "https://orcid.org/0000-0002-7817-9018"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Kucera,
+        Michal", "raw_affiliation_strings": ["MARUM, Germany"], "raw_orcid": null,
+        "affiliations": [{"raw_affiliation_string": "MARUM, Germany", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5069158253",
+        "display_name": "Azumi Kuroyanagi", "orcid": "https://orcid.org/0000-0003-2997-4864"},
+        "institutions": [{"id": "https://openalex.org/I201537933", "display_name":
+        "Tohoku University", "ror": "https://ror.org/01dq60k83", "country_code": "JP",
+        "type": "education", "lineage": ["https://openalex.org/I201537933"]}], "countries":
+        ["JP"], "is_corresponding": false, "raw_author_name": "Kuroyanagi, Azumi",
+        "raw_affiliation_strings": ["Tohoku Univ., Japan"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "Tohoku Univ., Japan", "institution_ids": ["https://openalex.org/I201537933"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5045587908",
+        "display_name": "Julie Meilland", "orcid": "https://orcid.org/0000-0001-8966-3115"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Meilland, Julie", "raw_affiliation_strings": ["MARUM, Germany"], "raw_orcid":
+        null, "affiliations": [{"raw_affiliation_string": "MARUM, Germany", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5069213966",
+        "display_name": "Fanny Monteiro", "orcid": "https://orcid.org/0000-0002-8790-0188"},
+        "institutions": [{"id": "https://openalex.org/I2801935073", "display_name":
+        "London Bridge Hospital", "ror": "https://ror.org/03asev112", "country_code":
+        "GB", "type": "healthcare", "lineage": ["https://openalex.org/I2801935073"]}],
+        "countries": ["GB"], "is_corresponding": false, "raw_author_name": "Monteiro,
+        Fanny", "raw_affiliation_strings": ["BRIDGE, UK"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "BRIDGE, UK", "institution_ids": ["https://openalex.org/I2801935073"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5051620631",
+        "display_name": "P. Graham Mortyn", "orcid": "https://orcid.org/0000-0002-9473-4309"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Mortyn, Graham", "raw_affiliation_strings": ["ICTA UAB, Spain"], "raw_orcid":
+        null, "affiliations": [{"raw_affiliation_string": "ICTA UAB, Spain", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5044744401",
+        "display_name": "Ahuva Almogi\u2010Labin", "orcid": "https://orcid.org/0000-0002-4082-7120"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Almogi-Labin Ahuva", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5035209316",
+        "display_name": "Asahi Hirofumi", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Asahi Hirofumi", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094339438", "display_name": "Avnaim-Katav
+        Simona", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Avnaim-Katav Simona", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5014864877", "display_name": "Bassinot
+        Franck", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Bassinot Franck", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5094339439", "display_name": "Davis Catherine
+        V.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Davis Catherine V.", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094328424", "display_name": "Field
+        David B.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Field David B.", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5094339441", "display_name": "Hernandez-Almeida
+        Ivan", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Hernandez-Almeida Ivan", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5063999000", "display_name": "Barak
+        Herut", "orcid": "https://orcid.org/0000-0002-7093-8753"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Herut
+        Barak", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5114142195",
+        "display_name": "Hosie Graham", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Hosie Graham", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094328426", "display_name": "Howard
+        Will", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Howard Will", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5094328427", "display_name": "Jentzen Anna", "orcid":
+        null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Jentzen Anna", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5013394378",
+        "display_name": "Johns David G.", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Johns David G.", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5113159124", "display_name": "Keigwin
+        Lloyd", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Keigwin Lloyd", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5111160637", "display_name": "Kitchener John",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Kitchener John", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5113158964", "display_name": "Kohfeld Karen E.", "orcid":
+        null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Kohfeld Karen E.", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5094328428",
+        "display_name": "Lessa Douglas V.O.", "orcid": null}, "institutions": [],
+        "countries": [], "is_corresponding": false, "raw_author_name": "Lessa Douglas
+        V.O.", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5007316649",
+        "display_name": "Clara Manno", "orcid": "https://orcid.org/0000-0002-3337-6173"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Manno Clara", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5094328429",
+        "display_name": "Marchant Margarita", "orcid": null}, "institutions": [],
+        "countries": [], "is_corresponding": false, "raw_author_name": "Marchant Margarita",
+        "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5094339446", "display_name":
+        "Ofstad Siri", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Ofstad Siri", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5094339447", "display_name": "Ortiz Joseph D.", "orcid":
+        null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Ortiz Joseph D.", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5094339448",
+        "display_name": "Post Alexandra", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Post Alexandra", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094328433", "display_name": "Rigual-Hernandez
+        Andres", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Rigual-Hernandez Andres", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5104269714", "display_name": "Rillo
+        Marina C.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Rillo Marina C.", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5046417002", "display_name": "Robinson Karen",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Robinson Karen", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5045534050", "display_name": "Takuya Sagawa", "orcid":
+        "https://orcid.org/0000-0002-1767-9158"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Sagawa Takuya", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5089908985", "display_name": "Sierro
+        Francisco", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Sierro Francisco", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5108146204", "display_name": "Takahashi Kunio
+        T.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Takahashi Kunio T.", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5111159737", "display_name": "Torfstein
+        Adi", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Torfstein Adi", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5094328434", "display_name": "Venancio Igor",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Venancio Igor", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5036451745", "display_name": "Makoto Yamasaki", "orcid":
+        "https://orcid.org/0000-0003-4810-3343"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Yamasaki Makoto", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5094339451", "display_name": "Ziveri Patrizia",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Ziveri Patrizia", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}], "institutions": [], "countries_distinct_count":
+        5, "institutions_distinct_count": 47, "corresponding_author_ids": ["https://openalex.org/A5052437613"],
+        "corresponding_institution_ids": ["https://openalex.org/I4210104942"], "apc_list":
+        null, "apc_paid": null, "fwci": null, "has_fulltext": false, "cited_by_count":
+        2, "citation_normalized_percentile": null, "cited_by_percentile_year": null,
+        "biblio": {"volume": null, "issue": null, "first_page": null, "last_page":
+        null}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
+        {"id": "https://openalex.org/T10017", "display_name": "Geology and Paleoclimatology
+        Research", "score": 0.9987000226974487, "subfield": {"id": "https://openalex.org/subfields/1902",
+        "display_name": "Atmospheric Science"}, "field": {"id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10017",
+        "display_name": "Geology and Paleoclimatology Research", "score": 0.9987000226974487,
+        "subfield": {"id": "https://openalex.org/subfields/1902", "display_name":
+        "Atmospheric Science"}, "field": {"id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T12073",
+        "display_name": "Isotope Analysis in Ecology", "score": 0.996999979019165,
+        "subfield": {"id": "https://openalex.org/subfields/2303", "display_name":
+        "Ecology"}, "field": {"id": "https://openalex.org/fields/23", "display_name":
+        "Environmental Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10995",
+        "display_name": "Methane Hydrates and Related Phenomena", "score": 0.9872000217437744,
+        "subfield": {"id": "https://openalex.org/subfields/2304", "display_name":
+        "Environmental Chemistry"}, "field": {"id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/foraminifera",
+        "display_name": "Foraminifera", "score": 0.9293262958526611}, {"id": "https://openalex.org/keywords/census",
+        "display_name": "Census", "score": 0.7475722432136536}, {"id": "https://openalex.org/keywords/oceanography",
+        "display_name": "Oceanography", "score": 0.6683300137519836}, {"id": "https://openalex.org/keywords/plankton",
+        "display_name": "Plankton", "score": 0.6293720006942749}, {"id": "https://openalex.org/keywords/geography",
+        "display_name": "Geography", "score": 0.42870327830314636}, {"id": "https://openalex.org/keywords/geology",
+        "display_name": "Geology", "score": 0.30780020356178284}, {"id": "https://openalex.org/keywords/benthic-zone",
+        "display_name": "Benthic zone", "score": 0.17408865690231323}, {"id": "https://openalex.org/keywords/demography",
+        "display_name": "Demography", "score": 0.07406452298164368}, {"id": "https://openalex.org/keywords/population",
+        "display_name": "Population", "score": 0.05971032381057739}, {"id": "https://openalex.org/keywords/sociology",
+        "display_name": "Sociology", "score": 0.04803845286369324}], "concepts": [{"id":
+        "https://openalex.org/C2780368712", "wikidata": "https://www.wikidata.org/wiki/Q107027",
+        "display_name": "Foraminifera", "level": 3, "score": 0.9293262958526611},
+        {"id": "https://openalex.org/C52130261", "wikidata": "https://www.wikidata.org/wiki/Q39825",
+        "display_name": "Census", "level": 3, "score": 0.7475722432136536}, {"id":
+        "https://openalex.org/C111368507", "wikidata": "https://www.wikidata.org/wiki/Q43518",
+        "display_name": "Oceanography", "level": 1, "score": 0.6683300137519836},
+        {"id": "https://openalex.org/C108469399", "wikidata": "https://www.wikidata.org/wiki/Q25367",
+        "display_name": "Plankton", "level": 2, "score": 0.6293720006942749}, {"id":
+        "https://openalex.org/C205649164", "wikidata": "https://www.wikidata.org/wiki/Q1071",
+        "display_name": "Geography", "level": 0, "score": 0.42870327830314636}, {"id":
+        "https://openalex.org/C127313418", "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology", "level": 0, "score": 0.30780020356178284}, {"id":
+        "https://openalex.org/C83042747", "wikidata": "https://www.wikidata.org/wiki/Q686881",
+        "display_name": "Benthic zone", "level": 2, "score": 0.17408865690231323},
+        {"id": "https://openalex.org/C149923435", "wikidata": "https://www.wikidata.org/wiki/Q37732",
+        "display_name": "Demography", "level": 1, "score": 0.07406452298164368}, {"id":
+        "https://openalex.org/C2908647359", "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+        "display_name": "Population", "level": 2, "score": 0.05971032381057739}, {"id":
+        "https://openalex.org/C144024400", "wikidata": "https://www.wikidata.org/wiki/Q21201",
+        "display_name": "Sociology", "level": 0, "score": 0.04803845286369324}], "mesh":
+        [], "locations_count": 2, "locations": [{"id": "pmh:oai:HAL:hal-05103254v1",
+        "is_oa": true, "landing_page_url": "https://hal.science/hal-05103254", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306402512", "display_name":
+        "HAL (Le Centre pour la Communication Scientifique Directe)", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;",
+        "raw_type": "Other publications"}, {"id": "doi:10.5281/zenodo.7390791", "is_oa":
+        true, "landing_page_url": "https://doi.org/10.5281/zenodo.7390791", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
+        "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I67311998", "host_organization_name": "European Organization
+        for Nuclear Research", "host_organization_lineage": ["https://openalex.org/I67311998"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
+        false, "is_published": null, "raw_source_name": null, "raw_type": "dataset"}],
+        "best_oa_location": {"id": "pmh:oai:HAL:hal-05103254v1", "is_oa": true, "landing_page_url":
+        "https://hal.science/hal-05103254", "pdf_url": null, "source": {"id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+        false, "host_organization": "https://openalex.org/I1294671590", "host_organization_name":
+        "Centre National de la Recherche Scientifique", "host_organization_lineage":
+        ["https://openalex.org/I1294671590"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion", "is_accepted": false, "is_published": false,
+        "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;", "raw_type":
+        "Other publications"}, "sustainable_development_goals": [], "awards": [],
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+        null, "referenced_works_count": 0, "referenced_works": [], "related_works":
+        ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618", "https://openalex.org/W4246227008",
+        "https://openalex.org/W2268450572", "https://openalex.org/W3095955896", "https://openalex.org/W4253819211",
+        "https://openalex.org/W3083054601", "https://openalex.org/W2381930979", "https://openalex.org/W2953563789",
+        "https://openalex.org/W2024032921"], "abstract_inverted_index": {"The": [0,
+        57, 193, 315, 334], "FORCIS": [1, 58, 300], "(Foraminifera": [2], "Response":
+        [3], "to": [4, 150, 159, 173, 178, 182, 219, 227], "Climatic": [5], "Stress)":
+        [6], "database": [7, 38, 59, 301, 316], "is": [8, 62, 105, 200, 317], "a":
+        [9], "synthesis": [10], "grouping": [11], "datasets": [12], "on": [13, 166,
+        212], "living": [14], "planktonic": [15], "foraminifera.": [16], "We": [17,
+        175, 235], "assembled": [18], "foraminiferal": [19], "diversity": [20], "and":
+        [21, 34, 50, 132, 245, 265, 267, 324, 351], "distribution": [22], "data":
+        [23, 40, 70, 84, 100, 103, 123, 254, 307], "in": [24, 203, 248, 258, 261,
+        269, 331], "the": [25, 54, 83, 86, 89, 96, 102, 107, 119, 125, 137, 167, 204,
+        213, 238, 249, 262, 270, 299, 306, 325, 340, 346], "global": [26, 55], "oceans":
+        [27], "from": [28, 53, 72, 88, 95, 118, 124, 185], "1910": [29], "until":
+        [30], "2018,": [31], "curating": [32], "published": [33], "unpublished": [35],
+        "datasets.": [36], "This": [37], "includes": [39], "collected": [41], "using":
+        [42], "plankton": [43, 46, 51], "tows,": [44], "continuous": [45], "recorder,":
+        [47], "sediment": [48], "traps": [49], "pump": [52], "ocean.": [56], "version":
+        [60, 327], "01": [61], "composed": [63], "of": [64, 85, 121, 195, 240, 281,
+        291, 336, 339, 348], "5": [65], "files": [66, 140, 343], "(\u201c.csv\u201d":
+        [67], "format).": [68], "All": [69], "coming": [71], "different": [73, 259],
+        "sampling": [74], "devices": [75], "were": [76], "put": [77], "into": [78],
+        "separate": [79], "\u201c.csv\u201d": [80, 342], "files.": [81], "Only": [82],
+        "CPR": [87, 99, 122], "Southern": [90], "Hemisphere": [91, 98, 127], "have":
+        [92], "been": [93], "separated": [94], "Northern": [97, 126], "as": [101],
+        "structure": [104], "not": [106], "same": [108], "(species": [109], "counts":
+        [110, 155, 164, 210, 255], "resolved": [111], "vs.": [112], "binned": [113,
+        133], "total": [114, 134], "counts,": [115, 135], "respectively).": [116],
+        "Apart": [117], "file": [120], "that": [128], "contains": [129], "only": [130],
+        "metadata": [131, 146], "all": [136], "remaining": [138], "four": [139], "contain":
+        [141, 345], "4": [142], "blocks:": [143], "Block": [144, 152, 161, 207], "1:":
+        [145], "(from": [147, 156, 170, 216], "column": [148, 157, 171, 205, 217,
+        250, 302], "1": [149], "71)": [151], "2:": [153], "original": [154], "72":
+        [158], "274)": [160], "3:": [162], "generated": [163, 209], "based": [165,
+        211], "validated": [168], "taxonomy": [169, 187, 215], "275": [172], "331).":
+        [174], "added": [176, 225], "\u201c_VT\u201d": [177], "each": [179, 228],
+        "species": [180, 196, 229, 241], "name": [181], "distinguish": [183], "it":
+        [184, 247], "other": [186], "levels.": [188], "E.g.": [189, 231], "\u201cg_bulloides\u201d":
+        [190], "became": [191, 233], "\u201cg_bulloides_VT\u201d.": [192], "number":
+        [194, 239, 280, 290], "counted": [197, 242], "per": [198, 243], "subsample":
+        [199, 244], "also": [201, 236], "reported": [202, 246, 257], "\u201cnumber_of_species_counted_VT\u201d":
+        [206], "4:": [208], "lumped": [214], "332": [218], "379).": [220], "In": [221],
+        "this": [222], "case,": [223], "we": [224], "\u201c_LT\u201d": [226], "name.":
+        [230], "\u201cn_dutertrei\u201d": [232], "\u201cn_dutertrei_VT\u201d.": [234],
+        "calculated": [237], "\u201cnumber_of_species_counted_LT\u201d": [251], "Foraminifera":
+        [252], "abundance": [253], "are": [256], "categories": [260], "blocks": [263],
+        "1,2": [264], "3": [266], "described": [268], "table": [271], "below:": [272],
+        "count_type": [273], "unit": [274], "Absolute": [275], "ind/m3": [276, 286],
+        "Relative": [277], "%": [278, 288], "Raw": [279], "individuals": [282, 292],
+        "Fluxes": [283], "ind/m2/day": [284, 294], "Bin_Absolute": [285], "Bin_Relative":
+        [287], "Bin_Raw": [289], "Bin_Fluxes": [293], "For": [295], "more": [296],
+        "details": [297], "about": [298], "description,": [303], "please": [304],
+        "check": [305], "descriptor": [308], "paper": [309], "Chaabane": [310], "et":
+        [311], "al.": [312], "(2023)": [313], "(https://doi.org/10.1038/s41597-023-02264-2).":
+        [314], "kept": [318], "open": [319], "for": [320], "any": [321], "new": [322],
+        "entries": [323], "updated": [326, 337], "will": [328, 344], "be": [329],
+        "released": [330, 341], "csv": [332], "format.": [333], "labels": [335], "versions":
+        [338], "date": [347], "their": [349], "publication": [350], "versioning":
+        [352], "number.": [353]}, "counts_by_year": [{"year": 2024, "cited_by_count":
+        1}, {"year": 2023, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
+        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-24 05:16:25
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.5281%2Fzenodo.7390791&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 05:16:26 GMT
+      content-type: application/json
+      cf-ray: a009d4048c4ee1d1-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=j2jIYP6hnUknUke8EV8MYhRDHJFQe3FRUlwU98DITug%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599786"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=j2jIYP6hnUknUke8EV8MYhRDHJFQe3FRUlwU98DITug%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599786"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9934'
+      x-ratelimit-remaining-usd: '0.9934'
+      x-ratelimit-reset: '67414'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 15, "page": null, "per_page":
+        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [{"id": "https://openalex.org/W4393830903", "doi": "https://doi.org/10.5281/zenodo.7390791",
+        "title": "The FORCIS database: A global census of planktonic Foraminifera
+        from ocean waters", "display_name": "The FORCIS database: A global census
+        of planktonic Foraminifera from ocean waters", "publication_year": 2024, "publication_date":
+        "2024-07-11", "ids": {"openalex": "https://openalex.org/W4393830903", "doi":
+        "https://doi.org/10.5281/zenodo.7390791"}, "language": "en", "primary_location":
+        {"id": "pmh:oai:HAL:hal-05103254v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-05103254",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306402512", "display_name":
+        "HAL (Le Centre pour la Communication Scientifique Directe)", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;",
+        "raw_type": "Other publications"}, "type": "dataset", "indexed_in": ["datacite"],
+        "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://hal.science/hal-05103254",
+        "any_repository_has_fulltext": true}, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5052437613", "display_name":
+        "Sonia Chaabane", "orcid": "https://orcid.org/0000-0002-4653-8610"}, "institutions":
+        [{"id": "https://openalex.org/I4210104942", "display_name": "Centre de Recherche
+        et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement", "ror":
+        "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1327553481",
+        "https://openalex.org/I1327553481", "https://openalex.org/I154202486", "https://openalex.org/I154202486",
+        "https://openalex.org/I187986737", "https://openalex.org/I21491767", "https://openalex.org/I21491767",
+        "https://openalex.org/I2746051580", "https://openalex.org/I2799535048", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2802818602", "https://openalex.org/I2802818602", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210090127", "https://openalex.org/I4210093025",
+        "https://openalex.org/I4210104942", "https://openalex.org/I4210113730", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210131494", "https://openalex.org/I4210148025",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4210166444", "https://openalex.org/I4405257220",
+        "https://openalex.org/I4405257220"]}], "countries": ["FR"], "is_corresponding":
+        true, "raw_author_name": "Chaabane, Sonia", "raw_affiliation_strings": ["CEREGE,
+        France and Max Planck, Germany"], "raw_orcid": "https://orcid.org/0000-0002-4653-8610",
+        "affiliations": [{"raw_affiliation_string": "CEREGE, France and Max Planck,
+        Germany", "institution_ids": ["https://openalex.org/I4210104942"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5041069138", "display_name":
+        "Thibault de Garidel\u2010Thoron", "orcid": "https://orcid.org/0000-0001-8983-9571"},
+        "institutions": [{"id": "https://openalex.org/I4210104942", "display_name":
+        "Centre de Recherche et d\u2019Enseignement de G\u00e9osciences de l\u2019Environnement",
+        "ror": "https://ror.org/01pa4h393", "country_code": "FR", "type": "facility",
+        "lineage": ["https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1327553481", "https://openalex.org/I1327553481", "https://openalex.org/I154202486",
+        "https://openalex.org/I154202486", "https://openalex.org/I187986737", "https://openalex.org/I21491767",
+        "https://openalex.org/I21491767", "https://openalex.org/I2746051580", "https://openalex.org/I2799535048",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2802818602", "https://openalex.org/I2802818602",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210090127", "https://openalex.org/I4210090127",
+        "https://openalex.org/I4210093025", "https://openalex.org/I4210104942", "https://openalex.org/I4210113730",
+        "https://openalex.org/I4210113730", "https://openalex.org/I4210131494", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210148025", "https://openalex.org/I4210166444", "https://openalex.org/I4210166444",
+        "https://openalex.org/I4405257220", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "de Garidel,
+        Thibault", "raw_affiliation_strings": ["CEREGE, France"], "raw_orcid": "https://orcid.org/0000-0001-8983-9571",
+        "affiliations": [{"raw_affiliation_string": "CEREGE, France", "institution_ids":
+        ["https://openalex.org/I4210104942"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5111159694", "display_name": "Xavier Giraud",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210104942",
+        "display_name": "Centre de Recherche et d\u2019Enseignement de G\u00e9osciences
+        de l\u2019Environnement", "ror": "https://ror.org/01pa4h393", "country_code":
+        "FR", "type": "facility", "lineage": ["https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1294671590", "https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I1327553481", "https://openalex.org/I1327553481",
+        "https://openalex.org/I154202486", "https://openalex.org/I154202486", "https://openalex.org/I187986737",
+        "https://openalex.org/I21491767", "https://openalex.org/I21491767", "https://openalex.org/I2746051580",
+        "https://openalex.org/I2799535048", "https://openalex.org/I2799535048", "https://openalex.org/I2802818602",
+        "https://openalex.org/I2802818602", "https://openalex.org/I4210088668", "https://openalex.org/I4210088668",
+        "https://openalex.org/I4210088668", "https://openalex.org/I4210088668", "https://openalex.org/I4210090127",
+        "https://openalex.org/I4210090127", "https://openalex.org/I4210093025", "https://openalex.org/I4210104942",
+        "https://openalex.org/I4210113730", "https://openalex.org/I4210113730", "https://openalex.org/I4210131494",
+        "https://openalex.org/I4210131494", "https://openalex.org/I4210148025", "https://openalex.org/I4210166444",
+        "https://openalex.org/I4210166444", "https://openalex.org/I4405257220", "https://openalex.org/I4405257220"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Giraud,
+        Xavier", "raw_affiliation_strings": ["CEREGE, France"], "raw_orcid": "https://orcid.org/0000-0002-6252-7647",
+        "affiliations": [{"raw_affiliation_string": "CEREGE, France", "institution_ids":
+        ["https://openalex.org/I4210104942"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5111159286", "display_name": "Ralf Schiebel",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Schiebel, Ralf", "raw_affiliation_strings": ["Max Planck,
+        Germany"], "raw_orcid": "https://orcid.org/0000-0001-5067-8176", "affiliations":
+        [{"raw_affiliation_string": "Max Planck, Germany", "institution_ids": []}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5058759653",
+        "display_name": "Gr\u00e9gory Beaugrand", "orcid": "https://orcid.org/0000-0002-0712-5223"},
+        "institutions": [{"id": "https://openalex.org/I4210161208", "display_name":
+        "Laboratoire d\u2019Oc\u00e9anologie et de G\u00e9osciences", "ror": "https://ror.org/05m14rs93",
+        "country_code": "FR", "type": "facility", "lineage": ["https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I2279609970", "https://openalex.org/I2802487185",
+        "https://openalex.org/I4210148025", "https://openalex.org/I4210161208"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Beaugrand,
+        Gregory", "raw_affiliation_strings": ["LOG, France"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "LOG, France", "institution_ids": ["https://openalex.org/I4210161208"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5089217409",
+        "display_name": "Geert-Jan A Brummer", "orcid": "https://orcid.org/0000-0003-4145-1281"},
+        "institutions": [{"id": "https://openalex.org/I4210107283", "display_name":
+        "Royal Netherlands Institute for Sea Research", "ror": "https://ror.org/01gntjh03",
+        "country_code": "NL", "type": "facility", "lineage": ["https://openalex.org/I2800991832",
+        "https://openalex.org/I4210107283", "https://openalex.org/I4405262988"]}],
+        "countries": ["NL"], "is_corresponding": false, "raw_author_name": "Brummer,
+        Geert-Jan", "raw_affiliation_strings": ["NIOZ, Netherlands"], "raw_orcid":
+        null, "affiliations": [{"raw_affiliation_string": "NIOZ, Netherlands", "institution_ids":
+        ["https://openalex.org/I4210107283"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5004806463", "display_name": "Nicolas Casajus",
+        "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions": [{"id":
+        "https://openalex.org/I4210151099", "display_name": "Fondation Pour la Recherche
+        Sur la Biodiversit\u00e9", "ror": "https://ror.org/05x5km989", "country_code":
+        "FR", "type": "nonprofit", "lineage": ["https://openalex.org/I4210151099"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Casajus,
+        Nicolas", "raw_affiliation_strings": ["FRB CESAB"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "FRB CESAB", "institution_ids": ["https://openalex.org/I4210151099"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5053519683",
+        "display_name": "Mattia Greco", "orcid": "https://orcid.org/0000-0003-2416-6235"},
+        "institutions": [{"id": "https://openalex.org/I4210134584", "display_name":
+        "Polish Academy of Learning", "ror": "https://ror.org/03q674f15", "country_code":
+        "PL", "type": "government", "lineage": ["https://openalex.org/I4210134584"]},
+        {"id": "https://openalex.org/I99542240", "display_name": "Polish Academy of
+        Sciences", "ror": "https://ror.org/01dr6c206", "country_code": "PL", "type":
+        "government", "lineage": ["https://openalex.org/I99542240"]}], "countries":
+        ["PL"], "is_corresponding": false, "raw_author_name": "Greco, Mattia", "raw_affiliation_strings":
+        ["Polish Academy of Sciences, Poland"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "Polish Academy of Sciences, Poland", "institution_ids":
+        ["https://openalex.org/I4210134584", "https://openalex.org/I99542240"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5079206790",
+        "display_name": "Maria Grigoratou", "orcid": "https://orcid.org/0000-0003-0484-1408"},
+        "institutions": [{"id": "https://openalex.org/I4210118904", "display_name":
+        "Mercator Ocean (France)", "ror": "https://ror.org/02754py23", "country_code":
+        "FR", "type": "company", "lineage": ["https://openalex.org/I4210118904"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Grigoratou,
+        Maria", "raw_affiliation_strings": ["Mercator Ocean International, France"],
+        "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Mercator Ocean
+        International, France", "institution_ids": ["https://openalex.org/I4210118904"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5022320338",
+        "display_name": "H\u00e9l\u00e8ne Howa", "orcid": "https://orcid.org/0000-0003-1532-4211"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Howa, H\u00e9l\u00e8ne", "raw_affiliation_strings": ["LPG-BIAF, France"],
+        "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "LPG-BIAF,
+        France", "institution_ids": []}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5033371043", "display_name": "Lukas Jonkers",
+        "orcid": "https://orcid.org/0000-0002-0253-2639"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Jonkers, Lukas", "raw_affiliation_strings":
+        ["MARUM, Germany"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+        "MARUM, Germany", "institution_ids": []}]}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5077805126", "display_name": "Michal
+        Ku\u010dera", "orcid": "https://orcid.org/0000-0002-7817-9018"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Kucera,
+        Michal", "raw_affiliation_strings": ["MARUM, Germany"], "raw_orcid": null,
+        "affiliations": [{"raw_affiliation_string": "MARUM, Germany", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5069158253",
+        "display_name": "Azumi Kuroyanagi", "orcid": "https://orcid.org/0000-0003-2997-4864"},
+        "institutions": [{"id": "https://openalex.org/I201537933", "display_name":
+        "Tohoku University", "ror": "https://ror.org/01dq60k83", "country_code": "JP",
+        "type": "education", "lineage": ["https://openalex.org/I201537933"]}], "countries":
+        ["JP"], "is_corresponding": false, "raw_author_name": "Kuroyanagi, Azumi",
+        "raw_affiliation_strings": ["Tohoku Univ., Japan"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "Tohoku Univ., Japan", "institution_ids": ["https://openalex.org/I201537933"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5045587908",
+        "display_name": "Julie Meilland", "orcid": "https://orcid.org/0000-0001-8966-3115"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Meilland, Julie", "raw_affiliation_strings": ["MARUM, Germany"], "raw_orcid":
+        null, "affiliations": [{"raw_affiliation_string": "MARUM, Germany", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5069213966",
+        "display_name": "Fanny Monteiro", "orcid": "https://orcid.org/0000-0002-8790-0188"},
+        "institutions": [{"id": "https://openalex.org/I2801935073", "display_name":
+        "London Bridge Hospital", "ror": "https://ror.org/03asev112", "country_code":
+        "GB", "type": "healthcare", "lineage": ["https://openalex.org/I2801935073"]}],
+        "countries": ["GB"], "is_corresponding": false, "raw_author_name": "Monteiro,
+        Fanny", "raw_affiliation_strings": ["BRIDGE, UK"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "BRIDGE, UK", "institution_ids": ["https://openalex.org/I2801935073"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5051620631",
+        "display_name": "P. Graham Mortyn", "orcid": "https://orcid.org/0000-0002-9473-4309"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Mortyn, Graham", "raw_affiliation_strings": ["ICTA UAB, Spain"], "raw_orcid":
+        null, "affiliations": [{"raw_affiliation_string": "ICTA UAB, Spain", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5044744401",
+        "display_name": "Ahuva Almogi\u2010Labin", "orcid": "https://orcid.org/0000-0002-4082-7120"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Almogi-Labin Ahuva", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5035209316",
+        "display_name": "Asahi Hirofumi", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Asahi Hirofumi", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094339438", "display_name": "Avnaim-Katav
+        Simona", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Avnaim-Katav Simona", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5014864877", "display_name": "Bassinot
+        Franck", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Bassinot Franck", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5094339439", "display_name": "Davis Catherine
+        V.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Davis Catherine V.", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094328424", "display_name": "Field
+        David B.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Field David B.", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5094339441", "display_name": "Hernandez-Almeida
+        Ivan", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Hernandez-Almeida Ivan", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5063999000", "display_name": "Barak
+        Herut", "orcid": "https://orcid.org/0000-0002-7093-8753"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Herut
+        Barak", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5114142195",
+        "display_name": "Hosie Graham", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Hosie Graham", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094328426", "display_name": "Howard
+        Will", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Howard Will", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5094328427", "display_name": "Jentzen Anna", "orcid":
+        null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Jentzen Anna", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5013394378",
+        "display_name": "Johns David G.", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Johns David G.", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5113159124", "display_name": "Keigwin
+        Lloyd", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Keigwin Lloyd", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5111160637", "display_name": "Kitchener John",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Kitchener John", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5113158964", "display_name": "Kohfeld Karen E.", "orcid":
+        null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Kohfeld Karen E.", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5094328428",
+        "display_name": "Lessa Douglas V.O.", "orcid": null}, "institutions": [],
+        "countries": [], "is_corresponding": false, "raw_author_name": "Lessa Douglas
+        V.O.", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5007316649",
+        "display_name": "Clara Manno", "orcid": "https://orcid.org/0000-0002-3337-6173"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Manno Clara", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5094328429",
+        "display_name": "Marchant Margarita", "orcid": null}, "institutions": [],
+        "countries": [], "is_corresponding": false, "raw_author_name": "Marchant Margarita",
+        "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5094339446", "display_name":
+        "Ofstad Siri", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Ofstad Siri", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5094339447", "display_name": "Ortiz Joseph D.", "orcid":
+        null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Ortiz Joseph D.", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5094339448",
+        "display_name": "Post Alexandra", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Post Alexandra", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5094328433", "display_name": "Rigual-Hernandez
+        Andres", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Rigual-Hernandez Andres", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5104269714", "display_name": "Rillo
+        Marina C.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Rillo Marina C.", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5046417002", "display_name": "Robinson Karen",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Robinson Karen", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5045534050", "display_name": "Takuya Sagawa", "orcid":
+        "https://orcid.org/0000-0002-1767-9158"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Sagawa Takuya", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5089908985", "display_name": "Sierro
+        Francisco", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Sierro Francisco", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5108146204", "display_name": "Takahashi Kunio
+        T.", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Takahashi Kunio T.", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5111159737", "display_name": "Torfstein
+        Adi", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Torfstein Adi", "raw_affiliation_strings": [],
+        "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5094328434", "display_name": "Venancio Igor",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Venancio Igor", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}, {"author_position": "middle", "author": {"id":
+        "https://openalex.org/A5036451745", "display_name": "Makoto Yamasaki", "orcid":
+        "https://orcid.org/0000-0003-4810-3343"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Yamasaki Makoto", "raw_affiliation_strings":
+        [], "raw_orcid": null, "affiliations": []}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5094339451", "display_name": "Ziveri Patrizia",
+        "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
+        "raw_author_name": "Ziveri Patrizia", "raw_affiliation_strings": [], "raw_orcid":
+        null, "affiliations": []}], "institutions": [], "countries_distinct_count":
+        5, "institutions_distinct_count": 47, "corresponding_author_ids": ["https://openalex.org/A5052437613"],
+        "corresponding_institution_ids": ["https://openalex.org/I4210104942"], "apc_list":
+        null, "apc_paid": null, "fwci": null, "has_fulltext": false, "cited_by_count":
+        2, "citation_normalized_percentile": null, "cited_by_percentile_year": null,
+        "biblio": {"volume": null, "issue": null, "first_page": null, "last_page":
+        null}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
+        {"id": "https://openalex.org/T10017", "display_name": "Geology and Paleoclimatology
+        Research", "score": 0.9987000226974487, "subfield": {"id": "https://openalex.org/subfields/1902",
+        "display_name": "Atmospheric Science"}, "field": {"id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10017",
+        "display_name": "Geology and Paleoclimatology Research", "score": 0.9987000226974487,
+        "subfield": {"id": "https://openalex.org/subfields/1902", "display_name":
+        "Atmospheric Science"}, "field": {"id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T12073",
+        "display_name": "Isotope Analysis in Ecology", "score": 0.996999979019165,
+        "subfield": {"id": "https://openalex.org/subfields/2303", "display_name":
+        "Ecology"}, "field": {"id": "https://openalex.org/fields/23", "display_name":
+        "Environmental Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10995",
+        "display_name": "Methane Hydrates and Related Phenomena", "score": 0.9872000217437744,
+        "subfield": {"id": "https://openalex.org/subfields/2304", "display_name":
+        "Environmental Chemistry"}, "field": {"id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/foraminifera",
+        "display_name": "Foraminifera", "score": 0.9293262958526611}, {"id": "https://openalex.org/keywords/census",
+        "display_name": "Census", "score": 0.7475722432136536}, {"id": "https://openalex.org/keywords/oceanography",
+        "display_name": "Oceanography", "score": 0.6683300137519836}, {"id": "https://openalex.org/keywords/plankton",
+        "display_name": "Plankton", "score": 0.6293720006942749}, {"id": "https://openalex.org/keywords/geography",
+        "display_name": "Geography", "score": 0.42870327830314636}, {"id": "https://openalex.org/keywords/geology",
+        "display_name": "Geology", "score": 0.30780020356178284}, {"id": "https://openalex.org/keywords/benthic-zone",
+        "display_name": "Benthic zone", "score": 0.17408865690231323}, {"id": "https://openalex.org/keywords/demography",
+        "display_name": "Demography", "score": 0.07406452298164368}, {"id": "https://openalex.org/keywords/population",
+        "display_name": "Population", "score": 0.05971032381057739}, {"id": "https://openalex.org/keywords/sociology",
+        "display_name": "Sociology", "score": 0.04803845286369324}], "concepts": [{"id":
+        "https://openalex.org/C2780368712", "wikidata": "https://www.wikidata.org/wiki/Q107027",
+        "display_name": "Foraminifera", "level": 3, "score": 0.9293262958526611},
+        {"id": "https://openalex.org/C52130261", "wikidata": "https://www.wikidata.org/wiki/Q39825",
+        "display_name": "Census", "level": 3, "score": 0.7475722432136536}, {"id":
+        "https://openalex.org/C111368507", "wikidata": "https://www.wikidata.org/wiki/Q43518",
+        "display_name": "Oceanography", "level": 1, "score": 0.6683300137519836},
+        {"id": "https://openalex.org/C108469399", "wikidata": "https://www.wikidata.org/wiki/Q25367",
+        "display_name": "Plankton", "level": 2, "score": 0.6293720006942749}, {"id":
+        "https://openalex.org/C205649164", "wikidata": "https://www.wikidata.org/wiki/Q1071",
+        "display_name": "Geography", "level": 0, "score": 0.42870327830314636}, {"id":
+        "https://openalex.org/C127313418", "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology", "level": 0, "score": 0.30780020356178284}, {"id":
+        "https://openalex.org/C83042747", "wikidata": "https://www.wikidata.org/wiki/Q686881",
+        "display_name": "Benthic zone", "level": 2, "score": 0.17408865690231323},
+        {"id": "https://openalex.org/C149923435", "wikidata": "https://www.wikidata.org/wiki/Q37732",
+        "display_name": "Demography", "level": 1, "score": 0.07406452298164368}, {"id":
+        "https://openalex.org/C2908647359", "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+        "display_name": "Population", "level": 2, "score": 0.05971032381057739}, {"id":
+        "https://openalex.org/C144024400", "wikidata": "https://www.wikidata.org/wiki/Q21201",
+        "display_name": "Sociology", "level": 0, "score": 0.04803845286369324}], "mesh":
+        [], "locations_count": 2, "locations": [{"id": "pmh:oai:HAL:hal-05103254v1",
+        "is_oa": true, "landing_page_url": "https://hal.science/hal-05103254", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306402512", "display_name":
+        "HAL (Le Centre pour la Communication Scientifique Directe)", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;",
+        "raw_type": "Other publications"}, {"id": "doi:10.5281/zenodo.7390791", "is_oa":
+        true, "landing_page_url": "https://doi.org/10.5281/zenodo.7390791", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
+        "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I67311998", "host_organization_name": "European Organization
+        for Nuclear Research", "host_organization_lineage": ["https://openalex.org/I67311998"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
+        false, "is_published": null, "raw_source_name": null, "raw_type": "dataset"}],
+        "best_oa_location": {"id": "pmh:oai:HAL:hal-05103254v1", "is_oa": true, "landing_page_url":
+        "https://hal.science/hal-05103254", "pdf_url": null, "source": {"id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+        false, "host_organization": "https://openalex.org/I1294671590", "host_organization_name":
+        "Centre National de la Recherche Scientifique", "host_organization_lineage":
+        ["https://openalex.org/I1294671590"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion", "is_accepted": false, "is_published": false,
+        "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;", "raw_type":
+        "Other publications"}, "sustainable_development_goals": [], "awards": [],
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+        null, "referenced_works_count": 0, "referenced_works": [], "related_works":
+        ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618", "https://openalex.org/W4246227008",
+        "https://openalex.org/W2268450572", "https://openalex.org/W3095955896", "https://openalex.org/W4253819211",
+        "https://openalex.org/W3083054601", "https://openalex.org/W2381930979", "https://openalex.org/W2953563789",
+        "https://openalex.org/W2024032921"], "abstract_inverted_index": {"The": [0,
+        57, 193, 315, 334], "FORCIS": [1, 58, 300], "(Foraminifera": [2], "Response":
+        [3], "to": [4, 150, 159, 173, 178, 182, 219, 227], "Climatic": [5], "Stress)":
+        [6], "database": [7, 38, 59, 301, 316], "is": [8, 62, 105, 200, 317], "a":
+        [9], "synthesis": [10], "grouping": [11], "datasets": [12], "on": [13, 166,
+        212], "living": [14], "planktonic": [15], "foraminifera.": [16], "We": [17,
+        175, 235], "assembled": [18], "foraminiferal": [19], "diversity": [20], "and":
+        [21, 34, 50, 132, 245, 265, 267, 324, 351], "distribution": [22], "data":
+        [23, 40, 70, 84, 100, 103, 123, 254, 307], "in": [24, 203, 248, 258, 261,
+        269, 331], "the": [25, 54, 83, 86, 89, 96, 102, 107, 119, 125, 137, 167, 204,
+        213, 238, 249, 262, 270, 299, 306, 325, 340, 346], "global": [26, 55], "oceans":
+        [27], "from": [28, 53, 72, 88, 95, 118, 124, 185], "1910": [29], "until":
+        [30], "2018,": [31], "curating": [32], "published": [33], "unpublished": [35],
+        "datasets.": [36], "This": [37], "includes": [39], "collected": [41], "using":
+        [42], "plankton": [43, 46, 51], "tows,": [44], "continuous": [45], "recorder,":
+        [47], "sediment": [48], "traps": [49], "pump": [52], "ocean.": [56], "version":
+        [60, 327], "01": [61], "composed": [63], "of": [64, 85, 121, 195, 240, 281,
+        291, 336, 339, 348], "5": [65], "files": [66, 140, 343], "(\u201c.csv\u201d":
+        [67], "format).": [68], "All": [69], "coming": [71], "different": [73, 259],
+        "sampling": [74], "devices": [75], "were": [76], "put": [77], "into": [78],
+        "separate": [79], "\u201c.csv\u201d": [80, 342], "files.": [81], "Only": [82],
+        "CPR": [87, 99, 122], "Southern": [90], "Hemisphere": [91, 98, 127], "have":
+        [92], "been": [93], "separated": [94], "Northern": [97, 126], "as": [101],
+        "structure": [104], "not": [106], "same": [108], "(species": [109], "counts":
+        [110, 155, 164, 210, 255], "resolved": [111], "vs.": [112], "binned": [113,
+        133], "total": [114, 134], "counts,": [115, 135], "respectively).": [116],
+        "Apart": [117], "file": [120], "that": [128], "contains": [129], "only": [130],
+        "metadata": [131, 146], "all": [136], "remaining": [138], "four": [139], "contain":
+        [141, 345], "4": [142], "blocks:": [143], "Block": [144, 152, 161, 207], "1:":
+        [145], "(from": [147, 156, 170, 216], "column": [148, 157, 171, 205, 217,
+        250, 302], "1": [149], "71)": [151], "2:": [153], "original": [154], "72":
+        [158], "274)": [160], "3:": [162], "generated": [163, 209], "based": [165,
+        211], "validated": [168], "taxonomy": [169, 187, 215], "275": [172], "331).":
+        [174], "added": [176, 225], "\u201c_VT\u201d": [177], "each": [179, 228],
+        "species": [180, 196, 229, 241], "name": [181], "distinguish": [183], "it":
+        [184, 247], "other": [186], "levels.": [188], "E.g.": [189, 231], "\u201cg_bulloides\u201d":
+        [190], "became": [191, 233], "\u201cg_bulloides_VT\u201d.": [192], "number":
+        [194, 239, 280, 290], "counted": [197, 242], "per": [198, 243], "subsample":
+        [199, 244], "also": [201, 236], "reported": [202, 246, 257], "\u201cnumber_of_species_counted_VT\u201d":
+        [206], "4:": [208], "lumped": [214], "332": [218], "379).": [220], "In": [221],
+        "this": [222], "case,": [223], "we": [224], "\u201c_LT\u201d": [226], "name.":
+        [230], "\u201cn_dutertrei\u201d": [232], "\u201cn_dutertrei_VT\u201d.": [234],
+        "calculated": [237], "\u201cnumber_of_species_counted_LT\u201d": [251], "Foraminifera":
+        [252], "abundance": [253], "are": [256], "categories": [260], "blocks": [263],
+        "1,2": [264], "3": [266], "described": [268], "table": [271], "below:": [272],
+        "count_type": [273], "unit": [274], "Absolute": [275], "ind/m3": [276, 286],
+        "Relative": [277], "%": [278, 288], "Raw": [279], "individuals": [282, 292],
+        "Fluxes": [283], "ind/m2/day": [284, 294], "Bin_Absolute": [285], "Bin_Relative":
+        [287], "Bin_Raw": [289], "Bin_Fluxes": [293], "For": [295], "more": [296],
+        "details": [297], "about": [298], "description,": [303], "please": [304],
+        "check": [305], "descriptor": [308], "paper": [309], "Chaabane": [310], "et":
+        [311], "al.": [312], "(2023)": [313], "(https://doi.org/10.1038/s41597-023-02264-2).":
+        [314], "kept": [318], "open": [319], "for": [320], "any": [321], "new": [322],
+        "entries": [323], "updated": [326, 337], "will": [328, 344], "be": [329],
+        "released": [330, 341], "csv": [332], "format.": [333], "labels": [335], "versions":
+        [338], "date": [347], "their": [349], "publication": [350], "versioning":
+        [352], "number.": [353]}, "counts_by_year": [{"year": 2024, "cited_by_count":
+        1}, {"year": 2023, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
+        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-24 05:16:26
+recorded_with: VCR-vcr/2.1.0

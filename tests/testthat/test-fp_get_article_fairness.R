@@ -7,14 +7,11 @@ dois <- c(
   "10.21105/joss.05753"
 )
 
-doi_na <- c("string", NA)
-doi_na <- doi_na[-1]
-
+doi_na <- NA_character_
 doi_not_in_oa <- "https://doi.org/10.xxxx/xxxx"
-
 doi_not_in_dafnee <- "10.5281/zenodo.7390791"
 
-test_that("Test fp_get_article_fairness() for error", {
+test_that("Test fp_get_article_fairness() errors - No API query", {
   # Argument missing
   expect_error(
     fp_get_article_fairness(),
@@ -83,11 +80,6 @@ test_that("Test fp_get_article_fairness() for error", {
     fixed = TRUE
   )
 
-  # Set API email
-  withr::local_options(
-    list("openalexR.mailto" = "anonymous@mail.com")
-  )
-
   # Only NA in DOI
   expect_error(
     fp_get_article_fairness(doi_na),
@@ -96,16 +88,15 @@ test_that("Test fp_get_article_fairness() for error", {
   )
 })
 
-test_that("Test fp_get_article_fairness() for success", {
-  needs_api()
-
-  # Set API email
+test_that("Test fp_get_article_fairness() works - With API query", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
   # Test for NP journal
-  expect_silent(res <- fp_get_article_fairness(dois[1]))
+  vcr::use_cassette("fp_get_article_fairness_np", {
+    expect_silent(res <- fp_get_article_fairness(dois[1]))
+  })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -118,7 +109,9 @@ test_that("Test fp_get_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "Non-profit and academic friendly")
 
   # Test for FP & academic journal
-  expect_silent(res <- fp_get_article_fairness(dois[2]))
+  vcr::use_cassette("fp_get_article_fairness_fp_acad", {
+    expect_silent(res <- fp_get_article_fairness(dois[2]))
+  })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -131,7 +124,9 @@ test_that("Test fp_get_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "For-profit and academic friendly")
 
   # Test for FP & non-academic journal
-  expect_silent(res <- fp_get_article_fairness(dois[3]))
+  vcr::use_cassette("fp_get_article_fairness_fp_non_acad", {
+    expect_silent(res <- fp_get_article_fairness(dois[3]))
+  })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -144,7 +139,9 @@ test_that("Test fp_get_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "For-profit and non-academic friendly")
 
   # Test for not found in OpenAlex
-  expect_silent(res <- fp_get_article_fairness(dois[4]))
+  vcr::use_cassette("fp_get_article_fairness_not_in_oa", {
+    expect_silent(res <- fp_get_article_fairness(dois[4]))
+  })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)
@@ -157,7 +154,9 @@ test_that("Test fp_get_article_fairness() for success", {
   expect_equal(res[1, "fairness"], "Record not found in OpenAlex")
 
   # Test for not found in OpenAlex
-  expect_silent(res <- fp_get_article_fairness(dois[5]))
+  vcr::use_cassette("fp_get_article_fairness_not_in_dafnee", {
+    expect_silent(res <- fp_get_article_fairness(dois[5]))
+  })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(ncol(res), 2L)

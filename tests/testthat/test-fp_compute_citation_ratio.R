@@ -8,14 +8,11 @@ dois <- c(
   NA
 )
 
-doi_na <- c("string", rep(NA, 3))
-doi_na <- doi_na[-1]
+doi_na <- rep(NA_character_, 3)
+doi_not_in_oa <- "https://doi.org/10.xxxx/xxxx"
+doi_not_in_dafnee <- "10.5281/zenodo.7390791"
 
-doi_not_in_oa <- c("https://doi.org/10.xxxx/xxxx")
-
-doi_not_in_dafnee <- c("10.5281/zenodo.7390791")
-
-test_that("Test fp_compute_citation_ratio() for error (no API query)", {
+test_that("Test fp_compute_citation_ratio() errors - No API query", {
   # Argument missing
   expect_error(
     fp_compute_citation_ratio(),
@@ -97,36 +94,36 @@ test_that("Test fp_compute_citation_ratio() for error (no API query)", {
   )
 })
 
-test_that("Test fp_compute_citation_ratio() for error (w/ API queries)", {
-  needs_api()
-
-  # Set API email
+test_that("Test fp_compute_citation_ratio() errors - With API query)", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  expect_error(
-    fp_compute_citation_ratio(doi_not_in_oa),
-    "No record found in OpenAlex",
-    fixed = TRUE
-  )
+  vcr::use_cassette("fp_compute_citation_ratio_not_in_oa", {
+    expect_error(
+      fp_compute_citation_ratio(doi_not_in_oa),
+      "No record found in OpenAlex",
+      fixed = TRUE
+    )
+  })
 
-  expect_error(
-    fp_compute_citation_ratio(doi_not_in_dafnee),
-    "No record found in DAFNEE database",
-    fixed = TRUE
-  )
+  vcr::use_cassette("fp_compute_citation_ratio_not_in_dafnee", {
+    expect_error(
+      fp_compute_citation_ratio(doi_not_in_dafnee),
+      "No record found in DAFNEE database",
+      fixed = TRUE
+    )
+  })
 })
 
-test_that("Test fp_compute_citation_ratio() for success", {
-  needs_api()
-
-  # Set API email
+test_that("Test fp_compute_citation_ratio() works", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  expect_silent(ratios <- fp_compute_citation_ratio(dois))
+  vcr::use_cassette("fp_compute_citation_ratio_works", {
+    expect_silent(ratios <- fp_compute_citation_ratio(dois))
+  })
 
   # Check list
   expect_true(inherits(ratios, "list"))

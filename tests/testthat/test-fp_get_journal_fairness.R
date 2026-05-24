@@ -6,11 +6,10 @@ journals <- c(
   "Ecology Letters"
 )
 
-journal_na <- c("string", NA)
-journal_na <- journal_na[-1]
+journal_na <- NA_character_
 
 
-test_that("Test fp_get_journal_fairness() for error", {
+test_that("Test fp_get_journal_fairness() errors", {
   # Argument missing
   expect_error(
     fp_get_journal_fairness(),
@@ -64,7 +63,7 @@ test_that("Test fp_get_journal_fairness() for error", {
   )
 })
 
-test_that("Test fp_get_journal_fairness() for success", {
+test_that("Test fp_get_journal_fairness() works", {
   # Test for exact match
   expect_silent(res <- fp_get_journal_fairness(journals[1]))
 
