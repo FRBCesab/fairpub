@@ -205,6 +205,8 @@ compute the citation ratio of a list of articles.
 
 Functions to retrieve, extract and clean DOI.
 
+- [`fp_retrieve_article_doi()`](https://frbcesab.github.io/fairpub/reference/fp_retrieve_article_doi.md)
+  : Retrieve the DOI of an article from OpenAlex
 - [`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.md)
   : Extract DOI from a BibTeX file or a string
 - [`fp_clean_doi()`](https://frbcesab.github.io/fairpub/reference/fp_clean_doi.md)
