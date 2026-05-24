@@ -24,30 +24,10 @@
 #' fp_extract_doi(filename)
 
 fp_extract_doi <- function(file) {
-  ## Check args ----
+  check_arg_file(file)
 
-  if (missing(file)) {
-    stop("Argument 'file' is required")
-  }
-
-  if (is.null(file)) {
-    stop("Argument 'file' is required")
-  }
-
-  if (!is.character(file)) {
-    stop("Argument 'file' must be a character (BibTeX file name)")
-  }
-
-  if (length(file) != 1) {
-    stop("Argument 'file' must be of length 1 (one BibTeX file)")
-  }
-
-  if (!file.exists(file)) {
-    stop("The file '", file, "' does not exist")
-  }
-
-  file |> 
-    fp_read_bibtex() |> 
-    fp_extract_doi_from_bibentry() |> 
+  file |>
+    fp_read_bibtex() |>
+    fp_extract_doi_from_bibentry() |>
     fp_clean_doi()
 }
