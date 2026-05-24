@@ -1,7 +1,7 @@
 ## fp_extract_doi() ----
 
 test_that("fp_extract_doi() works", {
-  expect_silent(res <- fp_extract_doi(filename))
+  expect_silent(res <- fp_extract_doi(file = filename))
 
   expect_true(inherits(res, "character"))
   expect_equal(length(res), 38L)

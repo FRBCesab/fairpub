@@ -1,9 +1,5 @@
 #' @noRd
 check_arg_file <- function(file) {
-  if (missing(file)) {
-    stop("Argument 'file' is required", call. = FALSE)
-  }
-
   if (is.null(file)) {
     stop("Argument 'file' is required", call. = FALSE)
   }
@@ -39,6 +35,38 @@ check_arg_doi <- function(doi) {
 
   if (!is.character(doi)) {
     stop("Argument 'doi' must be a character", call. = FALSE)
+  }
+
+  invisible(NULL)
+}
+
+
+#' @noRd
+check_exactly_one_arg <- function(x, file) {
+  n <- sum(!is.null(x), !is.null(file))
+
+  if (n != 1) {
+    stop(
+      "You must supply exactly one of 'x' or 'file'",
+      call. = FALSE
+    )
+  }
+
+  invisible(NULL)
+}
+
+
+#' @noRd
+check_arg_string <- function(x) {
+  if (is.null(x)) {
+    stop("Argument 'x' is required", call. = FALSE)
+  }
+
+  if (!is.character(x)) {
+    stop(
+      "Argument 'x' must be a character",
+      call. = FALSE
+    )
   }
 
   invisible(NULL)

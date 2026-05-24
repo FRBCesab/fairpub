@@ -2,12 +2,6 @@
 
 test_that("check_arg_file() errors - Wrong type", {
   expect_error(
-    check_arg_file(),
-    "Argument 'file' is required",
-    fixed = TRUE
-  )
-
-  expect_error(
     check_arg_file(NULL),
     "Argument 'file' is required",
     fixed = TRUE

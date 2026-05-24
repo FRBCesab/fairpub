@@ -4,8 +4,8 @@
   if (is.null(x)) y else x
 }
 
-#' @noRd
 
+#' @noRd
 fp_check_mailto <- function() {
   if (is.null(options()$"openalexR.mailto")) {
     stop(
@@ -18,6 +18,12 @@ fp_check_mailto <- function() {
 }
 
 #' @noRd
+fp_read_bibtex <- function(file) {
+  bibtex::read.bib(file)
+}
+
+
+#' @noRd
 fp_extract_doi_from_bibentry <- function(bibentry) {
   vapply(
     bibentry,
@@ -27,7 +33,13 @@ fp_extract_doi_from_bibentry <- function(bibentry) {
   )
 }
 
+
 #' @noRd
-fp_read_bibtex <- function(file) {
-  bibtex::read.bib(file)
+fp_extract_doi_from_string <- function(x) {
+  matches <- regmatches(
+    x,
+    gregexpr(.DOI_REGEX, x, perl = TRUE, ignore.case = TRUE)
+  )
+
+  unlist(matches, use.names = FALSE)
 }

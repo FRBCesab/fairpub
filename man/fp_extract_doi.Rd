@@ -2,29 +2,52 @@
 % Please edit documentation in R/fp_extract_doi.R
 \name{fp_extract_doi}
 \alias{fp_extract_doi}
-\title{Extract DOI from a BibTeX file}
+\title{Extract DOI from a BibTeX file or a string}
 \usage{
-fp_extract_doi(file)
+fp_extract_doi(x = NULL, file = NULL)
 }
 \arguments{
-\item{file}{a \code{character} of length 1. The (absolute or relative) path to
-the BibTeX file to open.}
+\item{x}{a \code{character} vector. A string containing bibliographic records.}
+
+\item{file}{a \code{character} of length 1. The path to the BibTeX file to open.}
 }
 \value{
 A \code{character} vector with extracted DOI. Some values can be \code{NA} in case of
-books, chapters, etc. or if references are malformed.
+books, chapters, etc. or if references are malformed in the BibTeX.
 }
 \description{
-This function reads a BibTex file and extracts the DOI of references (if
-originally present in the file).
+This function detects and extracts DOI from bibliographic records. User can
+provides either a \code{character} vector (argument \code{x}) or the path to a BibTex
+file (argument \code{file}).
 }
 \examples{
-# Path to the BibTeX provided by <fairpub> ----
+# Argument 'x' (one DOI per element) ----
+string <- c(
+  "Beck M (2026) Citation self-awareness... 10.1093/biosci/biag028.",
+  "Galtier N (2026) Time to publish... DOI: 10.32942/X24933",
+  "Doe J (9999) Title... http://dx.doi.org/10.1162/qss(c)_00305",
+  "Receveur A (2024) David vs Goliath... https://doi.org/10.1111/ele.14395",
+  "Smith J (9999) This is a fake article."
+)
+
+## Extract DOI from a vector ----
+fp_extract_doi(x = string)
+
+# Argument 'x' (many DOI per element) ----
+string <- paste(string, collapse = "\n")
+cat(string)
+
+## Extract DOI from a vector ----
+fp_extract_doi(x = string)
+
+# Argument 'file' ----
+
+## Path to the BibTeX provided by <fairpub> ----
 filename <- system.file(
   file.path("extdata", "references.bib"),
   package = "fairpub"
 )
 
-# Extract DOI from BibTeX ----
-fp_extract_doi(filename)
+## Extract DOI from BibTeX ----
+fp_extract_doi(file = filename)
 }
