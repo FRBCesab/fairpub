@@ -48,22 +48,20 @@ fp_extract_doi <- function(bibtex) {
 
   ## Open BibTeX file ----
 
-  refs <- RefManageR::ReadBib(bibtex)
+  refs <- bibtex::read.bib(bibtex)
 
   ## Extract DOI ----
 
-  dois <- refs$"doi"
-
-  dois <- lapply(dois, function(x) {
-    if (is.null(x)) {
+  dois <- lapply(refs, function(x) {
+    doi <- x$"doi"
+    if (is.null(doi)) {
       return(NA)
     } else {
-      return(x)
+      return(doi)
     }
   })
 
-  dois <- unlist(dois)
-  names(dois) <- NULL
+  dois <- unlist(dois, use.names = FALSE)
 
   ## Clean DOI ----
 
