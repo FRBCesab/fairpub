@@ -1,18 +1,6 @@
-# Test datasets
-dois <- c(
-  "10.1126/science.162.3859.1243",
-  "10.1038/35002501",
-  "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
-  "https://doi.org/10.xxxx/xxxx",
-  "10.5281/zenodo.7390791",
-  NA
-)
+# fp_compute_citation_ratio() ----
 
-doi_na <- rep(NA_character_, 3)
-doi_not_in_oa <- "https://doi.org/10.xxxx/xxxx"
-doi_not_in_dafnee <- "10.5281/zenodo.7390791"
-
-test_that("Test fp_compute_citation_ratio() errors - No API query", {
+test_that("fp_compute_citation_ratio() errors - No API query", {
   # Argument missing
   expect_error(
     fp_compute_citation_ratio(),
@@ -94,7 +82,7 @@ test_that("Test fp_compute_citation_ratio() errors - No API query", {
   )
 })
 
-test_that("Test fp_compute_citation_ratio() errors - With API query)", {
+test_that("fp_compute_citation_ratio() errors - With API query)", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
@@ -116,7 +104,7 @@ test_that("Test fp_compute_citation_ratio() errors - With API query)", {
   })
 })
 
-test_that("Test fp_compute_citation_ratio() works", {
+test_that("fp_compute_citation_ratio() works", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )

@@ -1,10 +1,5 @@
 ## check_arg_file() ----
 
-filename <- system.file(
-  file.path("extdata", "references.bib"),
-  package = "fairpub"
-)
-
 test_that("check_arg_file() errors - Wrong type", {
   expect_error(
     check_arg_file(),

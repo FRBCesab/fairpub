@@ -1,15 +1,6 @@
-# Test datasets
-journals <- c(
-  "Science",
-  "Science of Nature",
-  "The Science of Nature",
-  "Ecology Letters"
-)
+## fp_get_journal_fairness() ----
 
-journal_na <- NA_character_
-
-
-test_that("Test fp_get_journal_fairness() errors", {
+test_that("fp_get_journal_fairness() errors", {
   # Argument missing
   expect_error(
     fp_get_journal_fairness(),

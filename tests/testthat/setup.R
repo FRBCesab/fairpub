@@ -5,3 +5,52 @@ vcr::vcr_configure(
   log = FALSE,
   log_opts = list(file = "console")
 )
+
+
+# Data for tests ----
+
+filename <- system.file(
+  file.path("extdata", "references.bib"),
+  package = "fairpub"
+)
+
+refs <- fp_read_bibtex(filename)
+
+dois <- c(
+  "10.1126/science.162.3859.1243",
+  "10.1038/35002501",
+  "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
+  "https://doi.org/10.xxxx/xxxx",
+  "10.21105/joss.09217",
+  NA
+)
+
+doi_to_clean <- c(
+  "10.1098/rsos.160384",
+  "10.1098/RSOS.160384",
+  "doi:10.1098/rsos.160384",
+  "doi: 10.1098/rsos.160384",
+  "http://doi.org/10.1098/rsos.160384",
+  "http://dx.doi.org/10.1098/rsos.160384",
+  "https://doi.org/10.1098/rsos.160384",
+  "HTTPS://DOI.ORG/10.1098/RSOS.160384",
+  "https://dx.doi.org/10.1098/rsos.160384",
+  "HTTPS://DX.DOI.ORG/10.1098/RSOS.160384",
+  " https://dx.doi.org/10.1098/rsos.160384",
+  "https://dx.doi.org/10.1098/rsos.160384 ",
+  " https://dx.doi.org/10.1098/rsos.160384 ",
+  NA
+)
+
+doi_na <- NA_character_
+doi_not_in_oa <- "https://doi.org/10.xxxx/xxxx"
+doi_not_in_dafnee <- "10.5281/zenodo.7390791"
+
+journals <- c(
+  "Science",
+  "Science of Nature",
+  "The Science of Nature",
+  "Ecology Letters"
+)
+
+journal_na <- NA_character_

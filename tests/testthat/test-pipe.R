@@ -1,4 +1,4 @@
-## Test `%||%` ----
+## `%||%` ----
 
 test_that("%||% works", {
   expect_equal("Value 1" %||% "Value 2", "Value 1")
