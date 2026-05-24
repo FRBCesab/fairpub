@@ -62,3 +62,6 @@ texte <- c(
   "Receveur A (2024) David vs Goliath... https://doi.org/10.1111/ele.14395",
   "Smith J (9999) This is a fake article."
 )
+
+article_title <-
+  "Citation self-awareness for a fairer academic publishing landscape"

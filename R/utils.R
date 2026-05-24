@@ -43,3 +43,15 @@ fp_extract_doi_from_string <- function(x) {
 
   unlist(matches, use.names = FALSE)
 }
+
+
+#' @noRd
+fp_shorten_string <- function(x, width = 50) {
+  is_short <- nchar(x) <= width
+
+  shortened <- substr(x, 1, width - 3)
+  shortened <- sub("\\s+\\S*$", "", shortened)
+  shortened <- paste0(shortened, "...")
+
+  ifelse(is_short, x, shortened)
+}

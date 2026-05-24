@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 08:50:24 GMT
+      date: Sun, 24 May 2026 19:44:32 GMT
       content-type: application/json
-      cf-ray: a00b0d764c0ca26a-MRS
+      cf-ray: a00ecba739236cf5-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=CG6tpDI8MvwN8e7AciFYXoZqAjnqempTX4VvrehiQCg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779612624"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=CG6tpDI8MvwN8e7AciFYXoZqAjnqempTX4VvrehiQCg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779612624"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=SnJQChtc3RS4p87ujD7GF2OIJ7UoA7qy%2BDLCK%2BwnmFk%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651871"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=SnJQChtc3RS4p87ujD7GF2OIJ7UoA7qy%2BDLCK%2BwnmFk%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651871"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9935'
-      x-ratelimit-remaining-usd: '0.9935'
-      x-ratelimit-reset: '54576'
+      x-ratelimit-remaining: '9542'
+      x-ratelimit-remaining-usd: '0.9542'
+      x-ratelimit-reset: '15328'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 4, "db_response_time_ms": 46, "page": 1, "per_page":
+      string: '{"meta": {"count": 4, "db_response_time_ms": 22, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2162348455",
         "doi": "https://doi.org/10.1038/35002501", "title": "Biodiversity hotspots
         for conservation priorities", "display_name": "Biodiversity hotspots for conservation
@@ -106,7 +106,7 @@ http_interactions:
         5, "corresponding_author_ids": ["https://openalex.org/A5109070857"], "corresponding_institution_ids":
         ["https://openalex.org/I40120149"], "apc_list": {"value": 9750, "currency":
         "EUR", "value_usd": 11690}, "apc_paid": null, "fwci": 506.2763, "has_fulltext":
-        false, "cited_by_count": 31038, "citation_normalized_percentile": {"value":
+        false, "cited_by_count": 31040, "citation_normalized_percentile": {"value":
         1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "403", "issue": "6772", "first_page":
         "853", "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -270,8 +270,8 @@ http_interactions:
         "awards": [], "funders": [{"id": "https://openalex.org/F4320306142", "display_name":
         "John D. and Catherine T. MacArthur Foundation", "ror": "https://ror.org/00dxczh48"},
         {"id": "https://openalex.org/F4320323161", "display_name": "WWF International",
-        "ror": "https://ror.org/00ppaw753"}], "has_content": {"grobid_xml": false,
-        "pdf": false}, "content_urls": null, "referenced_works_count": 230, "referenced_works":
+        "ror": "https://ror.org/00ppaw753"}], "has_content": {"pdf": false, "grobid_xml":
+        false}, "content_urls": null, "referenced_works_count": 230, "referenced_works":
         ["https://openalex.org/W22843948", "https://openalex.org/W32719449", "https://openalex.org/W38423605",
         "https://openalex.org/W46166763", "https://openalex.org/W89943346", "https://openalex.org/W117453349",
         "https://openalex.org/W146764914", "https://openalex.org/W197913869", "https://openalex.org/W213495198",
@@ -353,25 +353,25 @@ http_interactions:
         "https://openalex.org/W1888713647", "https://openalex.org/W4384207523", "https://openalex.org/W2107551382",
         "https://openalex.org/W2157912707", "https://openalex.org/W4212786172", "https://openalex.org/W2148001066",
         "https://openalex.org/W2162348455"], "abstract_inverted_index": null, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 588}, {"year": 2025, "cited_by_count": 1796},
+        [{"year": 2026, "cited_by_count": 589}, {"year": 2025, "cited_by_count": 1796},
         {"year": 2024, "cited_by_count": 1794}, {"year": 2023, "cited_by_count": 1973},
-        {"year": 2022, "cited_by_count": 2005}, {"year": 2021, "cited_by_count": 2184},
+        {"year": 2022, "cited_by_count": 2005}, {"year": 2021, "cited_by_count": 2185},
         {"year": 2020, "cited_by_count": 2048}, {"year": 2019, "cited_by_count": 1752},
         {"year": 2018, "cited_by_count": 1602}, {"year": 2017, "cited_by_count": 1533},
         {"year": 2016, "cited_by_count": 1558}, {"year": 2015, "cited_by_count": 1417},
         {"year": 2014, "cited_by_count": 1465}, {"year": 2013, "cited_by_count": 1424},
-        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-24T08:33:08.758527",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 08:50:24
+  recorded_at: 2026-05-24 19:44:32
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.1126%2Fscience.162.3859.1243%7C10.1038%2F35002501%7C10.1111%2Fj.1461-0248.2005.00792.x%7C10.xxxx%2Fxxxx%7C10.21105%2Fjoss.09217&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 08:50:25 GMT
+      date: Sun, 24 May 2026 19:44:32 GMT
       content-type: application/json
-      cf-ray: a00b0d7b0d0ea26a-MRS
+      cf-ray: a00ecba9dacc6cf5-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -380,24 +380,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=4xwnYpyT73p4PS1C7h9VbrlukNcFhlY6Yto2cYF4hXM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779612625"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=4xwnYpyT73p4PS1C7h9VbrlukNcFhlY6Yto2cYF4hXM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779612625"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=h2BEBQA8fRs1D%2FxIZl3v4FO%2BIoSGR7g5ufYWSW5A7UA%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651872"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=h2BEBQA8fRs1D%2FxIZl3v4FO%2BIoSGR7g5ufYWSW5A7UA%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651872"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9934'
-      x-ratelimit-remaining-usd: '0.9934'
-      x-ratelimit-reset: '54575'
+      x-ratelimit-remaining: '9541'
+      x-ratelimit-remaining-usd: '0.9541'
+      x-ratelimit-reset: '15328'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 4, "db_response_time_ms": 41, "page": null, "per_page":
+      string: '{"meta": {"count": 4, "db_response_time_ms": 14, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2162348455", "doi": "https://doi.org/10.1038/35002501",
         "title": "Biodiversity hotspots for conservation priorities", "display_name":
@@ -470,7 +470,7 @@ http_interactions:
         5, "corresponding_author_ids": ["https://openalex.org/A5109070857"], "corresponding_institution_ids":
         ["https://openalex.org/I40120149"], "apc_list": {"value": 9750, "currency":
         "EUR", "value_usd": 11690}, "apc_paid": null, "fwci": 506.2763, "has_fulltext":
-        false, "cited_by_count": 31038, "citation_normalized_percentile": {"value":
+        false, "cited_by_count": 31040, "citation_normalized_percentile": {"value":
         1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "403", "issue": "6772", "first_page":
         "853", "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -629,13 +629,13 @@ http_interactions:
         "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
         "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
         "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-        "JournalArticle"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/15",
-        "display_name": "Life in Land", "score": 0.5600000023841858}], "awards": [],
-        "funders": [{"id": "https://openalex.org/F4320306142", "display_name": "John
-        D. and Catherine T. MacArthur Foundation", "ror": "https://ror.org/00dxczh48"},
+        "JournalArticle"}, "sustainable_development_goals": [{"display_name": "Life
+        in Land", "score": 0.5600000023841858, "id": "https://metadata.un.org/sdg/15"}],
+        "awards": [], "funders": [{"id": "https://openalex.org/F4320306142", "display_name":
+        "John D. and Catherine T. MacArthur Foundation", "ror": "https://ror.org/00dxczh48"},
         {"id": "https://openalex.org/F4320323161", "display_name": "WWF International",
-        "ror": "https://ror.org/00ppaw753"}], "has_content": {"pdf": false, "grobid_xml":
-        false}, "content_urls": null, "referenced_works_count": 230, "referenced_works":
+        "ror": "https://ror.org/00ppaw753"}], "has_content": {"grobid_xml": false,
+        "pdf": false}, "content_urls": null, "referenced_works_count": 230, "referenced_works":
         ["https://openalex.org/W22843948", "https://openalex.org/W32719449", "https://openalex.org/W38423605",
         "https://openalex.org/W46166763", "https://openalex.org/W89943346", "https://openalex.org/W117453349",
         "https://openalex.org/W146764914", "https://openalex.org/W197913869", "https://openalex.org/W213495198",
@@ -717,14 +717,14 @@ http_interactions:
         "https://openalex.org/W1888713647", "https://openalex.org/W4384207523", "https://openalex.org/W2107551382",
         "https://openalex.org/W2157912707", "https://openalex.org/W4212786172", "https://openalex.org/W2148001066",
         "https://openalex.org/W2162348455"], "abstract_inverted_index": null, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 588}, {"year": 2025, "cited_by_count": 1796},
+        [{"year": 2026, "cited_by_count": 589}, {"year": 2025, "cited_by_count": 1796},
         {"year": 2024, "cited_by_count": 1794}, {"year": 2023, "cited_by_count": 1973},
-        {"year": 2022, "cited_by_count": 2005}, {"year": 2021, "cited_by_count": 2184},
+        {"year": 2022, "cited_by_count": 2005}, {"year": 2021, "cited_by_count": 2185},
         {"year": 2020, "cited_by_count": 2048}, {"year": 2019, "cited_by_count": 1752},
         {"year": 2018, "cited_by_count": 1602}, {"year": 2017, "cited_by_count": 1533},
         {"year": 2016, "cited_by_count": 1558}, {"year": 2015, "cited_by_count": 1417},
         {"year": 2014, "cited_by_count": 1465}, {"year": 2013, "cited_by_count": 1424},
-        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-24T08:33:08.758527",
         "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W2226396244",
         "doi": "https://doi.org/10.1126/science.162.3859.1243", "title": "The Tragedy
         of the Commons", "display_name": "The Tragedy of the Commons", "publication_year":
@@ -761,8 +761,8 @@ http_interactions:
         ["https://openalex.org/I1311206647"]}]}], "institutions": [], "countries_distinct_count":
         1, "institutions_distinct_count": 1, "corresponding_author_ids": ["https://openalex.org/A5111448232"],
         "corresponding_institution_ids": ["https://openalex.org/I1311206647"], "apc_list":
-        null, "apc_paid": null, "fwci": 276.052, "has_fulltext": false, "cited_by_count":
-        22830, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
+        null, "apc_paid": null, "fwci": 276.0638, "has_fulltext": false, "cited_by_count":
+        22834, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
         true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99,
         "max": 100}, "biblio": {"volume": "162", "issue": "3859", "first_page": "1243",
         "last_page": "1248"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -850,9 +850,9 @@ http_interactions:
         "host_organization_lineage_names": [], "type": "repository"}, "license": null,
         "license_id": null, "version": "publishedVersion", "is_accepted": true, "is_published":
         true, "raw_source_name": "Science (New York, N.Y.)", "raw_type": null}], "best_oa_location":
-        null, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/16",
-        "display_name": "Peace, Justice and strong institutions", "score": 0.4300000071525574}],
-        "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
+        null, "sustainable_development_goals": [{"display_name": "Peace, Justice and
+        strong institutions", "score": 0.4300000071525574, "id": "https://metadata.un.org/sdg/16"}],
+        "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
         "content_urls": null, "referenced_works_count": 16, "referenced_works": ["https://openalex.org/W645218623",
         "https://openalex.org/W1520891760", "https://openalex.org/W1546755579", "https://openalex.org/W1967161129",
         "https://openalex.org/W2027636702", "https://openalex.org/W2029363644", "https://openalex.org/W2054383667",
@@ -866,14 +866,14 @@ http_interactions:
         {"The": [0], "population": [1], "problem": [2], "has": [3], "no": [4], "technical":
         [5], "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental":
         [10], "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 306}, {"year": 2025, "cited_by_count": 830},
+        [{"year": 2026, "cited_by_count": 307}, {"year": 2025, "cited_by_count": 831},
         {"year": 2024, "cited_by_count": 914}, {"year": 2023, "cited_by_count": 860},
         {"year": 2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169},
         {"year": 2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132},
-        {"year": 2018, "cited_by_count": 1048}, {"year": 2017, "cited_by_count": 969},
+        {"year": 2018, "cited_by_count": 1049}, {"year": 2017, "cited_by_count": 969},
         {"year": 2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909},
-        {"year": 2014, "cited_by_count": 1013}, {"year": 2013, "cited_by_count": 921},
-        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2014, "cited_by_count": 1014}, {"year": 2013, "cited_by_count": 921},
+        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-24T08:33:08.758527",
         "created_date": "2016-06-24T00:00:00"}, {"id": "https://openalex.org/W2123337039",
         "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x", "title": "Predicting
         species distribution: offering more than simple habitat models", "display_name":
@@ -1078,9 +1078,9 @@ http_interactions:
         [], "host_organization_lineage_names": [], "type": "repository"}, "license":
         null, "license_id": null, "version": "submittedVersion", "is_accepted": false,
         "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
-        "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/13",
-        "display_name": "Climate action", "score": 0.4399999976158142}], "awards":
-        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+        "sustainable_development_goals": [{"display_name": "Climate action", "score":
+        0.4399999976158142, "id": "https://metadata.un.org/sdg/13"}], "awards": [],
+        "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
         null, "referenced_works_count": 125, "referenced_works": ["https://openalex.org/W221484134",
         "https://openalex.org/W228375214", "https://openalex.org/W276691513", "https://openalex.org/W1503026800",
         "https://openalex.org/W1519918296", "https://openalex.org/W1535048244", "https://openalex.org/W1552647955",
@@ -1432,12 +1432,12 @@ http_interactions:
         f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}, {"id": "https://openalex.org/F4320335598",
         "display_name": "Agencia Estatal de Investigaci\u00f3n", "ror": null}, {"id":
         "https://openalex.org/F4320338223", "display_name": "Direcci\u00f3 General
-        de Recerca, Generalitat de Catalunya", "ror": null}], "has_content": {"pdf":
-        true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415113473.pdf"},
+        de Recerca, Generalitat de Catalunya", "ror": null}], "has_content": {"grobid_xml":
+        false, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415113473.pdf"},
         "referenced_works_count": 3, "referenced_works": ["https://openalex.org/W4229082123",
         "https://openalex.org/W4379259280", "https://openalex.org/W4404305647"], "related_works":
         [], "abstract_inverted_index": {"International": [0], "audience": [1]}, "counts_by_year":
         [], "updated_date": "2026-05-07T13:39:58.223016", "created_date": "2025-10-14T00:00:00"}],
         "group_by": []}'
-  recorded_at: 2026-05-24 08:50:25
+  recorded_at: 2026-05-24 19:44:32
 recorded_with: VCR-vcr/2.1.0
