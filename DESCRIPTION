@@ -18,7 +18,7 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1)
 Imports:
     bibtex,
     openalexR,

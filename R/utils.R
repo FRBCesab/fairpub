@@ -1,3 +1,9 @@
+#' Helper: if x is NULL then y
+#' @noRd
+`%||%` <- function(x, y) {
+  if (is.null(x)) y else x
+}
+
 #' @noRd
 
 fp_check_mailto <- function() {
@@ -9,4 +15,14 @@ fp_check_mailto <- function() {
   }
 
   invisible(NULL)
+}
+
+#' @noRd
+fp_extract_doi_from_bibentry <- function(bibentry) {
+  vapply(bibentry, \(x) x$doi %||% NA_character_, character(1))
+}
+
+#' @noRd
+fp_read_bibtex <- function(file) {
+  bibtex::read.bib(file)
 }
