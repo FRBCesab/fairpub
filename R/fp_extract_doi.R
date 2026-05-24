@@ -46,24 +46,8 @@ fp_extract_doi <- function(bibtex) {
     stop("The file '", bibtex, "' does not exist")
   }
 
-  ## Open BibTeX file ----
-
-  refs <- bibtex::read.bib(bibtex)
-
-  ## Extract DOI ----
-
-  dois <- lapply(refs, function(x) {
-    doi <- x$"doi"
-    if (is.null(doi)) {
-      return(NA)
-    } else {
-      return(doi)
-    }
-  })
-
-  dois <- unlist(dois, use.names = FALSE)
-
-  ## Clean DOI ----
-
-  fp_clean_doi(dois)
+  bibtex |> 
+    fp_read_bibtex() |> 
+    fp_extract_doi_from_bibentry() |> 
+    fp_clean_doi()
 }
