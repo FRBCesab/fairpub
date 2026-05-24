@@ -19,7 +19,12 @@ fp_check_mailto <- function() {
 
 #' @noRd
 fp_extract_doi_from_bibentry <- function(bibentry) {
-  vapply(bibentry, \(x) x$doi %||% NA_character_, character(1))
+  vapply(
+    bibentry,
+    \(x) x$doi %||% NA_character_,
+    character(1),
+    USE.NAMES = FALSE
+  )
 }
 
 #' @noRd
