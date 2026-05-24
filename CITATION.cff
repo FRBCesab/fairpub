@@ -39,10 +39,13 @@ references:
   url: https://www.R-project.org/
   authors:
   - name: R Core Team
+    website: https://ror.org/02zz1nj61
   institution:
     name: R Foundation for Statistical Computing
+    website: https://ror.org/05qewa988
     address: Vienna, Austria
   year: '2026'
+  doi: 10.32614/R.manuals
   version: '>= 3.5'
 - type: software
   title: openalexR
@@ -165,6 +168,31 @@ references:
   year: '2026'
   doi: 10.32614/CRAN.package.testthat
   version: '>= 3.0.0'
+- type: software
+  title: vcr
+  abstract: 'vcr: Record ''HTTP'' Calls to Disk'
+  notes: Suggests
+  url: https://github.com/ropensci/vcr/
+  repository: https://CRAN.R-project.org/package=vcr
+  authors:
+  - family-names: Chamberlain
+    given-names: Scott
+    email: myrmecocystus@gmail.com
+    orcid: https://orcid.org/0000-0003-1444-9135
+  - family-names: Wolen
+    given-names: Aaron
+    orcid: https://orcid.org/0000-0003-2542-2202
+  - family-names: Salmon
+    given-names: Maëlle
+    orcid: https://orcid.org/0000-0002-2815-0399
+  - family-names: Possenriede
+    given-names: Daniel
+    orcid: https://orcid.org/0000-0002-6738-9845
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  year: '2026'
+  doi: 10.32614/CRAN.package.vcr
 - type: software
   title: withr
   abstract: 'withr: Run Code ''With'' Temporarily Modified Global State'
