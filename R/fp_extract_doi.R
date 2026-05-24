@@ -4,7 +4,7 @@
 #' This function reads a BibTex file and extracts the DOI of references (if
 #' originally present in the file).
 #'
-#' @param bibtex a `character` of length 1. The (absolute or relative) path to
+#' @param file a `character` of length 1. The (absolute or relative) path to
 #'   the BibTeX file to open.
 #'
 #' @return
@@ -23,30 +23,30 @@
 #' # Extract DOI from BibTeX ----
 #' fp_extract_doi(filename)
 
-fp_extract_doi <- function(bibtex) {
+fp_extract_doi <- function(file) {
   ## Check args ----
 
-  if (missing(bibtex)) {
-    stop("Argument 'bibtex' is required")
+  if (missing(file)) {
+    stop("Argument 'file' is required")
   }
 
-  if (is.null(bibtex)) {
-    stop("Argument 'bibtex' is required")
+  if (is.null(file)) {
+    stop("Argument 'file' is required")
   }
 
-  if (!is.character(bibtex)) {
-    stop("Argument 'bibtex' must be a character (BibTeX file name)")
+  if (!is.character(file)) {
+    stop("Argument 'file' must be a character (BibTeX file name)")
   }
 
-  if (length(bibtex) != 1) {
-    stop("Argument 'bibtex' must be of length 1 (one BibTeX file)")
+  if (length(file) != 1) {
+    stop("Argument 'file' must be of length 1 (one BibTeX file)")
   }
 
-  if (!file.exists(bibtex)) {
-    stop("The file '", bibtex, "' does not exist")
+  if (!file.exists(file)) {
+    stop("The file '", file, "' does not exist")
   }
 
-  bibtex |> 
+  file |> 
     fp_read_bibtex() |> 
     fp_extract_doi_from_bibentry() |> 
     fp_clean_doi()

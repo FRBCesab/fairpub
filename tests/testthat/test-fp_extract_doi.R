@@ -8,45 +8,45 @@ test_that("Test fp_extract_doi() for error", {
   # Argument missing
   expect_error(
     fp_extract_doi(),
-    "Argument 'bibtex' is required",
+    "Argument 'file' is required",
     fixed = TRUE
   )
 
   expect_error(
     fp_extract_doi(NULL),
-    "Argument 'bibtex' is required",
+    "Argument 'file' is required",
     fixed = TRUE
   )
 
   # Not a file name
   expect_error(
     fp_extract_doi(data.frame()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
+    "Argument 'file' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   expect_error(
     fp_extract_doi(matrix()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
+    "Argument 'file' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   expect_error(
     fp_extract_doi(numeric()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
+    "Argument 'file' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   expect_error(
     fp_extract_doi(logical()),
-    "Argument 'bibtex' must be a character (BibTeX file name)",
+    "Argument 'file' must be a character (BibTeX file name)",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
     fp_extract_doi(rep(filename, 2)),
-    "Argument 'bibtex' must be of length 1 (one BibTeX file)",
+    "Argument 'file' must be of length 1 (one BibTeX file)",
     fixed = TRUE
   )
 

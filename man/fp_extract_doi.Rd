@@ -4,10 +4,10 @@
 \alias{fp_extract_doi}
 \title{Extract DOI from a BibTeX file}
 \usage{
-fp_extract_doi(bibtex)
+fp_extract_doi(file)
 }
 \arguments{
-\item{bibtex}{a \code{character} of length 1. The (absolute or relative) path to
+\item{file}{a \code{character} of length 1. The (absolute or relative) path to
 the BibTeX file to open.}
 }
 \value{
