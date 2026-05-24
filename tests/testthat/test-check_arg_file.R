@@ -58,4 +58,6 @@ test_that("check_arg_file() errors - File doesn't exist", {
 })
 
 
-test_that("check_arg_file() works", {})
+test_that("check_arg_file() works", {
+  expect_invisible(check_arg_file(filename))
+})
