@@ -1,13 +1,13 @@
 http_interactions:
 - request:
     method: GET
-    uri: https://api.openalex.org/works?filter=doi%3A10.xxxx%2Fxxxx&per-page=1&mailto=anonymous%40mail.com
+    uri: https://api.openalex.org/works?filter=title.search%3Akjdhfgvlzjegvz&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=1&mailto=anonymous%40mail.com
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:35 GMT
+      date: Sun, 24 May 2026 19:44:40 GMT
       content-type: application/json
-      cf-ray: a00ecbbf788c6cf5-MRS
+      cf-ray: a00ecbdb9b116cf5-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=R%2FbP9o%2FXDn5uibAxKiU%2FAiN88vQf%2FrQBO6ItBwzpbJc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651875"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=R%2FbP9o%2FXDn5uibAxKiU%2FAiN88vQf%2FrQBO6ItBwzpbJc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651875"
-      x-ratelimit-cost-usd: '0.0001'
-      x-ratelimit-credits-used: '1'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=3jbLfa2gbmn8HZ1Lp4HCgP1G5iTImntjh2KPUBzBLQQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779651880"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=3jbLfa2gbmn8HZ1Lp4HCgP1G5iTImntjh2KPUBzBLQQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779651880"
+      x-ratelimit-cost-usd: '0.001'
+      x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9534'
-      x-ratelimit-remaining-usd: '0.9534'
-      x-ratelimit-reset: '15325'
+      x-ratelimit-remaining: '9452'
+      x-ratelimit-remaining-usd: '0.9452'
+      x-ratelimit-reset: '15320'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 0, "db_response_time_ms": 6, "page": 1, "per_page":
-        1, "groups_count": null, "cost_usd": 0.0001}, "results": [], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:35
+      string: '{"meta": {"count": 0, "db_response_time_ms": 3, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.001}, "results": [], "group_by": []}'
+  recorded_at: 2026-05-24 19:44:40
 recorded_with: VCR-vcr/2.1.0

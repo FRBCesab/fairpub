@@ -17,6 +17,7 @@ reference:
   desc: |
     Functions to retrieve, extract and clean DOI.
   contents:
+  - fp_retrieve_article_doi
   - fp_extract_doi
   - fp_clean_doi
 

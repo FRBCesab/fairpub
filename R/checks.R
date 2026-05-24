@@ -71,3 +71,48 @@ check_arg_string <- function(x) {
 
   invisible(NULL)
 }
+
+
+#' @noRd
+check_arg_n <- function(n) {
+  if (is.null(n)) {
+    stop("Argument 'n' is required", call. = FALSE)
+  }
+
+  if (!is.numeric(n)) {
+    stop(
+      "Argument 'n' must be an integer",
+      call. = FALSE
+    )
+  }
+
+  if (length(n) != 1) {
+    stop(
+      "Argument 'n' must be of length 1",
+      call. = FALSE
+    )
+  }
+
+  if (!is.finite(n)) {
+    stop(
+      "Argument 'n' must be finite",
+      call. = FALSE
+    )
+  }
+
+  if (n %% 1 != 0) {
+    stop(
+      "Argument 'n' must be an integer",
+      call. = FALSE
+    )
+  }
+
+  if (n < 1 || n > 200) {
+    stop(
+      "Argument 'n' must be a positive integer between 1 and 200",
+      call. = FALSE
+    )
+  }
+
+  invisible(NULL)
+}
