@@ -76,18 +76,18 @@ toolbox to investigate the fairness of a research (article,
 bibliographic list, citation list, etc.). The fairness is measured
 according to two dimensions:</p>
 <ul>
-<li>the <strong>business model</strong> of the journal: for-profit
+<li>the <strong>Business model</strong> of the journal: for-profit
 vs. non-profit</li>
-<li>the <strong>academic friendly</strong> status of the journal: yes or
+<li>the <strong>Academic friendly</strong> status of the journal: yes or
 no</li>
 </ul>
 <p>A journal with a non-profit business model is fairer than an academic
 friendly journal with a for-profit business model. But the later is
 still fairer than a non-academic friendly journal with a for-profit
 business model.</p>
-<p>This information comes from the <a href="https://dafnee.isem-evolution.fr/" class="external-link">DAFNEE initiative</a>, a
-Database of Academia Friendly jourNals in Ecology and Evolution.</p>
-<p><strong>Note:</strong> The package <code>fairpub</code> provides a
+<p>This information comes from the <a href="https://dafnee.isem-evolution.fr/" class="external-link">DAFNEE database</a>, a Database
+of Academia Friendly jourNals in Ecology and Evolution.</p>
+<p><strong>Note:</strong> the package <code>fairpub</code> provides a
 subset of the original <a href="https://dafnee.isem-evolution.fr/" class="external-link">DAFNEE database</a> (fields
 “Ecology”, “Evolution/Systematics”, “General” and “Organisms”). We are
 currently working to increase this list of journals.</p>
@@ -121,7 +121,7 @@ it’s a good practice to send your email address to each query made by
 as a global variable available for the current session:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>openalexR.mailto <span class="op">=</span> <span class="st">'your_email@mail.com'</span><span class="op">)</span></span></code></pre></div>
-<p><strong>Note:</strong> No registration is required on the OpenAlex
+<p><strong>Note:</strong> no registration is required on the OpenAlex
 website.</p>
 </div>
 <div class="section level2">
@@ -157,9 +157,9 @@ candidates (low distance between characters). For instance:</p>
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/fp_get_journal_fairness.html">fp_get_journal_fairness</a></span><span class="op">(</span>journal <span class="op">=</span> <span class="st">"The Science of Nature"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                 journal                             fairness</span></span>
 <span><span class="co">#&gt; 1 The Science of Nature For-profit and non-academic friendly</span></span></code></pre></div>
-<p>As mentioned before, the list of DAFNEE journals included in
-<code>fairpub</code> is not exhaustive, and it’s possible that many
-journals are missing.</p>
+<p><strong>Note:</strong> as mentioned before, the list of DAFNEE
+journals included in <code>fairpub</code> is not exhaustive, and it’s
+possible that many journals are missing.</p>
 </div>
 <div class="section level2">
 <h2 id="article-fairness">Article fairness<a class="anchor" aria-label="anchor" href="#article-fairness"></a>
@@ -170,10 +170,10 @@ scientific article. This function first queries the <a href="https://openalex.or
 the journal name from the DOI (digital object identifier) of the
 article. Then, the journal name is used to query the DAFNEE database to
 get the fairness status.</p>
-<p><strong>Note:</strong> Even if this function works at the article
+<p><strong>Note:</strong> even if this function works at the article
 level, this fairness status is associated to the journal. In other
-words, all articles published in a journal have the same fairness
-status.</p>
+words, all articles published in the same journal will have the same
+fairness status.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/fp_get_article_fairness.html">fp_get_article_fairness</a></span><span class="op">(</span>doi <span class="op">=</span> <span class="st">"10.1126/science.162.3859.1243"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   journal                         fairness</span></span>
@@ -181,13 +181,13 @@ status.</p>
 <p>The output is identical to the output of
 <code><a href="../reference/fp_get_journal_fairness.html">fp_get_journal_fairness()</a></code>, i.e. a two-column
 <code>data.frame</code>.</p>
-<p><strong>Note:</strong> if the DOI is not found in OpenAlex, the
+<p><strong>Note:</strong> if the article is not found in OpenAlex, the
 output will be:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/fp_get_article_fairness.html">fp_get_article_fairness</a></span><span class="op">(</span>doi <span class="op">=</span> <span class="st">"10.xxxx/xxxx"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   journal                     fairness</span></span>
 <span><span class="co">#&gt; 1      NA Record not found in OpenAlex</span></span></code></pre></div>
-<p><strong>Note:</strong> if the DOI is found in OpenAlex but the
+<p><strong>Note:</strong> if the article is found in OpenAlex but the
 journal is absent from DAFNEE, the output will be:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/fp_get_article_fairness.html">fp_get_article_fairness</a></span><span class="op">(</span>doi <span class="op">=</span> <span class="st">"10.21105/joss.05753"</span><span class="op">)</span></span>
@@ -237,7 +237,7 @@ file provided as an example in <code>fairpub</code>.</p>
 <span><span class="co">#&gt; [33] "10.1371/journal.pone.0243664"      "10.1257/jep.15.4.183"             </span></span>
 <span><span class="co">#&gt; [35] "10.1073/pnas.0305628101"           "10.1016/j.amjmed.2019.07.028"     </span></span>
 <span><span class="co">#&gt; [37] "10.32614/rj-2023-089"              "10.5534/wjmh.230001"</span></span></code></pre></div>
-<p><strong>Note:</strong> Make sure to check your references, especially
+<p><strong>Note:</strong> make sure to check your references, especially
 the DOI field. In this example, some references don’t have a DOI (book,
 book chapter, etc.). The <code><a href="../reference/fp_extract_doi.html">fp_extract_doi()</a></code> function don’t
 remove these references to provide a full report (see below the output
@@ -257,11 +257,11 @@ fairness ratio of this list.</p>
 <span><span class="co">#&gt; 6     Non-profit and academic friendly references     9</span></span>
 <span><span class="co">#&gt; 7     For-profit and academic friendly references     2</span></span>
 <span><span class="co">#&gt; 8 For-profit and non-academic friendly references     0</span></span>
-<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;</span></span>
 <span><span class="co">#&gt; $ratios</span></span>
-<span><span class="co">#&gt;     Non-profit and academic friendly     For-profit and academic friendly </span></span>
-<span><span class="co">#&gt;                                 0.82                                 0.18 </span></span>
-<span><span class="co">#&gt; For-profit and non-academic friendly </span></span>
+<span><span class="co">#&gt;     Non-profit and academic friendly     For-profit and academic friendly</span></span>
+<span><span class="co">#&gt;                                 0.82                                 0.18</span></span>
+<span><span class="co">#&gt; For-profit and non-academic friendly</span></span>
 <span><span class="co">#&gt;                                 0.00</span></span></code></pre></div>
 <p>This function returns a two-element <code>list</code>:</p>
 <ul>
@@ -273,12 +273,12 @@ number of references remaining after each step of the workflow</li>
 value of the three fairness ratios</li>
 </ul>
 <p>In this example, this list of references has a fairness ratio
-(<code>Non-profit and academic friendly</code>) of 90%. But this value
+(<code>Non-profit and academic friendly</code>) of 82%. But this value
 must be interpreted with caution. Indeed this ratio has been computed on
-26% (10 over 38) of the references, because the journal of 20 articles
+29% (11 over 38) of the references, because the journal of 27 articles
 is not indexed in the DAFNEE database.</p>
-<p>As mentioned before, we are currently working to improve the list of
-journals indexed in the DAFNEE database.</p>
+<p><strong>Note:</strong> as mentioned before, we are currently working
+to improve the list of journals indexed in the DAFNEE database.</p>
 </div>
 <div class="section level2">
 <h2 id="author-ratio">Author ratio<a class="anchor" aria-label="anchor" href="#author-ratio"></a>

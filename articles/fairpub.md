@@ -16,8 +16,8 @@ investigate the fairness of a research (article, bibliographic list,
 citation list, etc.). The fairness is measured according to two
 dimensions:
 
-- the **business model** of the journal: for-profit vs. non-profit
-- the **academic friendly** status of the journal: yes or no
+- the **Business model** of the journal: for-profit vs. non-profit
+- the **Academic friendly** status of the journal: yes or no
 
 A journal with a non-profit business model is fairer than an academic
 friendly journal with a for-profit business model. But the later is
@@ -25,10 +25,10 @@ still fairer than a non-academic friendly journal with a for-profit
 business model.
 
 This information comes from the [DAFNEE
-initiative](https://dafnee.isem-evolution.fr/), a Database of Academia
+database](https://dafnee.isem-evolution.fr/), a Database of Academia
 Friendly jourNals in Ecology and Evolution.
 
-**Note:** The package `fairpub` provides a subset of the original
+**Note:** the package `fairpub` provides a subset of the original
 [DAFNEE database](https://dafnee.isem-evolution.fr/) (fields “Ecology”,
 “Evolution/Systematics”, “General” and “Organisms”). We are currently
 working to increase this list of journals.
@@ -76,7 +76,7 @@ session:
 options(openalexR.mailto = 'your_email@mail.com')
 ```
 
-**Note:** No registration is required on the OpenAlex website.
+**Note:** no registration is required on the OpenAlex website.
 
 ## Journal fairness
 
@@ -123,8 +123,9 @@ fp_get_journal_fairness(journal = "The Science of Nature")
 #> 1 The Science of Nature For-profit and non-academic friendly
 ```
 
-As mentioned before, the list of DAFNEE journals included in `fairpub`
-is not exhaustive, and it’s possible that many journals are missing.
+**Note:** as mentioned before, the list of DAFNEE journals included in
+`fairpub` is not exhaustive, and it’s possible that many journals are
+missing.
 
 ## Article fairness
 
@@ -137,9 +138,10 @@ journal name from the DOI (digital object identifier) of the article.
 Then, the journal name is used to query the DAFNEE database to get the
 fairness status.
 
-**Note:** Even if this function works at the article level, this
+**Note:** even if this function works at the article level, this
 fairness status is associated to the journal. In other words, all
-articles published in a journal have the same fairness status.
+articles published in the same journal will have the same fairness
+status.
 
 ``` r
 
@@ -152,7 +154,7 @@ The output is identical to the output of
 [`fp_get_journal_fairness()`](https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.md),
 i.e. a two-column `data.frame`.
 
-**Note:** if the DOI is not found in OpenAlex, the output will be:
+**Note:** if the article is not found in OpenAlex, the output will be:
 
 ``` r
 
@@ -161,8 +163,8 @@ fp_get_article_fairness(doi = "10.xxxx/xxxx")
 #> 1      NA Record not found in OpenAlex
 ```
 
-**Note:** if the DOI is found in OpenAlex but the journal is absent from
-DAFNEE, the output will be:
+**Note:** if the article is found in OpenAlex but the journal is absent
+from DAFNEE, the output will be:
 
 ``` r
 
@@ -222,7 +224,7 @@ doi_list
 #> [37] "10.32614/rj-2023-089"              "10.5534/wjmh.230001"
 ```
 
-**Note:** Make sure to check your references, especially the DOI field.
+**Note:** make sure to check your references, especially the DOI field.
 In this example, some references don’t have a DOI (book, book chapter,
 etc.). The
 [`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.md)
@@ -248,11 +250,11 @@ fp_compute_citation_ratio(doi = doi_list)
 #> 6     Non-profit and academic friendly references     9
 #> 7     For-profit and academic friendly references     2
 #> 8 For-profit and non-academic friendly references     0
-#> 
+#>
 #> $ratios
-#>     Non-profit and academic friendly     For-profit and academic friendly 
-#>                                 0.82                                 0.18 
-#> For-profit and non-academic friendly 
+#>     Non-profit and academic friendly     For-profit and academic friendly
+#>                                 0.82                                 0.18
+#> For-profit and non-academic friendly
 #>                                 0.00
 ```
 
@@ -264,13 +266,13 @@ This function returns a two-element `list`:
   ratios
 
 In this example, this list of references has a fairness ratio
-(`Non-profit and academic friendly`) of 90%. But this value must be
-interpreted with caution. Indeed this ratio has been computed on 26% (10
-over 38) of the references, because the journal of 20 articles is not
+(`Non-profit and academic friendly`) of 82%. But this value must be
+interpreted with caution. Indeed this ratio has been computed on 29% (11
+over 38) of the references, because the journal of 27 articles is not
 indexed in the DAFNEE database.
 
-As mentioned before, we are currently working to improve the list of
-journals indexed in the DAFNEE database.
+**Note:** as mentioned before, we are currently working to improve the
+list of journals indexed in the DAFNEE database.
 
 ## Author ratio
 
