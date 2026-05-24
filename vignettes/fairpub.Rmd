@@ -40,7 +40,7 @@ journal with a for-profit business model. But the later is still fairer than a
 non-academic friendly journal with a for-profit business model.
 
 This information comes from the 
-[DAFNEE initiative](https://dafnee.isem-evolution.fr/), a Database of Academia 
+[DAFNEE database](https://dafnee.isem-evolution.fr/), a Database of Academia 
 Friendly jourNals in Ecology and Evolution.
 
 **Note:** the package `fairpub` provides a subset of the original 
