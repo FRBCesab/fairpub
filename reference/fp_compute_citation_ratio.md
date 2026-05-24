@@ -81,9 +81,7 @@ doi_list <- fp_extract_doi(filename)
 
 # Print DOI ----
 head(doi_list)
-#> [1] "10.1098/rsos.160384"            NA                              
-#> [3] "10.1126/science.1212540"        "10.9745/ghsp-d-21-00145"       
-#> [5] "10.1126/science.adk9900"        "10.1016/j.ecolecon.2021.107082"
+#> character(0)
 
 if (FALSE) { # \dontrun{
 # Compute citation ratio ----

@@ -12,12 +12,14 @@ compute the citation ratio of a list of articles.
 - [`fp_compute_citation_ratio()`](https://frbcesab.github.io/fairpub/reference/fp_compute_citation_ratio.md)
   : Non profit & academic friendly ratio of citations
 
-## Digital Object Identifier (DOI)
+## DOI helpers
 
 Functions to retrieve, extract and clean DOI.
 
 - [`fp_extract_doi()`](https://frbcesab.github.io/fairpub/reference/fp_extract_doi.md)
-  : Extract DOI from a BibTeX file
+  : Extract DOI from a BibTeX file or a string
+- [`fp_clean_doi()`](https://frbcesab.github.io/fairpub/reference/fp_clean_doi.md)
+  : Clean a DOI vector
 
 ## DAFNEE database
 
