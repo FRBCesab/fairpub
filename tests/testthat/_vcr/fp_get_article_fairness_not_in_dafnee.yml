@@ -1,0 +1,389 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.21105%2Fjoss.05753&per-page=1&mailto=anonymous%40mail.com
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 05:16:31 GMT
+      content-type: application/json
+      cf-ray: a009d4271d7fe1d1-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599791"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599791"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9924'
+      x-ratelimit-remaining-usd: '0.9924'
+      x-ratelimit-reset: '67409'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 15, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W4387609797",
+        "doi": "https://doi.org/10.21105/joss.05753", "title": "chessboard: An R package
+        for creating networkconnections based on chess moves", "display_name": "chessboard:
+        An R package for creating networkconnections based on chess moves", "publication_year":
+        2023, "publication_date": "2023-10-13", "ids": {"openalex": "https://openalex.org/W4387609797",
+        "doi": "https://doi.org/10.21105/joss.05753"}, "language": "en", "primary_location":
+        {"id": "doi:10.21105/joss.05753", "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.05753",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, "type":
+        "article", "indexed_in": ["crossref", "doaj"], "open_access": {"is_oa": true,
+        "oa_status": "diamond", "oa_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
+        "any_repository_has_fulltext": true}, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5004806463", "display_name":
+        "Nicolas Casajus", "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions":
+        [], "countries": [], "is_corresponding": true, "raw_author_name": "Nicolas
+        Casajus", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-5537-5294",
+        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5034881512",
+        "display_name": "\u00c9rica Rievrs Borges", "orcid": "https://orcid.org/0000-0001-7751-6265"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "\u00c9rica Rievrs Borges", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
+        "https://orcid.org/0000-0001-7751-6265", "affiliations": [{"raw_affiliation_string":
+        "1 - , , ,", "institution_ids": []}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5051327875", "display_name": "\u00c9ric Tabacchi",
+        "orcid": "https://orcid.org/0000-0001-7729-4439"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "\u00c9ric Tabacchi", "raw_affiliation_strings":
+        ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0001-7729-4439", "affiliations":
+        [{"raw_affiliation_string": "1 - , , ,", "institution_ids": []}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5011198499", "display_name":
+        "Guillaume Fried", "orcid": "https://orcid.org/0000-0002-3653-195X"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Guillaume
+        Fried", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-3653-195X",
+        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
+        []}]}, {"author_position": "last", "author": {"id": "https://openalex.org/A5001034207",
+        "display_name": "Nicolas Mouquet", "orcid": "https://orcid.org/0000-0003-1840-6984"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Nicolas Mouquet", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
+        "https://orcid.org/0000-0003-1840-6984", "affiliations": [{"raw_affiliation_string":
+        "1 - , , ,", "institution_ids": []}]}], "institutions": [], "countries_distinct_count":
+        0, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5004806463"],
+        "corresponding_institution_ids": [], "apc_list": null, "apc_paid": null, "fwci":
+        0.2307, "has_fulltext": true, "cited_by_count": 1, "citation_normalized_percentile":
+        {"value": 0.52604547, "is_in_top_1_percent": false, "is_in_top_10_percent":
+        false}, "cited_by_percentile_year": {"min": 91, "max": 95}, "biblio": {"volume":
+        "8", "issue": "90", "first_page": "5753", "last_page": "5753"}, "is_retracted":
+        false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10799",
+        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
+        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
+        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10799",
+        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
+        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
+        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10064",
+        "display_name": "Complex Network Analysis Techniques", "score": 0.9715999960899353,
+        "subfield": {"id": "https://openalex.org/subfields/3109", "display_name":
+        "Statistical and Nonlinear Physics"}, "field": {"id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10487",
+        "display_name": "Plant and animal studies", "score": 0.9330999851226807, "subfield":
+        {"id": "https://openalex.org/subfields/1105", "display_name": "Ecology, Evolution,
+        Behavior and Systematics"}, "field": {"id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"}, "domain": {"id":
+        "https://openalex.org/domains/1", "display_name": "Life Sciences"}}], "keywords":
+        [{"id": "https://openalex.org/keywords/computer-science", "display_name":
+        "Computer science", "score": 0.5957576036453247}, {"id": "https://openalex.org/keywords/engineering-drawing",
+        "display_name": "Engineering drawing", "score": 0.42907822132110596}, {"id":
+        "https://openalex.org/keywords/computer-graphics", "display_name": "Computer
+        graphics (images)", "score": 0.40461450815200806}, {"id": "https://openalex.org/keywords/programming-language",
+        "display_name": "Programming language", "score": 0.3500136137008667}, {"id":
+        "https://openalex.org/keywords/engineering", "display_name": "Engineering",
+        "score": 0.16990187764167786}], "concepts": [{"id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198", "display_name": "Computer
+        science", "level": 0, "score": 0.5957576036453247}, {"id": "https://openalex.org/C199639397",
+        "wikidata": "https://www.wikidata.org/wiki/Q1788588", "display_name": "Engineering
+        drawing", "level": 1, "score": 0.42907822132110596}, {"id": "https://openalex.org/C121684516",
+        "wikidata": "https://www.wikidata.org/wiki/Q7600677", "display_name": "Computer
+        graphics (images)", "level": 1, "score": 0.40461450815200806}, {"id": "https://openalex.org/C199360897",
+        "wikidata": "https://www.wikidata.org/wiki/Q9143", "display_name": "Programming
+        language", "level": 1, "score": 0.3500136137008667}, {"id": "https://openalex.org/C127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023", "display_name": "Engineering",
+        "level": 0, "score": 0.16990187764167786}], "mesh": [], "locations_count":
+        3, "locations": [{"id": "doi:10.21105/joss.05753", "is_oa": true, "landing_page_url":
+        "https://doi.org/10.21105/joss.05753", "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
+        "source": {"id": "https://openalex.org/S4210214273", "display_name": "The
+        Journal of Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"],
+        "is_oa": true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, {"id":
+        "pmh:oai:HAL:hal-04782259v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-04782259",
+        "pdf_url": "https://hal.science/hal-04782259/document", "source": {"id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+        false, "host_organization": "https://openalex.org/I1294671590", "host_organization_name":
+        "Centre National de la Recherche Scientifique", "host_organization_lineage":
+        ["https://openalex.org/I1294671590"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
+        Open Source Software, 2023, 8, &#x27E8;10.21105/joss.05753&#x27E9;", "raw_type":
+        "Journal articles"}, {"id": "pmh:oai:archimer.ifremer.fr:96837", "is_oa":
+        true, "landing_page_url": "https://archimer.ifremer.fr/doc/00856/96837/",
+        "pdf_url": "https://archimer.ifremer.fr/doc/00856/96837/105441.pdf", "source":
+        {"id": "https://openalex.org/S4377196267", "display_name": "Institutional
+        Archive of Ifremer (French Research Institute for Exploitation of the Sea)",
+        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+        false, "host_organization": "https://openalex.org/I154202486", "host_organization_name":
+        "Ifremer", "host_organization_lineage": ["https://openalex.org/I154202486"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
+        Open Source Software (2475-9066) (The Open Journal), 2023-10-13 , Vol. 8 ,
+        N. 90 , P. 5753 (6p.)", "raw_type": "text"}], "best_oa_location": {"id": "doi:10.21105/joss.05753",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.05753",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, "sustainable_development_goals":
+        [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
+        "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
+        "has_content": {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf":
+        "https://content.openalex.org/works/W4387609797.pdf"}, "referenced_works_count":
+        10, "referenced_works": ["https://openalex.org/W229097380", "https://openalex.org/W2160061095",
+        "https://openalex.org/W2468260939", "https://openalex.org/W2582743722", "https://openalex.org/W2804233742",
+        "https://openalex.org/W2883227601", "https://openalex.org/W3102426116", "https://openalex.org/W4254687493",
+        "https://openalex.org/W4399580101", "https://openalex.org/W6608852248"], "related_works":
+        ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801", "https://openalex.org/W2358668433",
+        "https://openalex.org/W2376932109", "https://openalex.org/W2001405890", "https://openalex.org/W2382290278",
+        "https://openalex.org/W2350741829", "https://openalex.org/W2530322880", "https://openalex.org/W1596801655",
+        "https://openalex.org/W2359140296"], "abstract_inverted_index": {"chessboard":
+        [0, 29], "aims": [1], "to": [2, 33], "facilitate": [3], "the": [4, 39, 43],
+        "creation": [5, 44], "of": [6, 45], "connectivity": [7, 47], "matrices": [8],
+        "for": [9], "sampling": [10], "networks": [11], "designed": [12], "as": [13],
+        "regular": [14], "grids.": [15], "It": [16], "can": [17], "handle": [18],
+        "directed": [19], "(asymmetric)": [20], "and": [21], "undirected": [22], "(symmetric)":
+        [23], "spatial": [24], "(or": [25], "non-spatial)": [26], "network": [27],
+        "connections.": [28], "offers": [30], "various": [31], "methods": [32], "detect":
+        [34], "neighbors,": [35], "all": [36], "based": [37], "on": [38], "chess":
+        [40], "game,": [41], "allowing": [42], "complex": [46], "scenarios\\n": [48]},
+        "counts_by_year": [{"year": 2025, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
+        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-24 05:16:31
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.21105%2Fjoss.05753&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 05:16:31 GMT
+      content-type: application/json
+      cf-ray: a009d4299804e1d1-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599791"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=UUqOYs84dE8skWtG0LBXKhHC1ozSXGe%2BKMl1BHgixdE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599791"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9923'
+      x-ratelimit-remaining-usd: '0.9923'
+      x-ratelimit-reset: '67409'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 24, "page": null, "per_page":
+        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [{"id": "https://openalex.org/W4387609797", "doi": "https://doi.org/10.21105/joss.05753",
+        "title": "chessboard: An R package for creating networkconnections based on
+        chess moves", "display_name": "chessboard: An R package for creating networkconnections
+        based on chess moves", "publication_year": 2023, "publication_date": "2023-10-13",
+        "ids": {"openalex": "https://openalex.org/W4387609797", "doi": "https://doi.org/10.21105/joss.05753"},
+        "language": "en", "primary_location": {"id": "doi:10.21105/joss.05753", "is_oa":
+        true, "landing_page_url": "https://doi.org/10.21105/joss.05753", "pdf_url":
+        "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source": {"id":
+        "https://openalex.org/S4210214273", "display_name": "The Journal of Open Source
+        Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa": true, "is_in_doaj":
+        true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, "type":
+        "article", "indexed_in": ["crossref", "doaj"], "open_access": {"is_oa": true,
+        "oa_status": "diamond", "oa_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
+        "any_repository_has_fulltext": true}, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5004806463", "display_name":
+        "Nicolas Casajus", "orcid": "https://orcid.org/0000-0002-5537-5294"}, "institutions":
+        [], "countries": [], "is_corresponding": true, "raw_author_name": "Nicolas
+        Casajus", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-5537-5294",
+        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5034881512",
+        "display_name": "\u00c9rica Rievrs Borges", "orcid": "https://orcid.org/0000-0001-7751-6265"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "\u00c9rica Rievrs Borges", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
+        "https://orcid.org/0000-0001-7751-6265", "affiliations": [{"raw_affiliation_string":
+        "1 - , , ,", "institution_ids": []}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5051327875", "display_name": "\u00c9ric Tabacchi",
+        "orcid": "https://orcid.org/0000-0001-7729-4439"}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "\u00c9ric Tabacchi", "raw_affiliation_strings":
+        ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0001-7729-4439", "affiliations":
+        [{"raw_affiliation_string": "1 - , , ,", "institution_ids": []}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5011198499", "display_name":
+        "Guillaume Fried", "orcid": "https://orcid.org/0000-0002-3653-195X"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Guillaume
+        Fried", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid": "https://orcid.org/0000-0002-3653-195X",
+        "affiliations": [{"raw_affiliation_string": "1 - , , ,", "institution_ids":
+        []}]}, {"author_position": "last", "author": {"id": "https://openalex.org/A5001034207",
+        "display_name": "Nicolas Mouquet", "orcid": "https://orcid.org/0000-0003-1840-6984"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Nicolas Mouquet", "raw_affiliation_strings": ["1 - , , ,"], "raw_orcid":
+        "https://orcid.org/0000-0003-1840-6984", "affiliations": [{"raw_affiliation_string":
+        "1 - , , ,", "institution_ids": []}]}], "institutions": [], "countries_distinct_count":
+        0, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5004806463"],
+        "corresponding_institution_ids": [], "apc_list": null, "apc_paid": null, "fwci":
+        0.2307, "has_fulltext": true, "cited_by_count": 1, "citation_normalized_percentile":
+        {"value": 0.52604547, "is_in_top_1_percent": false, "is_in_top_10_percent":
+        false}, "cited_by_percentile_year": {"min": 91, "max": 95}, "biblio": {"volume":
+        "8", "issue": "90", "first_page": "5753", "last_page": "5753"}, "is_retracted":
+        false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10799",
+        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
+        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
+        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10799",
+        "display_name": "Data Visualization and Analytics", "score": 0.98580002784729,
+        "subfield": {"id": "https://openalex.org/subfields/1707", "display_name":
+        "Computer Vision and Pattern Recognition"}, "field": {"id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10064",
+        "display_name": "Complex Network Analysis Techniques", "score": 0.9715999960899353,
+        "subfield": {"id": "https://openalex.org/subfields/3109", "display_name":
+        "Statistical and Nonlinear Physics"}, "field": {"id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T10487",
+        "display_name": "Plant and animal studies", "score": 0.9330999851226807, "subfield":
+        {"id": "https://openalex.org/subfields/1105", "display_name": "Ecology, Evolution,
+        Behavior and Systematics"}, "field": {"id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"}, "domain": {"id":
+        "https://openalex.org/domains/1", "display_name": "Life Sciences"}}], "keywords":
+        [{"id": "https://openalex.org/keywords/computer-science", "display_name":
+        "Computer science", "score": 0.5957576036453247}, {"id": "https://openalex.org/keywords/engineering-drawing",
+        "display_name": "Engineering drawing", "score": 0.42907822132110596}, {"id":
+        "https://openalex.org/keywords/computer-graphics", "display_name": "Computer
+        graphics (images)", "score": 0.40461450815200806}, {"id": "https://openalex.org/keywords/programming-language",
+        "display_name": "Programming language", "score": 0.3500136137008667}, {"id":
+        "https://openalex.org/keywords/engineering", "display_name": "Engineering",
+        "score": 0.16990187764167786}], "concepts": [{"id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198", "display_name": "Computer
+        science", "level": 0, "score": 0.5957576036453247}, {"id": "https://openalex.org/C199639397",
+        "wikidata": "https://www.wikidata.org/wiki/Q1788588", "display_name": "Engineering
+        drawing", "level": 1, "score": 0.42907822132110596}, {"id": "https://openalex.org/C121684516",
+        "wikidata": "https://www.wikidata.org/wiki/Q7600677", "display_name": "Computer
+        graphics (images)", "level": 1, "score": 0.40461450815200806}, {"id": "https://openalex.org/C199360897",
+        "wikidata": "https://www.wikidata.org/wiki/Q9143", "display_name": "Programming
+        language", "level": 1, "score": 0.3500136137008667}, {"id": "https://openalex.org/C127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023", "display_name": "Engineering",
+        "level": 0, "score": 0.16990187764167786}], "mesh": [], "locations_count":
+        3, "locations": [{"id": "doi:10.21105/joss.05753", "is_oa": true, "landing_page_url":
+        "https://doi.org/10.21105/joss.05753", "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf",
+        "source": {"id": "https://openalex.org/S4210214273", "display_name": "The
+        Journal of Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"],
+        "is_oa": true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, {"id":
+        "pmh:oai:HAL:hal-04782259v1", "is_oa": true, "landing_page_url": "https://hal.science/hal-04782259",
+        "pdf_url": "https://hal.science/hal-04782259/document", "source": {"id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+        false, "host_organization": "https://openalex.org/I1294671590", "host_organization_name":
+        "Centre National de la Recherche Scientifique", "host_organization_lineage":
+        ["https://openalex.org/I1294671590"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
+        Open Source Software, 2023, 8, &#x27E8;10.21105/joss.05753&#x27E9;", "raw_type":
+        "Journal articles"}, {"id": "pmh:oai:archimer.ifremer.fr:96837", "is_oa":
+        true, "landing_page_url": "https://archimer.ifremer.fr/doc/00856/96837/",
+        "pdf_url": "https://archimer.ifremer.fr/doc/00856/96837/105441.pdf", "source":
+        {"id": "https://openalex.org/S4377196267", "display_name": "Institutional
+        Archive of Ifremer (French Research Institute for Exploitation of the Sea)",
+        "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+        false, "host_organization": "https://openalex.org/I154202486", "host_organization_name":
+        "Ifremer", "host_organization_lineage": ["https://openalex.org/I154202486"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "Journal of
+        Open Source Software (2475-9066) (The Open Journal), 2023-10-13 , Vol. 8 ,
+        N. 90 , P. 5753 (6p.)", "raw_type": "text"}], "best_oa_location": {"id": "doi:10.21105/joss.05753",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.21105/joss.05753",
+        "pdf_url": "https://joss.theoj.org/papers/10.21105/joss.05753.pdf", "source":
+        {"id": "https://openalex.org/S4210214273", "display_name": "The Journal of
+        Open Source Software", "issn_l": "2475-9066", "issn": ["2475-9066"], "is_oa":
+        true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315853",
+        "host_organization_name": "Open Journals", "host_organization_lineage": ["https://openalex.org/P4310315853"],
+        "host_organization_lineage_names": ["Open Journals"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Journal of Open Source Software", "raw_type": "journal-article"}, "sustainable_development_goals":
+        [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
+        "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
+        "has_content": {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf":
+        "https://content.openalex.org/works/W4387609797.pdf"}, "referenced_works_count":
+        10, "referenced_works": ["https://openalex.org/W229097380", "https://openalex.org/W2160061095",
+        "https://openalex.org/W2468260939", "https://openalex.org/W2582743722", "https://openalex.org/W2804233742",
+        "https://openalex.org/W2883227601", "https://openalex.org/W3102426116", "https://openalex.org/W4254687493",
+        "https://openalex.org/W4399580101", "https://openalex.org/W6608852248"], "related_works":
+        ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801", "https://openalex.org/W2358668433",
+        "https://openalex.org/W2376932109", "https://openalex.org/W2001405890", "https://openalex.org/W2382290278",
+        "https://openalex.org/W2350741829", "https://openalex.org/W2530322880", "https://openalex.org/W1596801655",
+        "https://openalex.org/W2359140296"], "abstract_inverted_index": {"chessboard":
+        [0, 29], "aims": [1], "to": [2, 33], "facilitate": [3], "the": [4, 39, 43],
+        "creation": [5, 44], "of": [6, 45], "connectivity": [7, 47], "matrices": [8],
+        "for": [9], "sampling": [10], "networks": [11], "designed": [12], "as": [13],
+        "regular": [14], "grids.": [15], "It": [16], "can": [17], "handle": [18],
+        "directed": [19], "(asymmetric)": [20], "and": [21], "undirected": [22], "(symmetric)":
+        [23], "spatial": [24], "(or": [25], "non-spatial)": [26], "network": [27],
+        "connections.": [28], "offers": [30], "various": [31], "methods": [32], "detect":
+        [34], "neighbors,": [35], "all": [36], "based": [37], "on": [38], "chess":
+        [40], "game,": [41], "allowing": [42], "complex": [46], "scenarios\\n": [48]},
+        "counts_by_year": [{"year": 2025, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
+        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-24 05:16:31
+recorded_with: VCR-vcr/2.1.0

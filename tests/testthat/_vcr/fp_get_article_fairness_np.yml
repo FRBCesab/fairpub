@@ -1,0 +1,375 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.1126%2Fscience.162.3859.1243&per-page=1&mailto=anonymous%40mail.com
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 05:16:28 GMT
+      content-type: application/json
+      cf-ray: a009d41319c0e1d1-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Eu52GX6%2Bs1LfFpWTD9CKQYB3Hu82Uv8aTjuiDwosf%2Bw%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599788"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=Eu52GX6%2Bs1LfFpWTD9CKQYB3Hu82Uv8aTjuiDwosf%2Bw%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599788"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9931'
+      x-ratelimit-remaining-usd: '0.9931'
+      x-ratelimit-reset: '67412'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 11, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2226396244",
+        "doi": "https://doi.org/10.1126/science.162.3859.1243", "title": "The Tragedy
+        of the Commons", "display_name": "The Tragedy of the Commons", "publication_year":
+        1968, "publication_date": "1968-12-13", "ids": {"openalex": "https://openalex.org/W2226396244",
+        "doi": "https://doi.org/10.1126/science.162.3859.1243", "mag": "2226396244",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/17756331"}, "language": "en", "primary_location":
+        {"id": "doi:10.1126/science.162.3859.1243", "is_oa": false, "landing_page_url":
+        "https://doi.org/10.1126/science.162.3859.1243", "pdf_url": null, "source":
+        {"id": "https://openalex.org/S3880285", "display_name": "Science", "issn_l":
+        "0036-8075", "issn": ["0036-8075", "1095-9203"], "is_oa": false, "is_in_doaj":
+        false, "is_core": true, "host_organization": "https://openalex.org/P4310315823",
+        "host_organization_name": "American Association for the Advancement of Science",
+        "host_organization_lineage": ["https://openalex.org/P4310315823"], "host_organization_lineage_names":
+        ["American Association for the Advancement of Science"], "type": "journal"},
+        "license": null, "license_id": null, "version": "publishedVersion", "is_accepted":
+        true, "is_published": true, "raw_source_name": "Science", "raw_type": "journal-article"},
+        "type": "article", "indexed_in": ["crossref", "pubmed"], "open_access": {"is_oa":
+        false, "oa_status": "closed", "oa_url": null, "any_repository_has_fulltext":
+        false}, "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5111448232",
+        "display_name": "Garrett Hardin", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I1311206647", "display_name": "American Association
+        For The Advancement of Science", "ror": "https://ror.org/05j0w0e76", "country_code":
+        "US", "type": "nonprofit", "lineage": ["https://openalex.org/I1311206647"]}],
+        "countries": ["US"], "is_corresponding": true, "raw_author_name": "Garrett
+        Hardin", "raw_affiliation_strings": ["The author is professor of biology,
+        University of California, Santa Barbara. This article is based on a presidential
+        address presented before the meeting of the Pacific Division of the American
+        Association for the Advancement of Science at Utah State University, Logan,
+        25 June 1968"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+        "The author is professor of biology, University of California, Santa Barbara.
+        This article is based on a presidential address presented before the meeting
+        of the Pacific Division of the American Association for the Advancement of
+        Science at Utah State University, Logan, 25 June 1968", "institution_ids":
+        ["https://openalex.org/I1311206647"]}]}], "institutions": [], "countries_distinct_count":
+        1, "institutions_distinct_count": 1, "corresponding_author_ids": ["https://openalex.org/A5111448232"],
+        "corresponding_institution_ids": ["https://openalex.org/I1311206647"], "apc_list":
+        null, "apc_paid": null, "fwci": 276.052, "has_fulltext": false, "cited_by_count":
+        22830, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
+        true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99,
+        "max": 100}, "biblio": {"volume": "162", "issue": "3859", "first_page": "1243",
+        "last_page": "1248"}, "is_retracted": false, "is_paratext": false, "is_xpac":
+        false, "primary_topic": {"id": "https://openalex.org/T11252", "display_name":
+        "Evolutionary Game Theory and Cooperation", "score": 0.031300000846385956,
+        "subfield": {"id": "https://openalex.org/subfields/3312", "display_name":
+        "Sociology and Political Science"}, "field": {"id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"}, "domain": {"id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"}}, "topics": [{"id": "https://openalex.org/T11252",
+        "display_name": "Evolutionary Game Theory and Cooperation", "score": 0.031300000846385956,
+        "subfield": {"id": "https://openalex.org/subfields/3312", "display_name":
+        "Sociology and Political Science"}, "field": {"id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"}, "domain": {"id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"}}, {"id": "https://openalex.org/T12788",
+        "display_name": "Space Science and Extraterrestrial Life", "score": 0.02850000001490116,
+        "subfield": {"id": "https://openalex.org/subfields/3103", "display_name":
+        "Astronomy and Astrophysics"}, "field": {"id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T14350",
+        "display_name": "Innovation, Sustainability, Human-Machine Systems", "score":
+        0.024399999529123306, "subfield": {"id": "https://openalex.org/subfields/3312",
+        "display_name": "Sociology and Political Science"}, "field": {"id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"}, "domain": {"id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/tragedy-of-the-commons",
+        "display_name": "Tragedy of the commons", "score": 0.7910512685775757}, {"id":
+        "https://openalex.org/keywords/tragedy", "display_name": "Tragedy (event)",
+        "score": 0.6399936079978943}, {"id": "https://openalex.org/keywords/commons",
+        "display_name": "Commons", "score": 0.548051118850708}, {"id": "https://openalex.org/keywords/environmental-ethics",
+        "display_name": "Environmental ethics", "score": 0.44521600008010864}, {"id":
+        "https://openalex.org/keywords/political-science", "display_name": "Political
+        science", "score": 0.38996389508247375}, {"id": "https://openalex.org/keywords/law-and-economics",
+        "display_name": "Law and economics", "score": 0.36387670040130615}, {"id":
+        "https://openalex.org/keywords/philosophy", "display_name": "Philosophy",
+        "score": 0.24631533026695251}, {"id": "https://openalex.org/keywords/law",
+        "display_name": "Law", "score": 0.20665067434310913}, {"id": "https://openalex.org/keywords/sociology",
+        "display_name": "Sociology", "score": 0.18951085209846497}, {"id": "https://openalex.org/keywords/art",
+        "display_name": "Art", "score": 0.17087167501449585}, {"id": "https://openalex.org/keywords/literature",
+        "display_name": "Literature", "score": 0.12536907196044922}], "concepts":
+        [{"id": "https://openalex.org/C15517945", "wikidata": "https://www.wikidata.org/wiki/Q334622",
+        "display_name": "Tragedy of the commons", "level": 3, "score": 0.7910512685775757},
+        {"id": "https://openalex.org/C2780027720", "wikidata": "https://www.wikidata.org/wiki/Q7832608",
+        "display_name": "Tragedy (event)", "level": 2, "score": 0.6399936079978943},
+        {"id": "https://openalex.org/C49427245", "wikidata": "https://www.wikidata.org/wiki/Q9828451",
+        "display_name": "Commons", "level": 2, "score": 0.548051118850708}, {"id":
+        "https://openalex.org/C95124753", "wikidata": "https://www.wikidata.org/wiki/Q875686",
+        "display_name": "Environmental ethics", "level": 1, "score": 0.44521600008010864},
+        {"id": "https://openalex.org/C17744445", "wikidata": "https://www.wikidata.org/wiki/Q36442",
+        "display_name": "Political science", "level": 0, "score": 0.38996389508247375},
+        {"id": "https://openalex.org/C190253527", "wikidata": "https://www.wikidata.org/wiki/Q295354",
+        "display_name": "Law and economics", "level": 1, "score": 0.36387670040130615},
+        {"id": "https://openalex.org/C138885662", "wikidata": "https://www.wikidata.org/wiki/Q5891",
+        "display_name": "Philosophy", "level": 0, "score": 0.24631533026695251}, {"id":
+        "https://openalex.org/C199539241", "wikidata": "https://www.wikidata.org/wiki/Q7748",
+        "display_name": "Law", "level": 1, "score": 0.20665067434310913}, {"id": "https://openalex.org/C144024400",
+        "wikidata": "https://www.wikidata.org/wiki/Q21201", "display_name": "Sociology",
+        "level": 0, "score": 0.18951085209846497}, {"id": "https://openalex.org/C142362112",
+        "wikidata": "https://www.wikidata.org/wiki/Q735", "display_name": "Art", "level":
+        0, "score": 0.17087167501449585}, {"id": "https://openalex.org/C124952713",
+        "wikidata": "https://www.wikidata.org/wiki/Q8242", "display_name": "Literature",
+        "level": 1, "score": 0.12536907196044922}], "mesh": [], "locations_count":
+        3, "locations": [{"id": "doi:10.1126/science.162.3859.1243", "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1126/science.162.3859.1243", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S3880285", "display_name": "Science",
+        "issn_l": "0036-8075", "issn": ["0036-8075", "1095-9203"], "is_oa": false,
+        "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310315823",
+        "host_organization_name": "American Association for the Advancement of Science",
+        "host_organization_lineage": ["https://openalex.org/P4310315823"], "host_organization_lineage_names":
+        ["American Association for the Advancement of Science"], "type": "journal"},
+        "license": null, "license_id": null, "version": "publishedVersion", "is_accepted":
+        true, "is_published": true, "raw_source_name": "Science", "raw_type": "journal-article"},
+        {"id": "pmid:17756331", "is_oa": false, "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/17756331",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306525036", "display_name":
+        "PubMed", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
+        "is_core": false, "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_name": "National Institutes of Health", "host_organization_lineage":
+        ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
+        "is_accepted": true, "is_published": true, "raw_source_name": "Science (New
+        York, N.Y.)", "raw_type": null}, {"id": "pmid:5699198", "is_oa": false, "landing_page_url":
+        "https://pubmed.ncbi.nlm.nih.gov/5699198", "pdf_url": null, "source": {"id":
+        "https://openalex.org/S4306525036", "display_name": "PubMed", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1299303238", "host_organization_name": "National Institutes
+        of Health", "host_organization_lineage": ["https://openalex.org/I1299303238"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
+        "license_id": null, "version": "publishedVersion", "is_accepted": true, "is_published":
+        true, "raw_source_name": "Science (New York, N.Y.)", "raw_type": null}], "best_oa_location":
+        null, "sustainable_development_goals": [{"score": 0.4300000071525574, "id":
+        "https://metadata.un.org/sdg/16", "display_name": "Peace, Justice and strong
+        institutions"}], "awards": [], "funders": [], "has_content": {"pdf": false,
+        "grobid_xml": false}, "content_urls": null, "referenced_works_count": 16,
+        "referenced_works": ["https://openalex.org/W645218623", "https://openalex.org/W1520891760",
+        "https://openalex.org/W1546755579", "https://openalex.org/W1967161129", "https://openalex.org/W2027636702",
+        "https://openalex.org/W2029363644", "https://openalex.org/W2054383667", "https://openalex.org/W2089475418",
+        "https://openalex.org/W2091050224", "https://openalex.org/W2106639850", "https://openalex.org/W2144846366",
+        "https://openalex.org/W2234578361", "https://openalex.org/W2330107103", "https://openalex.org/W2798908584",
+        "https://openalex.org/W3027820740", "https://openalex.org/W4285719527"], "related_works":
+        ["https://openalex.org/W3123154154", "https://openalex.org/W2118898980", "https://openalex.org/W3209447036",
+        "https://openalex.org/W2098644726", "https://openalex.org/W2375460653", "https://openalex.org/W2790699714",
+        "https://openalex.org/W4321439661", "https://openalex.org/W1522074275", "https://openalex.org/W2503841055",
+        "https://openalex.org/W1030266976"], "abstract_inverted_index": {"The": [0],
+        "population": [1], "problem": [2], "has": [3], "no": [4], "technical": [5],
+        "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental": [10],
+        "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year": [{"year":
+        2026, "cited_by_count": 306}, {"year": 2025, "cited_by_count": 830}, {"year":
+        2024, "cited_by_count": 914}, {"year": 2023, "cited_by_count": 860}, {"year":
+        2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169}, {"year":
+        2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132}, {"year":
+        2018, "cited_by_count": 1048}, {"year": 2017, "cited_by_count": 969}, {"year":
+        2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909}, {"year":
+        2014, "cited_by_count": 1013}, {"year": 2013, "cited_by_count": 921}, {"year":
+        2012, "cited_by_count": 889}], "updated_date": "2026-05-23T08:51:43.019350",
+        "created_date": "2016-06-24T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-24 05:16:28
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.1126%2Fscience.162.3859.1243&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
+  response:
+    status: 200
+    headers:
+      date: Sun, 24 May 2026 05:16:28 GMT
+      content-type: application/json
+      cf-ray: a009d4159c4be1d1-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Eu52GX6%2Bs1LfFpWTD9CKQYB3Hu82Uv8aTjuiDwosf%2Bw%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779599788"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=Eu52GX6%2Bs1LfFpWTD9CKQYB3Hu82Uv8aTjuiDwosf%2Bw%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779599788"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '9930'
+      x-ratelimit-remaining-usd: '0.993'
+      x-ratelimit-reset: '67412'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 10, "page": null, "per_page":
+        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [{"id": "https://openalex.org/W2226396244", "doi": "https://doi.org/10.1126/science.162.3859.1243",
+        "title": "The Tragedy of the Commons", "display_name": "The Tragedy of the
+        Commons", "publication_year": 1968, "publication_date": "1968-12-13", "ids":
+        {"openalex": "https://openalex.org/W2226396244", "doi": "https://doi.org/10.1126/science.162.3859.1243",
+        "mag": "2226396244", "pmid": "https://pubmed.ncbi.nlm.nih.gov/17756331"},
+        "language": "en", "primary_location": {"id": "doi:10.1126/science.162.3859.1243",
+        "is_oa": false, "landing_page_url": "https://doi.org/10.1126/science.162.3859.1243",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S3880285", "display_name":
+        "Science", "issn_l": "0036-8075", "issn": ["0036-8075", "1095-9203"], "is_oa":
+        false, "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310315823",
+        "host_organization_name": "American Association for the Advancement of Science",
+        "host_organization_lineage": ["https://openalex.org/P4310315823"], "host_organization_lineage_names":
+        ["American Association for the Advancement of Science"], "type": "journal"},
+        "license": null, "license_id": null, "version": "publishedVersion", "is_accepted":
+        true, "is_published": true, "raw_source_name": "Science", "raw_type": "journal-article"},
+        "type": "article", "indexed_in": ["crossref", "pubmed"], "open_access": {"is_oa":
+        false, "oa_status": "closed", "oa_url": null, "any_repository_has_fulltext":
+        false}, "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5111448232",
+        "display_name": "Garrett Hardin", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I1311206647", "display_name": "American Association
+        For The Advancement of Science", "ror": "https://ror.org/05j0w0e76", "country_code":
+        "US", "type": "nonprofit", "lineage": ["https://openalex.org/I1311206647"]}],
+        "countries": ["US"], "is_corresponding": true, "raw_author_name": "Garrett
+        Hardin", "raw_affiliation_strings": ["The author is professor of biology,
+        University of California, Santa Barbara. This article is based on a presidential
+        address presented before the meeting of the Pacific Division of the American
+        Association for the Advancement of Science at Utah State University, Logan,
+        25 June 1968"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+        "The author is professor of biology, University of California, Santa Barbara.
+        This article is based on a presidential address presented before the meeting
+        of the Pacific Division of the American Association for the Advancement of
+        Science at Utah State University, Logan, 25 June 1968", "institution_ids":
+        ["https://openalex.org/I1311206647"]}]}], "institutions": [], "countries_distinct_count":
+        1, "institutions_distinct_count": 1, "corresponding_author_ids": ["https://openalex.org/A5111448232"],
+        "corresponding_institution_ids": ["https://openalex.org/I1311206647"], "apc_list":
+        null, "apc_paid": null, "fwci": 276.052, "has_fulltext": false, "cited_by_count":
+        22830, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
+        true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99,
+        "max": 100}, "biblio": {"volume": "162", "issue": "3859", "first_page": "1243",
+        "last_page": "1248"}, "is_retracted": false, "is_paratext": false, "is_xpac":
+        false, "primary_topic": {"id": "https://openalex.org/T11252", "display_name":
+        "Evolutionary Game Theory and Cooperation", "score": 0.031300000846385956,
+        "subfield": {"id": "https://openalex.org/subfields/3312", "display_name":
+        "Sociology and Political Science"}, "field": {"id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"}, "domain": {"id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"}}, "topics": [{"id": "https://openalex.org/T11252",
+        "display_name": "Evolutionary Game Theory and Cooperation", "score": 0.031300000846385956,
+        "subfield": {"id": "https://openalex.org/subfields/3312", "display_name":
+        "Sociology and Political Science"}, "field": {"id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"}, "domain": {"id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"}}, {"id": "https://openalex.org/T12788",
+        "display_name": "Space Science and Extraterrestrial Life", "score": 0.02850000001490116,
+        "subfield": {"id": "https://openalex.org/subfields/3103", "display_name":
+        "Astronomy and Astrophysics"}, "field": {"id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}, {"id": "https://openalex.org/T14350",
+        "display_name": "Innovation, Sustainability, Human-Machine Systems", "score":
+        0.024399999529123306, "subfield": {"id": "https://openalex.org/subfields/3312",
+        "display_name": "Sociology and Political Science"}, "field": {"id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"}, "domain": {"id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/tragedy-of-the-commons",
+        "display_name": "Tragedy of the commons", "score": 0.7910512685775757}, {"id":
+        "https://openalex.org/keywords/tragedy", "display_name": "Tragedy (event)",
+        "score": 0.6399936079978943}, {"id": "https://openalex.org/keywords/commons",
+        "display_name": "Commons", "score": 0.548051118850708}, {"id": "https://openalex.org/keywords/environmental-ethics",
+        "display_name": "Environmental ethics", "score": 0.44521600008010864}, {"id":
+        "https://openalex.org/keywords/political-science", "display_name": "Political
+        science", "score": 0.38996389508247375}, {"id": "https://openalex.org/keywords/law-and-economics",
+        "display_name": "Law and economics", "score": 0.36387670040130615}, {"id":
+        "https://openalex.org/keywords/philosophy", "display_name": "Philosophy",
+        "score": 0.24631533026695251}, {"id": "https://openalex.org/keywords/law",
+        "display_name": "Law", "score": 0.20665067434310913}, {"id": "https://openalex.org/keywords/sociology",
+        "display_name": "Sociology", "score": 0.18951085209846497}, {"id": "https://openalex.org/keywords/art",
+        "display_name": "Art", "score": 0.17087167501449585}, {"id": "https://openalex.org/keywords/literature",
+        "display_name": "Literature", "score": 0.12536907196044922}], "concepts":
+        [{"id": "https://openalex.org/C15517945", "wikidata": "https://www.wikidata.org/wiki/Q334622",
+        "display_name": "Tragedy of the commons", "level": 3, "score": 0.7910512685775757},
+        {"id": "https://openalex.org/C2780027720", "wikidata": "https://www.wikidata.org/wiki/Q7832608",
+        "display_name": "Tragedy (event)", "level": 2, "score": 0.6399936079978943},
+        {"id": "https://openalex.org/C49427245", "wikidata": "https://www.wikidata.org/wiki/Q9828451",
+        "display_name": "Commons", "level": 2, "score": 0.548051118850708}, {"id":
+        "https://openalex.org/C95124753", "wikidata": "https://www.wikidata.org/wiki/Q875686",
+        "display_name": "Environmental ethics", "level": 1, "score": 0.44521600008010864},
+        {"id": "https://openalex.org/C17744445", "wikidata": "https://www.wikidata.org/wiki/Q36442",
+        "display_name": "Political science", "level": 0, "score": 0.38996389508247375},
+        {"id": "https://openalex.org/C190253527", "wikidata": "https://www.wikidata.org/wiki/Q295354",
+        "display_name": "Law and economics", "level": 1, "score": 0.36387670040130615},
+        {"id": "https://openalex.org/C138885662", "wikidata": "https://www.wikidata.org/wiki/Q5891",
+        "display_name": "Philosophy", "level": 0, "score": 0.24631533026695251}, {"id":
+        "https://openalex.org/C199539241", "wikidata": "https://www.wikidata.org/wiki/Q7748",
+        "display_name": "Law", "level": 1, "score": 0.20665067434310913}, {"id": "https://openalex.org/C144024400",
+        "wikidata": "https://www.wikidata.org/wiki/Q21201", "display_name": "Sociology",
+        "level": 0, "score": 0.18951085209846497}, {"id": "https://openalex.org/C142362112",
+        "wikidata": "https://www.wikidata.org/wiki/Q735", "display_name": "Art", "level":
+        0, "score": 0.17087167501449585}, {"id": "https://openalex.org/C124952713",
+        "wikidata": "https://www.wikidata.org/wiki/Q8242", "display_name": "Literature",
+        "level": 1, "score": 0.12536907196044922}], "mesh": [], "locations_count":
+        3, "locations": [{"id": "doi:10.1126/science.162.3859.1243", "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1126/science.162.3859.1243", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S3880285", "display_name": "Science",
+        "issn_l": "0036-8075", "issn": ["0036-8075", "1095-9203"], "is_oa": false,
+        "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310315823",
+        "host_organization_name": "American Association for the Advancement of Science",
+        "host_organization_lineage": ["https://openalex.org/P4310315823"], "host_organization_lineage_names":
+        ["American Association for the Advancement of Science"], "type": "journal"},
+        "license": null, "license_id": null, "version": "publishedVersion", "is_accepted":
+        true, "is_published": true, "raw_source_name": "Science", "raw_type": "journal-article"},
+        {"id": "pmid:17756331", "is_oa": false, "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/17756331",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306525036", "display_name":
+        "PubMed", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
+        "is_core": false, "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_name": "National Institutes of Health", "host_organization_lineage":
+        ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
+        "is_accepted": true, "is_published": true, "raw_source_name": "Science (New
+        York, N.Y.)", "raw_type": null}, {"id": "pmid:5699198", "is_oa": false, "landing_page_url":
+        "https://pubmed.ncbi.nlm.nih.gov/5699198", "pdf_url": null, "source": {"id":
+        "https://openalex.org/S4306525036", "display_name": "PubMed", "issn_l": null,
+        "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1299303238", "host_organization_name": "National Institutes
+        of Health", "host_organization_lineage": ["https://openalex.org/I1299303238"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
+        "license_id": null, "version": "publishedVersion", "is_accepted": true, "is_published":
+        true, "raw_source_name": "Science (New York, N.Y.)", "raw_type": null}], "best_oa_location":
+        null, "sustainable_development_goals": [{"display_name": "Peace, Justice and
+        strong institutions", "id": "https://metadata.un.org/sdg/16", "score": 0.4300000071525574}],
+        "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
+        "content_urls": null, "referenced_works_count": 16, "referenced_works": ["https://openalex.org/W645218623",
+        "https://openalex.org/W1520891760", "https://openalex.org/W1546755579", "https://openalex.org/W1967161129",
+        "https://openalex.org/W2027636702", "https://openalex.org/W2029363644", "https://openalex.org/W2054383667",
+        "https://openalex.org/W2089475418", "https://openalex.org/W2091050224", "https://openalex.org/W2106639850",
+        "https://openalex.org/W2144846366", "https://openalex.org/W2234578361", "https://openalex.org/W2330107103",
+        "https://openalex.org/W2798908584", "https://openalex.org/W3027820740", "https://openalex.org/W4285719527"],
+        "related_works": ["https://openalex.org/W3123154154", "https://openalex.org/W2118898980",
+        "https://openalex.org/W3209447036", "https://openalex.org/W2098644726", "https://openalex.org/W2375460653",
+        "https://openalex.org/W2790699714", "https://openalex.org/W4321439661", "https://openalex.org/W1522074275",
+        "https://openalex.org/W2503841055", "https://openalex.org/W1030266976"], "abstract_inverted_index":
+        {"The": [0], "population": [1], "problem": [2], "has": [3], "no": [4], "technical":
+        [5], "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental":
+        [10], "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year":
+        [{"year": 2026, "cited_by_count": 306}, {"year": 2025, "cited_by_count": 830},
+        {"year": 2024, "cited_by_count": 914}, {"year": 2023, "cited_by_count": 860},
+        {"year": 2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169},
+        {"year": 2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132},
+        {"year": 2018, "cited_by_count": 1048}, {"year": 2017, "cited_by_count": 969},
+        {"year": 2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909},
+        {"year": 2014, "cited_by_count": 1013}, {"year": 2013, "cited_by_count": 921},
+        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-23T08:51:43.019350",
+        "created_date": "2016-06-24T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-24 05:16:28
+recorded_with: VCR-vcr/2.1.0
