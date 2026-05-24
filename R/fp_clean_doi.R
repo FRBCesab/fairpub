@@ -17,28 +17,16 @@
 #'   "doi: 10.1098/rsos.160384",
 #'   "http://dx.doi.org/10.1098/rsos.160384",
 #'   "https://doi.org/10.1098/rsos.160384",
-#'   "HTTPS://DOI.ORG/10.1098/RSOS.160384"
+#'   "HTTPS://DOI.ORG/10.1098/RSOS.160384",
+#'   NA
 #' )
 #'
 #' fp_clean_doi(dois)
 
 fp_clean_doi <- function(doi) {
-  if (missing(doi)) {
-    stop("Argument 'doi' is required")
-  }
+  check_arg_doi(doi)
 
-  if (is.null(doi)) {
-    stop("Argument 'doi' is required")
-  }
-
-  if (!is.character(doi)) {
-    stop("Argument 'doi' must be character")
-  }
-
-  doi <- gsub("\\s", "", doi)
-  doi <- tolower(doi)
-  doi <- gsub("http(s)?://(dx.)?doi.org/", "", doi)
-  doi <- gsub("doi:", "", doi)
-
-  doi
+  doi |>
+    tolower() |>
+    gsub("\\s|http(s)?://(dx.)?doi.org/|doi:", "", x = _)
 }

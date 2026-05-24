@@ -23,7 +23,8 @@ dois <- c(
   "doi: 10.1098/rsos.160384",
   "http://dx.doi.org/10.1098/rsos.160384",
   "https://doi.org/10.1098/rsos.160384",
-  "HTTPS://DOI.ORG/10.1098/RSOS.160384"
+  "HTTPS://DOI.ORG/10.1098/RSOS.160384",
+  NA
 )
 
 fp_clean_doi(dois)

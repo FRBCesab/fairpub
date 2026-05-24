@@ -25,3 +25,21 @@ check_arg_file <- function(file) {
 
   invisible(NULL)
 }
+
+
+#' @noRd
+check_arg_doi <- function(doi) {
+  if (missing(doi)) {
+    stop("Argument 'doi' is required", call. = FALSE)
+  }
+
+  if (is.null(doi)) {
+    stop("Argument 'doi' is required", call. = FALSE)
+  }
+
+  if (!is.character(doi)) {
+    stop("Argument 'doi' must be a character", call. = FALSE)
+  }
+
+  invisible(NULL)
+}
