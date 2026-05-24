@@ -13,11 +13,12 @@ reference:
   - fp_get_journal_fairness
   - fp_compute_citation_ratio
 
-- title: Digital Object Identifier (DOI)
+- title: DOI helpers
   desc: |
     Functions to retrieve, extract and clean DOI.
   contents:
   - fp_extract_doi
+  - fp_clean_doi
 
 - title: DAFNEE database
   desc: |
