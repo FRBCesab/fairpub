@@ -1,0 +1,217 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=title.search%3ACitation+landscape&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=1&mailto=anonymous%40mail.com
+  response:
+    status: 200
+    headers:
+      date: Mon, 25 May 2026 16:34:30 GMT
+      content-type: application/json
+      cf-ray: a015f2a73a75449e-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=wURSFpoVWURUNfF7piNPkD%2BLp8zaMvGjD6n%2BsauwuOE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726869"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=wURSFpoVWURUNfF7piNPkD%2BLp8zaMvGjD6n%2BsauwuOE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726869"
+      x-ratelimit-cost-usd: '0.001'
+      x-ratelimit-credits-used: '10'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '7959'
+      x-ratelimit-remaining-usd: '0.7959'
+      x-ratelimit-reset: '26730'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 114, "db_response_time_ms": 9, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1016/j.datak.2008.05.004",
+        "display_name": "The thematic and citation landscape of Data and Knowledge
+        Engineering (1985\u20132007)", "publication_year": 2008, "primary_location":
+        {"id": "doi:10.1016/j.datak.2008.05.004", "is_oa": false, "landing_page_url":
+        "https://doi.org/10.1016/j.datak.2008.05.004", "pdf_url": null, "source":
+        {"id": "https://openalex.org/S136993123", "display_name": "Data & Knowledge
+        Engineering", "issn_l": "0169-023X", "issn": ["0169-023X", "1872-6933"], "is_oa":
+        false, "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV", "host_organization_lineage": ["https://openalex.org/P4310320990"],
+        "host_organization_lineage_names": ["Elsevier BV"], "type": "journal"}, "license":
+        null, "license_id": null, "version": "publishedVersion", "is_accepted": true,
+        "is_published": true, "raw_source_name": "Data &amp; Knowledge Engineering",
+        "raw_type": "journal-article"}}], "group_by": []}'
+  recorded_at: 2026-05-25 16:34:30
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=title.search%3ACitation+landscape&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=10&mailto=anonymous%40mail.com&page=1
+  response:
+    status: 200
+    headers:
+      date: Mon, 25 May 2026 16:34:30 GMT
+      content-type: application/json
+      cf-ray: a015f2ac1db4449e-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=BA1xnciotOC8IznVJZ%2B9srCWM%2BNu%2FKpJEAGBdFlzXBs%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726870"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=BA1xnciotOC8IznVJZ%2B9srCWM%2BNu%2FKpJEAGBdFlzXBs%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726870"
+      x-ratelimit-cost-usd: '0.001'
+      x-ratelimit-credits-used: '10'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '7949'
+      x-ratelimit-remaining-usd: '0.7949'
+      x-ratelimit-reset: '26730'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 114, "db_response_time_ms": 10, "page": 1, "per_page":
+        10, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1016/j.datak.2008.05.004",
+        "display_name": "The thematic and citation landscape of Data and Knowledge
+        Engineering (1985\u20132007)", "publication_year": 2008, "primary_location":
+        {"id": "doi:10.1016/j.datak.2008.05.004", "is_oa": false, "landing_page_url":
+        "https://doi.org/10.1016/j.datak.2008.05.004", "pdf_url": null, "source":
+        {"id": "https://openalex.org/S136993123", "display_name": "Data & Knowledge
+        Engineering", "issn_l": "0169-023X", "issn": ["0169-023X", "1872-6933"], "is_oa":
+        false, "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV", "host_organization_lineage": ["https://openalex.org/P4310320990"],
+        "host_organization_lineage_names": ["Elsevier BV"], "type": "journal"}, "license":
+        null, "license_id": null, "version": "publishedVersion", "is_accepted": true,
+        "is_published": true, "raw_source_name": "Data &amp; Knowledge Engineering",
+        "raw_type": "journal-article"}}, {"doi": "https://doi.org/10.1109/tfuzz.2017.2672732",
+        "display_name": "The Structure and Citation Landscape of IEEE Transactions
+        on Fuzzy Systems (1994\u20132015)", "publication_year": 2017, "primary_location":
+        {"id": "doi:10.1109/tfuzz.2017.2672732", "is_oa": false, "landing_page_url":
+        "https://doi.org/10.1109/tfuzz.2017.2672732", "pdf_url": null, "source": {"id":
+        "https://openalex.org/S134177497", "display_name": "IEEE Transactions on Fuzzy
+        Systems", "issn_l": "1063-6706", "issn": ["1063-6706", "1941-0034"], "is_oa":
+        false, "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310319808",
+        "host_organization_name": "Institute of Electrical and Electronics Engineers",
+        "host_organization_lineage": ["https://openalex.org/P4310319808"], "host_organization_lineage_names":
+        ["Institute of Electrical and Electronics Engineers"], "type": "journal"},
+        "license": null, "license_id": null, "version": "publishedVersion", "is_accepted":
+        true, "is_published": true, "raw_source_name": "IEEE Transactions on Fuzzy
+        Systems", "raw_type": "journal-article"}}, {"doi": "https://doi.org/10.1016/j.jbusres.2016.11.009",
+        "display_name": "Mapping the luxury research landscape: A bibliometric citation
+        analysis", "publication_year": 2016, "primary_location": {"id": "doi:10.1016/j.jbusres.2016.11.009",
+        "is_oa": false, "landing_page_url": "https://doi.org/10.1016/j.jbusres.2016.11.009",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S93284759", "display_name":
+        "Journal of Business Research", "issn_l": "0148-2963", "issn": ["0148-2963",
+        "1873-7978"], "is_oa": false, "is_in_doaj": false, "is_core": true, "host_organization":
+        "https://openalex.org/P4310320990", "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": ["https://openalex.org/P4310320990"], "host_organization_lineage_names":
+        ["Elsevier BV"], "type": "journal"}, "license": null, "license_id": null,
+        "version": "publishedVersion", "is_accepted": true, "is_published": true,
+        "raw_source_name": "Journal of Business Research", "raw_type": "journal-article"}},
+        {"doi": "https://doi.org/10.1007/s11625-007-0027-8", "display_name": "Creating
+        an academic landscape of sustainability science: an analysis of the citation
+        network", "publication_year": 2007, "primary_location": {"id": "doi:10.1007/s11625-007-0027-8",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.1007/s11625-007-0027-8",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11625-007-0027-8.pdf",
+        "source": {"id": "https://openalex.org/S135086837", "display_name": "Sustainability
+        Science", "issn_l": "1862-4057", "issn": ["1862-4057", "1862-4065"], "is_oa":
+        false, "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_name": "Springer Science+Business Media", "host_organization_lineage":
+        ["https://openalex.org/P4310319900", "https://openalex.org/P4310319965"],
+        "host_organization_lineage_names": ["Springer Science+Business Media", "Springer
+        Nature"], "type": "journal"}, "license": "cc-by-nc", "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion", "is_accepted": true, "is_published": true,
+        "raw_source_name": "Sustainability Science", "raw_type": "journal-article"}},
+        {"doi": "https://doi.org/10.1007/s11135-023-01626-7", "display_name": "Twenty
+        years of Wikipedia in scholarly publications: a bibliometric network analysis
+        of the thematic and citation landscape", "publication_year": 2023, "primary_location":
+        {"id": "doi:10.1007/s11135-023-01626-7", "is_oa": false, "landing_page_url":
+        "https://doi.org/10.1007/s11135-023-01626-7", "pdf_url": null, "source": {"id":
+        "https://openalex.org/S102399824", "display_name": "Quality & Quantity", "issn_l":
+        "0033-5177", "issn": ["0033-5177", "1573-7845"], "is_oa": false, "is_in_doaj":
+        false, "is_core": true, "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_name": "Springer Science+Business Media", "host_organization_lineage":
+        ["https://openalex.org/P4310319900", "https://openalex.org/P4310319965"],
+        "host_organization_lineage_names": ["Springer Science+Business Media", "Springer
+        Nature"], "type": "journal"}, "license": null, "license_id": null, "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Quality &amp; Quantity", "raw_type": "journal-article"}}, {"doi": "https://doi.org/10.5860/crl-285",
+        "display_name": "The Citation Landscape of Scholarly Literature in LGBT Studies:
+        A Snapshot for Subject Librarians", "publication_year": 2012, "primary_location":
+        {"id": "doi:10.5860/crl-285", "is_oa": true, "landing_page_url": "https://doi.org/10.5860/crl-285",
+        "pdf_url": "https://crl.acrl.org/index.php/crl/article/download/16268/17714",
+        "source": {"id": "https://openalex.org/S100920005", "display_name": "College
+        & Research Libraries", "issn_l": "0010-0870", "issn": ["0010-0870", "2150-6701"],
+        "is_oa": true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310316146",
+        "host_organization_name": "Association of College and Research Libraries",
+        "host_organization_lineage": ["https://openalex.org/P4310316146", "https://openalex.org/P4310315903"],
+        "host_organization_lineage_names": ["Association of College and Research Libraries",
+        "American Library Association"], "type": "journal"}, "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc", "version": "publishedVersion",
+        "is_accepted": true, "is_published": true, "raw_source_name": "College &amp;
+        Research Libraries", "raw_type": "journal-article"}}, {"doi": "https://doi.org/10.5944/openpraxis.10.2.822",
+        "display_name": "Mapping the Open Education Landscape: Citation Network Analysis
+        of Historical Open and Distance Education Research", "publication_year": 2018,
+        "primary_location": {"id": "doi:10.5944/openpraxis.10.2.822", "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5944/openpraxis.10.2.822", "pdf_url":
+        "https://openpraxis.org/index.php/OpenPraxis/article/download/822/435", "source":
+        {"id": "https://openalex.org/S2737386756", "display_name": "Open Praxis",
+        "issn_l": "1369-9997", "issn": ["1369-9997", "2304-070X"], "is_oa": true,
+        "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310314099",
+        "host_organization_name": "International Council for Open and Distance Education",
+        "host_organization_lineage": ["https://openalex.org/P4310314099"], "host_organization_lineage_names":
+        ["International Council for Open and Distance Education"], "type": "journal"},
+        "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Open Praxis", "raw_type": "journal-article"}}, {"doi": "https://doi.org/10.1038/383659c0",
+        "display_name": "... as citation ''landscape'' takes shape", "publication_year":
+        1996, "primary_location": {"id": "doi:10.1038/383659c0", "is_oa": true, "landing_page_url":
+        "https://doi.org/10.1038/383659c0", "pdf_url": "https://www.nature.com/articles/383659c0.pdf",
+        "source": {"id": "https://openalex.org/S137773608", "display_name": "Nature",
+        "issn_l": "0028-0836", "issn": ["0028-0836", "1476-4687"], "is_oa": false,
+        "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_name": "Nature Portfolio", "host_organization_lineage":
+        ["https://openalex.org/P4310319908", "https://openalex.org/P4310319965"],
+        "host_organization_lineage_names": ["Nature Portfolio", "Springer Nature"],
+        "type": "journal"}, "license": null, "license_id": null, "version": "publishedVersion",
+        "is_accepted": true, "is_published": true, "raw_source_name": "Nature", "raw_type":
+        "journal-article"}}, {"doi": "https://doi.org/10.1007/bf02458399", "display_name":
+        "Citation-networks, science landscapes and evolutionary strategies", "publication_year":
+        1998, "primary_location": {"id": "doi:10.1007/bf02458399", "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/bf02458399", "pdf_url": null,
+        "source": {"id": "https://openalex.org/S148561398", "display_name": "Scientometrics",
+        "issn_l": "0138-9130", "issn": ["0138-9130", "1588-2861"], "is_oa": false,
+        "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310320108",
+        "host_organization_name": "Springer Nature (Netherlands)", "host_organization_lineage":
+        ["https://openalex.org/P4310320108", "https://openalex.org/P4310319965"],
+        "host_organization_lineage_names": ["Springer Nature (Netherlands)", "Springer
+        Nature"], "type": "journal"}, "license": null, "license_id": null, "version":
+        "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+        "Scientometrics", "raw_type": "journal-article"}}, {"doi": "https://doi.org/10.1016/j.techfore.2022.121877",
+        "display_name": "Academic landscape of Technological Forecasting and Social
+        Change through citation network and topic analyses", "publication_year": 2022,
+        "primary_location": {"id": "doi:10.1016/j.techfore.2022.121877", "is_oa":
+        false, "landing_page_url": "https://doi.org/10.1016/j.techfore.2022.121877",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S39307421", "display_name":
+        "Technological Forecasting and Social Change", "issn_l": "0040-1625", "issn":
+        ["0040-1625", "1873-5509"], "is_oa": false, "is_in_doaj": false, "is_core":
+        true, "host_organization": "https://openalex.org/P4310320990", "host_organization_name":
+        "Elsevier BV", "host_organization_lineage": ["https://openalex.org/P4310320990"],
+        "host_organization_lineage_names": ["Elsevier BV"], "type": "journal"}, "license":
+        null, "license_id": null, "version": "publishedVersion", "is_accepted": true,
+        "is_published": true, "raw_source_name": "Technological Forecasting and Social
+        Change", "raw_type": "journal-article"}}], "group_by": []}'
+  recorded_at: 2026-05-25 16:34:30
+recorded_with: VCR-vcr/2.1.0

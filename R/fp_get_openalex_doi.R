@@ -49,53 +49,6 @@ fp_get_openalex_doi <- function(title, n = 10) {
   check_arg_string(title)
   check_arg_n(n)
 
-  meta <- tryCatch(
-    suppressMessages(
-      openalexR::oa_fetch(
-        entity = "works",
-        title.search = title,
-        per_page = n,
-        paging = "page",
-        pages = 1,
-        options = list(
-          sort = "relevance_score:desc",
-          select = c(
-            "doi",
-            "display_name",
-            "publication_year",
-            "primary_location"
-          )
-        )
-      )
-    ),
-    error = function(e) {
-      stop(
-        "Failed to retrieve data from OpenAlex",
-        call. = FALSE
-      )
-    }
-  )
-
-  meta <- as.data.frame(meta)
-
-  if (nrow(meta) > 0) {
-    meta <- meta[, c(
-      "display_name",
-      "publication_year",
-      "source_display_name",
-      "doi"
-    )]
-
-    meta$doi <- fp_clean_doi(meta$doi)
-    meta$display_name <- fp_shorten_string(meta$display_name)
-  } else {
-    meta <- data.frame(
-      display_name = character(),
-      publication_year = integer(),
-      source_display_name = character(),
-      doi = character()
-    )
-  }
-
-  meta
+  fp_oa_fetch_dois(title, n) |>
+    fp_oa_parse_dois()
 }
