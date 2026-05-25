@@ -1,4 +1,4 @@
-url: https://frbcesab.github.io/fairpub
+url: https://frbcesab.github.io/fairpub/
 
 template:
   bootstrap: 5
@@ -12,6 +12,12 @@ reference:
   - fp_get_article_fairness
   - fp_get_journal_fairness
   - fp_compute_citation_ratio
+
+- title: Author helpers
+  desc: |
+    Functions to retrieve author's publications.
+  contents:
+  - fp_retrieve_author_oa_id
 
 - title: DOI helpers
   desc: |
