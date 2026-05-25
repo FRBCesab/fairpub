@@ -58,7 +58,7 @@ fp_shorten_string <- function(x, width = 50) {
 
 
 #' @noRd
-fp_clean_ao_id <- function(x) {
+fp_clean_oa_id <- function(x) {
   gsub(.OA_PREFIX, "", x)
 }
 
