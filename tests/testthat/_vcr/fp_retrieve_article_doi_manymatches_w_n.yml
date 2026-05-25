@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:39 GMT
+      date: Mon, 25 May 2026 14:26:58 GMT
       content-type: application/json
-      cf-ray: a00ecbd67fa26cf5-MRS
+      cf-ray: a01537d92dbae279-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=dJGHcswUJhd7Ur9ZkJGTZc7V9faC2u8QbEUnQEQ4cP0%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779651879"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=dJGHcswUJhd7Ur9ZkJGTZc7V9faC2u8QbEUnQEQ4cP0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779651879"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=C9mz%2BROnPK5oQ3SuIrN0Robtfi%2FiOWygXMKyoueVcuo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779719218"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=C9mz%2BROnPK5oQ3SuIrN0Robtfi%2FiOWygXMKyoueVcuo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779719218"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9472'
-      x-ratelimit-remaining-usd: '0.9472'
-      x-ratelimit-reset: '15321'
+      x-ratelimit-remaining: '9099'
+      x-ratelimit-remaining-usd: '0.9099'
+      x-ratelimit-reset: '34382'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 114, "db_response_time_ms": 7, "page": 1, "per_page":
+      string: '{"meta": {"count": 114, "db_response_time_ms": 12, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1016/j.datak.2008.05.004",
         "display_name": "The thematic and citation landscape of Data and Knowledge
         Engineering (1985\u20132007)", "publication_year": 2008, "primary_location":
@@ -47,16 +47,16 @@ http_interactions:
         null, "license_id": null, "version": "publishedVersion", "is_accepted": true,
         "is_published": true, "raw_source_name": "Data &amp; Knowledge Engineering",
         "raw_type": "journal-article"}}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:39
+  recorded_at: 2026-05-25 14:26:58
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=title.search%3ACitation+landscape&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=3&mailto=anonymous%40mail.com&page=1
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:39 GMT
+      date: Mon, 25 May 2026 14:26:58 GMT
       content-type: application/json
-      cf-ray: a00ecbd8f95d6cf5-MRS
+      cf-ray: a01537dbab5ee279-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -65,24 +65,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=dJGHcswUJhd7Ur9ZkJGTZc7V9faC2u8QbEUnQEQ4cP0%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779651879"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=dJGHcswUJhd7Ur9ZkJGTZc7V9faC2u8QbEUnQEQ4cP0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779651879"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=C9mz%2BROnPK5oQ3SuIrN0Robtfi%2FiOWygXMKyoueVcuo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779719218"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=C9mz%2BROnPK5oQ3SuIrN0Robtfi%2FiOWygXMKyoueVcuo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779719218"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9462'
-      x-ratelimit-remaining-usd: '0.9462'
-      x-ratelimit-reset: '15321'
+      x-ratelimit-remaining: '9089'
+      x-ratelimit-remaining-usd: '0.9089'
+      x-ratelimit-reset: '34382'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 114, "db_response_time_ms": 18, "page": 1, "per_page":
+      string: '{"meta": {"count": 114, "db_response_time_ms": 8, "page": 1, "per_page":
         3, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1016/j.datak.2008.05.004",
         "display_name": "The thematic and citation landscape of Data and Knowledge
         Engineering (1985\u20132007)", "publication_year": 2008, "primary_location":
@@ -121,5 +121,5 @@ http_interactions:
         "version": "publishedVersion", "is_accepted": true, "is_published": true,
         "raw_source_name": "Journal of Business Research", "raw_type": "journal-article"}}],
         "group_by": []}'
-  recorded_at: 2026-05-24 19:44:40
+  recorded_at: 2026-05-25 14:26:58
 recorded_with: VCR-vcr/2.1.0
