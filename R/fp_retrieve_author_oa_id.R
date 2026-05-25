@@ -39,53 +39,6 @@ fp_retrieve_author_oa_id <- function(author, n = 10) {
   check_arg_string(author)
   check_arg_n(n)
 
-  meta <- tryCatch(
-    suppressMessages(
-      openalexR::oa_fetch(
-        entity = "authors",
-        search = author,
-        per_page = n,
-        paging = "page",
-        pages = 1,
-        options = list(
-          sort = "relevance_score:desc",
-          select = c(
-            "display_name",
-            "id",
-            "orcid",
-            "works_count"
-          )
-        )
-      )
-    ),
-    error = function(e) {
-      stop(
-        "Failed to retrieve data from OpenAlex",
-        call. = FALSE
-      )
-    }
-  )
-
-  meta <- as.data.frame(meta)
-
-  if (nrow(meta) > 0) {
-    meta <- meta[, c(
-      "id",
-      "display_name",
-      "orcid",
-      "works_count"
-    )]
-
-    meta$id <- fp_clean_oa_id(meta$id)
-    meta$orcid <- fp_clean_orcid(meta$orcid)
-  } else {
-    meta <- data.frame(
-      id = character(),
-      display_name = character(),
-      orcid = character(),
-      works_count = integer()
-    )
-  }
-
-  meta
+  fp_oa_fetch_authors(author, n) |>
+    fp_oa_parse_authors()
 }
