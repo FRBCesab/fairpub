@@ -67,4 +67,4 @@ article_title <-
   "Citation self-awareness for a fairer academic publishing landscape"
 
 orcid <- "https://orcid.org/0000-0002-5537-5294"
-oa_id <- "https://openalex.org/A5004806463"
+oa_author_id <- "https://openalex.org/A5004806463"
