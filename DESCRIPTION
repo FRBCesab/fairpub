@@ -11,7 +11,7 @@ Authors@R: c(
 Description: Provides a user-friendly way to compute the non-profit and academic
     friendly ratio of the bibliographic reference list before submitting a 
     manuscript for peer review.
-URL: https://github.com/frbcesab/fairpub
+URL: https://github.com/frbcesab/fairpub,https://frbcesab.github.io/fairpub
 BugReports: https://github.com/frbcesab/fairpub/issues
 License: GPL (>= 2)
 Encoding: UTF-8
