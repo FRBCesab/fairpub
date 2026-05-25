@@ -5,9 +5,9 @@ test_that("fp_oa_fetch_authors() errors", {
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  vcr::use_cassette("fp_retrieve_author_oa_id_error", {
+  vcr::use_cassette("fp_oa_fetch_authors_error", {
     expect_error(
-      fp_retrieve_author_oa_id(""),
+      fp_oa_fetch_authors(""),
       "OpenAlex request failed"
     )
   })
@@ -19,8 +19,8 @@ test_that("fp_oa_fetch_authors() works", {
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  vcr::use_cassette("fp_retrieve_author_oa_id_onematch", {
-    res <- fp_retrieve_author_oa_id("Nicolas Casajus")
+  vcr::use_cassette("fp_oa_fetch_authors_onematch", {
+    res <- fp_oa_fetch_authors("Nicolas Casajus", n = 10)
   })
 
   expect_true(inherits(res, "data.frame"))
@@ -32,10 +32,10 @@ test_that("fp_oa_fetch_authors() works", {
   )
 
   expect_equal(res[1, "display_name"], "Nicolas Casajus")
-  expect_equal(res[1, "orcid"], "0000-0002-5537-5294")
+  expect_equal(res[1, "orcid"], "https://orcid.org/0000-0002-5537-5294")
 
-  vcr::use_cassette("fp_retrieve_author_oa_id_manymatches", {
-    res <- fp_retrieve_author_oa_id("Nicolas")
+  vcr::use_cassette("fp_oa_fetch_authors_manymatches", {
+    res <- fp_oa_fetch_authors("Nicolas", n = 10)
   })
 
   expect_true(inherits(res, "data.frame"))
@@ -46,8 +46,8 @@ test_that("fp_oa_fetch_authors() works", {
     all(c("id", "display_name", "orcid", "works_count") %in% names(res))
   )
 
-  vcr::use_cassette("fp_retrieve_author_oa_id_manymatches_w_n", {
-    res <- fp_retrieve_author_oa_id("Nicolas", n = 20)
+  vcr::use_cassette("fp_oa_fetch_authors_manymatches_w_n", {
+    res <- fp_oa_fetch_authors("Nicolas", n = 20)
   })
 
   expect_true(inherits(res, "data.frame"))
@@ -58,15 +58,11 @@ test_that("fp_oa_fetch_authors() works", {
     all(c("id", "display_name", "orcid", "works_count") %in% names(res))
   )
 
-  vcr::use_cassette("fp_retrieve_author_oa_id_nomatches", {
-    res <- suppressWarnings(fp_retrieve_author_oa_id("jsdhvgaekgrvge"))
+  vcr::use_cassette("fp_oa_fetch_authors_nomatches", {
+    res <- suppressWarnings(fp_oa_fetch_authors("jsdhvgaekgrvge", n = 10))
   })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(nrow(res), 0L)
-  expect_equal(ncol(res), 4L)
-
-  expect_true(
-    all(c("id", "display_name", "orcid", "works_count") %in% names(res))
-  )
+  expect_equal(ncol(res), 0L)
 })

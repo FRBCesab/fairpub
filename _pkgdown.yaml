@@ -17,7 +17,7 @@ reference:
   desc: |
     Functions to retrieve author's publications.
   contents:
-  - fp_retrieve_author_oa_id
+  - fp_get_openalex_author
 
 - title: DOI helpers
   desc: |

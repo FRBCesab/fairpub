@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 14:26:48 GMT
+      date: Mon, 25 May 2026 15:51:03 GMT
       content-type: application/json
-      cf-ray: a0153799ab9be279-MRS
+      cf-ray: a015b3035a212558-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=tAitpI%2Fr0CIjGfFu7Vx%2Bd%2BtijtcmDesGs%2FZV2ntDZ68%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779719208"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=tAitpI%2Fr0CIjGfFu7Vx%2Bd%2BtijtcmDesGs%2FZV2ntDZ68%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779719208"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=DK1BKy%2BGHAEjnoZVkvMxcIgwyKLDR2M7BdHMWsmsItc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779724263"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=DK1BKy%2BGHAEjnoZVkvMxcIgwyKLDR2M7BdHMWsmsItc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779724263"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9237'
-      x-ratelimit-remaining-usd: '0.9237'
-      x-ratelimit-reset: '34392'
+      x-ratelimit-remaining: '8581'
+      x-ratelimit-remaining-usd: '0.8581'
+      x-ratelimit-reset: '29337'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 10, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 19, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2226396244",
         "doi": "https://doi.org/10.1126/science.162.3859.1243", "title": "The Tragedy
         of the Commons", "display_name": "The Tragedy of the Commons", "publication_year":
@@ -159,41 +159,42 @@ http_interactions:
         "host_organization_lineage_names": [], "type": "repository"}, "license": null,
         "license_id": null, "version": "publishedVersion", "is_accepted": true, "is_published":
         true, "raw_source_name": "Science (New York, N.Y.)", "raw_type": null}], "best_oa_location":
-        null, "sustainable_development_goals": [{"display_name": "Peace, Justice and
-        strong institutions", "score": 0.4300000071525574, "id": "https://metadata.un.org/sdg/16"}],
-        "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
-        "content_urls": null, "referenced_works_count": 16, "referenced_works": ["https://openalex.org/W645218623",
-        "https://openalex.org/W1520891760", "https://openalex.org/W1546755579", "https://openalex.org/W1967161129",
-        "https://openalex.org/W2027636702", "https://openalex.org/W2029363644", "https://openalex.org/W2054383667",
-        "https://openalex.org/W2089475418", "https://openalex.org/W2091050224", "https://openalex.org/W2106639850",
-        "https://openalex.org/W2144846366", "https://openalex.org/W2234578361", "https://openalex.org/W2330107103",
-        "https://openalex.org/W2798908584", "https://openalex.org/W3027820740", "https://openalex.org/W4285719527"],
-        "related_works": ["https://openalex.org/W3123154154", "https://openalex.org/W2118898980",
-        "https://openalex.org/W3209447036", "https://openalex.org/W2098644726", "https://openalex.org/W2375460653",
-        "https://openalex.org/W2790699714", "https://openalex.org/W4321439661", "https://openalex.org/W1522074275",
-        "https://openalex.org/W2503841055", "https://openalex.org/W1030266976"], "abstract_inverted_index":
-        {"The": [0], "population": [1], "problem": [2], "has": [3], "no": [4], "technical":
-        [5], "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental":
-        [10], "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 309}, {"year": 2025, "cited_by_count": 831},
-        {"year": 2024, "cited_by_count": 915}, {"year": 2023, "cited_by_count": 860},
-        {"year": 2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169},
-        {"year": 2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132},
-        {"year": 2018, "cited_by_count": 1049}, {"year": 2017, "cited_by_count": 969},
-        {"year": 2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909},
-        {"year": 2014, "cited_by_count": 1014}, {"year": 2013, "cited_by_count": 921},
-        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-25T08:39:21.599409",
+        null, "sustainable_development_goals": [{"score": 0.4300000071525574, "id":
+        "https://metadata.un.org/sdg/16", "display_name": "Peace, Justice and strong
+        institutions"}], "awards": [], "funders": [], "has_content": {"grobid_xml":
+        false, "pdf": false}, "content_urls": null, "referenced_works_count": 16,
+        "referenced_works": ["https://openalex.org/W645218623", "https://openalex.org/W1520891760",
+        "https://openalex.org/W1546755579", "https://openalex.org/W1967161129", "https://openalex.org/W2027636702",
+        "https://openalex.org/W2029363644", "https://openalex.org/W2054383667", "https://openalex.org/W2089475418",
+        "https://openalex.org/W2091050224", "https://openalex.org/W2106639850", "https://openalex.org/W2144846366",
+        "https://openalex.org/W2234578361", "https://openalex.org/W2330107103", "https://openalex.org/W2798908584",
+        "https://openalex.org/W3027820740", "https://openalex.org/W4285719527"], "related_works":
+        ["https://openalex.org/W3123154154", "https://openalex.org/W2118898980", "https://openalex.org/W3209447036",
+        "https://openalex.org/W2098644726", "https://openalex.org/W2375460653", "https://openalex.org/W2790699714",
+        "https://openalex.org/W4321439661", "https://openalex.org/W1522074275", "https://openalex.org/W2503841055",
+        "https://openalex.org/W1030266976"], "abstract_inverted_index": {"The": [0],
+        "population": [1], "problem": [2], "has": [3], "no": [4], "technical": [5],
+        "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental": [10],
+        "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year": [{"year":
+        2026, "cited_by_count": 309}, {"year": 2025, "cited_by_count": 831}, {"year":
+        2024, "cited_by_count": 915}, {"year": 2023, "cited_by_count": 860}, {"year":
+        2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169}, {"year":
+        2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132}, {"year":
+        2018, "cited_by_count": 1049}, {"year": 2017, "cited_by_count": 969}, {"year":
+        2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909}, {"year":
+        2014, "cited_by_count": 1014}, {"year": 2013, "cited_by_count": 921}, {"year":
+        2012, "cited_by_count": 889}], "updated_date": "2026-05-25T08:39:21.599409",
         "created_date": "2016-06-24T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 14:26:48
+  recorded_at: 2026-05-25 15:51:03
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.1126%2Fscience.162.3859.1243&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 14:26:48 GMT
+      date: Mon, 25 May 2026 15:51:03 GMT
       content-type: application/json
-      cf-ray: a015379e3d6be279-MRS
+      cf-ray: a015b306286b2558-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -202,24 +203,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=tAitpI%2Fr0CIjGfFu7Vx%2Bd%2BtijtcmDesGs%2FZV2ntDZ68%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779719208"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=tAitpI%2Fr0CIjGfFu7Vx%2Bd%2BtijtcmDesGs%2FZV2ntDZ68%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779719208"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=DK1BKy%2BGHAEjnoZVkvMxcIgwyKLDR2M7BdHMWsmsItc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779724263"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=DK1BKy%2BGHAEjnoZVkvMxcIgwyKLDR2M7BdHMWsmsItc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779724263"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9236'
-      x-ratelimit-remaining-usd: '0.9236'
-      x-ratelimit-reset: '34392'
+      x-ratelimit-remaining: '8580'
+      x-ratelimit-remaining-usd: '0.858'
+      x-ratelimit-reset: '29337'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 8, "page": null, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 13, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2226396244", "doi": "https://doi.org/10.1126/science.162.3859.1243",
         "title": "The Tragedy of the Commons", "display_name": "The Tragedy of the
@@ -346,7 +347,7 @@ http_interactions:
         "license_id": null, "version": "publishedVersion", "is_accepted": true, "is_published":
         true, "raw_source_name": "Science (New York, N.Y.)", "raw_type": null}], "best_oa_location":
         null, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/16",
-        "display_name": "Peace, Justice and strong institutions", "score": 0.4300000071525574}],
+        "score": 0.4300000071525574, "display_name": "Peace, Justice and strong institutions"}],
         "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
         "content_urls": null, "referenced_works_count": 16, "referenced_works": ["https://openalex.org/W645218623",
         "https://openalex.org/W1520891760", "https://openalex.org/W1546755579", "https://openalex.org/W1967161129",
@@ -370,5 +371,5 @@ http_interactions:
         {"year": 2014, "cited_by_count": 1014}, {"year": 2013, "cited_by_count": 921},
         {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-25T08:39:21.599409",
         "created_date": "2016-06-24T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 14:26:49
+  recorded_at: 2026-05-25 15:51:03
 recorded_with: VCR-vcr/2.1.0
