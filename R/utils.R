@@ -55,3 +55,15 @@ fp_shorten_string <- function(x, width = 50) {
 
   ifelse(is_short, x, shortened)
 }
+
+
+#' @noRd
+fp_clean_ao_id <- function(x) {
+  gsub(.OA_PREFIX, "", x)
+}
+
+
+#' @noRd
+fp_clean_orcid <- function(x) {
+  gsub(.ORCID_PREFIX, "", x)
+}
