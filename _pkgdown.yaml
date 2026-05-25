@@ -4,31 +4,32 @@ template:
   bootstrap: 5
 
 reference:
-- title: Fairness & Citation ratio
+- title: Fairness and citation metrics
   desc: |
-    Functions to retrieve tha fairness status of an article/journal and to
-    compute the citation ratio of a list of articles.
+    Functions to retrieve the fairness status of an article/journal and to
+    compute the citation ratio from a list of articles.
   contents:
   - fp_get_article_fairness
   - fp_get_journal_fairness
   - fp_compute_citation_ratio
 
-- title: Author helpers
+- title: OpenAlex API interface
   desc: |
-    Functions to retrieve author's publications.
+    Functions to query the OpenAlex database and retrieve bibliographic
+    information about authors, journals and publications.
   contents:
   - fp_get_openalex_author
+  - fp_get_openalex_doi
 
-- title: DOI helpers
+- title: DOI utilities
   desc: |
-    Functions to retrieve, extract and clean DOI.
+    Functions to extract and clean DOIs from BibTeX files or character vectors.
   contents:
-  - fp_retrieve_article_doi
   - fp_extract_doi
   - fp_clean_doi
 
 - title: DAFNEE database
   desc: |
-    Helpers related to the DAFNEE database.
+    Function to retrieve the list of journals included in the DAFNEE database.
   contents:
   - fp_list_dafnee_journals

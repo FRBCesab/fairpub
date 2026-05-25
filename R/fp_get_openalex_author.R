@@ -4,10 +4,10 @@
 #' Queries the OpenAlex bibliographic database (<https://openalex.org>) to
 #' retrieve an author's identifier.
 #'
-#' @param author A character vector of length 1. Name of the author.
+#' @param author a `character` vector of length 1. Name of the author.
 #'
-#' @param n An integer scalar. Number of results to return (between 1 and 200).
-#'   Defaults to 10.
+#' @param n an `integer` of length 1. Number of results to return (between
+#'   1 and 200, default is `10`).
 #'
 #' @return A data frame with the following columns:
 #'   \describe{

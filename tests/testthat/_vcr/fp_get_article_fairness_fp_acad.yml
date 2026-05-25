@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:04 GMT
+      date: Mon, 25 May 2026 16:23:27 GMT
       content-type: application/json
-      cf-ray: a015b30ecc622558-MRS
+      cf-ray: a015e27b4a804dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=uV5DhsGo2tEOLyBQYEeUT%2BX6TWZ4ihRufj%2B98zQToFg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779724264"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=uV5DhsGo2tEOLyBQYEeUT%2BX6TWZ4ihRufj%2B98zQToFg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779724264"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BfubxEy0Xh1IQkVq7Ue4qrsjzNAC%2BSIJkJYy0ci1PTc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779726207"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BfubxEy0Xh1IQkVq7Ue4qrsjzNAC%2BSIJkJYy0ci1PTc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779726207"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8577'
-      x-ratelimit-remaining-usd: '0.8577'
-      x-ratelimit-reset: '29336'
+      x-ratelimit-remaining: '8223'
+      x-ratelimit-remaining-usd: '0.8223'
+      x-ratelimit-reset: '27393'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 24, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 9, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2162348455",
         "doi": "https://doi.org/10.1038/35002501", "title": "Biodiversity hotspots
         for conservation priorities", "display_name": "Biodiversity hotspots for conservation
@@ -362,16 +362,16 @@ http_interactions:
         {"year": 2014, "cited_by_count": 1465}, {"year": 2013, "cited_by_count": 1424},
         {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-25T08:39:21.599409",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:05
+  recorded_at: 2026-05-25 16:23:27
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.1038%2F35002501&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:05 GMT
+      date: Mon, 25 May 2026 16:23:27 GMT
       content-type: application/json
-      cf-ray: a015b311cb242558-MRS
+      cf-ray: a015e27dd8144dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -380,24 +380,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=mqxvWLFcOqspkikc3fkVSl1FclhStR%2FOyyP8rlOPEsc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779724265"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=mqxvWLFcOqspkikc3fkVSl1FclhStR%2FOyyP8rlOPEsc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779724265"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BfubxEy0Xh1IQkVq7Ue4qrsjzNAC%2BSIJkJYy0ci1PTc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779726207"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BfubxEy0Xh1IQkVq7Ue4qrsjzNAC%2BSIJkJYy0ci1PTc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779726207"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8576'
-      x-ratelimit-remaining-usd: '0.8576'
-      x-ratelimit-reset: '29335'
+      x-ratelimit-remaining: '8222'
+      x-ratelimit-remaining-usd: '0.8222'
+      x-ratelimit-reset: '27393'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 14, "page": null, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 9, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2162348455", "doi": "https://doi.org/10.1038/35002501",
         "title": "Biodiversity hotspots for conservation priorities", "display_name":
@@ -726,5 +726,5 @@ http_interactions:
         {"year": 2014, "cited_by_count": 1465}, {"year": 2013, "cited_by_count": 1424},
         {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-25T08:39:21.599409",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:05
+  recorded_at: 2026-05-25 16:23:27
 recorded_with: VCR-vcr/2.1.0

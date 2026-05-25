@@ -1,8 +1,8 @@
-## fp_retrieve_article_doi() ----
+## fp_get_openalex_doi() ----
 
-test_that("fp_retrieve_article_doi() errors - No API query", {
+test_that("fp_get_openalex_doi() errors - No API query", {
   expect_error(
-    fp_retrieve_article_doi(article_title),
+    fp_get_openalex_doi(article_title),
     paste0(
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
@@ -15,7 +15,7 @@ test_that("fp_retrieve_article_doi() errors - No API query", {
   )
 
   expect_error(
-    fp_retrieve_article_doi(article_title),
+    fp_get_openalex_doi(article_title),
     paste0(
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
@@ -25,14 +25,14 @@ test_that("fp_retrieve_article_doi() errors - No API query", {
 })
 
 
-test_that("fp_retrieve_article_doi() errors - API query", {
+test_that("fp_get_openalex_doi() errors - API query", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  vcr::use_cassette("fp_retrieve_article_doi_error", {
+  vcr::use_cassette("fp_get_openalex_doi_error", {
     expect_error(
-      fp_retrieve_article_doi(""),
+      fp_get_openalex_doi(""),
       "Failed to retrieve data from OpenAlex",
       fixed = TRUE
     )
@@ -40,13 +40,13 @@ test_that("fp_retrieve_article_doi() errors - API query", {
 })
 
 
-test_that("fp_retrieve_article_doi() works - API query", {
+test_that("fp_get_openalex_doi() works - API query", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  vcr::use_cassette("fp_retrieve_article_doi_onematch", {
-    res <- fp_retrieve_article_doi(article_title)
+  vcr::use_cassette("fp_get_openalex_doi_onematch", {
+    res <- fp_get_openalex_doi(article_title)
   })
 
   expect_true(inherits(res, "data.frame"))
@@ -73,24 +73,24 @@ test_that("fp_retrieve_article_doi() works - API query", {
     "10.1093/biosci/biag028"
   )
 
-  vcr::use_cassette("fp_retrieve_article_doi_manymatches", {
-    res <- fp_retrieve_article_doi("Citation landscape")
+  vcr::use_cassette("fp_get_openalex_doi_manymatches", {
+    res <- fp_get_openalex_doi("Citation landscape")
   })
 
   expect_true(inherits(res, "data.frame"))
-  expect_equal(nrow(res), 5L)
+  expect_equal(nrow(res), 10L)
   expect_equal(ncol(res), 4L)
 
-  vcr::use_cassette("fp_retrieve_article_doi_manymatches_w_n", {
-    res <- fp_retrieve_article_doi("Citation landscape", n = 3)
+  vcr::use_cassette("fp_get_openalex_doi_manymatches_w_n", {
+    res <- fp_get_openalex_doi("Citation landscape", n = 3)
   })
 
   expect_true(inherits(res, "data.frame"))
   expect_equal(nrow(res), 3L)
   expect_equal(ncol(res), 4L)
 
-  vcr::use_cassette("fp_retrieve_article_doi_nomatch", {
-    res <- suppressWarnings(fp_retrieve_article_doi("kjdhfgvlzjegvz"))
+  vcr::use_cassette("fp_get_openalex_doi_nomatch", {
+    res <- suppressWarnings(fp_get_openalex_doi("kjdhfgvlzjegvz"))
   })
 
   expect_true(inherits(res, "data.frame"))

@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:10 GMT
+      date: Mon, 25 May 2026 16:23:35 GMT
       content-type: application/json
-      cf-ray: a015b32d4d7e2558-MRS
+      cf-ray: a015e2aacdb74dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,38 +16,38 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9PhwLnkTox70ObXLTC0zH48Ik6OOGoGBRqKW%2FJE6ZEY%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779724270"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=9PhwLnkTox70ObXLTC0zH48Ik6OOGoGBRqKW%2FJE6ZEY%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779724270"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=1srsQYhnbFB9FCyS0oRFdGISwX5EBzkJp2BlXdKV0es%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726214"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=1srsQYhnbFB9FCyS0oRFdGISwX5EBzkJp2BlXdKV0es%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726214"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8513'
-      x-ratelimit-remaining-usd: '0.8513'
-      x-ratelimit-reset: '29330'
+      x-ratelimit-remaining: '8079'
+      x-ratelimit-remaining-usd: '0.8079'
+      x-ratelimit-reset: '27385'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 63566, "db_response_time_ms": 16, "page": 1, "per_page":
+      string: '{"meta": {"count": 63566, "db_response_time_ms": 31, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
         "Nicholas J. Wareham", "id": "https://openalex.org/A5100717719", "orcid":
         "https://orcid.org/0000-0003-1422-2993", "works_count": 1730}], "group_by":
         []}'
-  recorded_at: 2026-05-25 15:51:10
+  recorded_at: 2026-05-25 16:23:35
 - request:
     method: GET
     uri: https://api.openalex.org/authors?search=Nicolas&sort=relevance_score%3Adesc&select=display_name%2Cid%2Corcid%2Cworks_count&per-page=10&mailto=anonymous%40mail.com&page=1
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:11 GMT
+      date: Mon, 25 May 2026 16:23:35 GMT
       content-type: application/json
-      cf-ray: a015b3338c812558-MRS
+      cf-ray: a015e2ad2b374dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -56,24 +56,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9PhwLnkTox70ObXLTC0zH48Ik6OOGoGBRqKW%2FJE6ZEY%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779724270"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=9PhwLnkTox70ObXLTC0zH48Ik6OOGoGBRqKW%2FJE6ZEY%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779724270"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=1yX6OnMReB3IweIqQpqrP5eh1LHg4KlWYDf%2FUyBqVqk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726215"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=1yX6OnMReB3IweIqQpqrP5eh1LHg4KlWYDf%2FUyBqVqk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726215"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8503'
-      x-ratelimit-remaining-usd: '0.8503'
-      x-ratelimit-reset: '29329'
+      x-ratelimit-remaining: '8069'
+      x-ratelimit-remaining-usd: '0.8069'
+      x-ratelimit-reset: '27385'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 63566, "db_response_time_ms": 12, "page": 1, "per_page":
+      string: '{"meta": {"count": 63566, "db_response_time_ms": 11, "page": 1, "per_page":
         10, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
         "Nicholas J. Wareham", "id": "https://openalex.org/A5100717719", "orcid":
         "https://orcid.org/0000-0003-1422-2993", "works_count": 1730}, {"display_name":
@@ -92,5 +92,5 @@ http_interactions:
         "orcid": "https://orcid.org/0000-0002-1530-3114", "works_count": 825}, {"display_name":
         "Nicolas Gruber", "id": "https://openalex.org/A5033288125", "orcid": "https://orcid.org/0000-0002-2085-2310",
         "works_count": 623}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:11
+  recorded_at: 2026-05-25 16:23:35
 recorded_with: VCR-vcr/2.1.0

@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:08 GMT
+      date: Mon, 25 May 2026 16:23:34 GMT
       content-type: application/json
-      cf-ray: a015b3263d0b2558-MRS
+      cf-ray: a015e2a5aa114dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,37 +16,37 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=s6tP0bSui6HCB%2FfKVPPATu34Usu5qmpeneJ9gDM2iPs%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779724268"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=s6tP0bSui6HCB%2FfKVPPATu34Usu5qmpeneJ9gDM2iPs%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779724268"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=1srsQYhnbFB9FCyS0oRFdGISwX5EBzkJp2BlXdKV0es%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726214"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=1srsQYhnbFB9FCyS0oRFdGISwX5EBzkJp2BlXdKV0es%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726214"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8533'
-      x-ratelimit-remaining-usd: '0.8533'
-      x-ratelimit-reset: '29332'
+      x-ratelimit-remaining: '8099'
+      x-ratelimit-remaining-usd: '0.8099'
+      x-ratelimit-reset: '27386'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 9, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 8, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
         "Nicolas Casajus", "id": "https://openalex.org/A5004806463", "orcid": "https://orcid.org/0000-0002-5537-5294",
         "works_count": 102}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:08
+  recorded_at: 2026-05-25 16:23:34
 - request:
     method: GET
     uri: https://api.openalex.org/authors?search=Nicolas+Casajus&sort=relevance_score%3Adesc&select=display_name%2Cid%2Corcid%2Cworks_count&per-page=10&mailto=anonymous%40mail.com&page=1
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:09 GMT
+      date: Mon, 25 May 2026 16:23:34 GMT
       content-type: application/json
-      cf-ray: a015b328bb652558-MRS
+      cf-ray: a015e2a82ffb4dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -55,26 +55,26 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=78pmPctB57x0SP%2F25QZOFlQT8RePYApPl6%2FwyEgIH4U%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779724269"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=78pmPctB57x0SP%2F25QZOFlQT8RePYApPl6%2FwyEgIH4U%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779724269"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=1srsQYhnbFB9FCyS0oRFdGISwX5EBzkJp2BlXdKV0es%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726214"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=1srsQYhnbFB9FCyS0oRFdGISwX5EBzkJp2BlXdKV0es%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726214"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8523'
-      x-ratelimit-remaining-usd: '0.8523'
-      x-ratelimit-reset: '29331'
+      x-ratelimit-remaining: '8089'
+      x-ratelimit-remaining-usd: '0.8089'
+      x-ratelimit-reset: '27386'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 9, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 8, "page": 1, "per_page":
         10, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
         "Nicolas Casajus", "id": "https://openalex.org/A5004806463", "orcid": "https://orcid.org/0000-0002-5537-5294",
         "works_count": 102}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:09
+  recorded_at: 2026-05-25 16:23:34
 recorded_with: VCR-vcr/2.1.0

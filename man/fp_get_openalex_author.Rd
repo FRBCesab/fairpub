@@ -7,10 +7,10 @@
 fp_get_openalex_author(author, n = 10)
 }
 \arguments{
-\item{author}{A character vector of length 1. Name of the author.}
+\item{author}{a \code{character} vector of length 1. Name of the author.}
 
-\item{n}{An integer scalar. Number of results to return (between 1 and 200).
-Defaults to 10.}
+\item{n}{an \code{integer} of length 1. Number of results to return (between
+1 and 200, default is \code{10}).}
 }
 \value{
 A data frame with the following columns:

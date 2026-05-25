@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:04 GMT
+      date: Mon, 25 May 2026 16:23:26 GMT
       content-type: application/json
-      cf-ray: a015b308debc2558-MRS
+      cf-ray: a015e2754d1e4dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,30 +16,353 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=DK1BKy%2BGHAEjnoZVkvMxcIgwyKLDR2M7BdHMWsmsItc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779724263"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=DK1BKy%2BGHAEjnoZVkvMxcIgwyKLDR2M7BdHMWsmsItc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779724263"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=UCUcH3cstF%2BFMDwIkOW9Qp%2BajhLpgeImC2mYbwUlooQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779726206"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=UCUcH3cstF%2BFMDwIkOW9Qp%2BajhLpgeImC2mYbwUlooQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779726206"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8579'
-      x-ratelimit-remaining-usd: '0.8579'
-      x-ratelimit-reset: '29336'
+      x-ratelimit-remaining: '8225'
+      x-ratelimit-remaining-usd: '0.8225'
+      x-ratelimit-reset: '27394'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 15, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 19, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2123337039",
         "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x", "title": "Predicting
         species distribution: offering more than simple habitat models", "display_name":
         "Predicting species distribution: offering more than simple habitat models",
         "publication_year": 2005, "publication_date": "2005-08-15", "ids": {"openalex":
         "https://openalex.org/W2123337039", "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
+        "mag": "2123337039", "pmid": "https://pubmed.ncbi.nlm.nih.gov/34517687"},
+        "language": "en", "primary_location": {"id": "doi:10.1111/j.1461-0248.2005.00792.x",
+        "is_oa": false, "landing_page_url": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S80967739", "display_name":
+        "Ecology Letters", "issn_l": "1461-023X", "issn": ["1461-023X", "1461-0248"],
+        "is_oa": false, "is_in_doaj": false, "is_core": true, "host_organization":
+        "https://openalex.org/P4310320595", "host_organization_name": "Wiley", "host_organization_lineage":
+        ["https://openalex.org/P4310320595"], "host_organization_lineage_names": ["Wiley"],
+        "type": "journal"}, "license": null, "license_id": null, "version": "publishedVersion",
+        "is_accepted": true, "is_published": true, "raw_source_name": "Ecology Letters",
+        "raw_type": "journal-article"}, "type": "review", "indexed_in": ["crossref",
+        "datacite", "pubmed"], "open_access": {"is_oa": true, "oa_status": "green",
+        "oa_url": "https://zotero.org/groups/5435545/items/7865KPPJ", "any_repository_has_fulltext":
+        true}, "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5041324397",
+        "display_name": "Antoine Guisan", "orcid": "https://orcid.org/0000-0002-3998-4815"},
+        "institutions": [{"id": "https://openalex.org/I97565354", "display_name":
+        "University of Lausanne", "ror": "https://ror.org/019whta54", "country_code":
+        "CH", "type": "education", "lineage": ["https://openalex.org/I97565354"]}],
+        "countries": ["CH"], "is_corresponding": true, "raw_author_name": "Antoine
+        Guisan", "raw_affiliation_strings": ["Laboratoire de Biologie de la Conservation
+        (LBC), D\u00e9partement d''Ecologie et d''Evolution (DEE), Universit\u00e9
+        de Lausanne, B\u00e2timent de Biologie, CH-1015 Lausanne, Switzerland", "Laboratoire
+        de Biologie de la Conservation (LBC), D\u00e9partement d''Ecologie et d''Evolution
+        (DEE), Universit\u00e9 de Lausanne, B\u00e2timent de Biologie, CH\u20101015
+        Lausanne, Switzerland"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+        "Laboratoire de Biologie de la Conservation (LBC), D\u00e9partement d''Ecologie
+        et d''Evolution (DEE), Universit\u00e9 de Lausanne, B\u00e2timent de Biologie,
+        CH-1015 Lausanne, Switzerland", "institution_ids": ["https://openalex.org/I97565354"]},
+        {"raw_affiliation_string": "Laboratoire de Biologie de la Conservation (LBC),
+        D\u00e9partement d''Ecologie et d''Evolution (DEE), Universit\u00e9 de Lausanne,
+        B\u00e2timent de Biologie, CH\u20101015 Lausanne, Switzerland", "institution_ids":
+        ["https://openalex.org/I97565354"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5072813166", "display_name": "Wilfried Thuiller",
+        "orcid": "https://orcid.org/0000-0002-5388-5274"}, "institutions": [{"id":
+        "https://openalex.org/I21803372", "display_name": "University of \u00c9vora",
+        "ror": "https://ror.org/02gyps716", "country_code": "PT", "type": "education",
+        "lineage": ["https://openalex.org/I21803372"]}, {"id": "https://openalex.org/I4210087898",
+        "display_name": "South African National Biodiversity Institute", "ror": "https://ror.org/005r3tp02",
+        "country_code": "ZA", "type": "facility", "lineage": ["https://openalex.org/I4210087898"]}],
+        "countries": ["PT", "ZA"], "is_corresponding": false, "raw_author_name": "Wilfried
+        Thuiller", "raw_affiliation_strings": ["Climate Change Research Group, Kirstenbosh
+        Research Center, South African National Biodiversity Institute, Post Bag x7,
+        Claremont 7735, Cape Town, South Africa", "Macroecology and Conservation Unit,
+        University of \u00c9vora, Estrada dos Le\u00f5es, 7000-730 \u00c9vora, Portugal",
+        "Macroecology and Conservation Unit, University of \u00c9vora, Estrada dos
+        Le\u00f5es, 7000\u2010730 \u00c9vora, Portugal"], "raw_orcid": null, "affiliations":
+        [{"raw_affiliation_string": "Climate Change Research Group, Kirstenbosh Research
+        Center, South African National Biodiversity Institute, Post Bag x7, Claremont
+        7735, Cape Town, South Africa", "institution_ids": ["https://openalex.org/I4210087898"]},
+        {"raw_affiliation_string": "Macroecology and Conservation Unit, University
+        of \u00c9vora, Estrada dos Le\u00f5es, 7000-730 \u00c9vora, Portugal", "institution_ids":
+        ["https://openalex.org/I21803372"]}, {"raw_affiliation_string": "Macroecology
+        and Conservation Unit, University of \u00c9vora, Estrada dos Le\u00f5es, 7000\u2010730
+        \u00c9vora, Portugal", "institution_ids": ["https://openalex.org/I21803372"]}]}],
+        "institutions": [], "countries_distinct_count": 3, "institutions_distinct_count":
+        2, "corresponding_author_ids": ["https://openalex.org/A5041324397"], "corresponding_institution_ids":
+        ["https://openalex.org/I97565354"], "apc_list": {"value": 5050, "currency":
+        "USD", "value_usd": 5050}, "apc_paid": null, "fwci": 298.6733, "has_fulltext":
+        false, "cited_by_count": 6467, "citation_normalized_percentile": {"value":
+        1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
+        {"min": 99, "max": 100}, "biblio": {"volume": "8", "issue": "9", "first_page":
+        "993", "last_page": "1009"}, "is_retracted": false, "is_paratext": false,
+        "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10895", "display_name":
+        "Species Distribution and Climate Change", "score": 1.0, "subfield": {"id":
+        "https://openalex.org/subfields/2302", "display_name": "Ecological Modeling"},
+        "field": {"id": "https://openalex.org/fields/23", "display_name": "Environmental
+        Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
+        "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10895", "display_name":
+        "Species Distribution and Climate Change", "score": 1.0, "subfield": {"id":
+        "https://openalex.org/subfields/2302", "display_name": "Ecological Modeling"},
+        "field": {"id": "https://openalex.org/fields/23", "display_name": "Environmental
+        Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
+        "Physical Sciences"}}, {"id": "https://openalex.org/T10199", "display_name":
+        "Wildlife Ecology and Conservation", "score": 0.9980999827384949, "subfield":
+        {"id": "https://openalex.org/subfields/2303", "display_name": "Ecology"},
+        "field": {"id": "https://openalex.org/fields/23", "display_name": "Environmental
+        Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
+        "Physical Sciences"}}, {"id": "https://openalex.org/T10005", "display_name":
+        "Ecology and Vegetation Dynamics Studies", "score": 0.9900000095367432, "subfield":
+        {"id": "https://openalex.org/subfields/2309", "display_name": "Nature and
+        Landscape Conservation"}, "field": {"id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"}, "domain": {"id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/ecology",
+        "display_name": "Ecology", "score": 0.7160497307777405}, {"id": "https://openalex.org/keywords/habitat",
+        "display_name": "Habitat", "score": 0.6080566644668579}, {"id": "https://openalex.org/keywords/distribution",
+        "display_name": "Distribution (mathematics)", "score": 0.5108282566070557},
+        {"id": "https://openalex.org/keywords/simple", "display_name": "Simple (philosophy)",
+        "score": 0.49583014845848083}, {"id": "https://openalex.org/keywords/geography",
+        "display_name": "Geography", "score": 0.4164107143878937}, {"id": "https://openalex.org/keywords/environmental-niche-modelling",
+        "display_name": "Environmental niche modelling", "score": 0.41606059670448303},
+        {"id": "https://openalex.org/keywords/biology", "display_name": "Biology",
+        "score": 0.410788357257843}, {"id": "https://openalex.org/keywords/ecological-niche",
+        "display_name": "Ecological niche", "score": 0.13281327486038208}, {"id":
+        "https://openalex.org/keywords/mathematics", "display_name": "Mathematics",
+        "score": 0.06781348586082458}], "concepts": [{"id": "https://openalex.org/C18903297",
+        "wikidata": "https://www.wikidata.org/wiki/Q7150", "display_name": "Ecology",
+        "level": 1, "score": 0.7160497307777405}, {"id": "https://openalex.org/C185933670",
+        "wikidata": "https://www.wikidata.org/wiki/Q52105", "display_name": "Habitat",
+        "level": 2, "score": 0.6080566644668579}, {"id": "https://openalex.org/C110121322",
+        "wikidata": "https://www.wikidata.org/wiki/Q865811", "display_name": "Distribution
+        (mathematics)", "level": 2, "score": 0.5108282566070557}, {"id": "https://openalex.org/C2780586882",
+        "wikidata": "https://www.wikidata.org/wiki/Q7520643", "display_name": "Simple
+        (philosophy)", "level": 2, "score": 0.49583014845848083}, {"id": "https://openalex.org/C205649164",
+        "wikidata": "https://www.wikidata.org/wiki/Q1071", "display_name": "Geography",
+        "level": 0, "score": 0.4164107143878937}, {"id": "https://openalex.org/C103215972",
+        "wikidata": "https://www.wikidata.org/wiki/Q5381340", "display_name": "Environmental
+        niche modelling", "level": 4, "score": 0.41606059670448303}, {"id": "https://openalex.org/C86803240",
+        "wikidata": "https://www.wikidata.org/wiki/Q420", "display_name": "Biology",
+        "level": 0, "score": 0.410788357257843}, {"id": "https://openalex.org/C102715595",
+        "wikidata": "https://www.wikidata.org/wiki/Q172861", "display_name": "Ecological
+        niche", "level": 3, "score": 0.13281327486038208}, {"id": "https://openalex.org/C33923547",
+        "wikidata": "https://www.wikidata.org/wiki/Q395", "display_name": "Mathematics",
+        "level": 0, "score": 0.06781348586082458}, {"id": "https://openalex.org/C138885662",
+        "wikidata": "https://www.wikidata.org/wiki/Q5891", "display_name": "Philosophy",
+        "level": 0, "score": 0.0}, {"id": "https://openalex.org/C134306372", "wikidata":
+        "https://www.wikidata.org/wiki/Q7754", "display_name": "Mathematical analysis",
+        "level": 1, "score": 0.0}, {"id": "https://openalex.org/C111472728", "wikidata":
+        "https://www.wikidata.org/wiki/Q9471", "display_name": "Epistemology", "level":
+        1, "score": 0.0}], "mesh": [], "locations_count": 8, "locations": [{"id":
+        "doi:10.1111/j.1461-0248.2005.00792.x", "is_oa": false, "landing_page_url":
+        "https://doi.org/10.1111/j.1461-0248.2005.00792.x", "pdf_url": null, "source":
+        {"id": "https://openalex.org/S80967739", "display_name": "Ecology Letters",
+        "issn_l": "1461-023X", "issn": ["1461-023X", "1461-0248"], "is_oa": false,
+        "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310320595",
+        "host_organization_name": "Wiley", "host_organization_lineage": ["https://openalex.org/P4310320595"],
+        "host_organization_lineage_names": ["Wiley"], "type": "journal"}, "license":
+        null, "license_id": null, "version": "publishedVersion", "is_accepted": true,
+        "is_published": true, "raw_source_name": "Ecology Letters", "raw_type": "journal-article"},
+        {"id": "pmid:34517687", "is_oa": false, "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34517687",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306525036", "display_name":
+        "PubMed", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
+        "is_core": false, "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_name": "National Institutes of Health", "host_organization_lineage":
+        ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
+        "is_accepted": true, "is_published": true, "raw_source_name": "Ecology letters",
+        "raw_type": null}, {"id": "pmh:doi:10.5281/zenodo.19669477", "is_oa": true,
+        "landing_page_url": "https://zotero.org/groups/5435545/items/7865KPPJ", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4406922384", "display_name":
+        "Open MIND", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
+        "is_core": false, "host_organization": null, "host_organization_name": null,
+        "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
+        "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
+        "JournalArticle"}, {"id": "pmh:oai:HAL:halsde-00274246v1", "is_oa": false,
+        "landing_page_url": "https://hal.science/halsde-00274246", "pdf_url": null,
+        "source": {"id": "https://openalex.org/S4306402512", "display_name": "HAL
+        (Le Centre pour la Communication Scientifique Directe)", "issn_l": null, "issn":
+        null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
+        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
+        "license_id": null, "version": "submittedVersion", "is_accepted": false, "is_published":
+        false, "raw_source_name": "Ecology Letters, 2005, 8 (9), pp.993-1009. &#x27E8;10.1111/j.1461-0248.2005.00792.x&#x27E9;",
+        "raw_type": "Journal articles"}, {"id": "pmh:oai:iris.unil.ch:iris/201017",
+        "is_oa": false, "landing_page_url": "https://iris.unil.ch/handle/iris/201017",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S7407055444", "display_name":
+        "IRIS", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
+        "is_core": false, "host_organization": null, "host_organization_name": null,
+        "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
+        "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
+        "journal article"}, {"id": "pmh:oai:serval.unil.ch:BIB_8122F431F096", "is_oa":
+        false, "landing_page_url": "https://serval.unil.ch/notice/serval:BIB_8122F431F096",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306401797", "display_name":
+        "SERVAL (Universit\u00e9 de Lausanne)", "issn_l": null, "issn": null, "is_oa":
+        false, "is_in_doaj": false, "is_core": false, "host_organization": "https://openalex.org/I4210093590",
+        "host_organization_name": "Swiss School of Archaeology in Greece", "host_organization_lineage":
+        ["https://openalex.org/I4210093590"], "host_organization_lineage_names": [],
+        "type": "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
+        "is_accepted": false, "is_published": false, "raw_source_name": "Ecology Letters,
+        vol. 8, no. 9, pp. 993-1009", "raw_type": "article"}, {"id": "doi:10.5281/zenodo.19669477",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.5281/zenodo.19669477",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
+        "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I67311998", "host_organization_name": "European Organization
+        for Nuclear Research", "host_organization_lineage": ["https://openalex.org/I67311998"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
+        "license_id": null, "version": null, "is_accepted": false, "is_published":
+        null, "raw_source_name": null, "raw_type": "article-journal"}, {"id": "doi:10.5281/zenodo.19669478",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.5281/zenodo.19669478",
+        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
+        "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
+        "https://openalex.org/I67311998", "host_organization_name": "European Organization
+        for Nuclear Research", "host_organization_lineage": ["https://openalex.org/I67311998"],
+        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
+        "license_id": null, "version": null, "is_accepted": false, "is_published":
+        null, "raw_source_name": null, "raw_type": "article-journal"}], "best_oa_location":
+        {"id": "pmh:doi:10.5281/zenodo.19669477", "is_oa": true, "landing_page_url":
+        "https://zotero.org/groups/5435545/items/7865KPPJ", "pdf_url": null, "source":
+        {"id": "https://openalex.org/S4406922384", "display_name": "Open MIND", "issn_l":
+        null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
+        "host_organization": null, "host_organization_name": null, "host_organization_lineage":
+        [], "host_organization_lineage_names": [], "type": "repository"}, "license":
+        null, "license_id": null, "version": "submittedVersion", "is_accepted": false,
+        "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
+        "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/13",
+        "score": 0.4399999976158142, "display_name": "Climate action"}], "awards":
+        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        null, "referenced_works_count": 125, "referenced_works": ["https://openalex.org/W221484134",
+        "https://openalex.org/W228375214", "https://openalex.org/W276691513", "https://openalex.org/W1503026800",
+        "https://openalex.org/W1519918296", "https://openalex.org/W1535048244", "https://openalex.org/W1552647955",
+        "https://openalex.org/W1575985957", "https://openalex.org/W1596529738", "https://openalex.org/W1838542636",
+        "https://openalex.org/W1844182505", "https://openalex.org/W1963600966", "https://openalex.org/W1964191306",
+        "https://openalex.org/W1964837462", "https://openalex.org/W1972082227", "https://openalex.org/W1985448383",
+        "https://openalex.org/W1986568873", "https://openalex.org/W1994031665", "https://openalex.org/W1994217680",
+        "https://openalex.org/W1994442418", "https://openalex.org/W1996364967", "https://openalex.org/W1998951281",
+        "https://openalex.org/W1999659160", "https://openalex.org/W2006970177", "https://openalex.org/W2015340512",
+        "https://openalex.org/W2016070884", "https://openalex.org/W2019055691", "https://openalex.org/W2022909546",
+        "https://openalex.org/W2023966367", "https://openalex.org/W2024046085", "https://openalex.org/W2024780423",
+        "https://openalex.org/W2031217053", "https://openalex.org/W2031901125", "https://openalex.org/W2032138416",
+        "https://openalex.org/W2037105750", "https://openalex.org/W2045997296", "https://openalex.org/W2048429184",
+        "https://openalex.org/W2049424645", "https://openalex.org/W2052489905", "https://openalex.org/W2055764609",
+        "https://openalex.org/W2058597570", "https://openalex.org/W2059210846", "https://openalex.org/W2060298585",
+        "https://openalex.org/W2078204193", "https://openalex.org/W2080441793", "https://openalex.org/W2080978149",
+        "https://openalex.org/W2081964130", "https://openalex.org/W2085073796", "https://openalex.org/W2085449681",
+        "https://openalex.org/W2088626174", "https://openalex.org/W2089454337", "https://openalex.org/W2095240644",
+        "https://openalex.org/W2096152168", "https://openalex.org/W2097672723", "https://openalex.org/W2099197539",
+        "https://openalex.org/W2099320848", "https://openalex.org/W2102881574", "https://openalex.org/W2106718643",
+        "https://openalex.org/W2108683999", "https://openalex.org/W2110022170", "https://openalex.org/W2111954076",
+        "https://openalex.org/W2114630657", "https://openalex.org/W2115414100", "https://openalex.org/W2118436877",
+        "https://openalex.org/W2119830727", "https://openalex.org/W2120160157", "https://openalex.org/W2123379596",
+        "https://openalex.org/W2123498764", "https://openalex.org/W2124286013", "https://openalex.org/W2124516299",
+        "https://openalex.org/W2125118617", "https://openalex.org/W2125340357", "https://openalex.org/W2129913788",
+        "https://openalex.org/W2130354003", "https://openalex.org/W2130695471", "https://openalex.org/W2132885452",
+        "https://openalex.org/W2136017883", "https://openalex.org/W2138788795", "https://openalex.org/W2139416101",
+        "https://openalex.org/W2139857790", "https://openalex.org/W2140534668", "https://openalex.org/W2144377259",
+        "https://openalex.org/W2146081698", "https://openalex.org/W2147531279", "https://openalex.org/W2149507322",
+        "https://openalex.org/W2150171421", "https://openalex.org/W2154107014", "https://openalex.org/W2155475871",
+        "https://openalex.org/W2156319159", "https://openalex.org/W2156476474", "https://openalex.org/W2157701121",
+        "https://openalex.org/W2160613335", "https://openalex.org/W2162883397", "https://openalex.org/W2163816695",
+        "https://openalex.org/W2164351958", "https://openalex.org/W2167237900", "https://openalex.org/W2167518054",
+        "https://openalex.org/W2168939113", "https://openalex.org/W2170505236", "https://openalex.org/W2170597372",
+        "https://openalex.org/W2171173166", "https://openalex.org/W2172838612", "https://openalex.org/W2188094503",
+        "https://openalex.org/W2247170044", "https://openalex.org/W2470118347", "https://openalex.org/W2474908076",
+        "https://openalex.org/W2507100972", "https://openalex.org/W2796407663", "https://openalex.org/W2997943624",
+        "https://openalex.org/W3150326654", "https://openalex.org/W3170870831", "https://openalex.org/W4231374061",
+        "https://openalex.org/W4233991124", "https://openalex.org/W4243871771", "https://openalex.org/W4249657560",
+        "https://openalex.org/W4301427652", "https://openalex.org/W6635459477", "https://openalex.org/W6648520290",
+        "https://openalex.org/W6671827719", "https://openalex.org/W6679410509", "https://openalex.org/W6679892459",
+        "https://openalex.org/W6681526416", "https://openalex.org/W6681784784", "https://openalex.org/W6682194299",
+        "https://openalex.org/W6812609589"], "related_works": ["https://openalex.org/W1585007175",
+        "https://openalex.org/W2382521049", "https://openalex.org/W2144385241", "https://openalex.org/W4300101996",
+        "https://openalex.org/W2165950148", "https://openalex.org/W4253593777", "https://openalex.org/W2951497643",
+        "https://openalex.org/W1524579078", "https://openalex.org/W1996083730", "https://openalex.org/W2095269989"],
+        "abstract_inverted_index": {"In": [0], "the": [1, 42, 64, 79, 90, 95], "last":
+        [2], "two": [3], "decades,": [4], "interest": [5], "in": [6, 20, 46, 60, 78],
+        "species": [7, 111], "distribution": [8], "models": [9], "(SDMs)": [10], "of":
+        [11, 31, 44, 57, 83, 92, 97, 134], "plants": [12], "and": [13, 49, 67, 71,
+        75, 81, 101, 117], "animals": [14], "has": [15], "grown": [16], "dramatically.":
+        [17], "Recent": [18], "advances": [19, 59], "SDMs": [21, 45, 93, 121, 135],
+        "allow": [22], "us": [23], "to": [24, 89], "potentially": [25], "forecast":
+        [26], "anthropogenic": [27], "effects": [28], "on": [29], "patterns": [30],
+        "biodiversity": [32], "at": [33, 122], "different": [34], "spatial": [35,
+        124], "scales.": [36, 125], "However,": [37], "some": [38], "limitations":
+        [39, 74], "still": [40], "preclude": [41], "use": [43, 91], "many": [47],
+        "theoretical": [48], "practical": [50], "applications.": [51], "Here,": [52],
+        "we": [53], "provide": [54], "an": [55], "overview": [56], "recent": [58],
+        "this": [61], "field,": [62], "discuss": [63], "ecological": [65, 137], "principles":
+        [66], "assumptions": [68], "underpinning": [69], "SDMs,": [70], "highlight":
+        [72], "critical": [73], "decisions": [76], "inherent": [77], "construction":
+        [80], "evaluation": [82], "SDMs.": [84], "Particular": [85], "emphasis": [86],
+        "is": [87], "given": [88], "for": [94, 109], "assessment": [96], "climate":
+        [98], "change": [99], "impacts": [100], "conservation": [102], "management":
+        [103], "issues.": [104], "We": [105], "suggest": [106], "new": [107], "avenues":
+        [108], "incorporating": [110], "migration,": [112], "population": [113], "dynamics,":
+        [114], "biotic": [115], "interactions": [116], "community": [118], "ecology":
+        [119], "into": [120], "multiple": [123], "Addressing": [126], "all": [127],
+        "these": [128], "issues": [129], "requires": [130], "a": [131], "better":
+        [132], "integration": [133], "with": [136], "theory.": [138]}, "counts_by_year":
+        [{"year": 2026, "cited_by_count": 120}, {"year": 2025, "cited_by_count": 390},
+        {"year": 2024, "cited_by_count": 348}, {"year": 2023, "cited_by_count": 345},
+        {"year": 2022, "cited_by_count": 373}, {"year": 2021, "cited_by_count": 378},
+        {"year": 2020, "cited_by_count": 482}, {"year": 2019, "cited_by_count": 378},
+        {"year": 2018, "cited_by_count": 373}, {"year": 2017, "cited_by_count": 353},
+        {"year": 2016, "cited_by_count": 359}, {"year": 2015, "cited_by_count": 342},
+        {"year": 2014, "cited_by_count": 337}, {"year": 2013, "cited_by_count": 341},
+        {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-25T08:39:21.599409",
+        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
+  recorded_at: 2026-05-25 16:23:26
+- request:
+    method: GET
+    uri: https://api.openalex.org/works?filter=doi%3A10.1111%2Fj.1461-0248.2005.00792.x&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
+  response:
+    status: 200
+    headers:
+      date: Mon, 25 May 2026 16:23:26 GMT
+      content-type: application/json
+      cf-ray: a015e2782bab4dd6-MRS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=UCUcH3cstF%2BFMDwIkOW9Qp%2BajhLpgeImC2mYbwUlooQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779726206"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=UCUcH3cstF%2BFMDwIkOW9Qp%2BajhLpgeImC2mYbwUlooQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779726206"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '8224'
+      x-ratelimit-remaining-usd: '0.8224'
+      x-ratelimit-reset: '27394'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 32, "page": null, "per_page":
+        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [{"id": "https://openalex.org/W2123337039", "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
+        "title": "Predicting species distribution: offering more than simple habitat
+        models", "display_name": "Predicting species distribution: offering more than
+        simple habitat models", "publication_year": 2005, "publication_date": "2005-08-15",
+        "ids": {"openalex": "https://openalex.org/W2123337039", "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
         "mag": "2123337039", "pmid": "https://pubmed.ncbi.nlm.nih.gov/34517687"},
         "language": "en", "primary_location": {"id": "doi:10.1111/j.1461-0248.2005.00792.x",
         "is_oa": false, "landing_page_url": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
@@ -321,327 +644,5 @@ http_interactions:
         {"year": 2014, "cited_by_count": 337}, {"year": 2013, "cited_by_count": 341},
         {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-25T08:39:21.599409",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:04
-- request:
-    method: GET
-    uri: https://api.openalex.org/works?filter=doi%3A10.1111%2Fj.1461-0248.2005.00792.x&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
-  response:
-    status: 200
-    headers:
-      date: Mon, 25 May 2026 15:51:04 GMT
-      content-type: application/json
-      cf-ray: a015b30bedfe2558-MRS
-      cf-cache-status: DYNAMIC
-      access-control-allow-origin: '*'
-      server: cloudflare
-      via: 1.1 heroku-router
-      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
-        Content-Type
-      access-control-allow-methods: GET, HEAD, POST, OPTIONS
-      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=uV5DhsGo2tEOLyBQYEeUT%2BX6TWZ4ihRufj%2B98zQToFg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779724264"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=uV5DhsGo2tEOLyBQYEeUT%2BX6TWZ4ihRufj%2B98zQToFg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779724264"
-      x-ratelimit-cost-usd: '0.0001'
-      x-ratelimit-credits-used: '1'
-      x-ratelimit-limit: '10000'
-      x-ratelimit-limit-usd: '1'
-      x-ratelimit-onetime-remaining: '0'
-      x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8578'
-      x-ratelimit-remaining-usd: '0.8578'
-      x-ratelimit-reset: '29336'
-      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
-        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
-        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
-      content-encoding: br
-    body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 20, "page": null, "per_page":
-        200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
-        [{"id": "https://openalex.org/W2123337039", "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
-        "title": "Predicting species distribution: offering more than simple habitat
-        models", "display_name": "Predicting species distribution: offering more than
-        simple habitat models", "publication_year": 2005, "publication_date": "2005-08-15",
-        "ids": {"openalex": "https://openalex.org/W2123337039", "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
-        "mag": "2123337039", "pmid": "https://pubmed.ncbi.nlm.nih.gov/34517687"},
-        "language": "en", "primary_location": {"id": "doi:10.1111/j.1461-0248.2005.00792.x",
-        "is_oa": false, "landing_page_url": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S80967739", "display_name":
-        "Ecology Letters", "issn_l": "1461-023X", "issn": ["1461-023X", "1461-0248"],
-        "is_oa": false, "is_in_doaj": false, "is_core": true, "host_organization":
-        "https://openalex.org/P4310320595", "host_organization_name": "Wiley", "host_organization_lineage":
-        ["https://openalex.org/P4310320595"], "host_organization_lineage_names": ["Wiley"],
-        "type": "journal"}, "license": null, "license_id": null, "version": "publishedVersion",
-        "is_accepted": true, "is_published": true, "raw_source_name": "Ecology Letters",
-        "raw_type": "journal-article"}, "type": "review", "indexed_in": ["crossref",
-        "datacite", "pubmed"], "open_access": {"is_oa": true, "oa_status": "green",
-        "oa_url": "https://zotero.org/groups/5435545/items/7865KPPJ", "any_repository_has_fulltext":
-        true}, "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5041324397",
-        "display_name": "Antoine Guisan", "orcid": "https://orcid.org/0000-0002-3998-4815"},
-        "institutions": [{"id": "https://openalex.org/I97565354", "display_name":
-        "University of Lausanne", "ror": "https://ror.org/019whta54", "country_code":
-        "CH", "type": "education", "lineage": ["https://openalex.org/I97565354"]}],
-        "countries": ["CH"], "is_corresponding": true, "raw_author_name": "Antoine
-        Guisan", "raw_affiliation_strings": ["Laboratoire de Biologie de la Conservation
-        (LBC), D\u00e9partement d''Ecologie et d''Evolution (DEE), Universit\u00e9
-        de Lausanne, B\u00e2timent de Biologie, CH-1015 Lausanne, Switzerland", "Laboratoire
-        de Biologie de la Conservation (LBC), D\u00e9partement d''Ecologie et d''Evolution
-        (DEE), Universit\u00e9 de Lausanne, B\u00e2timent de Biologie, CH\u20101015
-        Lausanne, Switzerland"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
-        "Laboratoire de Biologie de la Conservation (LBC), D\u00e9partement d''Ecologie
-        et d''Evolution (DEE), Universit\u00e9 de Lausanne, B\u00e2timent de Biologie,
-        CH-1015 Lausanne, Switzerland", "institution_ids": ["https://openalex.org/I97565354"]},
-        {"raw_affiliation_string": "Laboratoire de Biologie de la Conservation (LBC),
-        D\u00e9partement d''Ecologie et d''Evolution (DEE), Universit\u00e9 de Lausanne,
-        B\u00e2timent de Biologie, CH\u20101015 Lausanne, Switzerland", "institution_ids":
-        ["https://openalex.org/I97565354"]}]}, {"author_position": "last", "author":
-        {"id": "https://openalex.org/A5072813166", "display_name": "Wilfried Thuiller",
-        "orcid": "https://orcid.org/0000-0002-5388-5274"}, "institutions": [{"id":
-        "https://openalex.org/I21803372", "display_name": "University of \u00c9vora",
-        "ror": "https://ror.org/02gyps716", "country_code": "PT", "type": "education",
-        "lineage": ["https://openalex.org/I21803372"]}, {"id": "https://openalex.org/I4210087898",
-        "display_name": "South African National Biodiversity Institute", "ror": "https://ror.org/005r3tp02",
-        "country_code": "ZA", "type": "facility", "lineage": ["https://openalex.org/I4210087898"]}],
-        "countries": ["PT", "ZA"], "is_corresponding": false, "raw_author_name": "Wilfried
-        Thuiller", "raw_affiliation_strings": ["Climate Change Research Group, Kirstenbosh
-        Research Center, South African National Biodiversity Institute, Post Bag x7,
-        Claremont 7735, Cape Town, South Africa", "Macroecology and Conservation Unit,
-        University of \u00c9vora, Estrada dos Le\u00f5es, 7000-730 \u00c9vora, Portugal",
-        "Macroecology and Conservation Unit, University of \u00c9vora, Estrada dos
-        Le\u00f5es, 7000\u2010730 \u00c9vora, Portugal"], "raw_orcid": null, "affiliations":
-        [{"raw_affiliation_string": "Climate Change Research Group, Kirstenbosh Research
-        Center, South African National Biodiversity Institute, Post Bag x7, Claremont
-        7735, Cape Town, South Africa", "institution_ids": ["https://openalex.org/I4210087898"]},
-        {"raw_affiliation_string": "Macroecology and Conservation Unit, University
-        of \u00c9vora, Estrada dos Le\u00f5es, 7000-730 \u00c9vora, Portugal", "institution_ids":
-        ["https://openalex.org/I21803372"]}, {"raw_affiliation_string": "Macroecology
-        and Conservation Unit, University of \u00c9vora, Estrada dos Le\u00f5es, 7000\u2010730
-        \u00c9vora, Portugal", "institution_ids": ["https://openalex.org/I21803372"]}]}],
-        "institutions": [], "countries_distinct_count": 3, "institutions_distinct_count":
-        2, "corresponding_author_ids": ["https://openalex.org/A5041324397"], "corresponding_institution_ids":
-        ["https://openalex.org/I97565354"], "apc_list": {"value": 5050, "currency":
-        "USD", "value_usd": 5050}, "apc_paid": null, "fwci": 298.6733, "has_fulltext":
-        false, "cited_by_count": 6467, "citation_normalized_percentile": {"value":
-        1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
-        {"min": 99, "max": 100}, "biblio": {"volume": "8", "issue": "9", "first_page":
-        "993", "last_page": "1009"}, "is_retracted": false, "is_paratext": false,
-        "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10895", "display_name":
-        "Species Distribution and Climate Change", "score": 1.0, "subfield": {"id":
-        "https://openalex.org/subfields/2302", "display_name": "Ecological Modeling"},
-        "field": {"id": "https://openalex.org/fields/23", "display_name": "Environmental
-        Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
-        "Physical Sciences"}}, "topics": [{"id": "https://openalex.org/T10895", "display_name":
-        "Species Distribution and Climate Change", "score": 1.0, "subfield": {"id":
-        "https://openalex.org/subfields/2302", "display_name": "Ecological Modeling"},
-        "field": {"id": "https://openalex.org/fields/23", "display_name": "Environmental
-        Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
-        "Physical Sciences"}}, {"id": "https://openalex.org/T10199", "display_name":
-        "Wildlife Ecology and Conservation", "score": 0.9980999827384949, "subfield":
-        {"id": "https://openalex.org/subfields/2303", "display_name": "Ecology"},
-        "field": {"id": "https://openalex.org/fields/23", "display_name": "Environmental
-        Science"}, "domain": {"id": "https://openalex.org/domains/3", "display_name":
-        "Physical Sciences"}}, {"id": "https://openalex.org/T10005", "display_name":
-        "Ecology and Vegetation Dynamics Studies", "score": 0.9900000095367432, "subfield":
-        {"id": "https://openalex.org/subfields/2309", "display_name": "Nature and
-        Landscape Conservation"}, "field": {"id": "https://openalex.org/fields/23",
-        "display_name": "Environmental Science"}, "domain": {"id": "https://openalex.org/domains/3",
-        "display_name": "Physical Sciences"}}], "keywords": [{"id": "https://openalex.org/keywords/ecology",
-        "display_name": "Ecology", "score": 0.7160497307777405}, {"id": "https://openalex.org/keywords/habitat",
-        "display_name": "Habitat", "score": 0.6080566644668579}, {"id": "https://openalex.org/keywords/distribution",
-        "display_name": "Distribution (mathematics)", "score": 0.5108282566070557},
-        {"id": "https://openalex.org/keywords/simple", "display_name": "Simple (philosophy)",
-        "score": 0.49583014845848083}, {"id": "https://openalex.org/keywords/geography",
-        "display_name": "Geography", "score": 0.4164107143878937}, {"id": "https://openalex.org/keywords/environmental-niche-modelling",
-        "display_name": "Environmental niche modelling", "score": 0.41606059670448303},
-        {"id": "https://openalex.org/keywords/biology", "display_name": "Biology",
-        "score": 0.410788357257843}, {"id": "https://openalex.org/keywords/ecological-niche",
-        "display_name": "Ecological niche", "score": 0.13281327486038208}, {"id":
-        "https://openalex.org/keywords/mathematics", "display_name": "Mathematics",
-        "score": 0.06781348586082458}], "concepts": [{"id": "https://openalex.org/C18903297",
-        "wikidata": "https://www.wikidata.org/wiki/Q7150", "display_name": "Ecology",
-        "level": 1, "score": 0.7160497307777405}, {"id": "https://openalex.org/C185933670",
-        "wikidata": "https://www.wikidata.org/wiki/Q52105", "display_name": "Habitat",
-        "level": 2, "score": 0.6080566644668579}, {"id": "https://openalex.org/C110121322",
-        "wikidata": "https://www.wikidata.org/wiki/Q865811", "display_name": "Distribution
-        (mathematics)", "level": 2, "score": 0.5108282566070557}, {"id": "https://openalex.org/C2780586882",
-        "wikidata": "https://www.wikidata.org/wiki/Q7520643", "display_name": "Simple
-        (philosophy)", "level": 2, "score": 0.49583014845848083}, {"id": "https://openalex.org/C205649164",
-        "wikidata": "https://www.wikidata.org/wiki/Q1071", "display_name": "Geography",
-        "level": 0, "score": 0.4164107143878937}, {"id": "https://openalex.org/C103215972",
-        "wikidata": "https://www.wikidata.org/wiki/Q5381340", "display_name": "Environmental
-        niche modelling", "level": 4, "score": 0.41606059670448303}, {"id": "https://openalex.org/C86803240",
-        "wikidata": "https://www.wikidata.org/wiki/Q420", "display_name": "Biology",
-        "level": 0, "score": 0.410788357257843}, {"id": "https://openalex.org/C102715595",
-        "wikidata": "https://www.wikidata.org/wiki/Q172861", "display_name": "Ecological
-        niche", "level": 3, "score": 0.13281327486038208}, {"id": "https://openalex.org/C33923547",
-        "wikidata": "https://www.wikidata.org/wiki/Q395", "display_name": "Mathematics",
-        "level": 0, "score": 0.06781348586082458}, {"id": "https://openalex.org/C138885662",
-        "wikidata": "https://www.wikidata.org/wiki/Q5891", "display_name": "Philosophy",
-        "level": 0, "score": 0.0}, {"id": "https://openalex.org/C134306372", "wikidata":
-        "https://www.wikidata.org/wiki/Q7754", "display_name": "Mathematical analysis",
-        "level": 1, "score": 0.0}, {"id": "https://openalex.org/C111472728", "wikidata":
-        "https://www.wikidata.org/wiki/Q9471", "display_name": "Epistemology", "level":
-        1, "score": 0.0}], "mesh": [], "locations_count": 8, "locations": [{"id":
-        "doi:10.1111/j.1461-0248.2005.00792.x", "is_oa": false, "landing_page_url":
-        "https://doi.org/10.1111/j.1461-0248.2005.00792.x", "pdf_url": null, "source":
-        {"id": "https://openalex.org/S80967739", "display_name": "Ecology Letters",
-        "issn_l": "1461-023X", "issn": ["1461-023X", "1461-0248"], "is_oa": false,
-        "is_in_doaj": false, "is_core": true, "host_organization": "https://openalex.org/P4310320595",
-        "host_organization_name": "Wiley", "host_organization_lineage": ["https://openalex.org/P4310320595"],
-        "host_organization_lineage_names": ["Wiley"], "type": "journal"}, "license":
-        null, "license_id": null, "version": "publishedVersion", "is_accepted": true,
-        "is_published": true, "raw_source_name": "Ecology Letters", "raw_type": "journal-article"},
-        {"id": "pmid:34517687", "is_oa": false, "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34517687",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306525036", "display_name":
-        "PubMed", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
-        "is_core": false, "host_organization": "https://openalex.org/I1299303238",
-        "host_organization_name": "National Institutes of Health", "host_organization_lineage":
-        ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [],
-        "type": "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
-        "is_accepted": true, "is_published": true, "raw_source_name": "Ecology letters",
-        "raw_type": null}, {"id": "pmh:doi:10.5281/zenodo.19669477", "is_oa": true,
-        "landing_page_url": "https://zotero.org/groups/5435545/items/7865KPPJ", "pdf_url":
-        null, "source": {"id": "https://openalex.org/S4406922384", "display_name":
-        "Open MIND", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
-        "is_core": false, "host_organization": null, "host_organization_name": null,
-        "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
-        "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
-        "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-        "JournalArticle"}, {"id": "pmh:oai:HAL:halsde-00274246v1", "is_oa": false,
-        "landing_page_url": "https://hal.science/halsde-00274246", "pdf_url": null,
-        "source": {"id": "https://openalex.org/S4306402512", "display_name": "HAL
-        (Le Centre pour la Communication Scientifique Directe)", "issn_l": null, "issn":
-        null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
-        "https://openalex.org/I1294671590", "host_organization_name": "Centre National
-        de la Recherche Scientifique", "host_organization_lineage": ["https://openalex.org/I1294671590"],
-        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
-        "license_id": null, "version": "submittedVersion", "is_accepted": false, "is_published":
-        false, "raw_source_name": "Ecology Letters, 2005, 8 (9), pp.993-1009. &#x27E8;10.1111/j.1461-0248.2005.00792.x&#x27E9;",
-        "raw_type": "Journal articles"}, {"id": "pmh:oai:iris.unil.ch:iris/201017",
-        "is_oa": false, "landing_page_url": "https://iris.unil.ch/handle/iris/201017",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S7407055444", "display_name":
-        "IRIS", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false,
-        "is_core": false, "host_organization": null, "host_organization_name": null,
-        "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
-        "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
-        "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-        "journal article"}, {"id": "pmh:oai:serval.unil.ch:BIB_8122F431F096", "is_oa":
-        false, "landing_page_url": "https://serval.unil.ch/notice/serval:BIB_8122F431F096",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306401797", "display_name":
-        "SERVAL (Universit\u00e9 de Lausanne)", "issn_l": null, "issn": null, "is_oa":
-        false, "is_in_doaj": false, "is_core": false, "host_organization": "https://openalex.org/I4210093590",
-        "host_organization_name": "Swiss School of Archaeology in Greece", "host_organization_lineage":
-        ["https://openalex.org/I4210093590"], "host_organization_lineage_names": [],
-        "type": "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
-        "is_accepted": false, "is_published": false, "raw_source_name": "Ecology Letters,
-        vol. 8, no. 9, pp. 993-1009", "raw_type": "article"}, {"id": "doi:10.5281/zenodo.19669477",
-        "is_oa": true, "landing_page_url": "https://doi.org/10.5281/zenodo.19669477",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
-        "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
-        "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
-        "https://openalex.org/I67311998", "host_organization_name": "European Organization
-        for Nuclear Research", "host_organization_lineage": ["https://openalex.org/I67311998"],
-        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
-        "license_id": null, "version": null, "is_accepted": false, "is_published":
-        null, "raw_source_name": null, "raw_type": "article-journal"}, {"id": "doi:10.5281/zenodo.19669478",
-        "is_oa": true, "landing_page_url": "https://doi.org/10.5281/zenodo.19669478",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
-        "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
-        "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
-        "https://openalex.org/I67311998", "host_organization_name": "European Organization
-        for Nuclear Research", "host_organization_lineage": ["https://openalex.org/I67311998"],
-        "host_organization_lineage_names": [], "type": "repository"}, "license": null,
-        "license_id": null, "version": null, "is_accepted": false, "is_published":
-        null, "raw_source_name": null, "raw_type": "article-journal"}], "best_oa_location":
-        {"id": "pmh:doi:10.5281/zenodo.19669477", "is_oa": true, "landing_page_url":
-        "https://zotero.org/groups/5435545/items/7865KPPJ", "pdf_url": null, "source":
-        {"id": "https://openalex.org/S4406922384", "display_name": "Open MIND", "issn_l":
-        null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
-        "host_organization": null, "host_organization_name": null, "host_organization_lineage":
-        [], "host_organization_lineage_names": [], "type": "repository"}, "license":
-        null, "license_id": null, "version": "submittedVersion", "is_accepted": false,
-        "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
-        "sustainable_development_goals": [{"score": 0.4399999976158142, "id": "https://metadata.un.org/sdg/13",
-        "display_name": "Climate action"}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
-        125, "referenced_works": ["https://openalex.org/W221484134", "https://openalex.org/W228375214",
-        "https://openalex.org/W276691513", "https://openalex.org/W1503026800", "https://openalex.org/W1519918296",
-        "https://openalex.org/W1535048244", "https://openalex.org/W1552647955", "https://openalex.org/W1575985957",
-        "https://openalex.org/W1596529738", "https://openalex.org/W1838542636", "https://openalex.org/W1844182505",
-        "https://openalex.org/W1963600966", "https://openalex.org/W1964191306", "https://openalex.org/W1964837462",
-        "https://openalex.org/W1972082227", "https://openalex.org/W1985448383", "https://openalex.org/W1986568873",
-        "https://openalex.org/W1994031665", "https://openalex.org/W1994217680", "https://openalex.org/W1994442418",
-        "https://openalex.org/W1996364967", "https://openalex.org/W1998951281", "https://openalex.org/W1999659160",
-        "https://openalex.org/W2006970177", "https://openalex.org/W2015340512", "https://openalex.org/W2016070884",
-        "https://openalex.org/W2019055691", "https://openalex.org/W2022909546", "https://openalex.org/W2023966367",
-        "https://openalex.org/W2024046085", "https://openalex.org/W2024780423", "https://openalex.org/W2031217053",
-        "https://openalex.org/W2031901125", "https://openalex.org/W2032138416", "https://openalex.org/W2037105750",
-        "https://openalex.org/W2045997296", "https://openalex.org/W2048429184", "https://openalex.org/W2049424645",
-        "https://openalex.org/W2052489905", "https://openalex.org/W2055764609", "https://openalex.org/W2058597570",
-        "https://openalex.org/W2059210846", "https://openalex.org/W2060298585", "https://openalex.org/W2078204193",
-        "https://openalex.org/W2080441793", "https://openalex.org/W2080978149", "https://openalex.org/W2081964130",
-        "https://openalex.org/W2085073796", "https://openalex.org/W2085449681", "https://openalex.org/W2088626174",
-        "https://openalex.org/W2089454337", "https://openalex.org/W2095240644", "https://openalex.org/W2096152168",
-        "https://openalex.org/W2097672723", "https://openalex.org/W2099197539", "https://openalex.org/W2099320848",
-        "https://openalex.org/W2102881574", "https://openalex.org/W2106718643", "https://openalex.org/W2108683999",
-        "https://openalex.org/W2110022170", "https://openalex.org/W2111954076", "https://openalex.org/W2114630657",
-        "https://openalex.org/W2115414100", "https://openalex.org/W2118436877", "https://openalex.org/W2119830727",
-        "https://openalex.org/W2120160157", "https://openalex.org/W2123379596", "https://openalex.org/W2123498764",
-        "https://openalex.org/W2124286013", "https://openalex.org/W2124516299", "https://openalex.org/W2125118617",
-        "https://openalex.org/W2125340357", "https://openalex.org/W2129913788", "https://openalex.org/W2130354003",
-        "https://openalex.org/W2130695471", "https://openalex.org/W2132885452", "https://openalex.org/W2136017883",
-        "https://openalex.org/W2138788795", "https://openalex.org/W2139416101", "https://openalex.org/W2139857790",
-        "https://openalex.org/W2140534668", "https://openalex.org/W2144377259", "https://openalex.org/W2146081698",
-        "https://openalex.org/W2147531279", "https://openalex.org/W2149507322", "https://openalex.org/W2150171421",
-        "https://openalex.org/W2154107014", "https://openalex.org/W2155475871", "https://openalex.org/W2156319159",
-        "https://openalex.org/W2156476474", "https://openalex.org/W2157701121", "https://openalex.org/W2160613335",
-        "https://openalex.org/W2162883397", "https://openalex.org/W2163816695", "https://openalex.org/W2164351958",
-        "https://openalex.org/W2167237900", "https://openalex.org/W2167518054", "https://openalex.org/W2168939113",
-        "https://openalex.org/W2170505236", "https://openalex.org/W2170597372", "https://openalex.org/W2171173166",
-        "https://openalex.org/W2172838612", "https://openalex.org/W2188094503", "https://openalex.org/W2247170044",
-        "https://openalex.org/W2470118347", "https://openalex.org/W2474908076", "https://openalex.org/W2507100972",
-        "https://openalex.org/W2796407663", "https://openalex.org/W2997943624", "https://openalex.org/W3150326654",
-        "https://openalex.org/W3170870831", "https://openalex.org/W4231374061", "https://openalex.org/W4233991124",
-        "https://openalex.org/W4243871771", "https://openalex.org/W4249657560", "https://openalex.org/W4301427652",
-        "https://openalex.org/W6635459477", "https://openalex.org/W6648520290", "https://openalex.org/W6671827719",
-        "https://openalex.org/W6679410509", "https://openalex.org/W6679892459", "https://openalex.org/W6681526416",
-        "https://openalex.org/W6681784784", "https://openalex.org/W6682194299", "https://openalex.org/W6812609589"],
-        "related_works": ["https://openalex.org/W1585007175", "https://openalex.org/W2382521049",
-        "https://openalex.org/W2144385241", "https://openalex.org/W4300101996", "https://openalex.org/W2165950148",
-        "https://openalex.org/W4253593777", "https://openalex.org/W2951497643", "https://openalex.org/W1524579078",
-        "https://openalex.org/W1996083730", "https://openalex.org/W2095269989"], "abstract_inverted_index":
-        {"In": [0], "the": [1, 42, 64, 79, 90, 95], "last": [2], "two": [3], "decades,":
-        [4], "interest": [5], "in": [6, 20, 46, 60, 78], "species": [7, 111], "distribution":
-        [8], "models": [9], "(SDMs)": [10], "of": [11, 31, 44, 57, 83, 92, 97, 134],
-        "plants": [12], "and": [13, 49, 67, 71, 75, 81, 101, 117], "animals": [14],
-        "has": [15], "grown": [16], "dramatically.": [17], "Recent": [18], "advances":
-        [19, 59], "SDMs": [21, 45, 93, 121, 135], "allow": [22], "us": [23], "to":
-        [24, 89], "potentially": [25], "forecast": [26], "anthropogenic": [27], "effects":
-        [28], "on": [29], "patterns": [30], "biodiversity": [32], "at": [33, 122],
-        "different": [34], "spatial": [35, 124], "scales.": [36, 125], "However,":
-        [37], "some": [38], "limitations": [39, 74], "still": [40], "preclude": [41],
-        "use": [43, 91], "many": [47], "theoretical": [48], "practical": [50], "applications.":
-        [51], "Here,": [52], "we": [53], "provide": [54], "an": [55], "overview":
-        [56], "recent": [58], "this": [61], "field,": [62], "discuss": [63], "ecological":
-        [65, 137], "principles": [66], "assumptions": [68], "underpinning": [69],
-        "SDMs,": [70], "highlight": [72], "critical": [73], "decisions": [76], "inherent":
-        [77], "construction": [80], "evaluation": [82], "SDMs.": [84], "Particular":
-        [85], "emphasis": [86], "is": [87], "given": [88], "for": [94, 109], "assessment":
-        [96], "climate": [98], "change": [99], "impacts": [100], "conservation": [102],
-        "management": [103], "issues.": [104], "We": [105], "suggest": [106], "new":
-        [107], "avenues": [108], "incorporating": [110], "migration,": [112], "population":
-        [113], "dynamics,": [114], "biotic": [115], "interactions": [116], "community":
-        [118], "ecology": [119], "into": [120], "multiple": [123], "Addressing": [126],
-        "all": [127], "these": [128], "issues": [129], "requires": [130], "a": [131],
-        "better": [132], "integration": [133], "with": [136], "theory.": [138]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 120}, {"year": 2025, "cited_by_count": 390},
-        {"year": 2024, "cited_by_count": 348}, {"year": 2023, "cited_by_count": 345},
-        {"year": 2022, "cited_by_count": 373}, {"year": 2021, "cited_by_count": 378},
-        {"year": 2020, "cited_by_count": 482}, {"year": 2019, "cited_by_count": 378},
-        {"year": 2018, "cited_by_count": 373}, {"year": 2017, "cited_by_count": 353},
-        {"year": 2016, "cited_by_count": 359}, {"year": 2015, "cited_by_count": 342},
-        {"year": 2014, "cited_by_count": 337}, {"year": 2013, "cited_by_count": 341},
-        {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-25T08:39:21.599409",
-        "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 15:51:04
+  recorded_at: 2026-05-25 16:23:27
 recorded_with: VCR-vcr/2.1.0

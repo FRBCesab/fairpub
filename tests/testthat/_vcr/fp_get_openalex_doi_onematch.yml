@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:13 GMT
+      date: Mon, 25 May 2026 16:23:30 GMT
       content-type: application/json
-      cf-ray: a015b3431f9d2558-MRS
+      cf-ray: a015e2912add4dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=68rWmGFdKRsqx2fOCikuSmrCadG1BqgE5vdA8ScJdYA%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779724273"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=68rWmGFdKRsqx2fOCikuSmrCadG1BqgE5vdA8ScJdYA%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779724273"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jsR0wUIpDC38VZ8FW%2FgHJYiunBV2bIl1sfiVHgS3t0M%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726210"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=jsR0wUIpDC38VZ8FW%2FgHJYiunBV2bIl1sfiVHgS3t0M%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726210"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8453'
-      x-ratelimit-remaining-usd: '0.8453'
-      x-ratelimit-reset: '29327'
+      x-ratelimit-remaining: '8179'
+      x-ratelimit-remaining-usd: '0.8179'
+      x-ratelimit-reset: '27390'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 17, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 27, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1093/biosci/biag028",
         "display_name": "Citation self-awareness for a fairer academic publishing
         landscape", "publication_year": 2026, "primary_location": {"id": "doi:10.1093/biosci/biag028",
@@ -48,16 +48,16 @@ http_interactions:
         "version": "publishedVersion", "is_accepted": true, "is_published": true,
         "raw_source_name": "BioScience", "raw_type": "journal-article"}}], "group_by":
         []}'
-  recorded_at: 2026-05-25 15:51:13
+  recorded_at: 2026-05-25 16:23:30
 - request:
     method: GET
-    uri: https://api.openalex.org/works?filter=title.search%3ACitation+self-awareness+for+a+fairer+academic+publishing+landscape&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=5&mailto=anonymous%40mail.com&page=1
+    uri: https://api.openalex.org/works?filter=title.search%3ACitation+self-awareness+for+a+fairer+academic+publishing+landscape&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=10&mailto=anonymous%40mail.com&page=1
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 15:51:13 GMT
+      date: Mon, 25 May 2026 16:23:31 GMT
       content-type: application/json
-      cf-ray: a015b3453c3b2558-MRS
+      cf-ray: a015e293a8834dd6-MRS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -66,25 +66,25 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=68rWmGFdKRsqx2fOCikuSmrCadG1BqgE5vdA8ScJdYA%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779724273"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=68rWmGFdKRsqx2fOCikuSmrCadG1BqgE5vdA8ScJdYA%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779724273"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=b75QUgTveFeVy6PdSvW9F4vPniwDGwjwPtxaws8ZjnY%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726211"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=b75QUgTveFeVy6PdSvW9F4vPniwDGwjwPtxaws8ZjnY%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726211"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8443'
-      x-ratelimit-remaining-usd: '0.8443'
-      x-ratelimit-reset: '29327'
+      x-ratelimit-remaining: '8169'
+      x-ratelimit-remaining-usd: '0.8169'
+      x-ratelimit-reset: '27389'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 14, "page": 1, "per_page":
-        5, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1093/biosci/biag028",
+      string: '{"meta": {"count": 1, "db_response_time_ms": 13, "page": 1, "per_page":
+        10, "groups_count": null, "cost_usd": 0.001}, "results": [{"doi": "https://doi.org/10.1093/biosci/biag028",
         "display_name": "Citation self-awareness for a fairer academic publishing
         landscape", "publication_year": 2026, "primary_location": {"id": "doi:10.1093/biosci/biag028",
         "is_oa": true, "landing_page_url": "https://doi.org/10.1093/biosci/biag028",
@@ -98,5 +98,5 @@ http_interactions:
         "version": "publishedVersion", "is_accepted": true, "is_published": true,
         "raw_source_name": "BioScience", "raw_type": "journal-article"}}], "group_by":
         []}'
-  recorded_at: 2026-05-25 15:51:13
+  recorded_at: 2026-05-25 16:23:31
 recorded_with: VCR-vcr/2.1.0

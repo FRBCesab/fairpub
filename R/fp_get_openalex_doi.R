@@ -1,20 +1,21 @@
-#' Retrieve the DOI of an article from OpenAlex
+#' Get OpenAlex publication DOI
 #'
 #' @description
-#' This function queries the OpenAlex bibliographic database
-#' (<https://openalex.org>) to retrieve the DOI of an article based on its
-#' title.
+#' Queries the OpenAlex bibliographic database (<https://openalex.org>) to
+#' retrieve metadata about publications matching a given title, including
+#' their DOI.
 #'
-#' @param title a `character` of length 1. The title of the article.
+#' @param title a `character` vector of length 1. The title of the publication.
 #'
-#' @param n an `integer` of length 1. The number of results to return (between
-#'   1 and 200). Default is `5`.
+#' @inheritParams fp_get_openalex_author
 #'
-#' @return A `data.frame` with the following columns:
-#'   - `display_name`, the publication titles matching the query
-#'   - `publication_year`, the year of publication
-#'   - `source_display_name`, the name of the journal
-#'   - `doi`, the DOI of the publications
+#' @return A data frame with the following columns:
+#' \describe{
+#'   \item{display_name}{Title of the publication}
+#'   \item{publication_year}{Year of publication}
+#'   \item{source_display_name}{Journal or source name}
+#'   \item{doi}{Digital Object Identifier (DOI)}
+#' }
 #'
 #' @export
 #'
@@ -24,7 +25,7 @@
 #' options(openalexR.mailto = 'anonymous@mail.com')
 #'
 #' # Search for an full title ----
-#' fp_retrieve_article_doi(
+#' fp_get_openalex_doi(
 #'   "Citation self-awareness for a fairer academic publishing landscape"
 #' )
 #' #>                                       display_name publication_year
@@ -33,9 +34,7 @@
 #' #> 1          BioScience 10.1093/biosci/biag028
 #'
 #' # Search for a partial title ----
-#' fp_retrieve_article_doi(
-#'   "Citation fairer academic landscape"
-#' )
+#' fp_get_openalex_doi("Citation fairer academic landscape")
 #' #>                                       display_name publication_year
 #' #> 1     Strategic citations for a fairer academic...             2025
 #' #> 2 Citation self-awareness for a fairer academic...             2026
@@ -44,7 +43,7 @@
 #' #> 2                              BioScience    10.1093/biosci/biag028
 #' }
 
-fp_retrieve_article_doi <- function(title, n = 5) {
+fp_get_openalex_doi <- function(title, n = 10) {
   fp_check_mailto()
 
   check_arg_string(title)
