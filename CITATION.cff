@@ -26,7 +26,7 @@ preferred-citation:
   notes: R package version 1.0.0
   url: https://github.com/frbcesab/fairpub
 repository-code: https://github.com/frbcesab/fairpub
-url: https://github.com/frbcesab/fairpub
+url: https://frbcesab.github.io/fairpub
 contact:
 - family-names: Casajus
   given-names: Nicolas
