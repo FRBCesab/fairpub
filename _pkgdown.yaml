@@ -20,6 +20,8 @@ reference:
   contents:
   - fp_get_openalex_author
   - fp_get_openalex_doi
+  - fp_get_openalex_author_works
+  - fp_list_openalex_work_types
 
 - title: DOI utilities
   desc: |
