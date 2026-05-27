@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:34 GMT
+      date: Wed, 27 May 2026 11:54:55 GMT
       content-type: application/json
-      cf-ray: a00ecbb3f9116cf5-MRS
+      cf-ray: a024d3ddde1e1ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=6wFPruFOncvjVxvLqtPcSq5Wh5IvQGvu9KXhv%2FMhBcM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651873"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=6wFPruFOncvjVxvLqtPcSq5Wh5IvQGvu9KXhv%2FMhBcM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651873"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8H2fJEoRCax%2B18%2FHlvnfz%2Bn0T9lqoLiMbDXh7e4hWG0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882895"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8H2fJEoRCax%2B18%2FHlvnfz%2Bn0T9lqoLiMbDXh7e4hWG0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882895"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9538'
-      x-ratelimit-remaining-usd: '0.9538'
-      x-ratelimit-reset: '15326'
+      x-ratelimit-remaining: '8717'
+      x-ratelimit-remaining-usd: '0.8717'
+      x-ratelimit-reset: '43505'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 43, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 11, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2123337039",
         "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x", "title": "Predicting
         species distribution: offering more than simple habitat models", "display_name":
@@ -98,7 +98,7 @@ http_interactions:
         2, "corresponding_author_ids": ["https://openalex.org/A5041324397"], "corresponding_institution_ids":
         ["https://openalex.org/I97565354"], "apc_list": {"value": 5050, "currency":
         "USD", "value_usd": 5050}, "apc_paid": null, "fwci": 298.6733, "has_fulltext":
-        false, "cited_by_count": 6466, "citation_normalized_percentile": {"value":
+        false, "cited_by_count": 6473, "citation_normalized_percentile": {"value":
         1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "8", "issue": "9", "first_page":
         "993", "last_page": "1009"}, "is_retracted": false, "is_paratext": false,
@@ -238,98 +238,99 @@ http_interactions:
         [], "host_organization_lineage_names": [], "type": "repository"}, "license":
         null, "license_id": null, "version": "submittedVersion", "is_accepted": false,
         "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
-        "sustainable_development_goals": [{"score": 0.4399999976158142, "id": "https://metadata.un.org/sdg/13",
-        "display_name": "Climate action"}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
-        125, "referenced_works": ["https://openalex.org/W221484134", "https://openalex.org/W228375214",
-        "https://openalex.org/W276691513", "https://openalex.org/W1503026800", "https://openalex.org/W1519918296",
-        "https://openalex.org/W1535048244", "https://openalex.org/W1552647955", "https://openalex.org/W1575985957",
-        "https://openalex.org/W1596529738", "https://openalex.org/W1838542636", "https://openalex.org/W1844182505",
-        "https://openalex.org/W1963600966", "https://openalex.org/W1964191306", "https://openalex.org/W1964837462",
-        "https://openalex.org/W1972082227", "https://openalex.org/W1985448383", "https://openalex.org/W1986568873",
-        "https://openalex.org/W1994031665", "https://openalex.org/W1994217680", "https://openalex.org/W1994442418",
-        "https://openalex.org/W1996364967", "https://openalex.org/W1998951281", "https://openalex.org/W1999659160",
-        "https://openalex.org/W2006970177", "https://openalex.org/W2015340512", "https://openalex.org/W2016070884",
-        "https://openalex.org/W2019055691", "https://openalex.org/W2022909546", "https://openalex.org/W2023966367",
-        "https://openalex.org/W2024046085", "https://openalex.org/W2024780423", "https://openalex.org/W2031217053",
-        "https://openalex.org/W2031901125", "https://openalex.org/W2032138416", "https://openalex.org/W2037105750",
-        "https://openalex.org/W2045997296", "https://openalex.org/W2048429184", "https://openalex.org/W2049424645",
-        "https://openalex.org/W2052489905", "https://openalex.org/W2055764609", "https://openalex.org/W2058597570",
-        "https://openalex.org/W2059210846", "https://openalex.org/W2060298585", "https://openalex.org/W2078204193",
-        "https://openalex.org/W2080441793", "https://openalex.org/W2080978149", "https://openalex.org/W2081964130",
-        "https://openalex.org/W2085073796", "https://openalex.org/W2085449681", "https://openalex.org/W2088626174",
-        "https://openalex.org/W2089454337", "https://openalex.org/W2095240644", "https://openalex.org/W2096152168",
-        "https://openalex.org/W2097672723", "https://openalex.org/W2099197539", "https://openalex.org/W2099320848",
-        "https://openalex.org/W2102881574", "https://openalex.org/W2106718643", "https://openalex.org/W2108683999",
-        "https://openalex.org/W2110022170", "https://openalex.org/W2111954076", "https://openalex.org/W2114630657",
-        "https://openalex.org/W2115414100", "https://openalex.org/W2118436877", "https://openalex.org/W2119830727",
-        "https://openalex.org/W2120160157", "https://openalex.org/W2123379596", "https://openalex.org/W2123498764",
-        "https://openalex.org/W2124286013", "https://openalex.org/W2124516299", "https://openalex.org/W2125118617",
-        "https://openalex.org/W2125340357", "https://openalex.org/W2129913788", "https://openalex.org/W2130354003",
-        "https://openalex.org/W2130695471", "https://openalex.org/W2132885452", "https://openalex.org/W2136017883",
-        "https://openalex.org/W2138788795", "https://openalex.org/W2139416101", "https://openalex.org/W2139857790",
-        "https://openalex.org/W2140534668", "https://openalex.org/W2144377259", "https://openalex.org/W2146081698",
-        "https://openalex.org/W2147531279", "https://openalex.org/W2149507322", "https://openalex.org/W2150171421",
-        "https://openalex.org/W2154107014", "https://openalex.org/W2155475871", "https://openalex.org/W2156319159",
-        "https://openalex.org/W2156476474", "https://openalex.org/W2157701121", "https://openalex.org/W2160613335",
-        "https://openalex.org/W2162883397", "https://openalex.org/W2163816695", "https://openalex.org/W2164351958",
-        "https://openalex.org/W2167237900", "https://openalex.org/W2167518054", "https://openalex.org/W2168939113",
-        "https://openalex.org/W2170505236", "https://openalex.org/W2170597372", "https://openalex.org/W2171173166",
-        "https://openalex.org/W2172838612", "https://openalex.org/W2188094503", "https://openalex.org/W2247170044",
-        "https://openalex.org/W2470118347", "https://openalex.org/W2474908076", "https://openalex.org/W2507100972",
-        "https://openalex.org/W2796407663", "https://openalex.org/W2997943624", "https://openalex.org/W3150326654",
-        "https://openalex.org/W3170870831", "https://openalex.org/W4231374061", "https://openalex.org/W4233991124",
-        "https://openalex.org/W4243871771", "https://openalex.org/W4249657560", "https://openalex.org/W4301427652",
-        "https://openalex.org/W6635459477", "https://openalex.org/W6648520290", "https://openalex.org/W6671827719",
-        "https://openalex.org/W6679410509", "https://openalex.org/W6679892459", "https://openalex.org/W6681526416",
-        "https://openalex.org/W6681784784", "https://openalex.org/W6682194299", "https://openalex.org/W6812609589"],
-        "related_works": ["https://openalex.org/W1585007175", "https://openalex.org/W2382521049",
-        "https://openalex.org/W2144385241", "https://openalex.org/W4300101996", "https://openalex.org/W2165950148",
-        "https://openalex.org/W4253593777", "https://openalex.org/W2951497643", "https://openalex.org/W1524579078",
-        "https://openalex.org/W1996083730", "https://openalex.org/W2095269989"], "abstract_inverted_index":
-        {"In": [0], "the": [1, 42, 64, 79, 90, 95], "last": [2], "two": [3], "decades,":
-        [4], "interest": [5], "in": [6, 20, 46, 60, 78], "species": [7, 111], "distribution":
-        [8], "models": [9], "(SDMs)": [10], "of": [11, 31, 44, 57, 83, 92, 97, 134],
-        "plants": [12], "and": [13, 49, 67, 71, 75, 81, 101, 117], "animals": [14],
-        "has": [15], "grown": [16], "dramatically.": [17], "Recent": [18], "advances":
-        [19, 59], "SDMs": [21, 45, 93, 121, 135], "allow": [22], "us": [23], "to":
-        [24, 89], "potentially": [25], "forecast": [26], "anthropogenic": [27], "effects":
-        [28], "on": [29], "patterns": [30], "biodiversity": [32], "at": [33, 122],
-        "different": [34], "spatial": [35, 124], "scales.": [36, 125], "However,":
-        [37], "some": [38], "limitations": [39, 74], "still": [40], "preclude": [41],
-        "use": [43, 91], "many": [47], "theoretical": [48], "practical": [50], "applications.":
-        [51], "Here,": [52], "we": [53], "provide": [54], "an": [55], "overview":
-        [56], "recent": [58], "this": [61], "field,": [62], "discuss": [63], "ecological":
-        [65, 137], "principles": [66], "assumptions": [68], "underpinning": [69],
-        "SDMs,": [70], "highlight": [72], "critical": [73], "decisions": [76], "inherent":
-        [77], "construction": [80], "evaluation": [82], "SDMs.": [84], "Particular":
-        [85], "emphasis": [86], "is": [87], "given": [88], "for": [94, 109], "assessment":
-        [96], "climate": [98], "change": [99], "impacts": [100], "conservation": [102],
-        "management": [103], "issues.": [104], "We": [105], "suggest": [106], "new":
-        [107], "avenues": [108], "incorporating": [110], "migration,": [112], "population":
-        [113], "dynamics,": [114], "biotic": [115], "interactions": [116], "community":
-        [118], "ecology": [119], "into": [120], "multiple": [123], "Addressing": [126],
-        "all": [127], "these": [128], "issues": [129], "requires": [130], "a": [131],
-        "better": [132], "integration": [133], "with": [136], "theory.": [138]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 119}, {"year": 2025, "cited_by_count": 390},
+        "sustainable_development_goals": [{"display_name": "Climate action", "score":
+        0.4399999976158142, "id": "https://metadata.un.org/sdg/13"}], "awards": [],
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+        null, "referenced_works_count": 125, "referenced_works": ["https://openalex.org/W221484134",
+        "https://openalex.org/W228375214", "https://openalex.org/W276691513", "https://openalex.org/W1503026800",
+        "https://openalex.org/W1519918296", "https://openalex.org/W1535048244", "https://openalex.org/W1552647955",
+        "https://openalex.org/W1575985957", "https://openalex.org/W1596529738", "https://openalex.org/W1838542636",
+        "https://openalex.org/W1844182505", "https://openalex.org/W1963600966", "https://openalex.org/W1964191306",
+        "https://openalex.org/W1964837462", "https://openalex.org/W1972082227", "https://openalex.org/W1985448383",
+        "https://openalex.org/W1986568873", "https://openalex.org/W1994031665", "https://openalex.org/W1994217680",
+        "https://openalex.org/W1994442418", "https://openalex.org/W1996364967", "https://openalex.org/W1998951281",
+        "https://openalex.org/W1999659160", "https://openalex.org/W2006970177", "https://openalex.org/W2015340512",
+        "https://openalex.org/W2016070884", "https://openalex.org/W2019055691", "https://openalex.org/W2022909546",
+        "https://openalex.org/W2023966367", "https://openalex.org/W2024046085", "https://openalex.org/W2024780423",
+        "https://openalex.org/W2031217053", "https://openalex.org/W2031901125", "https://openalex.org/W2032138416",
+        "https://openalex.org/W2037105750", "https://openalex.org/W2045997296", "https://openalex.org/W2048429184",
+        "https://openalex.org/W2049424645", "https://openalex.org/W2052489905", "https://openalex.org/W2055764609",
+        "https://openalex.org/W2058597570", "https://openalex.org/W2059210846", "https://openalex.org/W2060298585",
+        "https://openalex.org/W2078204193", "https://openalex.org/W2080441793", "https://openalex.org/W2080978149",
+        "https://openalex.org/W2081964130", "https://openalex.org/W2085073796", "https://openalex.org/W2085449681",
+        "https://openalex.org/W2088626174", "https://openalex.org/W2089454337", "https://openalex.org/W2095240644",
+        "https://openalex.org/W2096152168", "https://openalex.org/W2097672723", "https://openalex.org/W2099197539",
+        "https://openalex.org/W2099320848", "https://openalex.org/W2102881574", "https://openalex.org/W2106718643",
+        "https://openalex.org/W2108683999", "https://openalex.org/W2110022170", "https://openalex.org/W2111954076",
+        "https://openalex.org/W2114630657", "https://openalex.org/W2115414100", "https://openalex.org/W2118436877",
+        "https://openalex.org/W2119830727", "https://openalex.org/W2120160157", "https://openalex.org/W2123379596",
+        "https://openalex.org/W2123498764", "https://openalex.org/W2124286013", "https://openalex.org/W2124516299",
+        "https://openalex.org/W2125118617", "https://openalex.org/W2125340357", "https://openalex.org/W2129913788",
+        "https://openalex.org/W2130354003", "https://openalex.org/W2130695471", "https://openalex.org/W2132885452",
+        "https://openalex.org/W2136017883", "https://openalex.org/W2138788795", "https://openalex.org/W2139416101",
+        "https://openalex.org/W2139857790", "https://openalex.org/W2140534668", "https://openalex.org/W2144377259",
+        "https://openalex.org/W2146081698", "https://openalex.org/W2147531279", "https://openalex.org/W2149507322",
+        "https://openalex.org/W2150171421", "https://openalex.org/W2154107014", "https://openalex.org/W2155475871",
+        "https://openalex.org/W2156319159", "https://openalex.org/W2156476474", "https://openalex.org/W2157701121",
+        "https://openalex.org/W2160613335", "https://openalex.org/W2162883397", "https://openalex.org/W2163816695",
+        "https://openalex.org/W2164351958", "https://openalex.org/W2167237900", "https://openalex.org/W2167518054",
+        "https://openalex.org/W2168939113", "https://openalex.org/W2170505236", "https://openalex.org/W2170597372",
+        "https://openalex.org/W2171173166", "https://openalex.org/W2172838612", "https://openalex.org/W2188094503",
+        "https://openalex.org/W2247170044", "https://openalex.org/W2470118347", "https://openalex.org/W2474908076",
+        "https://openalex.org/W2507100972", "https://openalex.org/W2796407663", "https://openalex.org/W2997943624",
+        "https://openalex.org/W3150326654", "https://openalex.org/W3170870831", "https://openalex.org/W4231374061",
+        "https://openalex.org/W4233991124", "https://openalex.org/W4243871771", "https://openalex.org/W4249657560",
+        "https://openalex.org/W4301427652", "https://openalex.org/W6635459477", "https://openalex.org/W6648520290",
+        "https://openalex.org/W6671827719", "https://openalex.org/W6679410509", "https://openalex.org/W6679892459",
+        "https://openalex.org/W6681526416", "https://openalex.org/W6681784784", "https://openalex.org/W6682194299",
+        "https://openalex.org/W6812609589"], "related_works": ["https://openalex.org/W1585007175",
+        "https://openalex.org/W2382521049", "https://openalex.org/W2144385241", "https://openalex.org/W4300101996",
+        "https://openalex.org/W2165950148", "https://openalex.org/W4253593777", "https://openalex.org/W2951497643",
+        "https://openalex.org/W1524579078", "https://openalex.org/W1996083730", "https://openalex.org/W2095269989"],
+        "abstract_inverted_index": {"In": [0], "the": [1, 42, 64, 79, 90, 95], "last":
+        [2], "two": [3], "decades,": [4], "interest": [5], "in": [6, 20, 46, 60, 78],
+        "species": [7, 111], "distribution": [8], "models": [9], "(SDMs)": [10], "of":
+        [11, 31, 44, 57, 83, 92, 97, 134], "plants": [12], "and": [13, 49, 67, 71,
+        75, 81, 101, 117], "animals": [14], "has": [15], "grown": [16], "dramatically.":
+        [17], "Recent": [18], "advances": [19, 59], "SDMs": [21, 45, 93, 121, 135],
+        "allow": [22], "us": [23], "to": [24, 89], "potentially": [25], "forecast":
+        [26], "anthropogenic": [27], "effects": [28], "on": [29], "patterns": [30],
+        "biodiversity": [32], "at": [33, 122], "different": [34], "spatial": [35,
+        124], "scales.": [36, 125], "However,": [37], "some": [38], "limitations":
+        [39, 74], "still": [40], "preclude": [41], "use": [43, 91], "many": [47],
+        "theoretical": [48], "practical": [50], "applications.": [51], "Here,": [52],
+        "we": [53], "provide": [54], "an": [55], "overview": [56], "recent": [58],
+        "this": [61], "field,": [62], "discuss": [63], "ecological": [65, 137], "principles":
+        [66], "assumptions": [68], "underpinning": [69], "SDMs,": [70], "highlight":
+        [72], "critical": [73], "decisions": [76], "inherent": [77], "construction":
+        [80], "evaluation": [82], "SDMs.": [84], "Particular": [85], "emphasis": [86],
+        "is": [87], "given": [88], "for": [94, 109], "assessment": [96], "climate":
+        [98], "change": [99], "impacts": [100], "conservation": [102], "management":
+        [103], "issues.": [104], "We": [105], "suggest": [106], "new": [107], "avenues":
+        [108], "incorporating": [110], "migration,": [112], "population": [113], "dynamics,":
+        [114], "biotic": [115], "interactions": [116], "community": [118], "ecology":
+        [119], "into": [120], "multiple": [123], "Addressing": [126], "all": [127],
+        "these": [128], "issues": [129], "requires": [130], "a": [131], "better":
+        [132], "integration": [133], "with": [136], "theory.": [138]}, "counts_by_year":
+        [{"year": 2026, "cited_by_count": 126}, {"year": 2025, "cited_by_count": 390},
         {"year": 2024, "cited_by_count": 348}, {"year": 2023, "cited_by_count": 345},
         {"year": 2022, "cited_by_count": 373}, {"year": 2021, "cited_by_count": 378},
         {"year": 2020, "cited_by_count": 482}, {"year": 2019, "cited_by_count": 378},
         {"year": 2018, "cited_by_count": 373}, {"year": 2017, "cited_by_count": 353},
         {"year": 2016, "cited_by_count": 359}, {"year": 2015, "cited_by_count": 342},
         {"year": 2014, "cited_by_count": 337}, {"year": 2013, "cited_by_count": 341},
-        {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:34
+  recorded_at: 2026-05-27 11:54:55
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.1111%2Fj.1461-0248.2005.00792.x&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:34 GMT
+      date: Wed, 27 May 2026 11:54:55 GMT
       content-type: application/json
-      cf-ray: a00ecbb6da996cf5-MRS
+      cf-ray: a024d3e049191ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -338,24 +339,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=j4g6Ox3SRV8RC4BPrKC6MpmkLVz93NCIRlGA2AbjfSE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651874"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=j4g6Ox3SRV8RC4BPrKC6MpmkLVz93NCIRlGA2AbjfSE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651874"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8H2fJEoRCax%2B18%2FHlvnfz%2Bn0T9lqoLiMbDXh7e4hWG0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882895"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8H2fJEoRCax%2B18%2FHlvnfz%2Bn0T9lqoLiMbDXh7e4hWG0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882895"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9537'
-      x-ratelimit-remaining-usd: '0.9537'
-      x-ratelimit-reset: '15326'
+      x-ratelimit-remaining: '8716'
+      x-ratelimit-remaining-usd: '0.8716'
+      x-ratelimit-reset: '43505'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 18, "page": null, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 55, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2123337039", "doi": "https://doi.org/10.1111/j.1461-0248.2005.00792.x",
         "title": "Predicting species distribution: offering more than simple habitat
@@ -420,7 +421,7 @@ http_interactions:
         2, "corresponding_author_ids": ["https://openalex.org/A5041324397"], "corresponding_institution_ids":
         ["https://openalex.org/I97565354"], "apc_list": {"value": 5050, "currency":
         "USD", "value_usd": 5050}, "apc_paid": null, "fwci": 298.6733, "has_fulltext":
-        false, "cited_by_count": 6466, "citation_normalized_percentile": {"value":
+        false, "cited_by_count": 6473, "citation_normalized_percentile": {"value":
         1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "8", "issue": "9", "first_page":
         "993", "last_page": "1009"}, "is_retracted": false, "is_paratext": false,
@@ -560,87 +561,88 @@ http_interactions:
         [], "host_organization_lineage_names": [], "type": "repository"}, "license":
         null, "license_id": null, "version": "submittedVersion", "is_accepted": false,
         "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
-        "sustainable_development_goals": [{"score": 0.4399999976158142, "id": "https://metadata.un.org/sdg/13",
-        "display_name": "Climate action"}], "awards": [], "funders": [], "has_content":
-        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
-        125, "referenced_works": ["https://openalex.org/W221484134", "https://openalex.org/W228375214",
-        "https://openalex.org/W276691513", "https://openalex.org/W1503026800", "https://openalex.org/W1519918296",
-        "https://openalex.org/W1535048244", "https://openalex.org/W1552647955", "https://openalex.org/W1575985957",
-        "https://openalex.org/W1596529738", "https://openalex.org/W1838542636", "https://openalex.org/W1844182505",
-        "https://openalex.org/W1963600966", "https://openalex.org/W1964191306", "https://openalex.org/W1964837462",
-        "https://openalex.org/W1972082227", "https://openalex.org/W1985448383", "https://openalex.org/W1986568873",
-        "https://openalex.org/W1994031665", "https://openalex.org/W1994217680", "https://openalex.org/W1994442418",
-        "https://openalex.org/W1996364967", "https://openalex.org/W1998951281", "https://openalex.org/W1999659160",
-        "https://openalex.org/W2006970177", "https://openalex.org/W2015340512", "https://openalex.org/W2016070884",
-        "https://openalex.org/W2019055691", "https://openalex.org/W2022909546", "https://openalex.org/W2023966367",
-        "https://openalex.org/W2024046085", "https://openalex.org/W2024780423", "https://openalex.org/W2031217053",
-        "https://openalex.org/W2031901125", "https://openalex.org/W2032138416", "https://openalex.org/W2037105750",
-        "https://openalex.org/W2045997296", "https://openalex.org/W2048429184", "https://openalex.org/W2049424645",
-        "https://openalex.org/W2052489905", "https://openalex.org/W2055764609", "https://openalex.org/W2058597570",
-        "https://openalex.org/W2059210846", "https://openalex.org/W2060298585", "https://openalex.org/W2078204193",
-        "https://openalex.org/W2080441793", "https://openalex.org/W2080978149", "https://openalex.org/W2081964130",
-        "https://openalex.org/W2085073796", "https://openalex.org/W2085449681", "https://openalex.org/W2088626174",
-        "https://openalex.org/W2089454337", "https://openalex.org/W2095240644", "https://openalex.org/W2096152168",
-        "https://openalex.org/W2097672723", "https://openalex.org/W2099197539", "https://openalex.org/W2099320848",
-        "https://openalex.org/W2102881574", "https://openalex.org/W2106718643", "https://openalex.org/W2108683999",
-        "https://openalex.org/W2110022170", "https://openalex.org/W2111954076", "https://openalex.org/W2114630657",
-        "https://openalex.org/W2115414100", "https://openalex.org/W2118436877", "https://openalex.org/W2119830727",
-        "https://openalex.org/W2120160157", "https://openalex.org/W2123379596", "https://openalex.org/W2123498764",
-        "https://openalex.org/W2124286013", "https://openalex.org/W2124516299", "https://openalex.org/W2125118617",
-        "https://openalex.org/W2125340357", "https://openalex.org/W2129913788", "https://openalex.org/W2130354003",
-        "https://openalex.org/W2130695471", "https://openalex.org/W2132885452", "https://openalex.org/W2136017883",
-        "https://openalex.org/W2138788795", "https://openalex.org/W2139416101", "https://openalex.org/W2139857790",
-        "https://openalex.org/W2140534668", "https://openalex.org/W2144377259", "https://openalex.org/W2146081698",
-        "https://openalex.org/W2147531279", "https://openalex.org/W2149507322", "https://openalex.org/W2150171421",
-        "https://openalex.org/W2154107014", "https://openalex.org/W2155475871", "https://openalex.org/W2156319159",
-        "https://openalex.org/W2156476474", "https://openalex.org/W2157701121", "https://openalex.org/W2160613335",
-        "https://openalex.org/W2162883397", "https://openalex.org/W2163816695", "https://openalex.org/W2164351958",
-        "https://openalex.org/W2167237900", "https://openalex.org/W2167518054", "https://openalex.org/W2168939113",
-        "https://openalex.org/W2170505236", "https://openalex.org/W2170597372", "https://openalex.org/W2171173166",
-        "https://openalex.org/W2172838612", "https://openalex.org/W2188094503", "https://openalex.org/W2247170044",
-        "https://openalex.org/W2470118347", "https://openalex.org/W2474908076", "https://openalex.org/W2507100972",
-        "https://openalex.org/W2796407663", "https://openalex.org/W2997943624", "https://openalex.org/W3150326654",
-        "https://openalex.org/W3170870831", "https://openalex.org/W4231374061", "https://openalex.org/W4233991124",
-        "https://openalex.org/W4243871771", "https://openalex.org/W4249657560", "https://openalex.org/W4301427652",
-        "https://openalex.org/W6635459477", "https://openalex.org/W6648520290", "https://openalex.org/W6671827719",
-        "https://openalex.org/W6679410509", "https://openalex.org/W6679892459", "https://openalex.org/W6681526416",
-        "https://openalex.org/W6681784784", "https://openalex.org/W6682194299", "https://openalex.org/W6812609589"],
-        "related_works": ["https://openalex.org/W1585007175", "https://openalex.org/W2382521049",
-        "https://openalex.org/W2144385241", "https://openalex.org/W4300101996", "https://openalex.org/W2165950148",
-        "https://openalex.org/W4253593777", "https://openalex.org/W2951497643", "https://openalex.org/W1524579078",
-        "https://openalex.org/W1996083730", "https://openalex.org/W2095269989"], "abstract_inverted_index":
-        {"In": [0], "the": [1, 42, 64, 79, 90, 95], "last": [2], "two": [3], "decades,":
-        [4], "interest": [5], "in": [6, 20, 46, 60, 78], "species": [7, 111], "distribution":
-        [8], "models": [9], "(SDMs)": [10], "of": [11, 31, 44, 57, 83, 92, 97, 134],
-        "plants": [12], "and": [13, 49, 67, 71, 75, 81, 101, 117], "animals": [14],
-        "has": [15], "grown": [16], "dramatically.": [17], "Recent": [18], "advances":
-        [19, 59], "SDMs": [21, 45, 93, 121, 135], "allow": [22], "us": [23], "to":
-        [24, 89], "potentially": [25], "forecast": [26], "anthropogenic": [27], "effects":
-        [28], "on": [29], "patterns": [30], "biodiversity": [32], "at": [33, 122],
-        "different": [34], "spatial": [35, 124], "scales.": [36, 125], "However,":
-        [37], "some": [38], "limitations": [39, 74], "still": [40], "preclude": [41],
-        "use": [43, 91], "many": [47], "theoretical": [48], "practical": [50], "applications.":
-        [51], "Here,": [52], "we": [53], "provide": [54], "an": [55], "overview":
-        [56], "recent": [58], "this": [61], "field,": [62], "discuss": [63], "ecological":
-        [65, 137], "principles": [66], "assumptions": [68], "underpinning": [69],
-        "SDMs,": [70], "highlight": [72], "critical": [73], "decisions": [76], "inherent":
-        [77], "construction": [80], "evaluation": [82], "SDMs.": [84], "Particular":
-        [85], "emphasis": [86], "is": [87], "given": [88], "for": [94, 109], "assessment":
-        [96], "climate": [98], "change": [99], "impacts": [100], "conservation": [102],
-        "management": [103], "issues.": [104], "We": [105], "suggest": [106], "new":
-        [107], "avenues": [108], "incorporating": [110], "migration,": [112], "population":
-        [113], "dynamics,": [114], "biotic": [115], "interactions": [116], "community":
-        [118], "ecology": [119], "into": [120], "multiple": [123], "Addressing": [126],
-        "all": [127], "these": [128], "issues": [129], "requires": [130], "a": [131],
-        "better": [132], "integration": [133], "with": [136], "theory.": [138]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 119}, {"year": 2025, "cited_by_count": 390},
+        "sustainable_development_goals": [{"display_name": "Climate action", "score":
+        0.4399999976158142, "id": "https://metadata.un.org/sdg/13"}], "awards": [],
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+        null, "referenced_works_count": 125, "referenced_works": ["https://openalex.org/W221484134",
+        "https://openalex.org/W228375214", "https://openalex.org/W276691513", "https://openalex.org/W1503026800",
+        "https://openalex.org/W1519918296", "https://openalex.org/W1535048244", "https://openalex.org/W1552647955",
+        "https://openalex.org/W1575985957", "https://openalex.org/W1596529738", "https://openalex.org/W1838542636",
+        "https://openalex.org/W1844182505", "https://openalex.org/W1963600966", "https://openalex.org/W1964191306",
+        "https://openalex.org/W1964837462", "https://openalex.org/W1972082227", "https://openalex.org/W1985448383",
+        "https://openalex.org/W1986568873", "https://openalex.org/W1994031665", "https://openalex.org/W1994217680",
+        "https://openalex.org/W1994442418", "https://openalex.org/W1996364967", "https://openalex.org/W1998951281",
+        "https://openalex.org/W1999659160", "https://openalex.org/W2006970177", "https://openalex.org/W2015340512",
+        "https://openalex.org/W2016070884", "https://openalex.org/W2019055691", "https://openalex.org/W2022909546",
+        "https://openalex.org/W2023966367", "https://openalex.org/W2024046085", "https://openalex.org/W2024780423",
+        "https://openalex.org/W2031217053", "https://openalex.org/W2031901125", "https://openalex.org/W2032138416",
+        "https://openalex.org/W2037105750", "https://openalex.org/W2045997296", "https://openalex.org/W2048429184",
+        "https://openalex.org/W2049424645", "https://openalex.org/W2052489905", "https://openalex.org/W2055764609",
+        "https://openalex.org/W2058597570", "https://openalex.org/W2059210846", "https://openalex.org/W2060298585",
+        "https://openalex.org/W2078204193", "https://openalex.org/W2080441793", "https://openalex.org/W2080978149",
+        "https://openalex.org/W2081964130", "https://openalex.org/W2085073796", "https://openalex.org/W2085449681",
+        "https://openalex.org/W2088626174", "https://openalex.org/W2089454337", "https://openalex.org/W2095240644",
+        "https://openalex.org/W2096152168", "https://openalex.org/W2097672723", "https://openalex.org/W2099197539",
+        "https://openalex.org/W2099320848", "https://openalex.org/W2102881574", "https://openalex.org/W2106718643",
+        "https://openalex.org/W2108683999", "https://openalex.org/W2110022170", "https://openalex.org/W2111954076",
+        "https://openalex.org/W2114630657", "https://openalex.org/W2115414100", "https://openalex.org/W2118436877",
+        "https://openalex.org/W2119830727", "https://openalex.org/W2120160157", "https://openalex.org/W2123379596",
+        "https://openalex.org/W2123498764", "https://openalex.org/W2124286013", "https://openalex.org/W2124516299",
+        "https://openalex.org/W2125118617", "https://openalex.org/W2125340357", "https://openalex.org/W2129913788",
+        "https://openalex.org/W2130354003", "https://openalex.org/W2130695471", "https://openalex.org/W2132885452",
+        "https://openalex.org/W2136017883", "https://openalex.org/W2138788795", "https://openalex.org/W2139416101",
+        "https://openalex.org/W2139857790", "https://openalex.org/W2140534668", "https://openalex.org/W2144377259",
+        "https://openalex.org/W2146081698", "https://openalex.org/W2147531279", "https://openalex.org/W2149507322",
+        "https://openalex.org/W2150171421", "https://openalex.org/W2154107014", "https://openalex.org/W2155475871",
+        "https://openalex.org/W2156319159", "https://openalex.org/W2156476474", "https://openalex.org/W2157701121",
+        "https://openalex.org/W2160613335", "https://openalex.org/W2162883397", "https://openalex.org/W2163816695",
+        "https://openalex.org/W2164351958", "https://openalex.org/W2167237900", "https://openalex.org/W2167518054",
+        "https://openalex.org/W2168939113", "https://openalex.org/W2170505236", "https://openalex.org/W2170597372",
+        "https://openalex.org/W2171173166", "https://openalex.org/W2172838612", "https://openalex.org/W2188094503",
+        "https://openalex.org/W2247170044", "https://openalex.org/W2470118347", "https://openalex.org/W2474908076",
+        "https://openalex.org/W2507100972", "https://openalex.org/W2796407663", "https://openalex.org/W2997943624",
+        "https://openalex.org/W3150326654", "https://openalex.org/W3170870831", "https://openalex.org/W4231374061",
+        "https://openalex.org/W4233991124", "https://openalex.org/W4243871771", "https://openalex.org/W4249657560",
+        "https://openalex.org/W4301427652", "https://openalex.org/W6635459477", "https://openalex.org/W6648520290",
+        "https://openalex.org/W6671827719", "https://openalex.org/W6679410509", "https://openalex.org/W6679892459",
+        "https://openalex.org/W6681526416", "https://openalex.org/W6681784784", "https://openalex.org/W6682194299",
+        "https://openalex.org/W6812609589"], "related_works": ["https://openalex.org/W1585007175",
+        "https://openalex.org/W2382521049", "https://openalex.org/W2144385241", "https://openalex.org/W4300101996",
+        "https://openalex.org/W2165950148", "https://openalex.org/W4253593777", "https://openalex.org/W2951497643",
+        "https://openalex.org/W1524579078", "https://openalex.org/W1996083730", "https://openalex.org/W2095269989"],
+        "abstract_inverted_index": {"In": [0], "the": [1, 42, 64, 79, 90, 95], "last":
+        [2], "two": [3], "decades,": [4], "interest": [5], "in": [6, 20, 46, 60, 78],
+        "species": [7, 111], "distribution": [8], "models": [9], "(SDMs)": [10], "of":
+        [11, 31, 44, 57, 83, 92, 97, 134], "plants": [12], "and": [13, 49, 67, 71,
+        75, 81, 101, 117], "animals": [14], "has": [15], "grown": [16], "dramatically.":
+        [17], "Recent": [18], "advances": [19, 59], "SDMs": [21, 45, 93, 121, 135],
+        "allow": [22], "us": [23], "to": [24, 89], "potentially": [25], "forecast":
+        [26], "anthropogenic": [27], "effects": [28], "on": [29], "patterns": [30],
+        "biodiversity": [32], "at": [33, 122], "different": [34], "spatial": [35,
+        124], "scales.": [36, 125], "However,": [37], "some": [38], "limitations":
+        [39, 74], "still": [40], "preclude": [41], "use": [43, 91], "many": [47],
+        "theoretical": [48], "practical": [50], "applications.": [51], "Here,": [52],
+        "we": [53], "provide": [54], "an": [55], "overview": [56], "recent": [58],
+        "this": [61], "field,": [62], "discuss": [63], "ecological": [65, 137], "principles":
+        [66], "assumptions": [68], "underpinning": [69], "SDMs,": [70], "highlight":
+        [72], "critical": [73], "decisions": [76], "inherent": [77], "construction":
+        [80], "evaluation": [82], "SDMs.": [84], "Particular": [85], "emphasis": [86],
+        "is": [87], "given": [88], "for": [94, 109], "assessment": [96], "climate":
+        [98], "change": [99], "impacts": [100], "conservation": [102], "management":
+        [103], "issues.": [104], "We": [105], "suggest": [106], "new": [107], "avenues":
+        [108], "incorporating": [110], "migration,": [112], "population": [113], "dynamics,":
+        [114], "biotic": [115], "interactions": [116], "community": [118], "ecology":
+        [119], "into": [120], "multiple": [123], "Addressing": [126], "all": [127],
+        "these": [128], "issues": [129], "requires": [130], "a": [131], "better":
+        [132], "integration": [133], "with": [136], "theory.": [138]}, "counts_by_year":
+        [{"year": 2026, "cited_by_count": 126}, {"year": 2025, "cited_by_count": 390},
         {"year": 2024, "cited_by_count": 348}, {"year": 2023, "cited_by_count": 345},
         {"year": 2022, "cited_by_count": 373}, {"year": 2021, "cited_by_count": 378},
         {"year": 2020, "cited_by_count": 482}, {"year": 2019, "cited_by_count": 378},
         {"year": 2018, "cited_by_count": 373}, {"year": 2017, "cited_by_count": 353},
         {"year": 2016, "cited_by_count": 359}, {"year": 2015, "cited_by_count": 342},
         {"year": 2014, "cited_by_count": 337}, {"year": 2013, "cited_by_count": 341},
-        {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2012, "cited_by_count": 378}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:34
+  recorded_at: 2026-05-27 11:54:55
 recorded_with: VCR-vcr/2.1.0

@@ -1,14 +1,14 @@
 http_interactions:
 - request:
     method: GET
-    uri: https://api.openalex.org/works?filter=title.search%3A&sort=relevance_score%3Adesc&select=doi%2Cdisplay_name%2Cpublication_year%2Cprimary_location&per-page=1&mailto=anonymous%40mail.com
+    uri: https://api.openalex.org/works?filter=author.id%3A&per-page=1&mailto=anonymous%40mail.com
   response:
     status: 400
     headers:
-      date: Sun, 24 May 2026 19:44:37 GMT
+      date: Wed, 27 May 2026 11:55:21 GMT
       content-type: application/json
-      content-length: '180'
-      cf-ray: a00ecbc96f476cf5-MRS
+      content-length: '174'
+      cf-ray: a024d48589c51ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -17,23 +17,23 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=MN8byXCtw78O3Da%2BEZul6WEgvNNG9mtDvuE0boi%2B9QE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779651877"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=MN8byXCtw78O3Da%2BEZul6WEgvNNG9mtDvuE0boi%2B9QE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779651877"
-      x-ratelimit-cost-usd: '0.001'
-      x-ratelimit-credits-used: '10'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=H6vHHljOJJBhJMhMhX2rJAM6K6II2sJc0RWhp11RwPA%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882921"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=H6vHHljOJJBhJMhMhX2rJAM6K6II2sJc0RWhp11RwPA%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882921"
+      x-ratelimit-cost-usd: '0.0001'
+      x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9522'
-      x-ratelimit-remaining-usd: '0.9522'
-      x-ratelimit-reset: '15323'
+      x-ratelimit-remaining: '8504'
+      x-ratelimit-remaining-usd: '0.8504'
+      x-ratelimit-reset: '43479'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
     body:
       string: |
-        {"error":"Invalid query parameters error.","message":"Invalid filter value for 'title.search': value cannot be empty or ''. Use a valid value like filter=title.search:your_value"}
-  recorded_at: 2026-05-24 19:44:37
+        {"error":"Invalid query parameters error.","message":"Invalid filter value for 'author.id': value cannot be empty or ''. Use a valid value like filter=author.id:your_value"}
+  recorded_at: 2026-05-27 11:55:21
 recorded_with: VCR-vcr/2.1.0

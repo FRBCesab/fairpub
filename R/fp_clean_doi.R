@@ -26,8 +26,9 @@
 fp_clean_doi <- function(doi) {
   check_arg_doi(doi)
 
-  doi |>
-    tolower() |>
-    gsub("\\s", "", x = _) |>
-    gsub(.DOI_PREFIX, "", x = _)
+  doi <- tolower(doi)
+  doi <- gsub("\\s", "", doi)
+  doi <- gsub(.DOI_PREFIX, "", doi)
+
+  doi
 }

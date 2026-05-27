@@ -1,0 +1,80 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.openalex.org/authors?search=Nicolas+Casajus&sort=relevance_score%3Adesc&select=display_name%2Cid%2Corcid%2Cworks_count&per-page=1&mailto=anonymous%40mail.com
+  response:
+    status: 200
+    headers:
+      date: Wed, 27 May 2026 11:54:58 GMT
+      content-type: application/json
+      cf-ray: a024d3f43e461ca6-AMS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=qWGfD%2BlQrPPN9KpL0Tr9L1YVB6jlscm5%2Fn3T8vLX2dg%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779882898"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=qWGfD%2BlQrPPN9KpL0Tr9L1YVB6jlscm5%2Fn3T8vLX2dg%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779882898"
+      x-ratelimit-cost-usd: '0.001'
+      x-ratelimit-credits-used: '10'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '8701'
+      x-ratelimit-remaining-usd: '0.8701'
+      x-ratelimit-reset: '43502'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 32, "page": 1, "per_page":
+        1, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
+        "Nicolas Casajus", "id": "https://openalex.org/A5004806463", "orcid": "https://orcid.org/0000-0002-5537-5294",
+        "works_count": 102}], "group_by": []}'
+  recorded_at: 2026-05-27 11:54:58
+- request:
+    method: GET
+    uri: https://api.openalex.org/authors?search=Nicolas+Casajus&sort=relevance_score%3Adesc&select=display_name%2Cid%2Corcid%2Cworks_count&per-page=10&mailto=anonymous%40mail.com&page=1
+  response:
+    status: 200
+    headers:
+      date: Wed, 27 May 2026 11:54:59 GMT
+      content-type: application/json
+      cf-ray: a024d3f6b8f61ca6-AMS
+      cf-cache-status: DYNAMIC
+      access-control-allow-origin: '*'
+      server: cloudflare
+      via: 1.1 heroku-router
+      access-control-allow-headers: Accept, Accept-Language, Accept-Encoding, Authorization,
+        Content-Type
+      access-control-allow-methods: GET, HEAD, POST, OPTIONS
+      nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=SbmrXYdueEDXw1UTsS%2Bwf2ocw0%2BC79sTZhGIgpVi488%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779882899"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=SbmrXYdueEDXw1UTsS%2Bwf2ocw0%2BC79sTZhGIgpVi488%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779882899"
+      x-ratelimit-cost-usd: '0.001'
+      x-ratelimit-credits-used: '10'
+      x-ratelimit-limit: '10000'
+      x-ratelimit-limit-usd: '1'
+      x-ratelimit-onetime-remaining: '0'
+      x-ratelimit-prepaid-remaining-usd: '0'
+      x-ratelimit-remaining: '8691'
+      x-ratelimit-remaining-usd: '0.8691'
+      x-ratelimit-reset: '43501'
+      access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
+        X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      content-encoding: br
+    body:
+      string: '{"meta": {"count": 1, "db_response_time_ms": 199, "page": 1, "per_page":
+        10, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
+        "Nicolas Casajus", "id": "https://openalex.org/A5004806463", "orcid": "https://orcid.org/0000-0002-5537-5294",
+        "works_count": 102}], "group_by": []}'
+  recorded_at: 2026-05-27 11:54:59
+recorded_with: VCR-vcr/2.1.0

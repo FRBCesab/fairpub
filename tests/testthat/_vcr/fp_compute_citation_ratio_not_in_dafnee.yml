@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:31 GMT
+      date: Wed, 27 May 2026 11:54:51 GMT
       content-type: application/json
-      cf-ray: a00ecba14d9a6cf5-MRS
+      cf-ray: a024d3c6de021ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jMexQeBJFdOk8EJmpNUYorqL47IS%2BUTibGl0ghaLMZA%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651870"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=jMexQeBJFdOk8EJmpNUYorqL47IS%2BUTibGl0ghaLMZA%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651870"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=aAu4VZFO0lGnnIRl%2BCrkYfwUI%2B%2FR4MlYX%2BQyXr4%2BMnQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882891"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=aAu4VZFO0lGnnIRl%2BCrkYfwUI%2B%2FR4MlYX%2BQyXr4%2BMnQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882891"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9544'
-      x-ratelimit-remaining-usd: '0.9544'
-      x-ratelimit-reset: '15329'
+      x-ratelimit-remaining: '8723'
+      x-ratelimit-remaining-usd: '0.8723'
+      x-ratelimit-reset: '43509'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 21, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 192, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W4393830903",
         "doi": "https://doi.org/10.5281/zenodo.7390791", "title": "The FORCIS database:
         A global census of planktonic Foraminifera from ocean waters", "display_name":
@@ -419,7 +419,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;", "raw_type":
         "Other publications"}, "sustainable_development_goals": [], "awards": [],
-        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+        "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618", "https://openalex.org/W4246227008",
         "https://openalex.org/W2268450572", "https://openalex.org/W3095955896", "https://openalex.org/W4253819211",
@@ -483,16 +483,16 @@ http_interactions:
         [352], "number.": [353]}, "counts_by_year": [{"year": 2024, "cited_by_count":
         1}, {"year": 2023, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:31
+  recorded_at: 2026-05-27 11:54:51
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.5281%2Fzenodo.7390791&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:31 GMT
+      date: Wed, 27 May 2026 11:54:52 GMT
       content-type: application/json
-      cf-ray: a00ecba3ff296cf5-MRS
+      cf-ray: a024d3ca59dd1ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -501,24 +501,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=SnJQChtc3RS4p87ujD7GF2OIJ7UoA7qy%2BDLCK%2BwnmFk%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651871"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=SnJQChtc3RS4p87ujD7GF2OIJ7UoA7qy%2BDLCK%2BwnmFk%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651871"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=aAu4VZFO0lGnnIRl%2BCrkYfwUI%2B%2FR4MlYX%2BQyXr4%2BMnQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882891"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=aAu4VZFO0lGnnIRl%2BCrkYfwUI%2B%2FR4MlYX%2BQyXr4%2BMnQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882891"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9543'
-      x-ratelimit-remaining-usd: '0.9543'
-      x-ratelimit-reset: '15329'
+      x-ratelimit-remaining: '8722'
+      x-ratelimit-remaining-usd: '0.8722'
+      x-ratelimit-reset: '43508'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 38, "page": null, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 62, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W4393830903", "doi": "https://doi.org/10.5281/zenodo.7390791",
         "title": "The FORCIS database: A global census of planktonic Foraminifera
@@ -968,5 +968,5 @@ http_interactions:
         [352], "number.": [353]}, "counts_by_year": [{"year": 2024, "cited_by_count":
         1}, {"year": 2023, "cited_by_count": 1}], "updated_date": "2026-05-07T13:39:58.223016",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:31
+  recorded_at: 2026-05-27 11:54:52
 recorded_with: VCR-vcr/2.1.0

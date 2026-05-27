@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:35 GMT
+      date: Wed, 27 May 2026 11:54:56 GMT
       content-type: application/json
-      cf-ray: a00ecbb9bca66cf5-MRS
+      cf-ray: a024d3e31be01ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=j4g6Ox3SRV8RC4BPrKC6MpmkLVz93NCIRlGA2AbjfSE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651874"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=j4g6Ox3SRV8RC4BPrKC6MpmkLVz93NCIRlGA2AbjfSE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651874"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8H2fJEoRCax%2B18%2FHlvnfz%2Bn0T9lqoLiMbDXh7e4hWG0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882895"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8H2fJEoRCax%2B18%2FHlvnfz%2Bn0T9lqoLiMbDXh7e4hWG0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882895"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9536'
-      x-ratelimit-remaining-usd: '0.9536'
-      x-ratelimit-reset: '15326'
+      x-ratelimit-remaining: '8715'
+      x-ratelimit-remaining-usd: '0.8715'
+      x-ratelimit-reset: '43504'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 23, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 33, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2162348455",
         "doi": "https://doi.org/10.1038/35002501", "title": "Biodiversity hotspots
         for conservation priorities", "display_name": "Biodiversity hotspots for conservation
@@ -106,7 +106,7 @@ http_interactions:
         5, "corresponding_author_ids": ["https://openalex.org/A5109070857"], "corresponding_institution_ids":
         ["https://openalex.org/I40120149"], "apc_list": {"value": 9750, "currency":
         "EUR", "value_usd": 11690}, "apc_paid": null, "fwci": 506.2763, "has_fulltext":
-        false, "cited_by_count": 31040, "citation_normalized_percentile": {"value":
+        false, "cited_by_count": 31056, "citation_normalized_percentile": {"value":
         1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "403", "issue": "6772", "first_page":
         "853", "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -265,13 +265,13 @@ http_interactions:
         "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
         "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
         "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-        "JournalArticle"}, "sustainable_development_goals": [{"display_name": "Life
-        in Land", "score": 0.5600000023841858, "id": "https://metadata.un.org/sdg/15"}],
+        "JournalArticle"}, "sustainable_development_goals": [{"score": 0.5600000023841858,
+        "id": "https://metadata.un.org/sdg/15", "display_name": "Life in Land"}],
         "awards": [], "funders": [{"id": "https://openalex.org/F4320306142", "display_name":
         "John D. and Catherine T. MacArthur Foundation", "ror": "https://ror.org/00dxczh48"},
         {"id": "https://openalex.org/F4320323161", "display_name": "WWF International",
-        "ror": "https://ror.org/00ppaw753"}], "has_content": {"grobid_xml": false,
-        "pdf": false}, "content_urls": null, "referenced_works_count": 230, "referenced_works":
+        "ror": "https://ror.org/00ppaw753"}], "has_content": {"pdf": false, "grobid_xml":
+        false}, "content_urls": null, "referenced_works_count": 230, "referenced_works":
         ["https://openalex.org/W22843948", "https://openalex.org/W32719449", "https://openalex.org/W38423605",
         "https://openalex.org/W46166763", "https://openalex.org/W89943346", "https://openalex.org/W117453349",
         "https://openalex.org/W146764914", "https://openalex.org/W197913869", "https://openalex.org/W213495198",
@@ -353,25 +353,25 @@ http_interactions:
         "https://openalex.org/W1888713647", "https://openalex.org/W4384207523", "https://openalex.org/W2107551382",
         "https://openalex.org/W2157912707", "https://openalex.org/W4212786172", "https://openalex.org/W2148001066",
         "https://openalex.org/W2162348455"], "abstract_inverted_index": null, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 589}, {"year": 2025, "cited_by_count": 1796},
+        [{"year": 2026, "cited_by_count": 605}, {"year": 2025, "cited_by_count": 1796},
         {"year": 2024, "cited_by_count": 1794}, {"year": 2023, "cited_by_count": 1973},
         {"year": 2022, "cited_by_count": 2005}, {"year": 2021, "cited_by_count": 2185},
         {"year": 2020, "cited_by_count": 2048}, {"year": 2019, "cited_by_count": 1752},
-        {"year": 2018, "cited_by_count": 1602}, {"year": 2017, "cited_by_count": 1533},
-        {"year": 2016, "cited_by_count": 1558}, {"year": 2015, "cited_by_count": 1417},
+        {"year": 2018, "cited_by_count": 1602}, {"year": 2017, "cited_by_count": 1532},
+        {"year": 2016, "cited_by_count": 1559}, {"year": 2015, "cited_by_count": 1417},
         {"year": 2014, "cited_by_count": 1465}, {"year": 2013, "cited_by_count": 1424},
-        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-24T08:33:08.758527",
+        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:35
+  recorded_at: 2026-05-27 11:54:56
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.1038%2F35002501&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Sun, 24 May 2026 19:44:35 GMT
+      date: Wed, 27 May 2026 11:54:56 GMT
       content-type: application/json
-      cf-ray: a00ecbbc7e886cf5-MRS
+      cf-ray: a024d3e64f1c1ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -380,24 +380,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=R%2FbP9o%2FXDn5uibAxKiU%2FAiN88vQf%2FrQBO6ItBwzpbJc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779651875"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=R%2FbP9o%2FXDn5uibAxKiU%2FAiN88vQf%2FrQBO6ItBwzpbJc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779651875"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xxi54rMAqNLDOXh7DVSYnyumkW2FcAcSoGFs2yMyU5E%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882896"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=xxi54rMAqNLDOXh7DVSYnyumkW2FcAcSoGFs2yMyU5E%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882896"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9535'
-      x-ratelimit-remaining-usd: '0.9535'
-      x-ratelimit-reset: '15325'
+      x-ratelimit-remaining: '8714'
+      x-ratelimit-remaining-usd: '0.8714'
+      x-ratelimit-reset: '43504'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 19, "page": null, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 79, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2162348455", "doi": "https://doi.org/10.1038/35002501",
         "title": "Biodiversity hotspots for conservation priorities", "display_name":
@@ -470,7 +470,7 @@ http_interactions:
         5, "corresponding_author_ids": ["https://openalex.org/A5109070857"], "corresponding_institution_ids":
         ["https://openalex.org/I40120149"], "apc_list": {"value": 9750, "currency":
         "EUR", "value_usd": 11690}, "apc_paid": null, "fwci": 506.2763, "has_fulltext":
-        false, "cited_by_count": 31040, "citation_normalized_percentile": {"value":
+        false, "cited_by_count": 31056, "citation_normalized_percentile": {"value":
         1.0, "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "403", "issue": "6772", "first_page":
         "853", "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -629,8 +629,8 @@ http_interactions:
         "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
         "repository"}, "license": null, "license_id": null, "version": "submittedVersion",
         "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-        "JournalArticle"}, "sustainable_development_goals": [{"display_name": "Life
-        in Land", "id": "https://metadata.un.org/sdg/15", "score": 0.5600000023841858}],
+        "JournalArticle"}, "sustainable_development_goals": [{"score": 0.5600000023841858,
+        "id": "https://metadata.un.org/sdg/15", "display_name": "Life in Land"}],
         "awards": [], "funders": [{"id": "https://openalex.org/F4320306142", "display_name":
         "John D. and Catherine T. MacArthur Foundation", "ror": "https://ror.org/00dxczh48"},
         {"id": "https://openalex.org/F4320323161", "display_name": "WWF International",
@@ -717,14 +717,14 @@ http_interactions:
         "https://openalex.org/W1888713647", "https://openalex.org/W4384207523", "https://openalex.org/W2107551382",
         "https://openalex.org/W2157912707", "https://openalex.org/W4212786172", "https://openalex.org/W2148001066",
         "https://openalex.org/W2162348455"], "abstract_inverted_index": null, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 589}, {"year": 2025, "cited_by_count": 1796},
+        [{"year": 2026, "cited_by_count": 605}, {"year": 2025, "cited_by_count": 1796},
         {"year": 2024, "cited_by_count": 1794}, {"year": 2023, "cited_by_count": 1973},
         {"year": 2022, "cited_by_count": 2005}, {"year": 2021, "cited_by_count": 2185},
         {"year": 2020, "cited_by_count": 2048}, {"year": 2019, "cited_by_count": 1752},
-        {"year": 2018, "cited_by_count": 1602}, {"year": 2017, "cited_by_count": 1533},
-        {"year": 2016, "cited_by_count": 1558}, {"year": 2015, "cited_by_count": 1417},
+        {"year": 2018, "cited_by_count": 1602}, {"year": 2017, "cited_by_count": 1532},
+        {"year": 2016, "cited_by_count": 1559}, {"year": 2015, "cited_by_count": 1417},
         {"year": 2014, "cited_by_count": 1465}, {"year": 2013, "cited_by_count": 1424},
-        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-24T08:33:08.758527",
+        {"year": 2012, "cited_by_count": 1216}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-24 19:44:35
+  recorded_at: 2026-05-27 11:54:56
 recorded_with: VCR-vcr/2.1.0

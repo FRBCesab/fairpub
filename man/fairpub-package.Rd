@@ -11,7 +11,7 @@ Provides a user-friendly way to compute the non-profit and academic friendly rat
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/frbcesab/fairpub}
+  \item \url{https://github.com/frbcesab/fairpub},\url{https://frbcesab.github.io/fairpub}
   \item Report bugs at \url{https://github.com/frbcesab/fairpub/issues}
 }
 
