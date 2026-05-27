@@ -55,16 +55,17 @@ fp_identify_duplicate_works <- function(
 ) {
   x <- data[["title"]]
 
+  x[is.na(x)] <- ""
+
   x <- tolower(x)
   x <- gsub("[[:punct:]]", " ", x)
   x <- gsub("[[:space:]]+", " ", x)
   x <- trimws(x)
 
-  x[is.na(x)] <- ""
-
   char_dist <- stringdist::stringdistmatrix(x, x, method = string_dist)
 
   dist_rel <- char_dist / outer(nchar(x), nchar(x), pmax)
+  dist_rel[is.na(dist_rel)] <- 0
 
   hc <- stats::hclust(stats::as.dist(dist_rel), method = hclust_method)
 
