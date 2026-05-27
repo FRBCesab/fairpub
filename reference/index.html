@@ -33,9 +33,9 @@
     </div>
 
     <div class="section level2">
-      <h2 id="fairness-citation-ratio">Fairness &amp; Citation ratio<a class="anchor" aria-label="anchor" href="#fairness-citation-ratio"></a></h2>
+      <h2 id="fairness-and-citation-metrics">Fairness and citation metrics<a class="anchor" aria-label="anchor" href="#fairness-and-citation-metrics"></a></h2>
 
-      <div class="section-desc"><p>Functions to retrieve tha fairness status of an article/journal and to compute the citation ratio of a list of articles.</p></div>
+      <div class="section-desc"><p>Functions to retrieve the fairness status of an article/journal and to compute the citation ratio from a list of articles.</p></div>
 
       <dl></dl></div><div class="section level2">
 
@@ -63,9 +63,9 @@
         </dt>
         <dd>Non profit &amp; academic friendly ratio of citations</dd>
       </dl></div><div class="section level2">
-      <h2 id="doi-helpers">DOI helpers<a class="anchor" aria-label="anchor" href="#doi-helpers"></a></h2>
+      <h2 id="openalex-api-interface">OpenAlex API interface<a class="anchor" aria-label="anchor" href="#openalex-api-interface"></a></h2>
 
-      <div class="section-desc"><p>Functions to retrieve, extract and clean DOI.</p></div>
+      <div class="section-desc"><p>Functions to query the OpenAlex database and retrieve bibliographic information about authors, journals and publications.</p></div>
 
       <dl></dl></div><div class="section level2">
 
@@ -74,12 +74,49 @@
 
       <dl><dt>
 
-          <code><a href="fp_retrieve_article_doi.html">fp_retrieve_article_doi()</a></code>
+          <code><a href="fp_get_openalex_author_id.html">fp_get_openalex_author_id()</a></code>
 
         </dt>
-        <dd>Retrieve the DOI of an article from OpenAlex</dd>
+        <dd>Get OpenAlex author ID</dd>
 
         <dt>
+
+          <code><a href="fp_get_openalex_author_works.html">fp_get_openalex_author_works()</a></code>
+
+        </dt>
+        <dd>Get and filter an author's works from OpenAlex</dd>
+
+        <dt>
+
+          <code><a href="fp_get_openalex_doi.html">fp_get_openalex_doi()</a></code>
+
+        </dt>
+        <dd>Get OpenAlex publication DOI</dd>
+
+        <dt>
+
+          <code><a href="fp_list_openalex_work_types.html">fp_list_openalex_work_types()</a></code>
+
+        </dt>
+        <dd>List valid OpenAlex work types</dd>
+
+        <dt>
+
+          <code><a href="fp_identify_duplicate_works.html">fp_identify_duplicate_works()</a></code>
+
+        </dt>
+        <dd>Identify duplicate works based on title similarity</dd>
+      </dl></div><div class="section level2">
+      <h2 id="doi-utilities">DOI utilities<a class="anchor" aria-label="anchor" href="#doi-utilities"></a></h2>
+
+      <div class="section-desc"><p>Functions to extract and clean DOIs from BibTeX files or character vectors.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
 
           <code><a href="fp_extract_doi.html">fp_extract_doi()</a></code>
 
@@ -95,7 +132,7 @@
       </dl></div><div class="section level2">
       <h2 id="dafnee-database">DAFNEE database<a class="anchor" aria-label="anchor" href="#dafnee-database"></a></h2>
 
-      <div class="section-desc"><p>Helpers related to the DAFNEE database.</p></div>
+      <div class="section-desc"><p>Function to retrieve the list of journals included in the DAFNEE database.</p></div>
 
       <dl></dl></div><div class="section level2">
 

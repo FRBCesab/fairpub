@@ -14,8 +14,12 @@
 <url><loc>https://frbcesab.github.io/fairpub/reference/fp_extract_doi.html</loc></url>
 <url><loc>https://frbcesab.github.io/fairpub/reference/fp_get_article_fairness.html</loc></url>
 <url><loc>https://frbcesab.github.io/fairpub/reference/fp_get_journal_fairness.html</loc></url>
+<url><loc>https://frbcesab.github.io/fairpub/reference/fp_get_openalex_author_id.html</loc></url>
+<url><loc>https://frbcesab.github.io/fairpub/reference/fp_get_openalex_author_works.html</loc></url>
+<url><loc>https://frbcesab.github.io/fairpub/reference/fp_get_openalex_doi.html</loc></url>
+<url><loc>https://frbcesab.github.io/fairpub/reference/fp_identify_duplicate_works.html</loc></url>
 <url><loc>https://frbcesab.github.io/fairpub/reference/fp_list_dafnee_journals.html</loc></url>
-<url><loc>https://frbcesab.github.io/fairpub/reference/fp_retrieve_article_doi.html</loc></url>
+<url><loc>https://frbcesab.github.io/fairpub/reference/fp_list_openalex_work_types.html</loc></url>
 <url><loc>https://frbcesab.github.io/fairpub/reference/index.html</loc></url>
 </urlset>
 

@@ -8,7 +8,7 @@ manuscript for peer review.
 
 Useful links:
 
-- <https://github.com/frbcesab/fairpub>
+- <https://github.com/frbcesab/fairpub>,<https://frbcesab.github.io/fairpub>
 
 - Report bugs at <https://github.com/frbcesab/fairpub/issues>
 
