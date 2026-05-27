@@ -1,12 +1,12 @@
-## fp_get_openalex_author() ----
+## fp_get_openalex_author_id() ----
 
-test_that("fp_get_openalex_author() works", {
+test_that("fp_get_openalex_author_id() works", {
   withr::local_options(
     list("openalexR.mailto" = "anonymous@mail.com")
   )
 
-  vcr::use_cassette("fp_get_openalex_author", {
-    res <- fp_get_openalex_author("Nicolas Casajus")
+  vcr::use_cassette("fp_get_openalex_author_id", {
+    res <- fp_get_openalex_author_id("Nicolas Casajus")
   })
 
   expect_true(inherits(res, "data.frame"))

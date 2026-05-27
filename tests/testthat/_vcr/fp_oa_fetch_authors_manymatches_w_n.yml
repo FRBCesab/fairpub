@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 16:23:36 GMT
+      date: Wed, 27 May 2026 11:55:13 GMT
       content-type: application/json
-      cf-ray: a015e2afda714dd6-MRS
+      cf-ray: a024d44ddca91ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,38 +16,38 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=nIWCq9o0cCIqkc9T30qPpiRlpLL46FzrFPJo3Gy2TH0%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726216"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=nIWCq9o0cCIqkc9T30qPpiRlpLL46FzrFPJo3Gy2TH0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726216"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jpVWNbgcdnsBmtebbNyGLTaSCDy7CjVNzr6tOOufa6Y%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779882913"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=jpVWNbgcdnsBmtebbNyGLTaSCDy7CjVNzr6tOOufa6Y%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779882913"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8059'
-      x-ratelimit-remaining-usd: '0.8059'
-      x-ratelimit-reset: '27384'
+      x-ratelimit-remaining: '8605'
+      x-ratelimit-remaining-usd: '0.8605'
+      x-ratelimit-reset: '43487'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 63566, "db_response_time_ms": 9, "page": 1, "per_page":
+      string: '{"meta": {"count": 63581, "db_response_time_ms": 111, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
         "Nicholas J. Wareham", "id": "https://openalex.org/A5100717719", "orcid":
         "https://orcid.org/0000-0003-1422-2993", "works_count": 1730}], "group_by":
         []}'
-  recorded_at: 2026-05-25 16:23:36
+  recorded_at: 2026-05-27 11:55:13
 - request:
     method: GET
     uri: https://api.openalex.org/authors?search=Nicolas&sort=relevance_score%3Adesc&select=display_name%2Cid%2Corcid%2Cworks_count&per-page=20&mailto=anonymous%40mail.com&page=1
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 16:23:36 GMT
+      date: Wed, 27 May 2026 11:55:15 GMT
       content-type: application/json
-      cf-ray: a015e2b44d834dd6-MRS
+      cf-ray: a024d452495a1ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -56,24 +56,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=nIWCq9o0cCIqkc9T30qPpiRlpLL46FzrFPJo3Gy2TH0%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779726216"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=nIWCq9o0cCIqkc9T30qPpiRlpLL46FzrFPJo3Gy2TH0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779726216"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jpVWNbgcdnsBmtebbNyGLTaSCDy7CjVNzr6tOOufa6Y%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1779882913"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=jpVWNbgcdnsBmtebbNyGLTaSCDy7CjVNzr6tOOufa6Y%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1779882913"
       x-ratelimit-cost-usd: '0.001'
       x-ratelimit-credits-used: '10'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8049'
-      x-ratelimit-remaining-usd: '0.8049'
-      x-ratelimit-reset: '27384'
+      x-ratelimit-remaining: '8595'
+      x-ratelimit-remaining-usd: '0.8595'
+      x-ratelimit-reset: '43485'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 63566, "db_response_time_ms": 13, "page": 1, "per_page":
+      string: '{"meta": {"count": 63581, "db_response_time_ms": 1577, "page": 1, "per_page":
         20, "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name":
         "Nicholas J. Wareham", "id": "https://openalex.org/A5100717719", "orcid":
         "https://orcid.org/0000-0003-1422-2993", "works_count": 1730}, {"display_name":
@@ -84,7 +84,7 @@ http_interactions:
         "https://orcid.org/0000-0003-4921-5427", "works_count": 850}, {"display_name":
         "Nicolas Gisin", "id": "https://openalex.org/A5032785303", "orcid": "https://orcid.org/0000-0003-0788-3494",
         "works_count": 801}, {"display_name": "N. Berger", "id": "https://openalex.org/A5012526019",
-        "orcid": "https://orcid.org/0000-0002-7963-9725", "works_count": 2872}, {"display_name":
+        "orcid": "https://orcid.org/0000-0002-7963-9725", "works_count": 2873}, {"display_name":
         "Nicholas J. Timpson", "id": "https://openalex.org/A5064383725", "orcid":
         "https://orcid.org/0000-0002-7141-9189", "works_count": 883}, {"display_name":
         "Nicolas Viovy", "id": "https://openalex.org/A5034519074", "orcid": "https://orcid.org/0000-0002-9197-6417",
@@ -94,19 +94,19 @@ http_interactions:
         "works_count": 623}, {"display_name": "Nicolas Pons", "id": "https://openalex.org/A5079424364",
         "orcid": "https://orcid.org/0000-0003-1926-8077", "works_count": 125}, {"display_name":
         "N. Arnaud", "id": "https://openalex.org/A5064205935", "orcid": "https://orcid.org/0000-0001-6589-8673",
-        "works_count": 955}, {"display_name": "N. Ellis", "id": "https://openalex.org/A5101863683",
-        "orcid": "https://orcid.org/0000-0002-1920-4930", "works_count": 1692}, {"display_name":
+        "works_count": 956}, {"display_name": "N. Ellis", "id": "https://openalex.org/A5101863683",
+        "orcid": "https://orcid.org/0000-0002-1920-4930", "works_count": 1691}, {"display_name":
         "Nicolas Cherbuin", "id": "https://openalex.org/A5002065453", "orcid": "https://orcid.org/0000-0001-6481-0748",
         "works_count": 367}, {"display_name": "J. Beringer", "id": "https://openalex.org/A5072937674",
-        "orcid": "https://orcid.org/0000-0002-9975-1781", "works_count": 1988}, {"display_name":
+        "orcid": "https://orcid.org/0000-0002-9975-1781", "works_count": 1983}, {"display_name":
         "J. Mueller", "id": "https://openalex.org/A5063560980", "orcid": "https://orcid.org/0000-0001-5099-4718",
-        "works_count": 2634}, {"display_name": "N. Leroy", "id": "https://openalex.org/A5072047732",
+        "works_count": 2631}, {"display_name": "N. Leroy", "id": "https://openalex.org/A5072047732",
         "orcid": "https://orcid.org/0000-0002-2321-1017", "works_count": 454}, {"display_name":
         "Nicol\u00e1s G. Baz\u00e1n", "id": "https://openalex.org/A5068398524", "orcid":
         "https://orcid.org/0000-0002-9243-5444", "works_count": 909}, {"display_name":
         "Nicolas Girard", "id": "https://openalex.org/A5090329560", "orcid": "https://orcid.org/0000-0001-9909-2299",
-        "works_count": 908}, {"display_name": "Nicolas Danchin", "id": "https://openalex.org/A5029003110",
-        "orcid": "https://orcid.org/0000-0001-9263-5051", "works_count": 1080}], "group_by":
+        "works_count": 908}, {"display_name": "N. Morange", "id": "https://openalex.org/A5027358132",
+        "orcid": "https://orcid.org/0000-0003-0047-7215", "works_count": 1566}], "group_by":
         []}'
-  recorded_at: 2026-05-25 16:23:36
+  recorded_at: 2026-05-27 11:55:15
 recorded_with: VCR-vcr/2.1.0

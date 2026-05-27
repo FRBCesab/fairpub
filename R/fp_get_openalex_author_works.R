@@ -5,7 +5,7 @@
 #' filters publication types and incomplete records.
 #'
 #' @param author_id a `character` of length 1. OpenAlex author ID. This
-#'   identifier can be retrieved with [fp_get_openalex_author()].
+#'   identifier can be retrieved with [fp_get_openalex_author_id()].
 #'
 #' @param select a `character` vector of work types to retain. Use 
 #'   [fp_list_openalex_work_types()] to list valid work types.

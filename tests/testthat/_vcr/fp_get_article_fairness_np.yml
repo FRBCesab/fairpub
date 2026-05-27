@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 16:23:25 GMT
+      date: Wed, 27 May 2026 11:54:54 GMT
       content-type: application/json
-      cf-ray: a015e26fc8004dd6-MRS
+      cf-ray: a024d3d8c8e11ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=4dB67TEXa2OBRNfyKfKB%2FFt%2FKDt7wXyuOWytMzGDji0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779726205"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=4dB67TEXa2OBRNfyKfKB%2FFt%2FKDt7wXyuOWytMzGDji0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779726205"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=D3D5fzXMp7ClXjAMhpLbnNfnY5U7QvLCC2M%2FGqdWPHs%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882894"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=D3D5fzXMp7ClXjAMhpLbnNfnY5U7QvLCC2M%2FGqdWPHs%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882894"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8227'
-      x-ratelimit-remaining-usd: '0.8227'
-      x-ratelimit-reset: '27395'
+      x-ratelimit-remaining: '8719'
+      x-ratelimit-remaining-usd: '0.8719'
+      x-ratelimit-reset: '43506'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 21, "page": 1, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 47, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2226396244",
         "doi": "https://doi.org/10.1126/science.162.3859.1243", "title": "The Tragedy
         of the Commons", "display_name": "The Tragedy of the Commons", "publication_year":
@@ -70,8 +70,8 @@ http_interactions:
         ["https://openalex.org/I1311206647"]}]}], "institutions": [], "countries_distinct_count":
         1, "institutions_distinct_count": 1, "corresponding_author_ids": ["https://openalex.org/A5111448232"],
         "corresponding_institution_ids": ["https://openalex.org/I1311206647"], "apc_list":
-        null, "apc_paid": null, "fwci": 276.0403, "has_fulltext": false, "cited_by_count":
-        22837, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
+        null, "apc_paid": null, "fwci": 276.1343, "has_fulltext": false, "cited_by_count":
+        22843, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
         true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99,
         "max": 100}, "biblio": {"volume": "162", "issue": "3859", "first_page": "1243",
         "last_page": "1248"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -159,9 +159,9 @@ http_interactions:
         "host_organization_lineage_names": [], "type": "repository"}, "license": null,
         "license_id": null, "version": "publishedVersion", "is_accepted": true, "is_published":
         true, "raw_source_name": "Science (New York, N.Y.)", "raw_type": null}], "best_oa_location":
-        null, "sustainable_development_goals": [{"display_name": "Peace, Justice and
-        strong institutions", "score": 0.4300000071525574, "id": "https://metadata.un.org/sdg/16"}],
-        "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
+        null, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/16",
+        "score": 0.4300000071525574, "display_name": "Peace, Justice and strong institutions"}],
+        "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
         "content_urls": null, "referenced_works_count": 16, "referenced_works": ["https://openalex.org/W645218623",
         "https://openalex.org/W1520891760", "https://openalex.org/W1546755579", "https://openalex.org/W1967161129",
         "https://openalex.org/W2027636702", "https://openalex.org/W2029363644", "https://openalex.org/W2054383667",
@@ -175,25 +175,25 @@ http_interactions:
         {"The": [0], "population": [1], "problem": [2], "has": [3], "no": [4], "technical":
         [5], "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental":
         [10], "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 309}, {"year": 2025, "cited_by_count": 831},
+        [{"year": 2026, "cited_by_count": 315}, {"year": 2025, "cited_by_count": 831},
         {"year": 2024, "cited_by_count": 915}, {"year": 2023, "cited_by_count": 860},
         {"year": 2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169},
         {"year": 2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132},
         {"year": 2018, "cited_by_count": 1049}, {"year": 2017, "cited_by_count": 969},
         {"year": 2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909},
         {"year": 2014, "cited_by_count": 1014}, {"year": 2013, "cited_by_count": 921},
-        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-25T08:39:21.599409",
+        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2016-06-24T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 16:23:25
+  recorded_at: 2026-05-27 11:54:54
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=doi%3A10.1126%2Fscience.162.3859.1243&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Mon, 25 May 2026 16:23:25 GMT
+      date: Wed, 27 May 2026 11:54:54 GMT
       content-type: application/json
-      cf-ray: a015e2726e6d4dd6-MRS
+      cf-ray: a024d3db2b571ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -202,24 +202,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=4dB67TEXa2OBRNfyKfKB%2FFt%2FKDt7wXyuOWytMzGDji0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779726205"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=4dB67TEXa2OBRNfyKfKB%2FFt%2FKDt7wXyuOWytMzGDji0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779726205"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=D3D5fzXMp7ClXjAMhpLbnNfnY5U7QvLCC2M%2FGqdWPHs%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882894"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=D3D5fzXMp7ClXjAMhpLbnNfnY5U7QvLCC2M%2FGqdWPHs%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882894"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '8226'
-      x-ratelimit-remaining-usd: '0.8226'
-      x-ratelimit-reset: '27395'
+      x-ratelimit-remaining: '8718'
+      x-ratelimit-remaining-usd: '0.8718'
+      x-ratelimit-reset: '43506'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 1, "db_response_time_ms": 16, "page": null, "per_page":
+      string: '{"meta": {"count": 1, "db_response_time_ms": 24, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2226396244", "doi": "https://doi.org/10.1126/science.162.3859.1243",
         "title": "The Tragedy of the Commons", "display_name": "The Tragedy of the
@@ -256,8 +256,8 @@ http_interactions:
         ["https://openalex.org/I1311206647"]}]}], "institutions": [], "countries_distinct_count":
         1, "institutions_distinct_count": 1, "corresponding_author_ids": ["https://openalex.org/A5111448232"],
         "corresponding_institution_ids": ["https://openalex.org/I1311206647"], "apc_list":
-        null, "apc_paid": null, "fwci": 276.0403, "has_fulltext": false, "cited_by_count":
-        22837, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
+        null, "apc_paid": null, "fwci": 276.1343, "has_fulltext": false, "cited_by_count":
+        22843, "citation_normalized_percentile": {"value": 1.0, "is_in_top_1_percent":
         true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99,
         "max": 100}, "biblio": {"volume": "162", "issue": "3859", "first_page": "1243",
         "last_page": "1248"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -361,14 +361,14 @@ http_interactions:
         {"The": [0], "population": [1], "problem": [2], "has": [3], "no": [4], "technical":
         [5], "solution;": [6], "it": [7], "requires": [8], "a": [9], "fundamental":
         [10], "extension": [11], "in": [12], "morality.": [13]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 309}, {"year": 2025, "cited_by_count": 831},
+        [{"year": 2026, "cited_by_count": 315}, {"year": 2025, "cited_by_count": 831},
         {"year": 2024, "cited_by_count": 915}, {"year": 2023, "cited_by_count": 860},
         {"year": 2022, "cited_by_count": 898}, {"year": 2021, "cited_by_count": 1169},
         {"year": 2020, "cited_by_count": 1230}, {"year": 2019, "cited_by_count": 1132},
         {"year": 2018, "cited_by_count": 1049}, {"year": 2017, "cited_by_count": 969},
         {"year": 2016, "cited_by_count": 956}, {"year": 2015, "cited_by_count": 909},
         {"year": 2014, "cited_by_count": 1014}, {"year": 2013, "cited_by_count": 921},
-        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-25T08:39:21.599409",
+        {"year": 2012, "cited_by_count": 889}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2016-06-24T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-25 16:23:26
+  recorded_at: 2026-05-27 11:54:54
 recorded_with: VCR-vcr/2.1.0

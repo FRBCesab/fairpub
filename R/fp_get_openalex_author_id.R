@@ -24,16 +24,16 @@
 #' # Be polite and send your email to OpenAlex API ----
 #' options(openalexR.mailto = 'anonymous@mail.com')
 #'
-#' fp_get_openalex_author("Nicolas Casajus")
+#' fp_get_openalex_author_id("Nicolas Casajus")
 #' #>            id    display_name               orcid works_count
 #' #> 1 A5004806463 Nicolas Casajus 0000-0002-5537-5294         102
 #'
-#' fp_get_openalex_author("Nicolas Mouquet")
+#' fp_get_openalex_author_id("Nicolas Mouquet")
 #' #>            id    display_name               orcid works_count
 #' #> 1 A5001034207 Nicolas Mouquet 0000-0003-1840-6984         210
 #' }
 
-fp_get_openalex_author <- function(author, n = 10) {
+fp_get_openalex_author_id <- function(author, n = 10) {
   fp_check_mailto()
 
   check_arg_string(author)

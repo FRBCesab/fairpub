@@ -12,7 +12,7 @@ fp_get_openalex_author_works(
 }
 \arguments{
 \item{author_id}{a \code{character} of length 1. OpenAlex author ID. This
-identifier can be retrieved with \code{\link[=fp_get_openalex_author]{fp_get_openalex_author()}}.}
+identifier can be retrieved with \code{\link[=fp_get_openalex_author_id]{fp_get_openalex_author_id()}}.}
 
 \item{select}{a \code{character} vector of work types to retain. Use
 \code{\link[=fp_list_openalex_work_types]{fp_list_openalex_work_types()}} to list valid work types.

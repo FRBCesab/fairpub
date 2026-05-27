@@ -5,9 +5,9 @@ http_interactions:
   response:
     status: 200
     headers:
-      date: Wed, 27 May 2026 05:04:54 GMT
+      date: Wed, 27 May 2026 11:55:00 GMT
       content-type: application/json
-      cf-ray: a0227b44fd004b79-MRS
+      cf-ray: a024d3fa1ce11ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -16,24 +16,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=4mxo%2BWnqJ7FmVdxaLTU%2FHE2tO7qSo7YBaBJY9joYCIo%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779858294"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=4mxo%2BWnqJ7FmVdxaLTU%2FHE2tO7qSo7YBaBJY9joYCIo%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779858294"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=uTqfb1UzNUlwtIrCmYRz076T4%2BuAOq3m64uPw0FmoXw%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882899"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=uTqfb1UzNUlwtIrCmYRz076T4%2BuAOq3m64uPw0FmoXw%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882899"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9999'
-      x-ratelimit-remaining-usd: '0.9999'
-      x-ratelimit-reset: '68106'
+      x-ratelimit-remaining: '8690'
+      x-ratelimit-remaining-usd: '0.869'
+      x-ratelimit-reset: '43500'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 102, "db_response_time_ms": 18, "page": 1, "per_page":
+      string: '{"meta": {"count": 102, "db_response_time_ms": 387, "page": 1, "per_page":
         1, "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W2128827287",
         "doi": "https://doi.org/10.1111/j.1365-2486.2009.02000.x", "title": "Uncertainty
         in ensemble forecasting of species distribution", "display_name": "Uncertainty
@@ -189,7 +189,7 @@ http_interactions:
         ["https://openalex.org/I1294671590", "https://openalex.org/I134560555", "https://openalex.org/I205747304",
         "https://openalex.org/I4210104620", "https://openalex.org/I4210122570", "https://openalex.org/I4210131653"],
         "apc_list": {"value": 4120, "currency": "USD", "value_usd": 4120}, "apc_paid":
-        null, "fwci": 37.2873, "has_fulltext": false, "cited_by_count": 691, "citation_normalized_percentile":
+        null, "fwci": 37.2873, "has_fulltext": false, "cited_by_count": 692, "citation_normalized_percentile":
         {"value": 0.99560412, "is_in_top_1_percent": true, "is_in_top_10_percent":
         true}, "cited_by_percentile_year": {"min": 99, "max": 100}, "biblio": {"volume":
         "16", "issue": "4", "first_page": "1145", "last_page": "1157"}, "is_retracted":
@@ -302,9 +302,9 @@ http_interactions:
         "type": "journal"}, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "Global Change
         Biology", "raw_type": "journal-article"}, "sustainable_development_goals":
-        [{"score": 0.5899999737739563, "id": "https://metadata.un.org/sdg/13", "display_name":
-        "Climate action"}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2128827287.pdf"},
+        [{"display_name": "Climate action", "score": 0.5899999737739563, "id": "https://metadata.un.org/sdg/13"}],
+        "awards": [], "funders": [], "has_content": {"pdf": true, "grobid_xml": false},
+        "content_urls": {"pdf": "https://content.openalex.org/works/W2128827287.pdf"},
         "referenced_works_count": 67, "referenced_works": ["https://openalex.org/W21054777",
         "https://openalex.org/W1520428197", "https://openalex.org/W1523963696", "https://openalex.org/W1705762375",
         "https://openalex.org/W1838542636", "https://openalex.org/W1849474684", "https://openalex.org/W1941660934",
@@ -381,25 +381,25 @@ http_interactions:
         "always": [279], "provided": [281], "their": [286, 302], "uncertainty,": [287],
         "so": [288], "management": [290], "conservation": [292], "decisions": [293],
         "can": [294], "full": [299], "knowledge": [300], "reliability.": [303]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 15}, {"year": 2025, "cited_by_count": 54},
+        [{"year": 2026, "cited_by_count": 16}, {"year": 2025, "cited_by_count": 54},
         {"year": 2024, "cited_by_count": 32}, {"year": 2023, "cited_by_count": 53},
         {"year": 2022, "cited_by_count": 48}, {"year": 2021, "cited_by_count": 47},
         {"year": 2020, "cited_by_count": 66}, {"year": 2019, "cited_by_count": 47},
         {"year": 2018, "cited_by_count": 36}, {"year": 2017, "cited_by_count": 36},
         {"year": 2016, "cited_by_count": 35}, {"year": 2015, "cited_by_count": 45},
         {"year": 2014, "cited_by_count": 39}, {"year": 2013, "cited_by_count": 52},
-        {"year": 2012, "cited_by_count": 39}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2012, "cited_by_count": 39}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}], "group_by": []}'
-  recorded_at: 2026-05-27 05:04:55
+  recorded_at: 2026-05-27 11:55:00
 - request:
     method: GET
     uri: https://api.openalex.org/works?filter=author.id%3AA5004806463&per-page=200&mailto=anonymous%40mail.com&cursor=%2A
   response:
     status: 200
     headers:
-      date: Wed, 27 May 2026 05:04:55 GMT
+      date: Wed, 27 May 2026 11:55:01 GMT
       content-type: application/json
-      cf-ray: a0227b49599b4b79-MRS
+      cf-ray: a024d3ff2a2d1ca6-AMS
       cf-cache-status: DYNAMIC
       access-control-allow-origin: '*'
       server: cloudflare
@@ -408,24 +408,24 @@ http_interactions:
         Content-Type
       access-control-allow-methods: GET, HEAD, POST, OPTIONS
       nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9WVR%2Fqmpu9pgddQfdmH4LRNHkHusF%2BRvMsdGuYwLQRI%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779858295"}],"max_age":3600}'
-      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=9WVR%2Fqmpu9pgddQfdmH4LRNHkHusF%2BRvMsdGuYwLQRI%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779858295"
+      report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9xo6paY5MLp0ROxpH8Ec9rKRIjn9lEONHwbCEQmoOFo%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779882900"}],"max_age":3600}'
+      reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=9xo6paY5MLp0ROxpH8Ec9rKRIjn9lEONHwbCEQmoOFo%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779882900"
       x-ratelimit-cost-usd: '0.0001'
       x-ratelimit-credits-used: '1'
       x-ratelimit-limit: '10000'
       x-ratelimit-limit-usd: '1'
       x-ratelimit-onetime-remaining: '0'
       x-ratelimit-prepaid-remaining-usd: '0'
-      x-ratelimit-remaining: '9998'
-      x-ratelimit-remaining-usd: '0.9998'
-      x-ratelimit-reset: '68105'
+      x-ratelimit-remaining: '8689'
+      x-ratelimit-remaining-usd: '0.8689'
+      x-ratelimit-reset: '43499'
       access-control-expose-headers: Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required,
         X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
         X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
       content-encoding: br
     body:
-      string: '{"meta": {"count": 102, "db_response_time_ms": 25, "page": null, "per_page":
+      string: '{"meta": {"count": 102, "db_response_time_ms": 145, "page": null, "per_page":
         200, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
         [{"id": "https://openalex.org/W2128827287", "doi": "https://doi.org/10.1111/j.1365-2486.2009.02000.x",
         "title": "Uncertainty in ensemble forecasting of species distribution", "display_name":
@@ -581,7 +581,7 @@ http_interactions:
         ["https://openalex.org/I1294671590", "https://openalex.org/I134560555", "https://openalex.org/I205747304",
         "https://openalex.org/I4210104620", "https://openalex.org/I4210122570", "https://openalex.org/I4210131653"],
         "apc_list": {"value": 4120, "currency": "USD", "value_usd": 4120}, "apc_paid":
-        null, "fwci": 37.2873, "has_fulltext": false, "cited_by_count": 691, "citation_normalized_percentile":
+        null, "fwci": 37.2873, "has_fulltext": false, "cited_by_count": 692, "citation_normalized_percentile":
         {"value": 0.99560412, "is_in_top_1_percent": true, "is_in_top_10_percent":
         true}, "cited_by_percentile_year": {"min": 99, "max": 100}, "biblio": {"volume":
         "16", "issue": "4", "first_page": "1145", "last_page": "1157"}, "is_retracted":
@@ -696,7 +696,7 @@ http_interactions:
         Biology", "raw_type": "journal-article"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/13", "display_name": "Climate action",
         "score": 0.5899999737739563}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2128827287.pdf"},
+        {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W2128827287.pdf"},
         "referenced_works_count": 67, "referenced_works": ["https://openalex.org/W21054777",
         "https://openalex.org/W1520428197", "https://openalex.org/W1523963696", "https://openalex.org/W1705762375",
         "https://openalex.org/W1838542636", "https://openalex.org/W1849474684", "https://openalex.org/W1941660934",
@@ -773,14 +773,14 @@ http_interactions:
         "always": [279], "provided": [281], "their": [286, 302], "uncertainty,": [287],
         "so": [288], "management": [290], "conservation": [292], "decisions": [293],
         "can": [294], "full": [299], "knowledge": [300], "reliability.": [303]}, "counts_by_year":
-        [{"year": 2026, "cited_by_count": 15}, {"year": 2025, "cited_by_count": 54},
+        [{"year": 2026, "cited_by_count": 16}, {"year": 2025, "cited_by_count": 54},
         {"year": 2024, "cited_by_count": 32}, {"year": 2023, "cited_by_count": 53},
         {"year": 2022, "cited_by_count": 48}, {"year": 2021, "cited_by_count": 47},
         {"year": 2020, "cited_by_count": 66}, {"year": 2019, "cited_by_count": 47},
         {"year": 2018, "cited_by_count": 36}, {"year": 2017, "cited_by_count": 36},
         {"year": 2016, "cited_by_count": 35}, {"year": 2015, "cited_by_count": 45},
         {"year": 2014, "cited_by_count": 39}, {"year": 2013, "cited_by_count": 52},
-        {"year": 2012, "cited_by_count": 39}], "updated_date": "2026-05-23T08:51:43.019350",
+        {"year": 2012, "cited_by_count": 39}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W2072381293",
         "doi": "https://doi.org/10.1111/j.1600-0587.2010.06152.x", "title": "Ensemble
         modelling of species distribution: the effects of geographical and environmental
@@ -904,7 +904,7 @@ http_interactions:
         "raw_type": "Journal articles"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/15", "display_name": "Life in Land",
         "score": 0.7099999785423279}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         54, "referenced_works": ["https://openalex.org/W1552647955", "https://openalex.org/W1710732412",
         "https://openalex.org/W1838542636", "https://openalex.org/W1941660934", "https://openalex.org/W1968254227",
         "https://openalex.org/W1974521698", "https://openalex.org/W1984267116", "https://openalex.org/W1985949400",
@@ -1313,8 +1313,8 @@ http_interactions:
         ["https://openalex.org/I1294671590", "https://openalex.org/I154202486", "https://openalex.org/I19894307",
         "https://openalex.org/I4210149887", "https://openalex.org/I4210166444"], "apc_list":
         {"value": 2200, "currency": "USD", "value_usd": 2200}, "apc_paid": {"value":
-        2200, "currency": "USD", "value_usd": 2200}, "fwci": 49.2459, "has_fulltext":
-        true, "cited_by_count": 369, "citation_normalized_percentile": {"value": 0.99941565,
+        2200, "currency": "USD", "value_usd": 2200}, "fwci": 49.2443, "has_fulltext":
+        true, "cited_by_count": 370, "citation_normalized_percentile": {"value": 0.99941567,
         "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 89, "max": 100}, "biblio": {"volume": "2022", "issue": "1", "first_page":
         null, "last_page": null}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -1469,7 +1469,7 @@ http_interactions:
         "display_name": "Fondation pour la Recherche sur la Biodiversite", "ror":
         "https://ror.org/05x5km989"}, {"id": "https://openalex.org/F4320324952", "display_name":
         "Universit\u00e9 de Montpellier", "ror": "https://ror.org/051escj72"}], "has_content":
-        {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4200357234.pdf"},
+        {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4200357234.pdf"},
         "referenced_works_count": 46, "referenced_works": ["https://openalex.org/W1481780239",
         "https://openalex.org/W1499267374", "https://openalex.org/W1580156547", "https://openalex.org/W1877892153",
         "https://openalex.org/W1956660394", "https://openalex.org/W1984188157", "https://openalex.org/W1987431381",
@@ -1529,10 +1529,10 @@ http_interactions:
         239], "framework,": [228], "we": [229], "built": [230], "associated": [232],
         "website": [233], "hosting": [234], "five": [235], "tutorials": [236], "all":
         [241], "step": [244], "by": [245], "step.": [246]}, "counts_by_year": [{"year":
-        2026, "cited_by_count": 52}, {"year": 2025, "cited_by_count": 142}, {"year":
+        2026, "cited_by_count": 53}, {"year": 2025, "cited_by_count": 142}, {"year":
         2024, "cited_by_count": 88}, {"year": 2023, "cited_by_count": 60}, {"year":
         2022, "cited_by_count": 26}, {"year": 2021, "cited_by_count": 1}], "updated_date":
-        "2026-05-26T13:28:51.108037", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "2026-05-27T09:02:27.158192", "created_date": "2025-10-10T00:00:00"}, {"id":
         "https://openalex.org/W2793209941", "doi": "https://doi.org/10.3389/fevo.2017.00175",
         "title": "Our House Is Burning: Discrepancy in Climate Change vs. Biodiversity
         Coverage in the Media as Compared to Scientific Literature", "display_name":
@@ -1884,7 +1884,7 @@ http_interactions:
         [], "funders": [{"id": "https://openalex.org/F4320310137", "display_name":
         "Universit\u00e9 Laval", "ror": "https://ror.org/04sjchr03"}, {"id": "https://openalex.org/F4320311261",
         "display_name": "Universit\u00e9 du Qu\u00e9bec \u00e0 Rimouski", "ror": "https://ror.org/049jtt335"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W2793209941.pdf", "grobid_xml": "https://content.openalex.org/works/W2793209941.grobid-xml"},
         "referenced_works_count": 39, "referenced_works": ["https://openalex.org/W51831811",
         "https://openalex.org/W1583928158", "https://openalex.org/W1980913870", "https://openalex.org/W1985354534",
@@ -2486,7 +2486,7 @@ http_interactions:
         "funders": [{"id": "https://openalex.org/F4320321735", "display_name": "Fondation
         pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"},
         {"id": "https://openalex.org/F4320329301", "display_name": "Electricit\u00e9
-        de France", "ror": null}], "has_content": {"grobid_xml": false, "pdf": false},
+        de France", "ror": null}], "has_content": {"pdf": false, "grobid_xml": false},
         "content_urls": null, "referenced_works_count": 133, "referenced_works": ["https://openalex.org/W201316592",
         "https://openalex.org/W1128809682", "https://openalex.org/W1479976413", "https://openalex.org/W1494332229",
         "https://openalex.org/W1499267374", "https://openalex.org/W1510871261", "https://openalex.org/W1555622755",
@@ -3220,7 +3220,7 @@ http_interactions:
         "Agence Nationale de la Recherche", "ror": "https://ror.org/00rbzpz17"}, {"id":
         "https://openalex.org/F4320321735", "display_name": "Fondation pour la Recherche
         sur la Biodiversite", "ror": "https://ror.org/05x5km989"}], "has_content":
-        {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3092604566.pdf",
+        {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3092604566.pdf",
         "grobid_xml": "https://content.openalex.org/works/W3092604566.grobid-xml"},
         "referenced_works_count": 114, "referenced_works": ["https://openalex.org/W130586186",
         "https://openalex.org/W1533083599", "https://openalex.org/W1541774929", "https://openalex.org/W1544875105",
@@ -3871,7 +3871,7 @@ http_interactions:
         "https://openalex.org/F4320320883", "display_name": "Agence Nationale de la
         Recherche", "ror": "https://ror.org/00rbzpz17"}, {"id": "https://openalex.org/F4320322892",
         "display_name": "Centre National de la Recherche Scientifique", "ror": "https://ror.org/02feahw73"}],
-        "has_content": {"grobid_xml": false, "pdf": false}, "content_urls": null,
+        "has_content": {"pdf": false, "grobid_xml": false}, "content_urls": null,
         "referenced_works_count": 80, "referenced_works": ["https://openalex.org/W1482023864",
         "https://openalex.org/W1597864774", "https://openalex.org/W1677182931", "https://openalex.org/W1964573227",
         "https://openalex.org/W1969029468", "https://openalex.org/W1977035173", "https://openalex.org/W1980480920",
@@ -4772,7 +4772,7 @@ http_interactions:
         "display_name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de
         S\u00e3o Paulo", "ror": "https://ror.org/02ddkpn78"}, {"id": "https://openalex.org/F4320321735",
         "display_name": "Fondation pour la Recherche sur la Biodiversite", "ror":
-        "https://ror.org/05x5km989"}], "has_content": {"grobid_xml": true, "pdf":
+        "https://ror.org/05x5km989"}], "has_content": {"pdf": true, "grobid_xml":
         true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4403541856.pdf",
         "grobid_xml": "https://content.openalex.org/works/W4403541856.grobid-xml"},
         "referenced_works_count": 84, "referenced_works": ["https://openalex.org/W1502222176",
@@ -5176,8 +5176,8 @@ http_interactions:
         "https://openalex.org/I4210088668", "https://openalex.org/I4210104942", "https://openalex.org/I4210113422",
         "https://openalex.org/I4210151099", "https://openalex.org/I4210166444"], "apc_list":
         {"value": 9750, "currency": "EUR", "value_usd": 11690}, "apc_paid": {"value":
-        9750, "currency": "EUR", "value_usd": 11690}, "fwci": 7.8412, "has_fulltext":
-        true, "cited_by_count": 23, "citation_normalized_percentile": {"value": 0.98565899,
+        9750, "currency": "EUR", "value_usd": 11690}, "fwci": 7.8237, "has_fulltext":
+        true, "cited_by_count": 23, "citation_normalized_percentile": {"value": 0.98560777,
         "is_in_top_1_percent": false, "is_in_top_10_percent": true}, "cited_by_percentile_year":
         {"min": 99, "max": 100}, "biblio": {"volume": "636", "issue": "8042", "first_page":
         "390", "last_page": "396"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -5300,12 +5300,12 @@ http_interactions:
         null, "is_major_topic": false}, {"descriptor_ui": "D010933", "descriptor_name":
         "Plankton", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
         false}, {"descriptor_ui": "D012623", "descriptor_name": "Seawater", "qualifier_ui":
-        "Q000737", "qualifier_name": "chemistry", "is_major_topic": false}, {"descriptor_ui":
+        "Q000737", "qualifier_name": "chemistry", "is_major_topic": true}, {"descriptor_ui":
         "D012623", "descriptor_name": "Seawater", "qualifier_ui": "Q000737", "qualifier_name":
         "chemistry", "is_major_topic": true}, {"descriptor_ui": "D012623", "descriptor_name":
         "Seawater", "qualifier_ui": "Q000737", "qualifier_name": "chemistry", "is_major_topic":
         false}, {"descriptor_ui": "D012623", "descriptor_name": "Seawater", "qualifier_ui":
-        "Q000737", "qualifier_name": "chemistry", "is_major_topic": true}, {"descriptor_ui":
+        "Q000737", "qualifier_name": "chemistry", "is_major_topic": false}, {"descriptor_ui":
         "D012623", "descriptor_name": "Seawater", "qualifier_ui": "Q000737", "qualifier_name":
         "chemistry", "is_major_topic": false}, {"descriptor_ui": "D012623", "descriptor_name":
         "Seawater", "qualifier_ui": "Q000737", "qualifier_name": "chemistry", "is_major_topic":
@@ -5345,13 +5345,13 @@ http_interactions:
         null, "is_major_topic": false}, {"descriptor_ui": "D017753", "descriptor_name":
         "Ecosystem", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
         false}, {"descriptor_ui": "D044822", "descriptor_name": "Biodiversity", "qualifier_ui":
-        null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D044822",
-        "descriptor_name": "Biodiversity", "qualifier_ui": null, "qualifier_name":
+        null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+        "D044822", "descriptor_name": "Biodiversity", "qualifier_ui": null, "qualifier_name":
         null, "is_major_topic": false}, {"descriptor_ui": "D044822", "descriptor_name":
         "Biodiversity", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
         true}, {"descriptor_ui": "D044822", "descriptor_name": "Biodiversity", "qualifier_ui":
-        null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-        "D044822", "descriptor_name": "Biodiversity", "qualifier_ui": null, "qualifier_name":
+        null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D044822",
+        "descriptor_name": "Biodiversity", "qualifier_ui": null, "qualifier_name":
         null, "is_major_topic": true}, {"descriptor_ui": "D044822", "descriptor_name":
         "Biodiversity", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
         false}, {"descriptor_ui": "D044822", "descriptor_name": "Biodiversity", "qualifier_ui":
@@ -5383,12 +5383,12 @@ http_interactions:
         true}, {"descriptor_ui": "D056908", "descriptor_name": "Foraminifera", "qualifier_ui":
         "Q000302", "qualifier_name": "isolation & purification", "is_major_topic":
         true}, {"descriptor_ui": "D057232", "descriptor_name": "Global Warming", "qualifier_ui":
-        null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-        "D057232", "descriptor_name": "Global Warming", "qualifier_ui": null, "qualifier_name":
+        null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D057232",
+        "descriptor_name": "Global Warming", "qualifier_ui": null, "qualifier_name":
         null, "is_major_topic": true}, {"descriptor_ui": "D057232", "descriptor_name":
         "Global Warming", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
         false}, {"descriptor_ui": "D057232", "descriptor_name": "Global Warming",
-        "qualifier_ui": null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui":
+        "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
         "D057232", "descriptor_name": "Global Warming", "qualifier_ui": null, "qualifier_name":
         null, "is_major_topic": false}, {"descriptor_ui": "D057232", "descriptor_name":
         "Global Warming", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
@@ -5488,7 +5488,7 @@ http_interactions:
         "raw_source_name": "Nature", "raw_type": "journal-article"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.8199999928474426}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         74, "referenced_works": ["https://openalex.org/W1581162269", "https://openalex.org/W1612072633",
         "https://openalex.org/W1971945883", "https://openalex.org/W2001748407", "https://openalex.org/W2015484390",
         "https://openalex.org/W2015762135", "https://openalex.org/W2018291779", "https://openalex.org/W2025716265",
@@ -5558,7 +5558,7 @@ http_interactions:
         [199], "interplay": [201], "climate": [203], "other": [208], "stressors":
         [209], "impact": [211], "survivability": [213], "large": [215], "parts": [216],
         "marine": [219], "realm.": [220]}, "counts_by_year": [{"year": 2026, "cited_by_count":
-        6}, {"year": 2025, "cited_by_count": 17}], "updated_date": "2026-05-26T13:28:51.108037",
+        6}, {"year": 2025, "cited_by_count": 17}], "updated_date": "2026-05-27T09:02:27.158192",
         "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4400725916",
         "doi": "https://doi.org/10.1126/sciadv.adj9510", "title": "Low human interest
         for the most at-risk reef fishes worldwide", "display_name": "Low human interest
@@ -5816,8 +5816,8 @@ http_interactions:
         "https://openalex.org/I19894307", "https://openalex.org/I4210147367", "https://openalex.org/I4210149887",
         "https://openalex.org/I4210166444"], "apc_list": {"value": 4500, "currency":
         "USD", "value_usd": 4500}, "apc_paid": {"value": 4500, "currency": "USD",
-        "value_usd": 4500}, "fwci": 10.2155, "has_fulltext": true, "cited_by_count":
-        18, "citation_normalized_percentile": {"value": 0.98525542, "is_in_top_1_percent":
+        "value_usd": 4500}, "fwci": 10.1654, "has_fulltext": true, "cited_by_count":
+        18, "citation_normalized_percentile": {"value": 0.98504777, "is_in_top_1_percent":
         false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min":
         96, "max": 100}, "biblio": {"volume": "10", "issue": "29", "first_page": "eadj9510",
         "last_page": "eadj9510"}, "is_retracted": false, "is_paratext": false, "is_xpac":
@@ -6043,8 +6043,8 @@ http_interactions:
         "score": 0.6600000262260437}], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735",
         "display_name": "Fondation pour la Recherche sur la Biodiversite", "ror":
         "https://ror.org/05x5km989"}, {"id": "https://openalex.org/F4320329301", "display_name":
-        "Electricit\u00e9 de France", "ror": null}], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 90,
+        "Electricit\u00e9 de France", "ror": null}], "has_content": {"pdf": false,
+        "grobid_xml": false}, "content_urls": null, "referenced_works_count": 90,
         "referenced_works": ["https://openalex.org/W1179295656", "https://openalex.org/W1605984840",
         "https://openalex.org/W1969029468", "https://openalex.org/W1975576303", "https://openalex.org/W1977035173",
         "https://openalex.org/W2020482409", "https://openalex.org/W2020778197", "https://openalex.org/W2023754051",
@@ -6107,7 +6107,7 @@ http_interactions:
         [141], "strategies,": [143], "programs,": [145], "communication": [147], "plans.":
         [148]}, "counts_by_year": [{"year": 2026, "cited_by_count": 5}, {"year": 2025,
         "cited_by_count": 10}, {"year": 2024, "cited_by_count": 3}], "updated_date":
-        "2026-05-24T08:33:08.758527", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "2026-05-27T09:02:27.158192", "created_date": "2025-10-10T00:00:00"}, {"id":
         "https://openalex.org/W2114878059", "doi": "https://doi.org/10.4039/tce.2013.4",
         "title": "Terrestrial arthropod abundance and phenology in the Canadian Arctic:
         modelling resource availability for Arctic-nesting insectivorous birds", "display_name":
@@ -6377,7 +6377,7 @@ http_interactions:
         "journal-article"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.47999998927116394}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         60, "referenced_works": ["https://openalex.org/W649408687", "https://openalex.org/W1512210251",
         "https://openalex.org/W1524915107", "https://openalex.org/W1528905581", "https://openalex.org/W1561003003",
         "https://openalex.org/W1563804626", "https://openalex.org/W1588821188", "https://openalex.org/W1835382466",
@@ -6690,7 +6690,7 @@ http_interactions:
         de l\u2019Environnement et de la Lutte Contre les Changements Climatiques",
         "ror": null}, {"id": "https://openalex.org/F4320334593", "display_name": "Natural
         Sciences and Engineering Research Council of Canada", "ror": "https://ror.org/01h531d29"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W2805165060.pdf", "grobid_xml": "https://content.openalex.org/works/W2805165060.grobid-xml"},
         "referenced_works_count": 59, "referenced_works": ["https://openalex.org/W1567643506",
         "https://openalex.org/W1823598244", "https://openalex.org/W1824284700", "https://openalex.org/W1852766045",
@@ -7112,8 +7112,8 @@ http_interactions:
         [], "funders": [{"id": "https://openalex.org/F4320311261", "display_name":
         "Universit\u00e9 du Qu\u00e9bec \u00e0 Rimouski", "ror": "https://ror.org/049jtt335"},
         {"id": "https://openalex.org/F4320319880", "display_name": "Government of
-        Canada", "ror": "https://ror.org/010q4q527"}], "has_content": {"grobid_xml":
-        true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W1992664830.pdf",
+        Canada", "ror": "https://ror.org/010q4q527"}], "has_content": {"pdf": true,
+        "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W1992664830.pdf",
         "grobid_xml": "https://content.openalex.org/works/W1992664830.grobid-xml"},
         "referenced_works_count": 88, "referenced_works": ["https://openalex.org/W1449742524",
         "https://openalex.org/W1483237037", "https://openalex.org/W1529384030", "https://openalex.org/W1567643506",
@@ -7334,7 +7334,7 @@ http_interactions:
         "raw_source_name": "Forest Ecology and Management", "raw_type": "journal-article"}],
         "best_oa_location": null, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/13",
         "display_name": "Climate action", "score": 0.5400000214576721}], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 51, "referenced_works": ["https://openalex.org/W267613865",
         "https://openalex.org/W1561699797", "https://openalex.org/W1841876174", "https://openalex.org/W1918984626",
         "https://openalex.org/W1972495330", "https://openalex.org/W1972750202", "https://openalex.org/W1991028382",
@@ -7683,8 +7683,8 @@ http_interactions:
         [], "funders": [{"id": "https://openalex.org/F4320319880", "display_name":
         "Government of Canada", "ror": "https://ror.org/010q4q527"}, {"id": "https://openalex.org/F4320334593",
         "display_name": "Natural Sciences and Engineering Research Council of Canada",
-        "ror": "https://ror.org/01h531d29"}], "has_content": {"grobid_xml": true,
-        "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2309822245.pdf",
+        "ror": "https://ror.org/01h531d29"}], "has_content": {"pdf": true, "grobid_xml":
+        true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2309822245.pdf",
         "grobid_xml": "https://content.openalex.org/works/W2309822245.grobid-xml"},
         "referenced_works_count": 48, "referenced_works": ["https://openalex.org/W1496093316",
         "https://openalex.org/W1520428197", "https://openalex.org/W1705762375", "https://openalex.org/W1761653152",
@@ -7970,7 +7970,7 @@ http_interactions:
         "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
         true, "is_published": true, "raw_source_name": "PLOS ONE", "raw_type": "journal-article"},
         "sustainable_development_goals": [], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2885109990.pdf",
+        {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2885109990.pdf",
         "grobid_xml": "https://content.openalex.org/works/W2885109990.grobid-xml"},
         "referenced_works_count": 77, "referenced_works": ["https://openalex.org/W290090916",
         "https://openalex.org/W600173711", "https://openalex.org/W1505377763", "https://openalex.org/W1519024891",
@@ -8183,7 +8183,7 @@ http_interactions:
         "is_published": true, "raw_source_name": "Polar Research", "raw_type": "journal-article"},
         "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/15",
         "display_name": "Life in Land", "score": 0.6600000262260437}], "awards": [],
-        "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W2747110737.pdf", "grobid_xml":
         "https://content.openalex.org/works/W2747110737.grobid-xml"}, "referenced_works_count":
         43, "referenced_works": ["https://openalex.org/W592328035", "https://openalex.org/W1499296277",
@@ -9162,8 +9162,8 @@ http_interactions:
         "https://ror.org/05x5km989"}, {"id": "https://openalex.org/F4320329647", "display_name":
         "Max-Planck-Institut f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"},
         {"id": "https://openalex.org/F4320334631", "display_name": "Natural Environment
-        Research Council", "ror": "https://ror.org/02b5d8509"}], "has_content": {"grobid_xml":
-        false, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4379259280.pdf"},
+        Research Council", "ror": "https://ror.org/02b5d8509"}], "has_content": {"pdf":
+        true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4379259280.pdf"},
         "referenced_works_count": 149, "referenced_works": ["https://openalex.org/W1481609986",
         "https://openalex.org/W1512291196", "https://openalex.org/W1673314509", "https://openalex.org/W1856278961",
         "https://openalex.org/W1864727833", "https://openalex.org/W1871116690", "https://openalex.org/W1896189108",
@@ -9458,7 +9458,7 @@ http_interactions:
         "raw_source_name": "Frontiers in Ecology and Evolution", "raw_type": "journal-article"},
         "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/13",
         "display_name": "Climate action", "score": 0.46000000834465027}], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 88, "referenced_works": ["https://openalex.org/W1568201516",
         "https://openalex.org/W1620630482", "https://openalex.org/W1820243598", "https://openalex.org/W1822284092",
         "https://openalex.org/W1911263821", "https://openalex.org/W1964000950", "https://openalex.org/W1965525165",
@@ -9745,7 +9745,7 @@ http_interactions:
         "display_name": "Reduced inequalities", "score": 0.5}], "awards": [], "funders":
         [{"id": "https://openalex.org/F4320317508", "display_name": "Centre M\u00e9diterran\u00e9en
         de l\u2019Environnement et de la Biodiversit\u00e9", "ror": null}], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         41, "referenced_works": ["https://openalex.org/W30383951", "https://openalex.org/W52075307",
         "https://openalex.org/W123053451", "https://openalex.org/W1412399316", "https://openalex.org/W1702163702",
         "https://openalex.org/W1965734658", "https://openalex.org/W1974639082", "https://openalex.org/W1976551422",
@@ -10437,7 +10437,7 @@ http_interactions:
         "R\u00e9gion Occitanie Pyr\u00e9n\u00e9es-M\u00e9diterran\u00e9e", "ror":
         null}, {"id": "https://openalex.org/F4320334593", "display_name": "Natural
         Sciences and Engineering Research Council of Canada", "ror": "https://ror.org/01h531d29"}],
-        "has_content": {"grobid_xml": false, "pdf": false}, "content_urls": null,
+        "has_content": {"pdf": false, "grobid_xml": false}, "content_urls": null,
         "referenced_works_count": 55, "referenced_works": ["https://openalex.org/W1533083599",
         "https://openalex.org/W1905326921", "https://openalex.org/W1981843416", "https://openalex.org/W1987775380",
         "https://openalex.org/W2018061932", "https://openalex.org/W2020482409", "https://openalex.org/W2029937379",
@@ -10906,8 +10906,8 @@ http_interactions:
         0.6600000262260437}], "awards": [], "funders": [{"id": "https://openalex.org/F4320318789",
         "display_name": "Biodiversa+", "ror": "https://ror.org/05cvqmv08"}, {"id":
         "https://openalex.org/F4320319993", "display_name": "Leverhulme Trust", "ror":
-        "https://ror.org/012mzw131"}], "has_content": {"grobid_xml": false, "pdf":
-        true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4403519705.pdf"},
+        "https://ror.org/012mzw131"}], "has_content": {"pdf": true, "grobid_xml":
+        false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4403519705.pdf"},
         "referenced_works_count": 104, "referenced_works": ["https://openalex.org/W1888640873",
         "https://openalex.org/W1966308439", "https://openalex.org/W1971625691", "https://openalex.org/W1971961969",
         "https://openalex.org/W1977171540", "https://openalex.org/W2008124447", "https://openalex.org/W2019122457",
@@ -12376,7 +12376,7 @@ http_interactions:
         "display_name": "Office of Polar Programs", "ror": "https://ror.org/05nwjp114"},
         {"id": "https://openalex.org/F8164916708", "display_name": "Minnesota State
         University Moorhead", "ror": "https://ror.org/03msdae35"}], "has_content":
-        {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4399505667.pdf",
+        {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4399505667.pdf",
         "grobid_xml": "https://content.openalex.org/works/W4399505667.grobid-xml"},
         "referenced_works_count": 84, "referenced_works": ["https://openalex.org/W1527094386",
         "https://openalex.org/W1539236560", "https://openalex.org/W1589359859", "https://openalex.org/W1650354833",
@@ -13303,7 +13303,7 @@ http_interactions:
         "Agence Nationale de la Recherche", "ror": "https://ror.org/00rbzpz17"}, {"id":
         "https://openalex.org/F4320321735", "display_name": "Fondation pour la Recherche
         sur la Biodiversite", "ror": "https://ror.org/05x5km989"}], "has_content":
-        {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3137384409.pdf",
+        {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3137384409.pdf",
         "grobid_xml": "https://content.openalex.org/works/W3137384409.grobid-xml"},
         "referenced_works_count": 76, "referenced_works": ["https://openalex.org/W13099181",
         "https://openalex.org/W130193107", "https://openalex.org/W201316592", "https://openalex.org/W570881010",
@@ -13565,8 +13565,8 @@ http_interactions:
         Foundation", "ror": null}, {"id": "https://openalex.org/F4320334593", "display_name":
         "Natural Sciences and Engineering Research Council of Canada", "ror": "https://ror.org/01h531d29"},
         {"id": "https://openalex.org/F4320334620", "display_name": "Natural Resources
-        Canada", "ror": "https://ror.org/05hepy730"}], "has_content": {"grobid_xml":
-        true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2748698588.pdf",
+        Canada", "ror": "https://ror.org/05hepy730"}], "has_content": {"pdf": true,
+        "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2748698588.pdf",
         "grobid_xml": "https://content.openalex.org/works/W2748698588.grobid-xml"},
         "referenced_works_count": 81, "referenced_works": ["https://openalex.org/W80873652",
         "https://openalex.org/W154477499", "https://openalex.org/W613649997", "https://openalex.org/W972776645",
@@ -14014,7 +14014,7 @@ http_interactions:
         "display_name": "Nunavut Arctic College", "ror": "https://ror.org/03m343922"},
         {"id": "https://openalex.org/F4320334593", "display_name": "Natural Sciences
         and Engineering Research Council of Canada", "ror": "https://ror.org/01h531d29"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W2805844511.pdf", "grobid_xml": "https://content.openalex.org/works/W2805844511.grobid-xml"},
         "referenced_works_count": 46, "referenced_works": ["https://openalex.org/W75231382",
         "https://openalex.org/W1007704209", "https://openalex.org/W1500960199", "https://openalex.org/W1549716303",
@@ -14141,7 +14141,7 @@ http_interactions:
         null, "raw_type": "edited-book"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/13", "display_name": "Climate action",
         "score": 0.6100000143051147}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W4391375266",
         "https://openalex.org/W2748952813", "https://openalex.org/W2949263084", "https://openalex.org/W2743539335",
         "https://openalex.org/W594353338", "https://openalex.org/W2922049016", "https://openalex.org/W4390697879",
@@ -14694,7 +14694,7 @@ http_interactions:
         "https://openalex.org/F4320322892", "display_name": "Centre National de la
         Recherche Scientifique", "ror": "https://ror.org/02feahw73"}, {"id": "https://openalex.org/F4320329647",
         "display_name": "Max-Planck-Institut f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W4400421127.pdf", "grobid_xml": "https://content.openalex.org/works/W4400421127.grobid-xml"},
         "referenced_works_count": 67, "referenced_works": ["https://openalex.org/W46950081",
         "https://openalex.org/W110528760", "https://openalex.org/W1481609986", "https://openalex.org/W1589321702",
@@ -15130,7 +15130,7 @@ http_interactions:
         "https://openalex.org/F4320320879", "display_name": "Deutsche Forschungsgemeinschaft",
         "ror": "https://ror.org/018mejw64"}, {"id": "https://openalex.org/F4320322892",
         "display_name": "Centre National de la Recherche Scientifique", "ror": "https://ror.org/02feahw73"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W4401833529.pdf", "grobid_xml": "https://content.openalex.org/works/W4401833529.grobid-xml"},
         "referenced_works_count": 60, "referenced_works": ["https://openalex.org/W68436435",
         "https://openalex.org/W69909878", "https://openalex.org/W624402412", "https://openalex.org/W1542521046",
@@ -15614,7 +15614,7 @@ http_interactions:
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.4099999964237213}], "awards": [], "funders": [{"id": "https://openalex.org/F4320329647",
         "display_name": "Max-Planck-Institut f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}],
-        "has_content": {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W4392763726.pdf"}, "referenced_works_count":
         60, "referenced_works": ["https://openalex.org/W1481609986", "https://openalex.org/W1589321702",
         "https://openalex.org/W1871116690", "https://openalex.org/W1970566466", "https://openalex.org/W1972673762",
@@ -16211,8 +16211,8 @@ http_interactions:
         [{"id": "https://openalex.org/F4320318789", "display_name": "Biodiversa+",
         "ror": "https://ror.org/05cvqmv08"}, {"id": "https://openalex.org/F4320334593",
         "display_name": "Natural Sciences and Engineering Research Council of Canada",
-        "ror": "https://ror.org/01h531d29"}], "has_content": {"grobid_xml": false,
-        "pdf": false}, "content_urls": null, "referenced_works_count": 62, "referenced_works":
+        "ror": "https://ror.org/01h531d29"}], "has_content": {"pdf": false, "grobid_xml":
+        false}, "content_urls": null, "referenced_works_count": 62, "referenced_works":
         ["https://openalex.org/W41465550", "https://openalex.org/W1941849125", "https://openalex.org/W1964144710",
         "https://openalex.org/W1971625691", "https://openalex.org/W1972949293", "https://openalex.org/W1978999138",
         "https://openalex.org/W2020778197", "https://openalex.org/W2044740668", "https://openalex.org/W2051663919",
@@ -16793,8 +16793,8 @@ http_interactions:
         {"id": "https://openalex.org/F4320321735", "display_name": "Fondation pour
         la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}, {"id":
         "https://openalex.org/F4320329182", "display_name": "Consortium of International
-        Agricultural Research Centers", "ror": null}], "has_content": {"grobid_xml":
-        true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415048605.pdf",
+        Agricultural Research Centers", "ror": null}], "has_content": {"pdf": true,
+        "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415048605.pdf",
         "grobid_xml": "https://content.openalex.org/works/W4415048605.grobid-xml"},
         "referenced_works_count": 69, "referenced_works": ["https://openalex.org/W601488478",
         "https://openalex.org/W1606935133", "https://openalex.org/W1963865237", "https://openalex.org/W1972750202",
@@ -17368,7 +17368,7 @@ http_interactions:
         "Journal articles"}, "sustainable_development_goals": [], "awards": [], "funders":
         [{"id": "https://openalex.org/F4320321735", "display_name": "Fondation pour
         la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         76, "referenced_works": ["https://openalex.org/W1511683044", "https://openalex.org/W1580156547",
         "https://openalex.org/W1596936787", "https://openalex.org/W1877892153", "https://openalex.org/W1956660394",
         "https://openalex.org/W1986706966", "https://openalex.org/W2004532752", "https://openalex.org/W2011941319",
@@ -17947,7 +17947,7 @@ http_interactions:
         "display_name": "Fondation pour la Recherche sur la Biodiversite", "ror":
         "https://ror.org/05x5km989"}, {"id": "https://openalex.org/F4320337400", "display_name":
         "Division of Environmental Biology", "ror": "https://ror.org/03g87he71"}],
-        "has_content": {"grobid_xml": false, "pdf": false}, "content_urls": null,
+        "has_content": {"pdf": false, "grobid_xml": false}, "content_urls": null,
         "referenced_works_count": 92, "referenced_works": ["https://openalex.org/W1526319989",
         "https://openalex.org/W1564471284", "https://openalex.org/W1837822620", "https://openalex.org/W1918112046",
         "https://openalex.org/W1965202842", "https://openalex.org/W1966522221", "https://openalex.org/W1990658345",
@@ -18740,7 +18740,7 @@ http_interactions:
         "raw_source_name": "Scientific Data", "raw_type": "journal-article"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.4399999976158142}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3158698763.pdf",
+        {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3158698763.pdf",
         "grobid_xml": "https://content.openalex.org/works/W3158698763.grobid-xml"},
         "referenced_works_count": 0, "referenced_works": [], "related_works": ["https://openalex.org/W3150750732",
         "https://openalex.org/W2388579761", "https://openalex.org/W2386173511", "https://openalex.org/W4254698667",
@@ -18962,7 +18962,7 @@ http_interactions:
         true, "raw_source_name": "Le Naturaliste canadien", "raw_type": "journal-article"},
         "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/13",
         "display_name": "Climate action", "score": 0.5199999809265137}], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W2773705383.pdf", "grobid_xml":
         "https://content.openalex.org/works/W2773705383.grobid-xml"}, "referenced_works_count":
         27, "referenced_works": ["https://openalex.org/W566122676", "https://openalex.org/W1574076602",
@@ -19150,7 +19150,7 @@ http_interactions:
         "Journal of Open Source Software", "raw_type": "journal-article"}, "sustainable_development_goals":
         [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
         "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
-        "has_content": {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W4387609797.pdf"}, "referenced_works_count":
         10, "referenced_works": ["https://openalex.org/W229097380", "https://openalex.org/W2160061095",
         "https://openalex.org/W2468260939", "https://openalex.org/W2582743722", "https://openalex.org/W2804233742",
@@ -19379,7 +19379,7 @@ http_interactions:
         "funder_display_name": "Environment and Climate Change Canada"}], "funders":
         [{"id": "https://openalex.org/F4320325263", "display_name": "Environment and
         Climate Change Canada", "ror": "https://ror.org/026ny0e17"}], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         25, "referenced_works": ["https://openalex.org/W1885828288", "https://openalex.org/W1968604118",
         "https://openalex.org/W2102299211", "https://openalex.org/W2105663391", "https://openalex.org/W2122774926",
         "https://openalex.org/W2228325927", "https://openalex.org/W2314194122", "https://openalex.org/W2314522415",
@@ -19560,7 +19560,7 @@ http_interactions:
         false, "raw_source_name": "", "raw_type": "art\u00edculo"}], "best_oa_location":
         null, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/15",
         "display_name": "Life in Land", "score": 0.6299999952316284}], "awards": [],
-        "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 47, "referenced_works": ["https://openalex.org/W168282052",
         "https://openalex.org/W1527380920", "https://openalex.org/W1544815196", "https://openalex.org/W1556631438",
         "https://openalex.org/W1918746976", "https://openalex.org/W1962241730", "https://openalex.org/W1963456711",
@@ -19724,7 +19724,7 @@ http_interactions:
         null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "CRAN: Contributed
         Packages", "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4399648949.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4399648949.grobid-xml"}, "referenced_works_count":
         6, "referenced_works": ["https://openalex.org/W1499267374", "https://openalex.org/W1998184392",
@@ -20106,8 +20106,8 @@ http_interactions:
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
         0.6700000166893005}], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735",
         "display_name": "Fondation pour la Recherche sur la Biodiversite", "ror":
-        "https://ror.org/05x5km989"}], "has_content": {"grobid_xml": false, "pdf":
-        true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4395480507.pdf"},
+        "https://ror.org/05x5km989"}], "has_content": {"pdf": true, "grobid_xml":
+        false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4395480507.pdf"},
         "referenced_works_count": 61, "referenced_works": ["https://openalex.org/W200771331",
         "https://openalex.org/W601488478", "https://openalex.org/W1998786766", "https://openalex.org/W2016804401",
         "https://openalex.org/W2056912568", "https://openalex.org/W2096369236", "https://openalex.org/W2097672723",
@@ -20402,7 +20402,7 @@ http_interactions:
         "display_name": "Natural Resources Canada", "ror": "https://ror.org/05hepy730"},
         {"id": "https://openalex.org/F4320334841", "display_name": "Fonds de recherche
         du Qu\u00e9bec \u2013 Nature et technologies", "ror": "https://ror.org/00b9f9778"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W2945149548.pdf", "grobid_xml": "https://content.openalex.org/works/W2945149548.grobid-xml"},
         "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1702847251",
         "https://openalex.org/W1934566139", "https://openalex.org/W1991779457", "https://openalex.org/W1992381997",
@@ -21089,7 +21089,7 @@ http_interactions:
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.8799999952316284}], "awards": [], "funders": [{"id": "https://openalex.org/F4320329647",
         "display_name": "Max-Planck-Institut f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}],
-        "has_content": {"grobid_xml": false, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": false}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W4387976852.pdf"}, "referenced_works_count":
         42, "referenced_works": ["https://openalex.org/W1581162269", "https://openalex.org/W1612072633",
         "https://openalex.org/W2001748407", "https://openalex.org/W2015762135", "https://openalex.org/W2018291779",
@@ -21295,7 +21295,7 @@ http_interactions:
         "raw_source_name": "bioRxiv", "raw_type": "posted-content"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/13", "display_name": "Climate action",
         "score": 0.5400000214576721}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2992303647.pdf",
+        {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W2992303647.pdf",
         "grobid_xml": "https://content.openalex.org/works/W2992303647.grobid-xml"},
         "referenced_works_count": 85, "referenced_works": ["https://openalex.org/W1548444156",
         "https://openalex.org/W1568201516", "https://openalex.org/W1620630482", "https://openalex.org/W1820243598",
@@ -21765,7 +21765,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "2025, &#x27E8;10.5281/zenodo.7390791&#x27E9;", "raw_type":
         "Other publications"}, "sustainable_development_goals": [], "awards": [],
-        "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618", "https://openalex.org/W4246227008",
         "https://openalex.org/W2268450572", "https://openalex.org/W3095955896", "https://openalex.org/W4253819211",
@@ -22182,7 +22182,7 @@ http_interactions:
         false, "raw_source_name": "", "raw_type": "info:eu-repo/semantics/other"},
         "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/14",
         "display_name": "Life below water", "score": 0.8899999856948853}], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2381930979", "https://openalex.org/W2953563789", "https://openalex.org/W3211051967",
         "https://openalex.org/W2941626531", "https://openalex.org/W2024032921", "https://openalex.org/W2433378755",
@@ -22605,7 +22605,7 @@ http_interactions:
         false, "raw_source_name": null, "raw_type": "dataset"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.8899999856948853}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W2381930979",
         "https://openalex.org/W2953563789", "https://openalex.org/W3211051967", "https://openalex.org/W2941626531",
         "https://openalex.org/W2024032921", "https://openalex.org/W2433378755", "https://openalex.org/W2552026281",
@@ -22724,7 +22724,7 @@ http_interactions:
         "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "CRAN: Contributed
         Packages", "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4399569428.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4399569428.grobid-xml"}, "referenced_works_count":
         1, "referenced_works": ["https://openalex.org/W4249988402"], "related_works":
@@ -22929,7 +22929,7 @@ http_interactions:
         "pdf_url": null, "source": null, "license": null, "license_id": null, "version":
         null, "is_accepted": false, "is_published": null, "raw_source_name": null,
         "raw_type": null}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 73, "referenced_works":
         ["https://openalex.org/W617039848", "https://openalex.org/W1449742524", "https://openalex.org/W1483237037",
         "https://openalex.org/W1520428197", "https://openalex.org/W1897486692", "https://openalex.org/W1915596646",
@@ -23117,7 +23117,7 @@ http_interactions:
         In press", "raw_type": "Journal articles"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/13", "display_name": "Climate action",
         "score": 0.8399999737739563}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W1571418947",
         "https://openalex.org/W4230344035", "https://openalex.org/W1964518132", "https://openalex.org/W2352375785",
         "https://openalex.org/W4248048022", "https://openalex.org/W3183321639", "https://openalex.org/W2467209196",
@@ -23191,7 +23191,7 @@ http_interactions:
         "pdf_url": null, "source": null, "license": null, "license_id": null, "version":
         null, "is_accepted": false, "is_published": null, "raw_source_name": null,
         "raw_type": null}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W3088866474", "https://openalex.org/W3087984543",
         "https://openalex.org/W3092940666", "https://openalex.org/W1587781430", "https://openalex.org/W1516874110",
@@ -23336,7 +23336,7 @@ http_interactions:
         null, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "publishedVersion", "is_accepted": true, "is_published": true,
         "raw_source_name": null, "raw_type": "peer-review"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2899084033", "https://openalex.org/W2748952813",
         "https://openalex.org/W4296209631", "https://openalex.org/W2390279801", "https://openalex.org/W3097449145",
@@ -23460,7 +23460,7 @@ http_interactions:
         "pdf_url": null, "source": null, "license": null, "license_id": null, "version":
         null, "is_accepted": false, "is_published": null, "raw_source_name": null,
         "raw_type": null}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": [], "abstract_inverted_index": null, "counts_by_year":
         [], "updated_date": "2025-11-06T04:12:42.849631", "created_date": "2025-10-10T00:00:00"},
@@ -23580,7 +23580,7 @@ http_interactions:
         "pdf_url": null, "source": null, "license": null, "license_id": null, "version":
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         null, "raw_type": "peer-review"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W3088277481", "https://openalex.org/W3127581100",
         "https://openalex.org/W3096965390", "https://openalex.org/W3111038038", "https://openalex.org/W3125923141",
@@ -23675,7 +23675,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5}], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        0.5}], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2765153054",
         "https://openalex.org/W2931838652", "https://openalex.org/W2596173151", "https://openalex.org/W3080576469",
@@ -23938,7 +23938,7 @@ http_interactions:
         false, "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"},
         "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2",
         "display_name": "Zero hunger", "score": 0.44999998807907104}], "awards": [],
-        "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2748952813", "https://openalex.org/W3120165752", "https://openalex.org/W2344506138",
         "https://openalex.org/W3158585187", "https://openalex.org/W4211064241", "https://openalex.org/W1964191721",
@@ -24016,31 +24016,32 @@ http_interactions:
         "license_id": null, "version": null, "is_accepted": false, "is_published":
         false, "raw_source_name": null, "raw_type": "report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W3120165752",
-        "https://openalex.org/W2344506138", "https://openalex.org/W3158585187", "https://openalex.org/W4211064241",
-        "https://openalex.org/W1964191721", "https://openalex.org/W85411530", "https://openalex.org/W2485179383",
-        "https://openalex.org/W2597744361", "https://openalex.org/W3195275078"], "abstract_inverted_index":
-        {"This": [0], "data": [1], "management": [2], "report": [3], "explains": [4],
-        "the": [5, 21, 32, 37, 38, 42, 49], "process": [6], "for": [7, 29], "creating":
-        [8], "figure": [9], "3.6,": [10], "as": [11], "part": [12], "of": [13, 17,
-        23, 41, 45, 48], "Chapter": [14], "3.": [15], "Status": [16], "and": [18,
-        26, 34, 55], "trends": [19], "in": [20, 36], "use": [22, 44], "wild": [24,
-        30, 46], "species": [25, 47], "its": [27], "implications": [28], "species,":
-        [31], "environment": [33], "people,": [35], "thematic": [39], "assessment":
-        [40], "sustainable": [43], "Intergovernmental": [50], "Science-Policy": [51],
-        "Platform": [52], "on": [53], "Biodiversity": [54], "Ecosystem": [56], "Services.":
-        [57]}, "counts_by_year": [], "updated_date": "2025-11-06T06:51:31.235846",
-        "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4225292939",
-        "doi": "https://doi.org/10.5281/zenodo.6513723", "title": "IPBES Sustainable
+        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W3120165752", "https://openalex.org/W2344506138", "https://openalex.org/W3158585187",
+        "https://openalex.org/W4211064241", "https://openalex.org/W1964191721", "https://openalex.org/W85411530",
+        "https://openalex.org/W2485179383", "https://openalex.org/W2597744361", "https://openalex.org/W3195275078"],
+        "abstract_inverted_index": {"This": [0], "data": [1], "management": [2], "report":
+        [3], "explains": [4], "the": [5, 21, 32, 37, 38, 42, 49], "process": [6],
+        "for": [7, 29], "creating": [8], "figure": [9], "3.6,": [10], "as": [11],
+        "part": [12], "of": [13, 17, 23, 41, 45, 48], "Chapter": [14], "3.": [15],
+        "Status": [16], "and": [18, 26, 34, 55], "trends": [19], "in": [20, 36], "use":
+        [22, 44], "wild": [24, 30, 46], "species": [25, 47], "its": [27], "implications":
+        [28], "species,": [31], "environment": [33], "people,": [35], "thematic":
+        [39], "assessment": [40], "sustainable": [43], "Intergovernmental": [50],
+        "Science-Policy": [51], "Platform": [52], "on": [53], "Biodiversity": [54],
+        "Ecosystem": [56], "Services.": [57]}, "counts_by_year": [], "updated_date":
+        "2025-11-06T06:51:31.235846", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "https://openalex.org/W4225292939", "doi": "https://doi.org/10.5281/zenodo.6513723",
+        "title": "IPBES Sustainable Use of Wild Species Assessment - Chapter 3 - Data
+        management report for the figure 3.17", "display_name": "IPBES Sustainable
         Use of Wild Species Assessment - Chapter 3 - Data management report for the
-        figure 3.17", "display_name": "IPBES Sustainable Use of Wild Species Assessment
-        - Chapter 3 - Data management report for the figure 3.17", "publication_year":
-        2022, "publication_date": "2022-01-01", "ids": {"openalex": "https://openalex.org/W4225292939",
-        "doi": "https://doi.org/10.5281/zenodo.6513723"}, "language": "en", "primary_location":
-        {"id": "pmh:oai:zenodo.org:6513723", "is_oa": true, "landing_page_url": "https://zenodo.org/record/6513723",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        figure 3.17", "publication_year": 2022, "publication_date": "2022-01-01",
+        "ids": {"openalex": "https://openalex.org/W4225292939", "doi": "https://doi.org/10.5281/zenodo.6513723"},
+        "language": "en", "primary_location": {"id": "pmh:oai:zenodo.org:6513723",
+        "is_oa": true, "landing_page_url": "https://zenodo.org/record/6513723", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
         "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
         "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
         "https://openalex.org/I67311998", "host_organization_name": "European Organization
@@ -24116,7 +24117,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5}], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        0.5}], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
         "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
@@ -24217,31 +24218,32 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
-        "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
-        "https://openalex.org/W2382290278", "https://openalex.org/W2350741829", "https://openalex.org/W2530322880",
-        "https://openalex.org/W1596801655", "https://openalex.org/W2359140296"], "abstract_inverted_index":
-        {"This": [0], "data": [1], "management": [2], "report": [3], "explains": [4],
-        "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6], "for": [7, 30], "creating":
-        [8], "figure": [10], "3.58,": [11], "as": [12], "part": [13], "of": [14, 18,
-        24, 42, 46, 49], "Chapter": [15], "3.": [16], "Status": [17], "and": [19,
-        27, 35, 56], "trends": [20], "in": [21, 37], "use": [23, 45], "wild": [25,
-        31, 47], "species": [26, 48], "its": [28], "implications": [29], "species,":
-        [32], "environment": [34], "people,": [36], "thematic": [40], "assessment":
-        [41], "sustainable": [44], "Intergovernmental": [51], "Science-Policy": [52],
-        "Platform": [53], "on": [54], "Biodiversity": [55], "Ecosystem": [57], "Services.":
-        [58]}, "counts_by_year": [], "updated_date": "2025-11-06T06:51:31.235846",
-        "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4225314201",
-        "doi": "https://doi.org/10.5281/zenodo.6513724", "title": "IPBES Sustainable
+        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801", "https://openalex.org/W2358668433", "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890", "https://openalex.org/W2382290278", "https://openalex.org/W2350741829",
+        "https://openalex.org/W2530322880", "https://openalex.org/W1596801655", "https://openalex.org/W2359140296"],
+        "abstract_inverted_index": {"This": [0], "data": [1], "management": [2], "report":
+        [3], "explains": [4], "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6],
+        "for": [7, 30], "creating": [8], "figure": [10], "3.58,": [11], "as": [12],
+        "part": [13], "of": [14, 18, 24, 42, 46, 49], "Chapter": [15], "3.": [16],
+        "Status": [17], "and": [19, 27, 35, 56], "trends": [20], "in": [21, 37], "use":
+        [23, 45], "wild": [25, 31, 47], "species": [26, 48], "its": [28], "implications":
+        [29], "species,": [32], "environment": [34], "people,": [36], "thematic":
+        [40], "assessment": [41], "sustainable": [44], "Intergovernmental": [51],
+        "Science-Policy": [52], "Platform": [53], "on": [54], "Biodiversity": [55],
+        "Ecosystem": [57], "Services.": [58]}, "counts_by_year": [], "updated_date":
+        "2025-11-06T06:51:31.235846", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "https://openalex.org/W4225314201", "doi": "https://doi.org/10.5281/zenodo.6513724",
+        "title": "IPBES Sustainable Use of Wild Species Assessment - Chapter 3 - Data
+        management report for the figure 3.17", "display_name": "IPBES Sustainable
         Use of Wild Species Assessment - Chapter 3 - Data management report for the
-        figure 3.17", "display_name": "IPBES Sustainable Use of Wild Species Assessment
-        - Chapter 3 - Data management report for the figure 3.17", "publication_year":
-        2022, "publication_date": "2022-07-09", "ids": {"openalex": "https://openalex.org/W4225314201",
-        "doi": "https://doi.org/10.5281/zenodo.6513724"}, "language": "en", "primary_location":
-        {"id": "pmh:oai:zenodo.org:6513724", "is_oa": true, "landing_page_url": "https://zenodo.org/record/6513724",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        figure 3.17", "publication_year": 2022, "publication_date": "2022-07-09",
+        "ids": {"openalex": "https://openalex.org/W4225314201", "doi": "https://doi.org/10.5281/zenodo.6513724"},
+        "language": "en", "primary_location": {"id": "pmh:oai:zenodo.org:6513724",
+        "is_oa": true, "landing_page_url": "https://zenodo.org/record/6513724", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
         "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
         "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
         "https://openalex.org/I67311998", "host_organization_name": "European Organization
@@ -24318,7 +24320,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5}], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        0.5}], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
         "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
@@ -24426,7 +24428,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5}], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        0.5}], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W3120165752",
         "https://openalex.org/W2344506138", "https://openalex.org/W3158585187", "https://openalex.org/W4211064241",
@@ -24527,31 +24529,32 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
-        "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
-        "https://openalex.org/W2382290278", "https://openalex.org/W2350741829", "https://openalex.org/W2530322880",
-        "https://openalex.org/W1596801655", "https://openalex.org/W2359140296"], "abstract_inverted_index":
-        {"This": [0], "data": [1], "management": [2], "report": [3], "explains": [4],
-        "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6], "for": [7, 30], "creating":
-        [8], "figure": [10], "3.22,": [11], "as": [12], "part": [13], "of": [14, 18,
-        24, 42, 46, 49], "Chapter": [15], "3.": [16], "Status": [17], "and": [19,
-        27, 35, 56], "trends": [20], "in": [21, 37], "use": [23, 45], "wild": [25,
-        31, 47], "species": [26, 48], "its": [28], "implications": [29], "species,":
-        [32], "environment": [34], "people,": [36], "thematic": [40], "assessment":
-        [41], "sustainable": [44], "Intergovernmental": [51], "Science-Policy": [52],
-        "Platform": [53], "on": [54], "Biodiversity": [55], "Ecosystem": [57], "Services.":
-        [58]}, "counts_by_year": [], "updated_date": "2025-11-06T06:51:31.235846",
-        "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4225469499",
-        "doi": "https://doi.org/10.5281/zenodo.6452954", "title": "IPBES Sustainable
+        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801", "https://openalex.org/W2358668433", "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890", "https://openalex.org/W2382290278", "https://openalex.org/W2350741829",
+        "https://openalex.org/W2530322880", "https://openalex.org/W1596801655", "https://openalex.org/W2359140296"],
+        "abstract_inverted_index": {"This": [0], "data": [1], "management": [2], "report":
+        [3], "explains": [4], "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6],
+        "for": [7, 30], "creating": [8], "figure": [10], "3.22,": [11], "as": [12],
+        "part": [13], "of": [14, 18, 24, 42, 46, 49], "Chapter": [15], "3.": [16],
+        "Status": [17], "and": [19, 27, 35, 56], "trends": [20], "in": [21, 37], "use":
+        [23, 45], "wild": [25, 31, 47], "species": [26, 48], "its": [28], "implications":
+        [29], "species,": [32], "environment": [34], "people,": [36], "thematic":
+        [40], "assessment": [41], "sustainable": [44], "Intergovernmental": [51],
+        "Science-Policy": [52], "Platform": [53], "on": [54], "Biodiversity": [55],
+        "Ecosystem": [57], "Services.": [58]}, "counts_by_year": [], "updated_date":
+        "2025-11-06T06:51:31.235846", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "https://openalex.org/W4225469499", "doi": "https://doi.org/10.5281/zenodo.6452954",
+        "title": "IPBES Sustainable Use of Wild Species Assessment - Chapter 3 - Data
+        management report for the figure 3.18", "display_name": "IPBES Sustainable
         Use of Wild Species Assessment - Chapter 3 - Data management report for the
-        figure 3.18", "display_name": "IPBES Sustainable Use of Wild Species Assessment
-        - Chapter 3 - Data management report for the figure 3.18", "publication_year":
-        2022, "publication_date": "2022-01-01", "ids": {"openalex": "https://openalex.org/W4225469499",
-        "doi": "https://doi.org/10.5281/zenodo.6452954"}, "language": "en", "primary_location":
-        {"id": "pmh:oai:zenodo.org:6452954", "is_oa": true, "landing_page_url": "https://zenodo.org/record/6452954",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        figure 3.18", "publication_year": 2022, "publication_date": "2022-01-01",
+        "ids": {"openalex": "https://openalex.org/W4225469499", "doi": "https://doi.org/10.5281/zenodo.6452954"},
+        "language": "en", "primary_location": {"id": "pmh:oai:zenodo.org:6452954",
+        "is_oa": true, "landing_page_url": "https://zenodo.org/record/6452954", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
         "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
         "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
         "https://openalex.org/I67311998", "host_organization_name": "European Organization
@@ -24628,7 +24631,7 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5}], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        0.5}], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W3007404728",
         "https://openalex.org/W2374021052", "https://openalex.org/W2110536732", "https://openalex.org/W3117958761",
@@ -24723,31 +24726,32 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
-        "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
-        "https://openalex.org/W2382290278", "https://openalex.org/W2350741829", "https://openalex.org/W2530322880",
-        "https://openalex.org/W1596801655", "https://openalex.org/W2359140296"], "abstract_inverted_index":
-        {"This": [0], "data": [1], "management": [2], "report": [3], "explains": [4],
-        "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6], "for": [7, 30], "creating":
-        [8], "figure": [10], "3.22,": [11], "as": [12], "part": [13], "of": [14, 18,
-        24, 42, 46, 49], "Chapter": [15], "3.": [16], "Status": [17], "and": [19,
-        27, 35, 56], "trends": [20], "in": [21, 37], "use": [23, 45], "wild": [25,
-        31, 47], "species": [26, 48], "its": [28], "implications": [29], "species,":
-        [32], "environment": [34], "people,": [36], "thematic": [40], "assessment":
-        [41], "sustainable": [44], "Intergovernmental": [51], "Science-Policy": [52],
-        "Platform": [53], "on": [54], "Biodiversity": [55], "Ecosystem": [57], "Services.":
-        [58]}, "counts_by_year": [], "updated_date": "2025-11-06T06:51:31.235846",
-        "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4226358871",
-        "doi": "https://doi.org/10.5281/zenodo.6462961", "title": "IPBES Sustainable
+        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801", "https://openalex.org/W2358668433", "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890", "https://openalex.org/W2382290278", "https://openalex.org/W2350741829",
+        "https://openalex.org/W2530322880", "https://openalex.org/W1596801655", "https://openalex.org/W2359140296"],
+        "abstract_inverted_index": {"This": [0], "data": [1], "management": [2], "report":
+        [3], "explains": [4], "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6],
+        "for": [7, 30], "creating": [8], "figure": [10], "3.22,": [11], "as": [12],
+        "part": [13], "of": [14, 18, 24, 42, 46, 49], "Chapter": [15], "3.": [16],
+        "Status": [17], "and": [19, 27, 35, 56], "trends": [20], "in": [21, 37], "use":
+        [23, 45], "wild": [25, 31, 47], "species": [26, 48], "its": [28], "implications":
+        [29], "species,": [32], "environment": [34], "people,": [36], "thematic":
+        [40], "assessment": [41], "sustainable": [44], "Intergovernmental": [51],
+        "Science-Policy": [52], "Platform": [53], "on": [54], "Biodiversity": [55],
+        "Ecosystem": [57], "Services.": [58]}, "counts_by_year": [], "updated_date":
+        "2025-11-06T06:51:31.235846", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "https://openalex.org/W4226358871", "doi": "https://doi.org/10.5281/zenodo.6462961",
+        "title": "IPBES Sustainable Use of Wild Species Assessment - Chapter 3 - Data
+        management report for the figures 3.6", "display_name": "IPBES Sustainable
         Use of Wild Species Assessment - Chapter 3 - Data management report for the
-        figures 3.6", "display_name": "IPBES Sustainable Use of Wild Species Assessment
-        - Chapter 3 - Data management report for the figures 3.6", "publication_year":
-        2022, "publication_date": "2022-01-01", "ids": {"openalex": "https://openalex.org/W4226358871",
-        "doi": "https://doi.org/10.5281/zenodo.6462961"}, "language": "en", "primary_location":
-        {"id": "pmh:oai:zenodo.org:6462961", "is_oa": true, "landing_page_url": "https://zenodo.org/record/6462961",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        figures 3.6", "publication_year": 2022, "publication_date": "2022-01-01",
+        "ids": {"openalex": "https://openalex.org/W4226358871", "doi": "https://doi.org/10.5281/zenodo.6462961"},
+        "language": "en", "primary_location": {"id": "pmh:oai:zenodo.org:6462961",
+        "is_oa": true, "landing_page_url": "https://zenodo.org/record/6462961", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
         "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
         "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
         "https://openalex.org/I67311998", "host_organization_name": "European Organization
@@ -24817,31 +24821,32 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W3120165752",
-        "https://openalex.org/W2344506138", "https://openalex.org/W3158585187", "https://openalex.org/W4211064241",
-        "https://openalex.org/W1964191721", "https://openalex.org/W85411530", "https://openalex.org/W2485179383",
-        "https://openalex.org/W2597744361", "https://openalex.org/W3195275078"], "abstract_inverted_index":
-        {"This": [0], "data": [1], "management": [2], "report": [3], "explains": [4],
-        "the": [5, 21, 32, 37, 38, 42, 49], "process": [6], "for": [7, 29], "creating":
-        [8], "figure": [9], "3.6,": [10], "as": [11], "part": [12], "of": [13, 17,
-        23, 41, 45, 48], "Chapter": [14], "3.": [15], "Status": [16], "and": [18,
-        26, 34, 55], "trends": [19], "in": [20, 36], "use": [22, 44], "wild": [24,
-        30, 46], "species": [25, 47], "its": [27], "implications": [28], "species,":
-        [31], "environment": [33], "people,": [35], "thematic": [39], "assessment":
-        [40], "sustainable": [43], "Intergovernmental": [50], "Science-Policy": [51],
-        "Platform": [52], "on": [53], "Biodiversity": [54], "Ecosystem": [56], "Services.":
-        [57]}, "counts_by_year": [], "updated_date": "2025-11-06T06:51:31.235846",
-        "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4226434170",
-        "doi": "https://doi.org/10.5281/zenodo.6453136", "title": "IPBES Sustainable
+        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W3120165752", "https://openalex.org/W2344506138", "https://openalex.org/W3158585187",
+        "https://openalex.org/W4211064241", "https://openalex.org/W1964191721", "https://openalex.org/W85411530",
+        "https://openalex.org/W2485179383", "https://openalex.org/W2597744361", "https://openalex.org/W3195275078"],
+        "abstract_inverted_index": {"This": [0], "data": [1], "management": [2], "report":
+        [3], "explains": [4], "the": [5, 21, 32, 37, 38, 42, 49], "process": [6],
+        "for": [7, 29], "creating": [8], "figure": [9], "3.6,": [10], "as": [11],
+        "part": [12], "of": [13, 17, 23, 41, 45, 48], "Chapter": [14], "3.": [15],
+        "Status": [16], "and": [18, 26, 34, 55], "trends": [19], "in": [20, 36], "use":
+        [22, 44], "wild": [24, 30, 46], "species": [25, 47], "its": [27], "implications":
+        [28], "species,": [31], "environment": [33], "people,": [35], "thematic":
+        [39], "assessment": [40], "sustainable": [43], "Intergovernmental": [50],
+        "Science-Policy": [51], "Platform": [52], "on": [53], "Biodiversity": [54],
+        "Ecosystem": [56], "Services.": [57]}, "counts_by_year": [], "updated_date":
+        "2025-11-06T06:51:31.235846", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "https://openalex.org/W4226434170", "doi": "https://doi.org/10.5281/zenodo.6453136",
+        "title": "IPBES Sustainable Use of Wild Species Assessment - Chapter 3 - Data
+        management report for the figures 3.58", "display_name": "IPBES Sustainable
         Use of Wild Species Assessment - Chapter 3 - Data management report for the
-        figures 3.58", "display_name": "IPBES Sustainable Use of Wild Species Assessment
-        - Chapter 3 - Data management report for the figures 3.58", "publication_year":
-        2022, "publication_date": "2022-01-01", "ids": {"openalex": "https://openalex.org/W4226434170",
-        "doi": "https://doi.org/10.5281/zenodo.6453136"}, "language": "en", "primary_location":
-        {"id": "pmh:oai:zenodo.org:6453136", "is_oa": true, "landing_page_url": "https://zenodo.org/record/6453136",
-        "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
+        figures 3.58", "publication_year": 2022, "publication_date": "2022-01-01",
+        "ids": {"openalex": "https://openalex.org/W4226434170", "doi": "https://doi.org/10.5281/zenodo.6453136"},
+        "language": "en", "primary_location": {"id": "pmh:oai:zenodo.org:6453136",
+        "is_oa": true, "landing_page_url": "https://zenodo.org/record/6453136", "pdf_url":
+        null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
         "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
         "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
         "https://openalex.org/I67311998", "host_organization_name": "European Organization
@@ -24928,31 +24933,32 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W3120165752",
-        "https://openalex.org/W2010066730", "https://openalex.org/W2344506138", "https://openalex.org/W658636438",
-        "https://openalex.org/W617126653", "https://openalex.org/W3158585187", "https://openalex.org/W4389967401",
-        "https://openalex.org/W4211064241", "https://openalex.org/W2892562171"], "abstract_inverted_index":
-        {"This": [0], "data": [1], "management": [2], "report": [3], "explains": [4],
-        "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6], "for": [7, 30], "creating":
-        [8], "figure": [10], "3.58,": [11], "as": [12], "part": [13], "of": [14, 18,
-        24, 42, 46, 49], "Chapter": [15], "3.": [16], "Status": [17], "and": [19,
-        27, 35, 56], "trends": [20], "in": [21, 37], "use": [23, 45], "wild": [25,
-        31, 47], "species": [26, 48], "its": [28], "implications": [29], "species,":
-        [32], "environment": [34], "people,": [36], "thematic": [40], "assessment":
-        [41], "sustainable": [44], "Intergovernmental": [51], "Science-Policy": [52],
-        "Platform": [53], "on": [54], "Biodiversity": [55], "Ecosystem": [57], "Services.":
-        [58]}, "counts_by_year": [], "updated_date": "2025-11-06T06:51:31.235846",
-        "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4237978003",
-        "doi": "https://doi.org/10.1111/ele.13778/v3/response1", "title": "Author
-        response for \"The dimensionality and structure of species trait spaces\"",
-        "display_name": "Author response for \"The dimensionality and structure of
-        species trait spaces\"", "publication_year": 2021, "publication_date": "2021-04-06",
-        "ids": {"openalex": "https://openalex.org/W4237978003", "doi": "https://doi.org/10.1111/ele.13778/v3/response1"},
-        "language": "en", "primary_location": {"id": "doi:10.1111/ele.13778/v3/response1",
-        "is_oa": true, "landing_page_url": "https://doi.org/10.1111/ele.13778/v3/response1",
-        "pdf_url": null, "source": null, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+        0.5099999904632568}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W3120165752", "https://openalex.org/W2010066730", "https://openalex.org/W2344506138",
+        "https://openalex.org/W658636438", "https://openalex.org/W617126653", "https://openalex.org/W3158585187",
+        "https://openalex.org/W4389967401", "https://openalex.org/W4211064241", "https://openalex.org/W2892562171"],
+        "abstract_inverted_index": {"This": [0], "data": [1], "management": [2], "report":
+        [3], "explains": [4], "the": [5, 9, 22, 33, 38, 39, 43, 50], "process": [6],
+        "for": [7, 30], "creating": [8], "figure": [10], "3.58,": [11], "as": [12],
+        "part": [13], "of": [14, 18, 24, 42, 46, 49], "Chapter": [15], "3.": [16],
+        "Status": [17], "and": [19, 27, 35, 56], "trends": [20], "in": [21, 37], "use":
+        [23, 45], "wild": [25, 31, 47], "species": [26, 48], "its": [28], "implications":
+        [29], "species,": [32], "environment": [34], "people,": [36], "thematic":
+        [40], "assessment": [41], "sustainable": [44], "Intergovernmental": [51],
+        "Science-Policy": [52], "Platform": [53], "on": [54], "Biodiversity": [55],
+        "Ecosystem": [57], "Services.": [58]}, "counts_by_year": [], "updated_date":
+        "2025-11-06T06:51:31.235846", "created_date": "2025-10-10T00:00:00"}, {"id":
+        "https://openalex.org/W4237978003", "doi": "https://doi.org/10.1111/ele.13778/v3/response1",
+        "title": "Author response for \"The dimensionality and structure of species
+        trait spaces\"", "display_name": "Author response for \"The dimensionality
+        and structure of species trait spaces\"", "publication_year": 2021, "publication_date":
+        "2021-04-06", "ids": {"openalex": "https://openalex.org/W4237978003", "doi":
+        "https://doi.org/10.1111/ele.13778/v3/response1"}, "language": "en", "primary_location":
+        {"id": "doi:10.1111/ele.13778/v3/response1", "is_oa": true, "landing_page_url":
+        "https://doi.org/10.1111/ele.13778/v3/response1", "pdf_url": null, "source":
+        null, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "publishedVersion", "is_accepted": true, "is_published": true,
         "raw_source_name": null, "raw_type": "peer-review"}, "type": "peer-review",
         "indexed_in": ["crossref"], "open_access": {"is_oa": true, "oa_status": "gold",
@@ -25076,7 +25082,7 @@ http_interactions:
         null, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "publishedVersion", "is_accepted": true, "is_published": true,
         "raw_source_name": null, "raw_type": "peer-review"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W4296209631",
         "https://openalex.org/W2390279801", "https://openalex.org/W2358668433", "https://openalex.org/W2561617217",
@@ -25166,7 +25172,7 @@ http_interactions:
         false, "is_published": false, "raw_source_name": null, "raw_type": "report"},
         "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2",
         "display_name": "Zero hunger", "score": 0.5099999904632568}], "awards": [],
-        "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2748952813", "https://openalex.org/W2390279801", "https://openalex.org/W2358668433",
         "https://openalex.org/W2376932109", "https://openalex.org/W2001405890", "https://openalex.org/W2382290278",
@@ -25430,25 +25436,26 @@ http_interactions:
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/report"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
-        0.46000000834465027}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-        false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-        [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2955725829",
-        "https://openalex.org/W2949263084", "https://openalex.org/W2743539335", "https://openalex.org/W594353338",
-        "https://openalex.org/W2922049016", "https://openalex.org/W2724734218", "https://openalex.org/W4382466601",
-        "https://openalex.org/W2955504986", "https://openalex.org/W2216817687"], "abstract_inverted_index":
-        {"Data": [0], "Management": [1], "Report": [2], "for": [3, 9], "Figure": [4],
-        "SPM.2": [5], "of": [6, 11, 15, 19, 22], "the": [7, 12, 16, 23], "Summary":
-        [8], "policymakers": [10], "thematic": [13], "assessment": [14], "sustainable":
-        [17], "use": [18], "wild": [20], "species": [21], "Intergovernmental": [24],
-        "Science-Policy": [25], "Platform": [26], "on": [27], "Biodiversity": [28],
-        "and": [29], "Ecosystem": [30], "Services": [31], "(IPBES)": [32]}, "counts_by_year":
-        [], "updated_date": "2026-05-04T08:30:34.212998", "created_date": "2025-10-10T00:00:00"},
-        {"id": "https://openalex.org/W4387355554", "doi": "https://doi.org/10.5281/zenodo.8409865",
-        "title": "Modern planktonic Foraminifera: migrating is not enough", "display_name":
-        "Modern planktonic Foraminifera: migrating is not enough", "publication_year":
-        2023, "publication_date": "2023-10-05", "ids": {"openalex": "https://openalex.org/W4387355554",
-        "doi": "https://doi.org/10.5281/zenodo.8409865"}, "language": "en", "primary_location":
-        {"id": "doi:10.5281/zenodo.8409865", "is_oa": true, "landing_page_url": "https://doi.org/10.5281/zenodo.8409865",
+        0.46000000834465027}], "awards": [], "funders": [], "has_content": {"pdf":
+        false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+        0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
+        "https://openalex.org/W2955725829", "https://openalex.org/W2949263084", "https://openalex.org/W2743539335",
+        "https://openalex.org/W594353338", "https://openalex.org/W2922049016", "https://openalex.org/W2724734218",
+        "https://openalex.org/W4382466601", "https://openalex.org/W2955504986", "https://openalex.org/W2216817687"],
+        "abstract_inverted_index": {"Data": [0], "Management": [1], "Report": [2],
+        "for": [3, 9], "Figure": [4], "SPM.2": [5], "of": [6, 11, 15, 19, 22], "the":
+        [7, 12, 16, 23], "Summary": [8], "policymakers": [10], "thematic": [13], "assessment":
+        [14], "sustainable": [17], "use": [18], "wild": [20], "species": [21], "Intergovernmental":
+        [24], "Science-Policy": [25], "Platform": [26], "on": [27], "Biodiversity":
+        [28], "and": [29], "Ecosystem": [30], "Services": [31], "(IPBES)": [32]},
+        "counts_by_year": [], "updated_date": "2026-05-04T08:30:34.212998", "created_date":
+        "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4387355554", "doi":
+        "https://doi.org/10.5281/zenodo.8409865", "title": "Modern planktonic Foraminifera:
+        migrating is not enough", "display_name": "Modern planktonic Foraminifera:
+        migrating is not enough", "publication_year": 2023, "publication_date": "2023-10-05",
+        "ids": {"openalex": "https://openalex.org/W4387355554", "doi": "https://doi.org/10.5281/zenodo.8409865"},
+        "language": "en", "primary_location": {"id": "doi:10.5281/zenodo.8409865",
+        "is_oa": true, "landing_page_url": "https://doi.org/10.5281/zenodo.8409865",
         "pdf_url": null, "source": {"id": "https://openalex.org/S4306400562", "display_name":
         "Zenodo (CERN European Organization for Nuclear Research)", "issn_l": null,
         "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
@@ -25668,7 +25675,7 @@ http_interactions:
         false, "raw_source_name": null, "raw_type": "article-journal"}, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.5400000214576721}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W2403591496",
         "https://openalex.org/W2101305618", "https://openalex.org/W4246227008", "https://openalex.org/W3095955896",
         "https://openalex.org/W2268450572", "https://openalex.org/W4253819211", "https://openalex.org/W2381930979",
@@ -26095,7 +26102,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
         null, "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2748952813", "https://openalex.org/W2403591496", "https://openalex.org/W2101305618",
         "https://openalex.org/W4246227008", "https://openalex.org/W2268450572", "https://openalex.org/W3095955896",
@@ -26546,7 +26553,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/other"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618",
         "https://openalex.org/W4246227008", "https://openalex.org/W2268450572", "https://openalex.org/W3095955896",
@@ -26990,7 +26997,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/other"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2403591496",
         "https://openalex.org/W2101305618", "https://openalex.org/W4246227008", "https://openalex.org/W2268450572",
@@ -27441,7 +27448,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/other"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618",
         "https://openalex.org/W4246227008", "https://openalex.org/W2268450572", "https://openalex.org/W3095955896",
@@ -27880,7 +27887,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
         null, "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2910093970", "https://openalex.org/W2381930979", "https://openalex.org/W4256631947",
         "https://openalex.org/W2911113450", "https://openalex.org/W2910019733", "https://openalex.org/W4235781712",
@@ -28335,7 +28342,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": "submittedVersion", "is_accepted": false, "is_published": false,
         "raw_source_name": "", "raw_type": "info:eu-repo/semantics/other"}, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2403591496", "https://openalex.org/W2101305618",
         "https://openalex.org/W4246227008", "https://openalex.org/W2268450572", "https://openalex.org/W3095955896",
@@ -28777,7 +28784,7 @@ http_interactions:
         "license_id": null, "version": "submittedVersion", "is_accepted": false, "is_published":
         false, "raw_source_name": "", "raw_type": "info:eu-repo/semantics/other"},
         "sustainable_development_goals": [], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
         "https://openalex.org/W2403591496", "https://openalex.org/W2101305618", "https://openalex.org/W4246227008",
         "https://openalex.org/W2268450572", "https://openalex.org/W3095955896", "https://openalex.org/W4253819211",
@@ -29036,7 +29043,7 @@ http_interactions:
         "type": "repository"}, "license": "public-domain", "license_id": "https://openalex.org/licenses/public-domain",
         "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
         null, "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2748952813", "https://openalex.org/W4312203868", "https://openalex.org/W2069013776",
         "https://openalex.org/W2038264393", "https://openalex.org/W2059637021", "https://openalex.org/W2378282666",
@@ -29248,7 +29255,7 @@ http_interactions:
         "type": "repository"}, "license": "public-domain", "license_id": "https://openalex.org/licenses/public-domain",
         "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
         null, "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W2748952813", "https://openalex.org/W4312203868", "https://openalex.org/W2069013776",
         "https://openalex.org/W2038264393", "https://openalex.org/W2059637021", "https://openalex.org/W2378282666",
@@ -29391,7 +29398,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
         null, "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W4391375266", "https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
         "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
@@ -29542,7 +29549,7 @@ http_interactions:
         "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
         "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
         null, "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
         null, "referenced_works_count": 0, "referenced_works": [], "related_works":
         ["https://openalex.org/W4391375266", "https://openalex.org/W2748952813", "https://openalex.org/W2390279801",
         "https://openalex.org/W2358668433", "https://openalex.org/W2376932109", "https://openalex.org/W2001405890",
@@ -29649,7 +29656,7 @@ http_interactions:
         "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "CRAN: Contributed
         Packages", "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4399570749.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4399570749.grobid-xml"}, "referenced_works_count":
         3, "referenced_works": ["https://openalex.org/W2134920145", "https://openalex.org/W2160061095",
@@ -29765,7 +29772,7 @@ http_interactions:
         "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "CRAN: Contributed
         Packages", "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4399575702.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4399575702.grobid-xml"}, "referenced_works_count":
         1, "referenced_works": ["https://openalex.org/W4399575702"], "related_works":
@@ -29837,7 +29844,7 @@ http_interactions:
         null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "CRAN: Contributed
         Packages", "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4399648454.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4399648454.grobid-xml"}, "referenced_works_count":
         1, "referenced_works": ["https://openalex.org/W4399648454"], "related_works":
@@ -29925,7 +29932,7 @@ http_interactions:
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Changements climatiques et biodiversit\u00e9 du Qu\u00e9bec", "raw_type":
         "book-chapter"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W4391375266", "https://openalex.org/W2748952813",
         "https://openalex.org/W2949263084", "https://openalex.org/W2743539335", "https://openalex.org/W594353338",
@@ -30002,7 +30009,7 @@ http_interactions:
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Changements climatiques et biodiversit\u00e9 du Qu\u00e9bec", "raw_type":
         "book-chapter"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W2748952813", "https://openalex.org/W2997567050",
         "https://openalex.org/W1483272040", "https://openalex.org/W4283377908", "https://openalex.org/W1533421371",
@@ -30083,7 +30090,7 @@ http_interactions:
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Changements climatiques et biodiversit\u00e9 du Qu\u00e9bec", "raw_type":
         "book-chapter"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W4391375266", "https://openalex.org/W2748952813",
         "https://openalex.org/W2390279801", "https://openalex.org/W2358668433", "https://openalex.org/W4396701345",
@@ -30151,7 +30158,7 @@ http_interactions:
         "book-chapter"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/13", "display_name": "Climate action",
         "score": 0.8500000238418579}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
         "https://openalex.org/W3120165752", "https://openalex.org/W3158585187", "https://openalex.org/W2344506138",
         "https://openalex.org/W1964191721", "https://openalex.org/W2485179383", "https://openalex.org/W4211064241",
@@ -30229,7 +30236,7 @@ http_interactions:
         "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
         "Changements climatiques et biodiversit\u00e9 du Qu\u00e9bec", "raw_type":
         "book-chapter"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": ["https://openalex.org/W4391375266", "https://openalex.org/W2748952813",
         "https://openalex.org/W2949263084", "https://openalex.org/W2743539335", "https://openalex.org/W594353338",
@@ -30310,7 +30317,7 @@ http_interactions:
         "book-chapter"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/15", "display_name": "Life in Land",
         "score": 0.4099999964237213}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
         "https://openalex.org/W3120165752", "https://openalex.org/W3158585187", "https://openalex.org/W2344506138",
         "https://openalex.org/W1964191721", "https://openalex.org/W2485179383", "https://openalex.org/W4211064241",
@@ -30427,7 +30434,7 @@ http_interactions:
         "raw_type": "Journal articles"}], "best_oa_location": null, "sustainable_development_goals":
         [{"id": "https://metadata.un.org/sdg/14", "display_name": "Life below water",
         "score": 0.46000000834465027}], "awards": [], "funders": [], "has_content":
-        {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+        {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
         0, "referenced_works": [], "related_works": ["https://openalex.org/W2748952813",
         "https://openalex.org/W1981253168", "https://openalex.org/W2105092152", "https://openalex.org/W2370255588",
         "https://openalex.org/W1120309716", "https://openalex.org/W3143536211", "https://openalex.org/W4386573981",
@@ -30789,8 +30796,8 @@ http_interactions:
         [{"id": "https://metadata.un.org/sdg/15", "display_name": "Life in Land",
         "score": 0.7799999713897705}], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735",
         "display_name": "Fondation pour la Recherche sur la Biodiversite", "ror":
-        "https://ror.org/05x5km989"}], "has_content": {"grobid_xml": false, "pdf":
-        true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4406766122.pdf"},
+        "https://ror.org/05x5km989"}], "has_content": {"pdf": true, "grobid_xml":
+        false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4406766122.pdf"},
         "referenced_works_count": 80, "referenced_works": ["https://openalex.org/W1491136047",
         "https://openalex.org/W1553207425", "https://openalex.org/W1951724000", "https://openalex.org/W1965962493",
         "https://openalex.org/W1971117819", "https://openalex.org/W1983071162", "https://openalex.org/W1987431381",
@@ -30943,7 +30950,7 @@ http_interactions:
         null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": "CRAN: Contributed
         Packages", "raw_type": "dataset"}, "sustainable_development_goals": [], "awards":
-        [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4410634495.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4410634495.grobid-xml"}, "referenced_works_count":
         4, "referenced_works": ["https://openalex.org/W4379259280", "https://openalex.org/W4393830903",
@@ -31279,7 +31286,7 @@ http_interactions:
         "raw_source_name": "bioRxiv", "raw_type": "posted-content"}, "sustainable_development_goals":
         [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
         "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
-        "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf":
+        "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf":
         "https://content.openalex.org/works/W4413120357.pdf", "grobid_xml": "https://content.openalex.org/works/W4413120357.grobid-xml"},
         "referenced_works_count": 35, "referenced_works": ["https://openalex.org/W1655306493",
         "https://openalex.org/W1767553509", "https://openalex.org/W2017933072", "https://openalex.org/W2031881698",
@@ -31520,7 +31527,7 @@ http_interactions:
         "BioScience", "raw_type": "journal-article"}, "sustainable_development_goals":
         [], "awards": [], "funders": [{"id": "https://openalex.org/F4320317508", "display_name":
         "Centre M\u00e9diterran\u00e9en de l\u2019Environnement et de la Biodiversit\u00e9",
-        "ror": null}], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+        "ror": null}], "has_content": {"pdf": true, "grobid_xml": true}, "content_urls":
         {"pdf": "https://content.openalex.org/works/W4414475266.pdf", "grobid_xml":
         "https://content.openalex.org/works/W4414475266.grobid-xml"}, "referenced_works_count":
         14, "referenced_works": ["https://openalex.org/W52075307", "https://openalex.org/W123053451",
@@ -31658,7 +31665,7 @@ http_interactions:
         null, "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": null, "raw_type":
         "peer-review"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": [], "abstract_inverted_index": null, "counts_by_year":
         [], "updated_date": "2026-03-07T16:01:11.037858", "created_date": "2025-10-11T00:00:00"},
@@ -31790,7 +31797,7 @@ http_interactions:
         null, "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": null, "raw_type":
         "peer-review"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": [], "abstract_inverted_index": null, "counts_by_year":
         [], "updated_date": "2026-03-07T16:01:11.037858", "created_date": "2025-10-11T00:00:00"},
@@ -32065,8 +32072,8 @@ http_interactions:
         f\u00fcr Chemie", "ror": "https://ror.org/02f5b7n18"}, {"id": "https://openalex.org/F4320335598",
         "display_name": "Agencia Estatal de Investigaci\u00f3n", "ror": null}, {"id":
         "https://openalex.org/F4320338223", "display_name": "Direcci\u00f3 General
-        de Recerca, Generalitat de Catalunya", "ror": null}], "has_content": {"grobid_xml":
-        false, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415113473.pdf"},
+        de Recerca, Generalitat de Catalunya", "ror": null}], "has_content": {"pdf":
+        true, "grobid_xml": false}, "content_urls": {"pdf": "https://content.openalex.org/works/W4415113473.pdf"},
         "referenced_works_count": 3, "referenced_works": ["https://openalex.org/W4229082123",
         "https://openalex.org/W4379259280", "https://openalex.org/W4404305647"], "related_works":
         [], "abstract_inverted_index": {"International": [0], "audience": [1]}, "counts_by_year":
@@ -32163,7 +32170,7 @@ http_interactions:
         null, "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": null, "raw_type":
         "peer-review"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": [], "abstract_inverted_index": null, "counts_by_year":
         [], "updated_date": "2026-03-07T16:01:11.037858", "created_date": "2025-11-28T00:00:00"},
@@ -32258,7 +32265,7 @@ http_interactions:
         null, "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": null, "raw_type":
         "peer-review"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": [], "abstract_inverted_index": null, "counts_by_year":
         [], "updated_date": "2026-03-07T16:01:11.037858", "created_date": "2025-11-28T00:00:00"},
@@ -32354,7 +32361,7 @@ http_interactions:
         null, "source": null, "license": null, "license_id": null, "version": "publishedVersion",
         "is_accepted": true, "is_published": true, "raw_source_name": null, "raw_type":
         "peer-review"}], "best_oa_location": null, "sustainable_development_goals":
-        [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf":
+        [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml":
         false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
         [], "related_works": [], "abstract_inverted_index": null, "counts_by_year":
         [], "updated_date": "2026-03-07T16:01:11.037858", "created_date": "2025-11-28T00:00:00"},
@@ -32672,7 +32679,7 @@ http_interactions:
         "raw_source_name": "BioScience", "raw_type": "journal-article"}, "sustainable_development_goals":
         [], "awards": [], "funders": [{"id": "https://openalex.org/F4320321735", "display_name":
         "Fondation pour la Recherche sur la Biodiversite", "ror": "https://ror.org/05x5km989"}],
-        "has_content": {"grobid_xml": false, "pdf": false}, "content_urls": null,
+        "has_content": {"pdf": false, "grobid_xml": false}, "content_urls": null,
         "referenced_works_count": 18, "referenced_works": ["https://openalex.org/W2067333003",
         "https://openalex.org/W2118179338", "https://openalex.org/W2136074788", "https://openalex.org/W2416241581",
         "https://openalex.org/W2809616249", "https://openalex.org/W2990585923", "https://openalex.org/W2994083704",
@@ -32683,5 +32690,5 @@ http_interactions:
         [], "abstract_inverted_index": {"International": [0], "audience": [1]}, "counts_by_year":
         [], "updated_date": "2026-05-07T13:39:58.223016", "created_date": "2026-04-13T00:00:00"}],
         "group_by": []}'
-  recorded_at: 2026-05-27 05:04:56
+  recorded_at: 2026-05-27 11:55:01
 recorded_with: VCR-vcr/2.1.0

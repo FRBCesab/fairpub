@@ -7,7 +7,7 @@
 #'
 #' @param title a `character` vector of length 1. The title of the publication.
 #'
-#' @inheritParams fp_get_openalex_author
+#' @inheritParams fp_get_openalex_author_id
 #'
 #' @return A data frame with the following columns:
 #' \describe{
