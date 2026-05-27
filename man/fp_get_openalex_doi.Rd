@@ -7,7 +7,7 @@
 fp_get_openalex_doi(title, n = 10)
 }
 \arguments{
-\item{title}{a \code{character} of length 1. The title of the publication.}
+\item{title}{a \code{character} vector of length 1. The title of the publication.}
 
 \item{n}{an \code{integer} of length 1. Number of results to return (between
 1 and 200, default is \code{10}).}
@@ -22,9 +22,9 @@ A data frame with the following columns:
 }
 }
 \description{
-This function queries the OpenAlex bibliographic database
-(\url{https://openalex.org}) to retrieve metadata about publications matching a
-given title, including their DOI.
+Queries the OpenAlex bibliographic database (\url{https://openalex.org}) to
+retrieve metadata about publications matching a given title, including
+their DOI.
 }
 \examples{
 \dontrun{
