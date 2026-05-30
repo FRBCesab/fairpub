@@ -20,3 +20,33 @@
 #' Regex for ORCID prefix
 #' @noRd
 .ORCID_PREFIX <- "^(https?://orcid\\.org/)"
+
+
+#' Valid values for the argument `method` of `stats::hclust()`
+#' @noRd
+.HCLUST_METHODS <- c(
+  "ward.D",
+  "ward.D2",
+  "single",
+  "complete",
+  "average",
+  "mcquitty",
+  "median",
+  "centroid"
+)
+
+
+#' Valid values for the argument `method` of `stringdist::stringdist()`
+#' @noRd
+.STRING_METHODS <- c(
+  "osa",
+  "lv",
+  "dl",
+  "hamming",
+  "lcs",
+  "qgram",
+  "cosine",
+  "jaccard",
+  "jw",
+  "soundex"
+)
