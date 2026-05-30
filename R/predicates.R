@@ -19,7 +19,8 @@ is_number <- function(x) {
 #' @keywords internal
 is_positive_integer <- function(x) {
   length(x) == 1L &&
-    (is.integer(x) ||
+    ((is.integer(x) && all(!is.na(x))) &&
+      all(is.finite(x)) ||
       (is.numeric(x) &&
         all(!is.na(x)) &&
         all(is.finite(x)) &&
