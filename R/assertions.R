@@ -101,7 +101,7 @@ assert_flag <- function(x, arg = "x") {
 assert_file <- function(x, arg = "x") {
   if (!is_file(x)) {
     stop(
-      sprintf("File `%s` does not exist.", arg)
+      sprintf("Argument `%s`: file `%s` does not exist.", arg, x)
     )
   }
 
