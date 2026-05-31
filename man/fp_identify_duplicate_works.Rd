@@ -5,7 +5,7 @@
 \title{Identify duplicate works based on title similarity}
 \usage{
 fp_identify_duplicate_works(
-  data,
+  data = NULL,
   string_dist = "lv",
   hclust_method = "single",
   threshold = 0.2

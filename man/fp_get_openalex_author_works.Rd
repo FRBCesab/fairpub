@@ -5,7 +5,7 @@
 \title{Get and filter an author's works from OpenAlex}
 \usage{
 fp_get_openalex_author_works(
-  author_id,
+  author_id = NULL,
   select = c("article", "review", "letter"),
   drop_na = TRUE
 )

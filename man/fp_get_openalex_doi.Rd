@@ -4,7 +4,7 @@
 \alias{fp_get_openalex_doi}
 \title{Get OpenAlex publication DOI}
 \usage{
-fp_get_openalex_doi(title, n = 10)
+fp_get_openalex_doi(title = NULL, n = 10)
 }
 \arguments{
 \item{title}{a \code{character} vector of length 1. The title of the publication.}

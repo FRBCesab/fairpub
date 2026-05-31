@@ -47,18 +47,46 @@
 #' fp_extract_doi(file = filename)
 
 fp_extract_doi <- function(x = NULL, file = NULL) {
-  check_exactly_one_arg(x, file)
+  assert_exactly_one(x, file)
 
   if (!is.null(x)) {
-    check_arg_string(x)
+    assert_character(x)
 
     dois <- fp_extract_doi_from_string(x)
   } else {
-    check_arg_file(file)
+    assert_file(file, "file")
 
     dois <- fp_read_bibtex(file) |>
       fp_extract_doi_from_bibentry()
   }
 
   fp_clean_doi(dois)
+}
+
+
+#' @noRd
+fp_read_bibtex <- function(file) {
+  bibtex::read.bib(file)
+}
+
+
+#' @noRd
+fp_extract_doi_from_bibentry <- function(bibentry) {
+  vapply(
+    bibentry,
+    \(x) if (!is.null(x$doi)) x$doi else NA_character_,
+    character(1),
+    USE.NAMES = FALSE
+  )
+}
+
+
+#' @noRd
+fp_extract_doi_from_string <- function(x) {
+  matches <- regmatches(
+    x,
+    gregexpr(.DOI_REGEX, x, perl = TRUE, ignore.case = TRUE)
+  )
+
+  unlist(matches, use.names = FALSE)
 }

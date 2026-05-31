@@ -48,11 +48,33 @@
 #' }
 
 fp_identify_duplicate_works <- function(
-  data,
+  data = NULL,
   string_dist = "lv",
   hclust_method = "single",
   threshold = 0.2
 ) {
+  assert_dataframe(data, "data")
+  assert_has_column(data, "title", "data")
+
+  assert_string(string_dist, "string_dist")
+  assert_one_of(
+    string_dist,
+    .STRING_METHODS,
+    "stringdist::stringdist",
+    string_dist
+  )
+
+  assert_string(hclust_method, "hclust_method")
+  assert_one_of(
+    hclust_method,
+    .HCLUST_METHODS,
+    "stats::hclust",
+    hclust_method
+  )
+
+  assert_number(threshold, "threshold")
+  assert_between(threshold, 0, 1, "threshold")
+
   x <- data[["title"]]
 
   x[is.na(x)] <- ""

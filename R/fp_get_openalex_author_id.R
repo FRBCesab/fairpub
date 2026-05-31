@@ -33,12 +33,68 @@
 #' #> 1 A5001034207 Nicolas Mouquet 0000-0003-1840-6984         210
 #' }
 
-fp_get_openalex_author_id <- function(author, n = 10) {
-  fp_check_mailto()
+fp_get_openalex_author_id <- function(author = NULL, n = 10) {
+  assert_string(author, "author")
+  assert_positive_integer(n, "n")
+  assert_between(n, 1, 200, "n")
 
-  check_arg_string(author)
-  check_arg_n(n)
+  assert_openalex_mailto()
 
   fp_oa_fetch_authors(author, n) |>
     fp_oa_parse_authors()
+}
+
+
+#' @noRd
+fp_oa_fetch_authors <- function(author, n) {
+  meta <- tryCatch(
+    suppressMessages(
+      openalexR::oa_fetch(
+        entity = "authors",
+        search = author,
+        per_page = n,
+        paging = "page",
+        pages = 1,
+        options = list(
+          sort = "relevance_score:desc",
+          select = c(
+            "display_name",
+            "id",
+            "orcid",
+            "works_count"
+          )
+        )
+      )
+    ),
+    error = function(e) {
+      stop(
+        sprintf("OpenAlex request failed: %s", e$message),
+        call. = FALSE
+      )
+    }
+  )
+
+  as.data.frame(meta)
+}
+
+
+#' @noRd
+fp_oa_parse_authors <- function(x) {
+  cols <- c("id", "display_name", "orcid", "works_count")
+
+  if (nrow(x) > 0) {
+    x <- x[, cols, drop = FALSE]
+
+    x$id <- fp_clean_oa_id(x$id)
+    x$orcid <- fp_clean_orcid(x$orcid)
+  } else {
+    x <- data.frame(
+      id = character(),
+      display_name = character(),
+      orcid = character(),
+      works_count = integer()
+    )
+  }
+
+  x
 }

@@ -4,7 +4,7 @@
 \alias{fp_clean_doi}
 \title{Clean a DOI vector}
 \usage{
-fp_clean_doi(doi)
+fp_clean_doi(doi = NULL)
 }
 \arguments{
 \item{doi}{a \code{character} vector with Digital Object Identifiers (DOI).}

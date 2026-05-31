@@ -23,8 +23,8 @@
 #'
 #' fp_clean_doi(dois)
 
-fp_clean_doi <- function(doi) {
-  check_arg_doi(doi)
+fp_clean_doi <- function(doi = NULL) {
+  assert_character(doi, "doi")
 
   doi <- tolower(doi)
   doi <- gsub("\\s", "", doi)

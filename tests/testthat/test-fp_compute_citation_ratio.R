@@ -4,45 +4,45 @@ test_that("fp_compute_citation_ratio() errors - No API query", {
   # Argument missing
   expect_error(
     fp_compute_citation_ratio(),
-    "Argument 'doi' is required",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 
   expect_error(
     fp_compute_citation_ratio(NULL),
-    "Argument 'doi' is required",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 
   # Not a string
   expect_error(
     fp_compute_citation_ratio(data.frame()),
-    "Argument 'doi' must be character",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 
   expect_error(
     fp_compute_citation_ratio(matrix()),
-    "Argument 'doi' must be character",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 
   expect_error(
     fp_compute_citation_ratio(numeric()),
-    "Argument 'doi' must be character",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 
   expect_error(
     fp_compute_citation_ratio(logical()),
-    "Argument 'doi' must be character",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
     fp_compute_citation_ratio(character()),
-    "Argument 'doi' must be of length > 0",
+    "Argument `doi` must be a character vector.",
     fixed = TRUE
   )
 

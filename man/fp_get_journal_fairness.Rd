@@ -4,7 +4,7 @@
 \alias{fp_get_journal_fairness}
 \title{Get the fairness status of a journal}
 \usage{
-fp_get_journal_fairness(journal)
+fp_get_journal_fairness(journal = NULL)
 }
 \arguments{
 \item{journal}{a \code{character} of length 1. The name of the journal. Do not use

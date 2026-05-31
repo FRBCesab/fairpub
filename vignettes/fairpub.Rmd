@@ -199,7 +199,7 @@ filename <- system.file(
 )
 
 # Extract DOI from this BibTeX file ----
-doi_list <- fp_extract_doi(filename)
+doi_list <- fp_extract_doi(file = filename)
 doi_list
 ```
 
