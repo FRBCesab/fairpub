@@ -142,6 +142,6 @@ test_that("fp_oa_filter_works() errors - Invalid select values", {
       select = "foobar",
       drop_na = FALSE
     ),
-    regexp = "Invalid 'select' argument"
+    regexp = "Invalid `select` argument"
   )
 })

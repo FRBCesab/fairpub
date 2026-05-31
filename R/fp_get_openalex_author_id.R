@@ -33,11 +33,12 @@
 #' #> 1 A5001034207 Nicolas Mouquet 0000-0003-1840-6984         210
 #' }
 
-fp_get_openalex_author_id <- function(author, n = 10) {
-  fp_check_mailto()
+fp_get_openalex_author_id <- function(author = NULL, n = 10) {
+  assert_string(author, "author")
+  assert_positive_integer(n, "n")
+  assert_between(n, 1, 200, "n")
 
-  check_arg_string(author)
-  check_arg_n(n)
+  fp_check_mailto()
 
   fp_oa_fetch_authors(author, n) |>
     fp_oa_parse_authors()

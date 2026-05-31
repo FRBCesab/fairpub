@@ -4,45 +4,27 @@ test_that("fp_get_article_fairness() errors - No API query", {
   # Argument missing
   expect_error(
     fp_get_article_fairness(),
-    "Argument 'doi' is required",
+    "Argument `doi` must be a character vector of length 1.",
     fixed = TRUE
   )
 
   expect_error(
     fp_get_article_fairness(NULL),
-    "Argument 'doi' is required",
+    "Argument `doi` must be a character vector of length 1.",
     fixed = TRUE
   )
 
-  # Not a string
+  # Only NA in DOI
   expect_error(
-    fp_get_article_fairness(data.frame()),
-    "Argument 'doi' must be character",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_get_article_fairness(matrix()),
-    "Argument 'doi' must be character",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_get_article_fairness(numeric()),
-    "Argument 'doi' must be character",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_get_article_fairness(logical()),
-    "Argument 'doi' must be character",
+    fp_get_article_fairness(doi_na),
+    "Argument `doi` must be a character vector of length 1.",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
     fp_get_article_fairness(dois),
-    "Argument 'doi' must be of length 1",
+    "Argument `doi` must be a character vector of length 1.",
     fixed = TRUE
   )
 
@@ -66,13 +48,6 @@ test_that("fp_get_article_fairness() errors - No API query", {
       "Be polite with OpenAlex API and run: ",
       "`options(openalexR.mailto = 'your_email')`"
     ),
-    fixed = TRUE
-  )
-
-  # Only NA in DOI
-  expect_error(
-    fp_get_article_fairness(doi_na),
-    "Argument 'doi' cannot be NA",
     fixed = TRUE
   )
 })

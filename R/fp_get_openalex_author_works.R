@@ -7,7 +7,7 @@
 #' @param author_id a `character` of length 1. OpenAlex author ID. This
 #'   identifier can be retrieved with [fp_get_openalex_author_id()].
 #'
-#' @param select a `character` vector of work types to retain. Use 
+#' @param select a `character` vector of work types to retain. Use
 #'   [fp_list_openalex_work_types()] to list valid work types.
 #'   Defaults to `c("article", "review", "letter")`.
 #'   Set to `NULL` to keep all work types.
@@ -38,7 +38,7 @@
 #' may be excluded depending on the selected work types.
 #'
 #' @export
-#' 
+#'
 #' @examples
 #' \dontrun{
 #' # Be polite and send your email to OpenAlex API ----
@@ -69,13 +69,21 @@
 #' }
 
 fp_get_openalex_author_works <- function(
-  author_id,
+  author_id = NULL,
   select = c("article", "review", "letter"),
   drop_na = TRUE
 ) {
-  fp_check_mailto()
+  assert_string(author_id, "author_id")
+  assert_starting_with(author_id, "A", "author_id")
 
-  check_arg_string(author_id)
+  if (!is.null(select)) {
+    assert_character(select, "select")
+    assert_not_na(select, "select")
+  }
+
+  assert_flag(drop_na, "drop_na")
+
+  fp_check_mailto()
 
   fp_oa_fetch_works(author_id) |>
     fp_oa_parse_works() |>
@@ -155,7 +163,7 @@ fp_oa_parse_works <- function(x) {
 #' @noRd
 fp_oa_filter_works <- function(x, select, drop_na) {
   if (!is.null(select)) {
-    check_if_valid_work_type(select)
+    assert_if_valid_work_type(select)
 
     x <- x[x$type %in% select, ]
 

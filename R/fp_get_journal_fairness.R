@@ -27,7 +27,7 @@
 #' fp_get_journal_fairness("Science")
 #' #>   journal                           fairness
 #' #> 1 Science   Non-profit and academic friendly
-#' 
+#'
 #' # Fuzzy search ----
 #' fp_get_journal_fairness("Science of Nature")
 #' #> No exact match found!
@@ -35,34 +35,14 @@
 #' #>   'The Science of Nature'
 #' #>   'Science Advances'
 #' #>   'People and Nature'
-#' 
+#'
 #' fp_get_journal_fairness("The Science of Nature")
 #' #>                 journal                               fairness
 #' #> 1 The Science of Nature   For-profit and non-academic friendly
 #' }
 
-fp_get_journal_fairness <- function(journal) {
-  ## Check args ----
-
-  if (missing(journal)) {
-    stop("Argument 'journal' is required")
-  }
-
-  if (is.null(journal)) {
-    stop("Argument 'journal' is required")
-  }
-
-  if (!is.character(journal)) {
-    stop("Argument 'journal' must be character")
-  }
-
-  if (length(journal) != 1L) {
-    stop("Argument 'journal' must be of length 1")
-  }
-
-  if (is.na(journal)) {
-    stop("Argument 'journal' cannot be NA")
-  }
+fp_get_journal_fairness <- function(journal = NULL) {
+  assert_string(journal, "journal")
 
   ## Clean journal name ----
 

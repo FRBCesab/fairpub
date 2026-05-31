@@ -4,52 +4,27 @@ test_that("fp_get_journal_fairness() errors", {
   # Argument missing
   expect_error(
     fp_get_journal_fairness(),
-    "Argument 'journal' is required",
+    "Argument `journal` must be a character vector of length 1.",
     fixed = TRUE
   )
 
   expect_error(
     fp_get_journal_fairness(NULL),
-    "Argument 'journal' is required",
-    fixed = TRUE
-  )
-
-  # Not a string
-  expect_error(
-    fp_get_journal_fairness(data.frame()),
-    "Argument 'journal' must be character",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_get_journal_fairness(matrix()),
-    "Argument 'journal' must be character",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_get_journal_fairness(numeric()),
-    "Argument 'journal' must be character",
-    fixed = TRUE
-  )
-
-  expect_error(
-    fp_get_journal_fairness(logical()),
-    "Argument 'journal' must be character",
+    "Argument `journal` must be a character vector of length 1.",
     fixed = TRUE
   )
 
   # Wrong length
   expect_error(
     fp_get_journal_fairness(journals),
-    "Argument 'journal' must be of length 1",
+    "Argument `journal` must be a character vector of length 1.",
     fixed = TRUE
   )
 
   # Only NA in DOI
   expect_error(
     fp_get_journal_fairness(journal_na),
-    "Argument 'journal' cannot be NA",
+    "Argument `journal` must be a character vector of length 1.",
     fixed = TRUE
   )
 })

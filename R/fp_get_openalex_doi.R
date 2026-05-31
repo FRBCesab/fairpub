@@ -43,11 +43,12 @@
 #' #> 2                              BioScience    10.1093/biosci/biag028
 #' }
 
-fp_get_openalex_doi <- function(title, n = 10) {
-  fp_check_mailto()
+fp_get_openalex_doi <- function(title = NULL, n = 10) {
+  assert_string(title, "title")
+  assert_positive_integer(n, "n")
+  assert_between(n, 1, 200, "n")
 
-  check_arg_string(title)
-  check_arg_n(n)
+  fp_check_mailto()
 
   fp_oa_fetch_dois(title, n) |>
     fp_oa_parse_dois()

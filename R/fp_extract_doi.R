@@ -47,14 +47,14 @@
 #' fp_extract_doi(file = filename)
 
 fp_extract_doi <- function(x = NULL, file = NULL) {
-  check_exactly_one_arg(x, file)
+  assert_exactly_one(x, file)
 
   if (!is.null(x)) {
-    check_arg_string(x)
+    assert_character(x)
 
     dois <- fp_extract_doi_from_string(x)
   } else {
-    check_arg_file(file)
+    assert_file(file, "file")
 
     dois <- fp_read_bibtex(file) |>
       fp_extract_doi_from_bibentry()
