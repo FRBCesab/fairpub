@@ -62,3 +62,31 @@ fp_extract_doi <- function(x = NULL, file = NULL) {
 
   fp_clean_doi(dois)
 }
+
+
+#' @noRd
+fp_read_bibtex <- function(file) {
+  bibtex::read.bib(file)
+}
+
+
+#' @noRd
+fp_extract_doi_from_bibentry <- function(bibentry) {
+  vapply(
+    bibentry,
+    \(x) if (!is.null(x$doi)) x$doi else NA_character_,
+    character(1),
+    USE.NAMES = FALSE
+  )
+}
+
+
+#' @noRd
+fp_extract_doi_from_string <- function(x) {
+  matches <- regmatches(
+    x,
+    gregexpr(.DOI_REGEX, x, perl = TRUE, ignore.case = TRUE)
+  )
+
+  unlist(matches, use.names = FALSE)
+}

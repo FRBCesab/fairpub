@@ -53,3 +53,70 @@ fp_get_openalex_doi <- function(title = NULL, n = 10) {
   fp_oa_fetch_dois(title, n) |>
     fp_oa_parse_dois()
 }
+
+
+#' @noRd
+fp_oa_fetch_dois <- function(title, n) {
+  meta <- tryCatch(
+    suppressMessages(
+      openalexR::oa_fetch(
+        entity = "works",
+        title.search = title,
+        per_page = n,
+        paging = "page",
+        pages = 1,
+        options = list(
+          sort = "relevance_score:desc",
+          select = c(
+            "doi",
+            "display_name",
+            "publication_year",
+            "primary_location"
+          )
+        )
+      )
+    ),
+    error = function(e) {
+      stop(
+        sprintf("OpenAlex request failed: %s", e$message),
+        call. = FALSE
+      )
+    }
+  )
+
+  as.data.frame(meta)
+}
+
+
+#' @noRd
+fp_oa_parse_dois <- function(x) {
+  cols <- c("display_name", "publication_year", "source_display_name", "doi")
+
+  if (nrow(x) > 0) {
+    x <- x[, cols, drop = FALSE]
+
+    x$doi <- fp_clean_doi(x$doi)
+    x$display_name <- fp_shorten_string(x$display_name)
+  } else {
+    x <- data.frame(
+      display_name = character(),
+      publication_year = integer(),
+      source_display_name = character(),
+      doi = character()
+    )
+  }
+
+  x
+}
+
+
+#' @noRd
+fp_shorten_string <- function(x, width = 50) {
+  is_short <- nchar(x) <= width
+
+  shortened <- substr(x, 1, width - 3)
+  shortened <- sub("\\s+\\S*$", "", shortened)
+  shortened <- paste0(shortened, "...")
+
+  ifelse(is_short, x, shortened)
+}
