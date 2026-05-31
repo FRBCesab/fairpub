@@ -4,7 +4,7 @@
 \alias{fp_compute_citation_ratio}
 \title{Non profit & academic friendly ratio of citations}
 \usage{
-fp_compute_citation_ratio(doi)
+fp_compute_citation_ratio(doi = NULL)
 }
 \arguments{
 \item{doi}{a \code{character} vector of Digital Object Identifiers (DOI). Can

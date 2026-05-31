@@ -79,26 +79,8 @@
 #' #>                                 0.00
 #' }
 
-fp_compute_citation_ratio <- function(doi) {
-  ## Check args ----
-
-  if (missing(doi)) {
-    stop("Argument 'doi' is required")
-  }
-
-  if (is.null(doi)) {
-    stop("Argument 'doi' is required")
-  }
-
-  if (!is.character(doi)) {
-    stop("Argument 'doi' must be character")
-  }
-
-  if (length(doi) == 0) {
-    stop("Argument 'doi' must be of length > 0")
-  }
-
-  ## Check if user is polite ----
+fp_compute_citation_ratio <- function(doi = NULL) {
+  assert_character(doi, "doi")
 
   assert_openalex_mailto()
 

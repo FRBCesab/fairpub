@@ -79,6 +79,7 @@ fp_get_openalex_author_works <- function(
   if (!is.null(select)) {
     assert_character(select, "select")
     assert_not_na(select, "select")
+    assert_if_valid_work_type(select)
   }
 
   assert_flag(drop_na, "drop_na")
