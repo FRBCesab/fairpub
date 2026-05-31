@@ -17,7 +17,7 @@ academic friendly status of journals.
 ## Usage
 
 ``` r
-fp_compute_citation_ratio(doi)
+fp_compute_citation_ratio(doi = NULL)
 ```
 
 ## Arguments
@@ -77,11 +77,13 @@ filename <- system.file(
 )
 
 # Extract DOI from BibTeX ----
-doi_list <- fp_extract_doi(filename)
+doi_list <- fp_extract_doi(file = filename)
 
 # Print DOI ----
 head(doi_list)
-#> character(0)
+#> [1] "10.1098/rsos.160384"            NA                              
+#> [3] "10.1126/science.1212540"        "10.9745/ghsp-d-21-00145"       
+#> [5] "10.1126/science.adk9900"        "10.1016/j.ecolecon.2021.107082"
 
 if (FALSE) { # \dontrun{
 # Compute citation ratio ----
@@ -96,11 +98,11 @@ fp_compute_citation_ratio(doi_list)
 #> 6     Non-profit and academic friendly references     9
 #> 7     For-profit and academic friendly references     2
 #> 8 For-profit and non-academic friendly references     0
-#> 
+#>
 #> $ratios
-#>     Non-profit and academic friendly     For-profit and academic friendly 
-#>                                 0.82                                 0.18 
-#> For-profit and non-academic friendly 
-#>                                 0.00 
+#>     Non-profit and academic friendly     For-profit and academic friendly
+#>                                 0.82                                 0.18
+#> For-profit and non-academic friendly
+#>                                 0.00
 } # }
 ```

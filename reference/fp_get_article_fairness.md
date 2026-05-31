@@ -8,7 +8,7 @@ an article (more precisely the fairness status of the journal).
 ## Usage
 
 ``` r
-fp_get_article_fairness(doi)
+fp_get_article_fairness(doi = NULL)
 ```
 
 ## Arguments

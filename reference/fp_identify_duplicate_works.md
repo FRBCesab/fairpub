@@ -7,7 +7,7 @@ string distances between work titles and clustering similar items.
 
 ``` r
 fp_identify_duplicate_works(
-  data,
+  data = NULL,
   string_dist = "lv",
   hclust_method = "single",
   threshold = 0.2

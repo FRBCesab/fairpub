@@ -6,7 +6,7 @@ retrieve an author's identifier.
 ## Usage
 
 ``` r
-fp_get_openalex_author_id(author, n = 10)
+fp_get_openalex_author_id(author = NULL, n = 10)
 ```
 
 ## Arguments

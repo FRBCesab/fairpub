@@ -8,7 +8,7 @@ a journal.
 ## Usage
 
 ``` r
-fp_get_journal_fairness(journal)
+fp_get_journal_fairness(journal = NULL)
 ```
 
 ## Arguments

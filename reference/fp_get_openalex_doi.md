@@ -7,7 +7,7 @@ their DOI.
 ## Usage
 
 ``` r
-fp_get_openalex_doi(title, n = 10)
+fp_get_openalex_doi(title = NULL, n = 10)
 ```
 
 ## Arguments

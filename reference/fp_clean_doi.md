@@ -7,7 +7,7 @@ case.
 ## Usage
 
 ``` r
-fp_clean_doi(doi)
+fp_clean_doi(doi = NULL)
 ```
 
 ## Arguments

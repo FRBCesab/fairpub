@@ -8,7 +8,7 @@ filters publication types and incomplete records.
 
 ``` r
 fp_get_openalex_author_works(
-  author_id,
+  author_id = NULL,
   select = c("article", "review", "letter"),
   drop_na = TRUE
 )

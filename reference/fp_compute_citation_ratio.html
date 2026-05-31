@@ -70,7 +70,7 @@ academic friendly status of journals.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">fp_compute_citation_ratio</span><span class="op">(</span><span class="va">doi</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">fp_compute_citation_ratio</span><span class="op">(</span>doi <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -118,11 +118,13 @@ DOI: <a href="https://doi.org/10.1093/biosci/biag028" class="external-link">doi:
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Extract DOI from BibTeX ----</span></span></span>
-<span class="r-in"><span><span class="va">doi_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="fp_extract_doi.html">fp_extract_doi</a></span><span class="op">(</span><span class="va">filename</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">doi_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="fp_extract_doi.html">fp_extract_doi</a></span><span class="op">(</span>file <span class="op">=</span> <span class="va">filename</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Print DOI ----</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">doi_list</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> character(0)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "10.1098/rsos.160384"            NA                              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [3] "10.1126/science.1212540"        "10.9745/ghsp-d-21-00145"       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "10.1126/science.adk9900"        "10.1016/j.ecolecon.2021.107082"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># \dontrun{</span></span></span>
 <span class="r-in"><span><span class="co"># Compute citation ratio ----</span></span></span>
@@ -137,12 +139,12 @@ DOI: <a href="https://doi.org/10.1093/biosci/biag028" class="external-link">doi:
 <span class="r-in"><span><span class="co">#&gt; 6     Non-profit and academic friendly references     9</span></span></span>
 <span class="r-in"><span><span class="co">#&gt; 7     For-profit and academic friendly references     2</span></span></span>
 <span class="r-in"><span><span class="co">#&gt; 8 For-profit and non-academic friendly references     0</span></span></span>
-<span class="r-in"><span><span class="co">#&gt; </span></span></span>
+<span class="r-in"><span><span class="co">#&gt;</span></span></span>
 <span class="r-in"><span><span class="co">#&gt; $ratios</span></span></span>
-<span class="r-in"><span><span class="co">#&gt;     Non-profit and academic friendly     For-profit and academic friendly </span></span></span>
-<span class="r-in"><span><span class="co">#&gt;                                 0.82                                 0.18 </span></span></span>
-<span class="r-in"><span><span class="co">#&gt; For-profit and non-academic friendly </span></span></span>
-<span class="r-in"><span><span class="co">#&gt;                                 0.00 </span></span></span>
+<span class="r-in"><span><span class="co">#&gt;     Non-profit and academic friendly     For-profit and academic friendly</span></span></span>
+<span class="r-in"><span><span class="co">#&gt;                                 0.82                                 0.18</span></span></span>
+<span class="r-in"><span><span class="co">#&gt; For-profit and non-academic friendly</span></span></span>
+<span class="r-in"><span><span class="co">#&gt;                                 0.00</span></span></span>
 <span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
