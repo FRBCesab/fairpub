@@ -4,7 +4,7 @@
 \alias{fp_get_article_fairness}
 \title{Get the fairness status of an article}
 \usage{
-fp_get_article_fairness(doi)
+fp_get_article_fairness(doi = NULL)
 }
 \arguments{
 \item{doi}{a \code{character} of length 1. The Digital Object Identifiers (DOI)

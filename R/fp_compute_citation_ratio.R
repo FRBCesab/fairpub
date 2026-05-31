@@ -53,7 +53,7 @@
 #' )
 #'
 #' # Extract DOI from BibTeX ----
-#' doi_list <- fp_extract_doi(filename)
+#' doi_list <- fp_extract_doi(file = filename)
 #'
 #' # Print DOI ----
 #' head(doi_list)
@@ -71,12 +71,12 @@
 #' #> 6     Non-profit and academic friendly references     9
 #' #> 7     For-profit and academic friendly references     2
 #' #> 8 For-profit and non-academic friendly references     0
-#' #> 
+#' #>
 #' #> $ratios
-#' #>     Non-profit and academic friendly     For-profit and academic friendly 
-#' #>                                 0.82                                 0.18 
-#' #> For-profit and non-academic friendly 
-#' #>                                 0.00 
+#' #>     Non-profit and academic friendly     For-profit and academic friendly
+#' #>                                 0.82                                 0.18
+#' #> For-profit and non-academic friendly
+#' #>                                 0.00
 #' }
 
 fp_compute_citation_ratio <- function(doi) {
