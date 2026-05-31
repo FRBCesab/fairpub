@@ -288,8 +288,8 @@ test_that("is_flag() returns FALSE", {
 
 test_that("is_file() returns TRUE", {
   withr::with_tempfile("tmp", {
-    writeLines("# README", "README.md")
-    expect_true(is_file("README.md"))
+    writeLines("# README", tmp)
+    expect_true(is_file(tmp))
   })
 })
 

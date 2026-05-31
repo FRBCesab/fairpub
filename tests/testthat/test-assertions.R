@@ -300,9 +300,8 @@ test_that("assert_flag() works", {
 
 test_that("assert_file() works", {
   withr::with_tempfile("tmp", {
-    writeLines("# README", "README.md")
-
-    expect_invisible(assert_file("README.md"))
+    writeLines("# README", tmp)
+    expect_invisible(assert_file(tmp))
   })
 
   expect_error(
