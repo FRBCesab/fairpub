@@ -84,6 +84,7 @@ is_file <- function(x) {
 }
 
 
+#' @keywords internal
 is_one_of <- function(x, values) {
   if (!is.character(x) || length(x) != 1L || is.na(x)) {
     return(FALSE)
@@ -94,4 +95,29 @@ is_one_of <- function(x, values) {
   }
 
   x %in% values
+}
+
+
+#' @keywords internal
+is_exactly_one <- function(x, y) {
+  n <- sum(!is.null(x), !is.null(y))
+
+  n == 1L
+}
+
+
+#' @keywords internal
+is_dataframe <- function(data) {
+  is.data.frame(data) && nrow(data) > 0L && ncol(data) > 0L
+}
+
+
+#' @keywords internal
+has_column <- function(data, column) {
+  is.data.frame(data) &&
+    is.character(column) &&
+    length(column) == 1L &&
+    !is.na(column) &&
+    column != "" &&
+    column %in% names(data)
 }

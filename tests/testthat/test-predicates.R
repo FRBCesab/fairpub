@@ -342,3 +342,67 @@ test_that("is_one_of() returns FALSE", {
   expect_false(is_one_of("AAA", "aaa"))
   expect_false(is_one_of("aaa", c("bbb", "ccc")))
 })
+
+
+test_that("is_dataframe() returns TRUE", {
+  expect_true(is_dataframe(data.frame(x = 1)))
+  expect_true(is_dataframe(data.frame(x = 1:2, y = c("a", "b"))))
+})
+
+test_that("is_dataframe() returns FALSE", {
+  expect_false(is_dataframe(12))
+  expect_false(is_dataframe(12:16))
+  expect_false(is_dataframe("aaa"))
+  expect_false(is_dataframe(TRUE))
+  expect_false(is_dataframe(list(x = 1)))
+  expect_false(is_dataframe(matrix(1:4, ncol = 2)))
+
+  expect_false(is_dataframe(data.frame()))
+  expect_false(is_dataframe(data.frame(x = character(0))))
+  expect_false(is_dataframe(data.frame(x = character(0), y = character(0))))
+})
+
+
+test_that("has_column() returns TRUE", {
+  df <- data.frame(x = 1:2, y = c("a", "b"))
+
+  expect_true(has_column(df, "x"))
+  expect_true(has_column(df, "y"))
+})
+
+test_that("has_column() returns FALSE", {
+  expect_false(has_column(12, "x"))
+  expect_false(has_column(12:16, "x"))
+  expect_false(has_column("aaa", "x"))
+  expect_false(has_column(TRUE, "x"))
+  expect_false(has_column(list(x = 1), "x"))
+  expect_false(has_column(matrix(1:4, ncol = 2), "x"))
+
+  df <- data.frame(x = 1:2, y = c("a", "b"))
+
+  expect_false(has_column(df, 12))
+  expect_false(has_column(df, TRUE))
+  expect_false(has_column(df, list()))
+  expect_false(has_column(df, matrix()))
+  expect_false(has_column(df, data.frame()))
+
+  expect_false(has_column(df, c("x", "y")))
+
+  expect_false(has_column(df, ""))
+  expect_false(has_column(df, NA))
+  expect_false(has_column(df, NA_character_))
+
+  expect_false(has_column(df, "z"))
+  expect_false(has_column(df, "X"))
+})
+
+
+test_that("is_exactly_one() returns TRUE", {
+  expect_true(is_exactly_one(NULL, 12))
+  expect_true(is_exactly_one(12, NULL))
+})
+
+test_that("is_exactly_one() returns FALSE", {
+  expect_false(is_exactly_one(NULL, NULL))
+  expect_false(is_exactly_one(12, 14))
+})

@@ -73,15 +73,3 @@ fp_clean_orcid <- function(x) {
 fp_clean_source <- function(x) {
   gsub("\\s\\(.*\\)", "", x)
 }
-
-
-#' @noRd
-check_if_valid_work_type <- function(x) {
-  if (any(!(x %in% fp_list_openalex_work_types()))) {
-    stop(
-      "Invalid 'select' argument. ",
-      "Please run `fp_list_openalex_work_types()` to list accepted values",
-      call. = FALSE
-    )
-  }
-}

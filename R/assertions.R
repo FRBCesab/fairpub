@@ -122,3 +122,59 @@ assert_one_of <- function(x, values, pkg, arg = "x") {
 
   invisible(NULL)
 }
+
+
+#' @keywords internal
+assert_exactly_one <- function(x, y, arg_names = c("x", "file")) {
+  if (!is_exactly_one(x, y)) {
+    stop(
+      sprintf(
+        "Exactly one of `%s` must be supplied.",
+        paste(arg_names, collapse = "` and `")
+      )
+    )
+  }
+
+  invisible(NULL)
+}
+
+
+#' @keywords internal
+assert_if_valid_work_type <- function(x) {
+  if (any(!(x %in% fp_list_openalex_work_types()))) {
+    stop(
+      "Invalid `select` argument. ",
+      "See `?fp_list_openalex_work_types` for details",
+      call. = FALSE
+    )
+  }
+
+  invisible(NULL)
+}
+
+
+#' @keywords internal
+assert_dataframe <- function(data, arg = "data") {
+  if (!is_dataframe(data)) {
+    abort_msg(
+      arg,
+      "must be a non-empty data frame"
+    )
+  }
+
+  invisible(NULL)
+}
+
+
+#' @keywords internal
+assert_has_column <- function(data, column, arg = "data") {
+  if (!has_column(data, column)) {
+    abort_msg(
+      arg,
+      "must contain a column named `%s`",
+      column
+    )
+  }
+
+  invisible(NULL)
+}

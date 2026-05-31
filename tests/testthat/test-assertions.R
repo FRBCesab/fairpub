@@ -350,3 +350,123 @@ test_that("assert_one_of() works", {
   expect_error(assert_one_of(1, values = c("A", "B"), pkg = "fun"))
   expect_error(assert_one_of(c("A", "B"), values = c("A", "B"), pkg = "fun"))
 })
+
+
+test_that("assert_dataframe() works", {
+  expect_invisible(assert_dataframe(data.frame(x = 1:2, y = c("a", "b"))))
+
+  expect_error(
+    assert_dataframe(12),
+    "Argument `data` must be a non-empty data frame.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_dataframe(data.frame()),
+    "Argument `data` must be a non-empty data frame.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_dataframe(data.frame(x = character(0))),
+    "Argument `data` must be a non-empty data frame.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_dataframe(data.frame(), "df"),
+    "Argument `df` must be a non-empty data frame.",
+    fixed = TRUE
+  )
+})
+
+
+test_that("assert_has_column() works", {
+  df <- data.frame(x = 1:2, y = c("a", "b"))
+
+  expect_invisible(assert_has_column(df, "x"))
+
+  expect_error(
+    assert_has_column(12, "x"),
+    "Argument `data` must contain a column named `x`.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_has_column(data.frame(), "x"),
+    "Argument `data` must contain a column named `x`.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_has_column(data.frame(), "x", "df"),
+    "Argument `df` must contain a column named `x`.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_has_column(df, "X"),
+    "Argument `data` must contain a column named `X`.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_has_column(df, "z"),
+    "Argument `data` must contain a column named `z`.",
+    fixed = TRUE
+  )
+})
+
+
+test_that("assert_exactly_one() works", {
+  expect_invisible(assert_exactly_one(12, NULL))
+  expect_invisible(assert_exactly_one(NULL, 12))
+
+  expect_error(
+    assert_exactly_one(NULL, NULL),
+    "Exactly one of `x` and `file` must be supplied.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_exactly_one(12, 12),
+    "Exactly one of `x` and `file` must be supplied.",
+    fixed = TRUE
+  )
+
+  expect_error(
+    assert_exactly_one(NULL, NULL, arg_names = c("y", "z")),
+    "Exactly one of `y` and `z` must be supplied.",
+    fixed = TRUE
+  )
+})
+
+
+test_that("assert_if_valid_work_type() works", {
+  expect_no_error(
+    assert_if_valid_work_type("article")
+  )
+
+  expect_no_error(
+    assert_if_valid_work_type(c("article", "book", "review"))
+  )
+
+  result <- assert_if_valid_work_type("article")
+  expect_null(result)
+
+  valid_types <- fp_list_openalex_work_types()
+
+  expect_no_error(
+    assert_if_valid_work_type(valid_types)
+  )
+
+  expect_error(
+    assert_if_valid_work_type("foobar"),
+    regexp = "Invalid `select` argument"
+  )
+
+  expect_error(
+    assert_if_valid_work_type(c("article", "foobar")),
+    regexp = "Invalid `select` argument"
+  )
+})
