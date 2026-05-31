@@ -48,7 +48,7 @@ fp_get_openalex_doi <- function(title = NULL, n = 10) {
   assert_positive_integer(n, "n")
   assert_between(n, 1, 200, "n")
 
-  fp_check_mailto()
+  assert_openalex_mailto()
 
   fp_oa_fetch_dois(title, n) |>
     fp_oa_parse_dois()

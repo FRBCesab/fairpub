@@ -178,3 +178,16 @@ assert_has_column <- function(data, column, arg = "data") {
 
   invisible(NULL)
 }
+
+
+#' @keywords internal
+assert_openalex_mailto <- function() {
+  if (is.null(options()$"openalexR.mailto")) {
+    stop(
+      "Be polite with OpenAlex API and run: ",
+      "`options(openalexR.mailto = 'your_email')`"
+    )
+  }
+
+  invisible(NULL)
+}

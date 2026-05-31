@@ -53,7 +53,7 @@ fp_get_article_fairness <- function(doi = NULL) {
 
   ## Check if user is polite ----
 
-  fp_check_mailto()
+  assert_openalex_mailto()
 
   ## Clean DOI ----
 

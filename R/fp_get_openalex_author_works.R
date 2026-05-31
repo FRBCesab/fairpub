@@ -83,7 +83,7 @@ fp_get_openalex_author_works <- function(
 
   assert_flag(drop_na, "drop_na")
 
-  fp_check_mailto()
+  assert_openalex_mailto()
 
   fp_oa_fetch_works(author_id) |>
     fp_oa_parse_works() |>

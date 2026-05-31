@@ -100,7 +100,7 @@ fp_compute_citation_ratio <- function(doi) {
 
   ## Check if user is polite ----
 
-  fp_check_mailto()
+  assert_openalex_mailto()
 
   ## Fill summary output ----
 

@@ -469,3 +469,34 @@ test_that("assert_if_valid_work_type() works", {
     regexp = "Invalid `select` argument"
   )
 })
+
+
+test_that("assert_openalex_mailto() works", {
+  expect_error(
+    assert_openalex_mailto(),
+    paste0(
+      "Be polite with OpenAlex API and run: ",
+      "`options(openalexR.mailto = 'your_email')`"
+    ),
+    fixed = TRUE
+  )
+
+  withr::local_options(
+    list("openalexR.mailto" = NULL)
+  )
+
+  expect_error(
+    assert_openalex_mailto(),
+    paste0(
+      "Be polite with OpenAlex API and run: ",
+      "`options(openalexR.mailto = 'your_email')`"
+    ),
+    fixed = TRUE
+  )
+
+  withr::local_options(
+    list("openalexR.mailto" = "anonymous@mail.com")
+  )
+
+  expect_invisible(assert_openalex_mailto())
+})
